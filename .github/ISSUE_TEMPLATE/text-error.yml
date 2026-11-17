@@ -68,7 +68,7 @@ body:
       options:
         - None
         - "Green underline: transcription correction"
-        - "Orange dotted underline: PTS correction of the edition, not applied"
+        - "Orange dotted underline: PTS correction of the edition, applied"
         - "Red underline: braces in GRETIL"
     validations:
       required: true

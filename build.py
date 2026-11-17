@@ -197,25 +197,9 @@ def apply(volume, n, part, text, flags=None):
     for c in CORRECTIONS.get((volume, n), []):
         if c.get('part', 'text') != part:
             continue
+        # every correction is applied, a correction of the edition published by the PTS (`emendation`)
+        # too: the text gives the reading the authority adopts, the popup the printed reading it replaces
         old, new = c['gretil'], c['book']
-        if c.get('kind') == 'emendation':
-            # an authority's correction of the edition: the text stays as printed, the words are only marked
-            at = [j for j in range(len(t)) if t.startswith(old, j)]
-            if len(at) != c['times']:
-                # the emendation was written on the text with the earlier emendations of the page applied:
-                # where one of them stands, its words are no longer there to be found
-                at = [j for j in at if not any(x.get('kind') == 'emendation' for w in who[j:j + len(old)] for x in w)]
-            if len(at) != c['times']:
-                sys.exit(f'{volume} p. {n}: {old!r} is there {len(at)} times, the correction says {c["times"]}')
-            keep_l, mid_old, _, _ = _trim(old, new)
-            a, b = len(keep_l), len(keep_l) + len(mid_old)
-            if not mid_old.strip():         # an addition: the words it would follow or precede are marked
-                a, b = len(old) - len(old.lstrip()), len(old.rstrip())
-            who = list(who)
-            for j in at:
-                for x in range(j + a, j + b):
-                    who[x] = who[x] + (c,)
-            continue
         if t.count(old) != c['times']:
             sys.exit(f'{volume} p. {n}: {old!r} is there {t.count(old)} times, the correction says {c["times"]}')
         # only the words that change are marked: what the correction repeats around them (a
@@ -291,12 +275,13 @@ def describe(c):
     date = f"Approved on {c['date']}." if c['date'] else 'Approval date not recorded.'
     kind = c.get('kind', 'transcription')
     if kind == 'emendation':
-        # listing an emendation does not endorse it: its date is when it was recorded
+        # applied as the authority publishes it, not judged by the proofreader: its date is when it was recorded
         date = f"Recorded on {c['date']}." if c['date'] else 'Date not recorded.'
         if not old or not new:                            # an addition or an omission: show the context
             old, new = full_old, full_new
-        lines = ['Correction of the edition published by the PTS (not applied to the text)',
-                 f'Text, as in GRETIL: «{old}»', f'To be read, according to the authority: «{new}»',
+        lines = ['Correction of the edition published by the PTS (applied to the text)',
+                 f'Reading replaced, marked as wrong by the authority (as in GRETIL): «{old}»',
+                 f'Reading adopted, according to the authority: «{new}»',
                  f"Authority: {c['source']}. {date}"]
     elif kind == 'notation':
         lines = ['Notation only (same reading)', f'GRETIL: «{old}» → «{new}» (same letters; only the signs differ)',
@@ -439,10 +424,10 @@ CREDIT = ('<div class="legend"><b>About this copy.</b> The licence and the notic
           'Where GRETIL departs from the printed edition, the text below gives the printed reading, '
           'checked against the scans of the edition; proofreading and approval by Jorge Contreras '
           '(github.com/jorgecaa), foureditions project. Each correction was approved by a person; 24 were '
-          'read on the scan by machine and checked by hand, as their popups say.{replaced} The proofreader is not a philologist. The corrections are mechanical: each one restores what the printed PTS edition prints, read on its scan, or records a correction published by the authority cited. No reading was chosen on text-critical grounds, and no emendation is the proofreader\'s own; listing an emendation does not endorse it. Corrections of the edition itself published by the PTS (M. Cone\'s '
+          'read on the scan by machine and checked by hand, as their popups say.{replaced} The proofreader is not a philologist. The corrections are mechanical: each one restores what the printed PTS edition prints, read on its scan, or applies a correction published by the authority cited. No reading was chosen on text-critical grounds, and no emendation is the proofreader\'s own; applying a correction of the PTS does not mean the proofreader has judged it. Corrections of the edition itself published by the PTS (M. Cone\'s '
           'Dictionary of P\u0101li, P. Jackson\'s revision of Sa\u1e43yutta IV, W. Pruitt\'s correction lists), '
-          'which mark a printed reading as wrong and give the reading to adopt, are not applied to the text: '
-          'the corrected reading is given on the words concerned. '
+          'which mark a printed reading as wrong and give the reading to adopt, are applied to the text: '
+          'the text gives the reading to adopt, and the popup on the words concerned gives the printed reading it replaces. '
           'The text of GRETIL itself has not been rewritten: every correction is recorded, with its '
           'source and, when recorded, its date, in corrections.json of the repository that built this file.</div>\n')
 #: said only in a file with pages read from the scan in place of GRETIL's (`replaced_pages`)
@@ -453,14 +438,14 @@ LEGEND = ('<div class="legend"><span class="erratum">red underline</span>: GRETI
           '<span class="correction">green underline</span>: '
           'GRETIL departs from the printed edition; the printed reading is given. &nbsp; '
           '<span class="suggestion">orange dotted underline</span>: a correction of the edition published by '
-          'the PTS (Cone, Jackson or Pruitt), marking the printed reading as wrong; not applied. Hover over (or tap) a marked word for the readings, the evidence or authority, '
+          'the PTS (Cone, Jackson or Pruitt), applied: the text gives the reading the authority adopts, the popup the printed reading it marks as wrong. Hover over (or tap) a marked word for the readings, the evidence or authority, '
           'and the approval date when recorded.</div>')
 NOTE = ('Pali Text Society edition (Ee), digital input by the Dhammakaya Foundation (1989-1996), GRETIL '
         'version. Licence: CC BY-SA 4.0, (c) Pali Text Society and Dhammakaya Foundation, 2015. '
         'This file carries the corrections approved in the foureditions project ({count} pages '
         'changed in this file; built from commit {commit} of the GRETIL mirror). The critical apparatus (footnotes and variant '
         'readings) has NOT been proofread. Text between braces is reproduced as GRETIL has it, '
-        'unchanged except for notation. Corrections of the edition published by the PTS (Cone, Jackson, Pruitt) are marked, not applied. '
+        'unchanged except for notation. Corrections of the edition published by the PTS (Cone, Jackson, Pruitt) are applied and marked. '
         'The original GRETIL file is not modified.')
 
 
@@ -543,9 +528,9 @@ reproducibly from a pinned commit of the GRETIL mirror; source, method and licen
 <p><b>The critical apparatus (footnotes) has NOT been proofread</b>, except in the Sutta Nipāta.
 Licence: CC BY-SA 4.0, &copy; Pali Text Society and Dhammakaya Foundation, 2015.</p>
 <p>Every volume listed with a file was reviewed in the foureditions review service. The counts give the
-corrections approved so far. A volume with 0 corrections applied has no approved correction yet; this
+corrections approved so far. A volume with 0 proofreading corrections has no approved correction yet; this
 does not mean it was proofread in full and found free of errors, since the proofreading is not finished
-for every book. Ja I carries only PTS corrections not applied, which do not change the text.</p>
+for every book. Ja I carries only PTS corrections of the edition.</p>
 <p>Struck through, at the end: the books the review service leaves out, which are not built. A review needs
 a scan of the same printed edition that GRETIL transcribes; six of these books have none usable, and the
 Yamaka is excluded:</p>
@@ -558,7 +543,7 @@ Minayeff 1888, Morris 1882), a different text.</li>
 <li><b>Yamaka</b>: its PTS edition is excluded from the review because of its many abbreviations.</li>
 </ul>
 <table>
-<tr><th>Volume</th><th>File</th><th>Pages</th><th>Corrections applied</th><th>PTS corrections not applied</th></tr>
+<tr><th>Volume</th><th>File</th><th>Pages</th><th>Proofreading corrections</th><th>PTS corrections of the edition</th></tr>
 {rows}
 </table>
 </body>
@@ -576,7 +561,7 @@ LEFT_OUT = (('Vimānavatthu', NO_SCAN), ('Petavatthu', NO_SCAN), ('Apadāna', NO
 
 def write_index(pages):
     """`index.html`: the page GitHub Pages opens first, with a link to every built file."""
-    # applied corrections and PTS corrections not applied apart: an emendation does not change the text
+    # proofreading corrections and corrections of the edition published by the PTS, counted apart
     counts, emended = {}, {}
     for c in DATA['corrections']:
         tally = emended if c.get('kind') == 'emendation' else counts
