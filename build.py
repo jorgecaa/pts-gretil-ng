@@ -263,44 +263,41 @@ def _with_calls(text, call, k, j):
     return ''.join(out)
 
 
-BRACES_NOTE = ('GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left '
-               'the content between braces unchanged, except for notation.')
+BRACES_NOTE = '{ } as in GRETIL; content unchanged except for notation.'
+
+#: who corrected the edition, as the popup names it (the full citation is in the README)
+BY = (
+    ('M. Cone, A Dictionary of Pāli', 'DOP'),
+    ('L. Feer, Saṃyutta-nikāya IV, revised by P. Jackson', 'Jackson, SN IV (2014)'),
+    ('W. Pruitt, Corrections for the 2004 reprint', 'Pruitt, MN II (2008)'),
+    ('W. Pruitt, M I corrections', 'Pruitt, MN I (2009)'),
+)
+SCAN = 'the PTS ed. (scan)'
 
 
 def describe(c):
-    """The popup's text for one correction; ` | ` separates its lines."""
+    """The popup's text for one correction, short: what the text replaced, and by whose authority."""
     _, old, new, _ = _trim(c['gretil'], c['book'])        # only the words that change
-    old, new = ' '.join(old.split()), ' '.join(new.split())
-    full_old, full_new = ' '.join(c['gretil'].split()), ' '.join(c['book'].split())
-    date = f"Approved on {c['date']}." if c['date'] else 'Approval date not recorded.'
+    flat = lambda r: ' '.join(re.sub(r'-[ \t]*\n\s*', '-', r).split())   # a line-break hyphen joins the line
+    old, new = flat(old), flat(new)
     kind = c.get('kind', 'transcription')
     if kind == 'emendation':
-        # applied as the authority publishes it, not judged by the proofreader: its date is when it was recorded
-        date = f"Recorded on {c['date']}." if c['date'] else 'Date not recorded.'
         if not old or not new:                            # an addition or an omission: show the context
-            old, new = full_old, full_new
-        lines = ['Correction of the edition published by the PTS (applied to the text)',
-                 f'Reading replaced, marked as wrong by the authority (as in GRETIL): «{old}»',
-                 f'Reading adopted, according to the authority: «{new}»',
-                 f"Authority: {c['source']}. {date}"]
-    elif kind == 'notation':
-        lines = ['Notation only (same reading)', f'GRETIL: «{old}» → «{new}» (same letters; only the signs differ)',
-                 date]
-    elif c['gretil'] == c['book']:
-        lines = ['Printed reading confirmed', f'The printed edition reads «{new}» (sic), as GRETIL has; kept.',
-                 f"Evidence: {c['source']}. {date}"]
-    elif old == new:
-        lines = ['Line division corrected', f'Same reading: «{new}»', f"Evidence: {c['source']}. {date}"]
-    elif not old:
-        lines = ['Transcription corrected', f'GRETIL omits «{new}»; the printed edition has it.',
-                 f"Evidence: {c['source']}. {date}"]
-    elif not new:
-        lines = ['Transcription corrected', f'GRETIL has «{old}» next to the marked word; the printed edition does not have it.',
-                 f"Evidence: {c['source']}. {date}"]
-    else:
-        lines = ['Transcription corrected', f'GRETIL: «{old}» → printed edition: «{new}»',
-                 f"Evidence: {c['source']}. {date}"]
-    return ' | '.join(lines)
+            old = flat(c['gretil'])
+        by = next((short for start, short in BY if c['source'].startswith(start)), c['source'])
+        see = f" (see s.v. {', '.join(c['entry'])})" if c.get('entry') else ''
+        return f'from «{old}» corrected by {by}{see}'
+    if kind == 'notation':
+        return f'from «{old}» (GRETIL notation)'
+    if c['gretil'] == c['book']:
+        return f'«{new}» sic {SCAN}'
+    if old == new:
+        return f'line division corrected from {SCAN}'
+    if not old:
+        return f'om. GRETIL; added from {SCAN}'
+    if not new:
+        return f'«{old}» (GRETIL) deleted, as in {SCAN}'
+    return f'from «{old}» (GRETIL) corrected by {SCAN}'
 
 
 def mark(text, who, call, infos=None, braces=True, tag='span'):
@@ -438,8 +435,7 @@ LEGEND = ('<div class="legend"><span class="erratum">red underline</span>: GRETI
           '<span class="correction">green underline</span>: '
           'GRETIL departs from the printed edition; the printed reading is given. &nbsp; '
           '<span class="suggestion">orange dotted underline</span>: a correction of the edition published by '
-          'the PTS (Cone, Jackson or Pruitt), applied: the text gives the reading the authority adopts, the popup the printed reading it marks as wrong. Hover over (or tap) a marked word for the readings, the evidence or authority, '
-          'and the approval date when recorded.</div>')
+          'the PTS (Cone, Jackson or Pruitt), applied: the text gives the reading the authority adopts, the popup the printed reading it marks as wrong. Hover over (or tap) a marked word for the reading it replaced and who corrected it.</div>')
 NOTE = ('Pali Text Society edition (Ee), digital input by the Dhammakaya Foundation (1989-1996), GRETIL '
         'version. Licence: CC BY-SA 4.0, (c) Pali Text Society and Dhammakaya Foundation, 2015. '
         'This file carries the corrections approved in the foureditions project ({count} pages '

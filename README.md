@@ -78,7 +78,8 @@ Each correction was approved by a person. Every correction in `corrections.json`
   Pāli (an entry that marks the printed reading as wrong), P. Jackson's revision of Saṃyutta IV, W. Pruitt's
   correction lists. The authority declares the printed reading wrong and gives the reading to adopt.
   Applied: the text gives the reading to adopt, and the popup gives the printed reading it replaces and the
-  authority.
+  authority. A correction taken from Cone also has `entry`: the article(s) of the Dictionary of Pāli that
+  cite the passage, found mechanically from the passage cited and the forms of Cone's note.
 
 4,228 corrections in total:
 
@@ -107,8 +108,13 @@ Each correction was approved by a person. Every correction in `corrections.json`
 - Orange dotted underline: the PTS has published a correction of the edition here (Cone, Jackson or
   Pruitt), marking the printed reading as wrong; applied: the text gives the reading the authority adopts,
   and the popup the printed reading it replaces.
-- Hover over (or tap) a marked word: the popup states what kind of change it is, GRETIL's reading, the
-  printed reading or the reading to adopt, the evidence or authority, and the approval date when recorded.
+- Hover over (or tap) a marked word: the popup gives the reading the text replaced and who corrected it:
+  `from «ratheni» (GRETIL) corrected by the PTS ed. (scan)` (green: checked on the scan of the PTS
+  edition), `from «sattattāya» corrected by DOP (see s.v. pariṇamati)` or
+  `from «Pāgagginā» corrected by Jackson, SN IV (2014)` (orange). «s.v.»: the article of Cone's
+  Dictionary of Pāli where the reading is marked as wrong; when Cone cites the passage in more than one
+  article, all are given. The full citation of each source, the kind of evidence and the date of each
+  correction are in `corrections.json` (see «Corrections and their sources»).
   Only the words that change are underlined: a line-break hyphen or a neighbouring word that a
   correction repeats as context is left unmarked.
 - Each page shows line numbers in the left margin (1, 5, 10, 15 …), counting only the lines of the text, not
