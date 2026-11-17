@@ -71,7 +71,9 @@ popup of each marked word and in `corrections.json`).
 - **The critical apparatus (footnotes and variant readings) has NOT been proofread.** The corrections
   apply to the main text only, and every built file says so at the top of the page. The one exception
   is the Sutta Nipāta, whose footnotes were proofread together with its text; its file carries no such warning.
-- Note calls keep GRETIL's format (red superscript numbers). On the eight Saṃyutta II pages read from the
+- Each page shows line numbers in the left margin (1, 5, 10, 15 …), counting only the lines of the text, not
+  the running head nor the apparatus. They are drawn by the style sheet and are not part of the text.
+- Note calls are superscript numbers and the apparatus is shown in blue (GRETIL shows both in red). On the eight Saṃyutta II pages read from the
   scan and on three pages GRETIL's markup does not let be read reliably (SN II 60 and 129, Nidd I 161), the
   digits glued to the end of a word are taken as the calls.
 - A correction that only deletes text leaves no mark in the HTML; it is still listed in `corrections.json`.

@@ -292,7 +292,16 @@ def page_html(n, head, lines, notes):
     if head:
         s.append(f'<i>{html.escape(head, quote=False)}</i><BR>\n')
     if lines:
-        s.append(''.join(r + '<BR>\n' for r in t.split('\n')))
+        # line numbers of the body only (not the running head, not the apparatus): 1, 5, 10, 15…
+        # They are drawn by the style sheet from `data-n`, so they are not part of the text.
+        k = 0
+        for r in t.split('\n'):
+            if not r.strip():
+                s.append(r + '<BR>\n')
+                continue
+            k += 1
+            n_attr = f' data-n="{k}"' if k == 1 or k % 5 == 0 else ''
+            s.append(f'<span class="ln"{n_attr}></span>' + r + '<BR>\n')
     if notes:
         s.append(f'<span class="red">{_NOTE_DASH}<BR>\n')
         s += [html.escape(r.translate(_SUPERSCRIPTS), quote=False) + '<BR>\n' for r in notes.split('\n')]
@@ -307,6 +316,10 @@ body{font-family:Georgia,serif;max-width:60em;margin:1em auto;padding:0 1em;colo
 .erratum.correction{border-bottom:2px solid #c00}
 #tip{position:fixed;display:none;max-width:26em;background:#fffbe6;border:1px solid #888;
  padding:.5em .7em;font:13px/1.4 sans-serif;box-shadow:0 2px 6px #0004;z-index:9;white-space:normal}
+.red{color:#00c}
+.ln{display:inline-block;width:2.2em;margin-right:.9em;text-align:right;color:#000;font:11px/1 sans-serif;
+ user-select:none;vertical-align:baseline}
+.ln::before{content:attr(data-n)}
 .legend{font:13px/1.4 sans-serif;border:1px solid #ccc;padding:.5em .8em;margin-bottom:1em}
 </style>"""
 SCRIPT = """<script>
