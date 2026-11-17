@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: CC0-1.0 (the code of this repository is dedicated to the public domain; see README.md)
 name: build
 
 # The build must reproduce the committed files exactly (README: "The build is deterministic").

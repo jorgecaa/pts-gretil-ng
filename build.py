@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 """Rebuild the corrected GRETIL files.
 
-Licence of this repository (code, data and built files): CC BY-SA 4.0, the licence of the GRETIL
-files it derives from (see README.md).
+Licence of this file (code): CC0 1.0, dedicated to the public domain
+(https://creativecommons.org/publicdomain/zero/1.0/). The data (corrections.json) and the built files are
+under CC BY-SA 4.0, the licence of the GRETIL files they derive from (see README.md and NOTICE).
+SPDX-License-Identifier: CC0-1.0
 
     python3 build.py            # 1. download  2. read corrections.json  3. write corrected/*.htm
     python3 build.py --verify   # only check that the downloaded files are the ones corrections.json expects

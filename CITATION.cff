@@ -1,8 +1,9 @@
 cff-version: 1.2.0
 message: >-
-  If you cite these texts, cite this repository and the printed PTS edition
-  (volume and page). The corrections are recorded, with their sources, in
-  corrections.json.
+  If you cite these texts, cite the release of this repository you used (its
+  version, and its DOI when one is given) and the printed PTS edition (volume
+  and page). corrections.json changes between releases; the corrections are
+  recorded there with their sources.
 type: dataset
 title: "pts-gretil-ng: PTS Pali texts from GRETIL, proofread"
 abstract: >-
@@ -15,6 +16,8 @@ authors:
   - family-names: Contreras
     given-names: Jorge
 license: CC-BY-SA-4.0
+version: "1.0.0"
+date-released: "2026-11-17"
 repository-code: "https://github.com/jorgecaa/pts-gretil-ng"
 url: "https://jorgecaa.github.io/pts-gretil-ng/"
 keywords:

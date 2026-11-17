@@ -1,0 +1,13 @@
+pts-gretil-ng: licence notice. Licence: Creative Commons Attribution-ShareAlike 4.0 International
+(CC BY-SA 4.0); full text in LICENSE, also at https://creativecommons.org/licenses/by-sa/4.0/legalcode
+
+The GRETIL texts are (C) Copyright the Pali Text Society and the Dhammakaya Foundation, 2015,
+distributed by GRETIL under CC BY-SA 4.0. corrections.json and the built files in corrected/
+derive from those texts and are released under the same licence. README.md contains
+no GRETIL text and is released under the same licence. The code (build.py and
+.github/workflows/build.yml) contains no GRETIL text and is dedicated to the public domain under
+CC0 1.0 Universal: https://creativecommons.org/publicdomain/zero/1.0/legalcode
+
+Proofreading and approval of the corrections: Jorge Contreras (github.com/jorgecaa), foureditions
+project. The PTS corrections marked but not applied in the built files are those of the authorities cited there.
+The proofreader is not a philologist. The corrections are mechanical: each one restores what the printed PTS edition prints, read on its scan, or records a correction published by the authority cited. No reading was chosen on text-critical grounds, and no emendation is the proofreader's own; listing an emendation does not endorse it.

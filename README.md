@@ -41,17 +41,26 @@ GRETIL's text whole, and carry no marks. The GRETIL files themselves are
 never modified. `corrections.json` is exported from the corrections layer of the foureditions
 project, where the review is done; it is data, not written by hand, and is updated from there.
 
+**The foureditions project is not public.** Its review records (the review sheets, the corrected copies,
+the answers given during review) cannot be consulted. What can be checked from outside is each
+correction in `corrections.json` (volume, page, GRETIL's reading, the printed reading, its source and
+date) against a scan of the printed edition. The column «Public scan» in [Volumes](#volumes) says which
+volumes have a scan published (see [Scans of the printed editions](#scans-of-the-printed-editions));
+for the others, checking needs a copy of the printed edition.
+
 ## Files
 
 | Path | What it is |
 |---|---|
 | `build.py` | The whole build: download, verify, correct, write. |
 | `corrections.json` | Pinned mirror commit, checksums, corrections with their sources. |
-| `LICENSE` | Licence notice (CC BY-SA 4.0). |
-| `corrected/` | The built files (44 HTML files, 43 volumes), committed for convenience. |
+| `LICENSE` | Full text of the licence of the texts, the data and this README (CC BY-SA 4.0); the code is CC0 1.0 (see [Licence](#licence)). |
+| `NOTICE` | Licence notice: copyright of the GRETIL texts, what derives from them, credits. |
+| `corrected/` | The built files (44 HTML files, 43 volumes), committed for convenience. |  |
 | `index.html` | Entry page with a link to every built file (written by `build.py`; the GitHub Pages home). |
-| `CITATION.cff` | How to cite this repository. |
+| `CITATION.cff` | How to cite this repository (cite the release used: `corrections.json` changes between releases). |
 | `CONTRIBUTING.md` | How to report an error. |
+| `.github/ISSUE_TEMPLATE/` | The form for reporting an error in the text. |
 | `.github/workflows/build.yml` | The check that the build reproduces the committed files. |
 
 ## Corrections and their sources
@@ -119,6 +128,9 @@ does not mean it was proofread in full and found free of errors, since the proof
 for every book (see «Scope and limits»). Ja I carries only PTS corrections not applied, which do not
 change the text.
 
+Public scan: "yes" when the scan of the printed edition used for proofreading is published at the
+Internet Archive (see «Scans of the printed editions»); otherwise the scan used is not published.
+
 Struck through, at the end: the books the review service leaves out, which are not built. A review needs
 a scan of the same printed edition that GRETIL transcribes; six of these books have none usable, and the
 Yamaka is excluded:
@@ -130,59 +142,59 @@ Yamaka is excluded:
 - **Paṭṭhāna**: no scan of the PTS edition is at hand.
 - **Yamaka**: its PTS edition is excluded from the review because of its many abbreviations.
 
-| Volume | File | Pages | Corrections applied | PTS corrections not applied |
-|---|---|---:|---:|---:|
-| DN I | [`dighn1ou.htm`](corrected/dighn1ou.htm) | 253 | 73 | 25 |
-| DN II | [`dighn2ou.htm`](corrected/dighn2ou.htm) | 358 | 101 | 12 |
-| DN III | [`dighn3ou.htm`](corrected/dighn3ou.htm) | 293 | 113 | 24 |
-| MN I | [`majjn1ou.htm`](corrected/majjn1ou.htm) | 524 | 137 | 14 |
-| MN II | [`majjn2ou.htm`](corrected/majjn2ou.htm) | 266 | 46 | 33 |
-| MN III | [`majjn3ou.htm`](corrected/majjn3ou.htm) | 302 | 134 | 30 |
-| SN I | [`samyu1ou.htm`](corrected/samyu1ou.htm) | 240 | 169 | 29 |
-| SN II | [`samyu2ou.htm`](corrected/samyu2ou.htm) | 279 | 87 | 9 |
-| SN III | [`samyu3ou.htm`](corrected/samyu3ou.htm) | 279 | 52 | 8 |
-| SN IV | [`samyu4ou.htm`](corrected/samyu4ou.htm) | 403 | 103 | 633 |
-| SN V | [`samyu5ou.htm`](corrected/samyu5ou.htm) | 478 | 80 | 26 |
-| AN I | [`angut1ou.htm`](corrected/angut1ou.htm) | 304 | 65 | 19 |
-| AN II | [`angut2ou.htm`](corrected/angut2ou.htm) | 257 | 65 | 17 |
-| AN III | [`angut3ou.htm`](corrected/angut3ou.htm) | 452 | 25 | 12 |
-| AN IV | [`angut4ou.htm`](corrected/angut4ou.htm) | 466 | 50 | 17 |
-| AN V | [`angut5ou.htm`](corrected/angut5ou.htm) | 361 | 25 | 3 |
-| Sn | [`sutnipou.htm`](corrected/sutnipou.htm) | 223 | 827 | 0 |
-| Th & Th | [`theragou.htm`](corrected/theragou.htm) | 115 | 63 | 0 |
-|  | [`therigou.htm`](corrected/therigou.htm) | 52 |  |  |
-| Dhp | [`dhampdou.htm`](corrected/dhampdou.htm) | 120 | 8 | 0 |
-| Khp | [`khudp_ou.htm`](corrected/khudp_ou.htm) | 9 | 0 | 0 |
-| Ud | [`udana_ou.htm`](corrected/udana_ou.htm) | 94 | 7 | 0 |
-| It | [`itivutou.htm`](corrected/itivutou.htm) | 124 | 0 | 0 |
-| Ja I | [`jatak1ou.htm`](corrected/jatak1ou.htm) | 511 | 0 | 86 |
-| Ja II | [`jatak2ou.htm`](corrected/jatak2ou.htm) | 451 | 1 | 68 |
-| Ja III | [`jatak3ou.htm`](corrected/jatak3ou.htm) | 543 | 5 | 106 |
-| Ja IV | [`jatak4ou.htm`](corrected/jatak4ou.htm) | 499 | 19 | 106 |
-| Ja V | [`jatak5ou.htm`](corrected/jatak5ou.htm) | 511 | 24 | 198 |
-| Ja VI | [`jatak6ou.htm`](corrected/jatak6ou.htm) | 596 | 7 | 174 |
-| Nidd I | [`nidde1ou.htm`](corrected/nidde1ou.htm) | 509 | 2 | 0 |
-| Nidd II | [`nidde2ou.htm`](corrected/nidde2ou.htm) | 72 | 0 | 0 |
-| Patis I | [`patis1ou.htm`](corrected/patis1ou.htm) | 196 | 73 | 0 |
-| Patis II | [`patis2ou.htm`](corrected/patis2ou.htm) | 246 | 38 | 0 |
-| Mil | [`milindou.htm`](corrected/milindou.htm) | 420 | 0 | 0 |
-| Vin I | [`vin1maou.htm`](corrected/vin1maou.htm) | 360 | 8 | 0 |
-| Vin II | [`vin2cuou.htm`](corrected/vin2cuou.htm) | 308 | 14 | 0 |
-| Vin III | [`vin3s1ou.htm`](corrected/vin3s1ou.htm) | 266 | 7 | 0 |
-| Vin IV | [`vin4s2ou.htm`](corrected/vin4s2ou.htm) | 351 | 1 | 0 |
-| Vin V | [`vin5paou.htm`](corrected/vin5paou.htm) | 226 | 0 | 0 |
-| Dhs | [`dhamsgou.htm`](corrected/dhamsgou.htm) | 264 | 1 | 0 |
-| Vibh | [`vibhanou.htm`](corrected/vibhanou.htm) | 436 | 0 | 0 |
-| Dhātuk | [`dhatukou.htm`](corrected/dhatukou.htm) | 113 | 0 | 0 |
-| Pp | [`pugpan_ou.htm`](corrected/pugpan_ou.htm) | 74 | 13 | 0 |
-| Kv | [`kathavou.htm`](corrected/kathavou.htm) | 628 | 136 | 0 |
-| ~~Vimānavatthu~~ | not reviewed: no compatible scan of the printed PTS edition |  |  |  |
-| ~~Petavatthu~~ | not reviewed: no compatible scan of the printed PTS edition |  |  |  |
-| ~~Apadāna~~ | not reviewed: no compatible scan of the printed PTS edition |  |  |  |
-| ~~Buddhavaṃsa~~ | not reviewed: no compatible scan of the printed PTS edition |  |  |  |
-| ~~Cariyāpiṭaka~~ | not reviewed: no compatible scan of the printed PTS edition |  |  |  |
-| ~~Yamaka~~ | not reviewed: the review service excludes its PTS edition (too many abbreviations) |  |  |  |
-| ~~Paṭṭhāna~~ | not reviewed: no compatible scan of the printed PTS edition |  |  |  |
+| Volume | File | Pages | Corrections applied | PTS corrections not applied | Public scan |
+|---|---|---:|---:|---:|---|
+| DN I | [`dighn1ou.htm`](corrected/dighn1ou.htm) | 253 | 73 | 25 |  |
+| DN II | [`dighn2ou.htm`](corrected/dighn2ou.htm) | 358 | 101 | 12 |  |
+| DN III | [`dighn3ou.htm`](corrected/dighn3ou.htm) | 293 | 113 | 24 |  |
+| MN I | [`majjn1ou.htm`](corrected/majjn1ou.htm) | 524 | 137 | 14 | yes |
+| MN II | [`majjn2ou.htm`](corrected/majjn2ou.htm) | 266 | 46 | 33 |  |
+| MN III | [`majjn3ou.htm`](corrected/majjn3ou.htm) | 302 | 134 | 30 |  |
+| SN I | [`samyu1ou.htm`](corrected/samyu1ou.htm) | 240 | 169 | 29 |  |
+| SN II | [`samyu2ou.htm`](corrected/samyu2ou.htm) | 279 | 87 | 9 | yes |
+| SN III | [`samyu3ou.htm`](corrected/samyu3ou.htm) | 279 | 52 | 8 | yes |
+| SN IV | [`samyu4ou.htm`](corrected/samyu4ou.htm) | 403 | 103 | 633 | yes |
+| SN V | [`samyu5ou.htm`](corrected/samyu5ou.htm) | 478 | 80 | 26 | yes |
+| AN I | [`angut1ou.htm`](corrected/angut1ou.htm) | 304 | 65 | 19 | yes |
+| AN II | [`angut2ou.htm`](corrected/angut2ou.htm) | 257 | 65 | 17 | yes |
+| AN III | [`angut3ou.htm`](corrected/angut3ou.htm) | 452 | 25 | 12 | yes |
+| AN IV | [`angut4ou.htm`](corrected/angut4ou.htm) | 466 | 50 | 17 | yes |
+| AN V | [`angut5ou.htm`](corrected/angut5ou.htm) | 361 | 25 | 3 | yes |
+| Sn | [`sutnipou.htm`](corrected/sutnipou.htm) | 223 | 827 | 0 |  |
+| Th & Th | [`theragou.htm`](corrected/theragou.htm) | 115 | 63 | 0 | yes |
+|  | [`therigou.htm`](corrected/therigou.htm) | 52 |  |  | yes |
+| Dhp | [`dhampdou.htm`](corrected/dhampdou.htm) | 120 | 8 | 0 |  |
+| Khp | [`khudp_ou.htm`](corrected/khudp_ou.htm) | 9 | 0 | 0 |  |
+| Ud | [`udana_ou.htm`](corrected/udana_ou.htm) | 94 | 7 | 0 |  |
+| It | [`itivutou.htm`](corrected/itivutou.htm) | 124 | 0 | 0 | yes |
+| Ja I | [`jatak1ou.htm`](corrected/jatak1ou.htm) | 511 | 0 | 86 |  |
+| Ja II | [`jatak2ou.htm`](corrected/jatak2ou.htm) | 451 | 1 | 68 | yes |
+| Ja III | [`jatak3ou.htm`](corrected/jatak3ou.htm) | 543 | 5 | 106 |  |
+| Ja IV | [`jatak4ou.htm`](corrected/jatak4ou.htm) | 499 | 19 | 106 | yes |
+| Ja V | [`jatak5ou.htm`](corrected/jatak5ou.htm) | 511 | 24 | 198 | yes |
+| Ja VI | [`jatak6ou.htm`](corrected/jatak6ou.htm) | 596 | 7 | 174 | yes |
+| Nidd I | [`nidde1ou.htm`](corrected/nidde1ou.htm) | 509 | 2 | 0 |  |
+| Nidd II | [`nidde2ou.htm`](corrected/nidde2ou.htm) | 72 | 0 | 0 |  |
+| Patis I | [`patis1ou.htm`](corrected/patis1ou.htm) | 196 | 73 | 0 |  |
+| Patis II | [`patis2ou.htm`](corrected/patis2ou.htm) | 246 | 38 | 0 |  |
+| Mil | [`milindou.htm`](corrected/milindou.htm) | 420 | 0 | 0 | yes |
+| Vin I | [`vin1maou.htm`](corrected/vin1maou.htm) | 360 | 8 | 0 |  |
+| Vin II | [`vin2cuou.htm`](corrected/vin2cuou.htm) | 308 | 14 | 0 | yes |
+| Vin III | [`vin3s1ou.htm`](corrected/vin3s1ou.htm) | 266 | 7 | 0 | yes |
+| Vin IV | [`vin4s2ou.htm`](corrected/vin4s2ou.htm) | 351 | 1 | 0 |  |
+| Vin V | [`vin5paou.htm`](corrected/vin5paou.htm) | 226 | 0 | 0 | yes |
+| Dhs | [`dhamsgou.htm`](corrected/dhamsgou.htm) | 264 | 1 | 0 |  |
+| Vibh | [`vibhanou.htm`](corrected/vibhanou.htm) | 436 | 0 | 0 |  |
+| Dhātuk | [`dhatukou.htm`](corrected/dhatukou.htm) | 113 | 0 | 0 |  |
+| Pp | [`pugpan_ou.htm`](corrected/pugpan_ou.htm) | 74 | 13 | 0 | yes |
+| Kv | [`kathavou.htm`](corrected/kathavou.htm) | 628 | 136 | 0 |  |
+| ~~Vimānavatthu~~ | not reviewed: no compatible scan of the printed PTS edition |  |  |  |  |
+| ~~Petavatthu~~ | not reviewed: no compatible scan of the printed PTS edition |  |  |  |  |
+| ~~Apadāna~~ | not reviewed: no compatible scan of the printed PTS edition |  |  |  |  |
+| ~~Buddhavaṃsa~~ | not reviewed: no compatible scan of the printed PTS edition |  |  |  |  |
+| ~~Cariyāpiṭaka~~ | not reviewed: no compatible scan of the printed PTS edition |  |  |  |  |
+| ~~Yamaka~~ | not reviewed: the review service excludes its PTS edition (too many abbreviations) |  |  |  |  |
+| ~~Paṭṭhāna~~ | not reviewed: no compatible scan of the printed PTS edition |  |  |  |  |
 
 Page counts are those of each built file; corrections are counted per volume.
 
@@ -228,4 +240,17 @@ are not published here.
 The GRETIL texts are © Pali Text Society and Dhammakaya Foundation, 2015, under
 [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). `corrections.json` and the built
 files in `corrected/` derive from those texts and are released under the same licence, with the same
-notice. `build.py` and this README contain no GRETIL text and are released under the same licence.
+notice. This README contains no GRETIL text and is released under the same licence.
+
+The code, `build.py` and the check in `.github/workflows/build.yml`, contains no GRETIL text and is
+dedicated to the public domain under [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/):
+it can be copied, changed and reused for any purpose, without asking and without attribution.
+
+The full text of CC BY-SA 4.0 is in `LICENSE`; the notice (copyright, what derives from the GRETIL texts,
+credits) is in `NOTICE`.
+
+## Citing
+
+Cite the release you used, by its version (and its DOI, when one is given), together with the printed
+PTS edition (volume and page): `corrections.json` changes between releases, so the text at a later
+release may differ. `CITATION.cff` gives the details; GitHub shows them under «Cite this repository».

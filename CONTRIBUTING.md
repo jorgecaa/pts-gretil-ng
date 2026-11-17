@@ -2,7 +2,7 @@
 
 ## Reporting an error in the text
 
-Open an issue with:
+Open an issue with the form «Error in the text» (Issues → New issue). It asks for:
 
 - the volume, page and line (the line numbers are in the left margin of each page);
 - what the page shows and what the printed PTS edition prints, if you have checked it;
@@ -10,7 +10,7 @@ Open an issue with:
   of the edition, not applied; red: braces in GRETIL).
 
 `corrections.json` is not edited by hand here: it is exported from the corrections layer of the
-foureditions project, where every correction is checked against the scan and approved. A reported
+foureditions project (not public), where every correction is checked against the scan and approved. A reported
 error is reviewed there and reaches this repository with the next export.
 
 ## Changes to `build.py`

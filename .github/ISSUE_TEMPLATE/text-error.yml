@@ -1,0 +1,79 @@
+name: Error in the text
+description: Report a word or passage of a built page that does not match the printed PTS edition, or a wrong mark.
+title: "[Text error] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The corrections are reviewed in the foureditions project (not public), against the scan of the
+        printed edition; a confirmed error reaches this repository with the next export of `corrections.json`.
+        The critical apparatus (footnotes, variant readings) has not been proofread, except in the Sutta Nipāta.
+  - type: input
+    id: volume
+    attributes:
+      label: Volume
+      description: As in the README's «Volumes» table, e.g. "SN IV", or the file name, e.g. samyu4ou.htm.
+    validations:
+      required: true
+  - type: input
+    id: page
+    attributes:
+      label: Page
+      description: The PTS page, as shown on the built page ("[page 123]").
+    validations:
+      required: true
+  - type: input
+    id: line
+    attributes:
+      label: Line
+      description: The line number in the left margin of the page.
+    validations:
+      required: true
+  - type: dropdown
+    id: part
+    attributes:
+      label: Part of the page
+      options:
+        - Main text
+        - Running head
+        - Apparatus (footnotes, variant readings)
+    validations:
+      required: true
+  - type: textarea
+    id: shown
+    attributes:
+      label: What the page shows
+      description: Copy the words as they appear on the built page.
+    validations:
+      required: true
+  - type: textarea
+    id: printed
+    attributes:
+      label: What the printed PTS edition prints
+      description: Leave empty if you have not checked the printed edition or its scan.
+  - type: dropdown
+    id: checked
+    attributes:
+      label: Checked against the printed edition?
+      options:
+        - Yes, against the printed book
+        - Yes, against a scan of the printed edition
+        - "No"
+    validations:
+      required: true
+  - type: dropdown
+    id: mark
+    attributes:
+      label: Mark on the word
+      options:
+        - None
+        - "Green underline: transcription correction"
+        - "Orange dotted underline: PTS correction of the edition, not applied"
+        - "Red underline: braces in GRETIL"
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Anything else (another edition, a dictionary entry, a published correction list).
