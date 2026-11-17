@@ -112,8 +112,18 @@ shown on the words concerned but not applied.
 
 Every volume listed with a file was reviewed in the foureditions review service. A volume with 0
 corrections applied was reviewed and the review found nothing to correct in it (Ja I carries only
-suggested emendations, which do not change the text). Struck through, at the end: the books the review
-service leaves out, which are not built.
+suggested emendations, which do not change the text).
+
+Struck through, at the end: the books the review service leaves out, which are not built. A review needs
+a scan of the same printed edition that GRETIL transcribes; six of these books have none usable, and the
+Yamaka is excluded:
+
+- **Vimānavatthu and Petavatthu, Buddhavaṃsa and Cariyāpiṭaka**: GRETIL gives the later PTS editions by
+  N. A. Jayawickrama (1977 and 1974); the scans at hand are of the earlier editions (Gooneratne 1886,
+  Minayeff 1888, Morris 1882), a different text.
+- **Apadāna**: the scan at hand was withdrawn, because its images lose the diacritics.
+- **Paṭṭhāna**: no scan of the PTS edition is at hand.
+- **Yamaka**: its PTS edition is excluded from the review because of its many abbreviations.
 
 | Volume | File | Pages | Corrections applied | Emendations suggested |
 |---|---|---:|---:|---:|
