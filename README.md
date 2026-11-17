@@ -53,7 +53,7 @@ popup of each marked word and in `corrections.json`).
 | Source label | Corrections |
 |---|---|
 | Sheet corrected by hand against the scan of the PTS edition | 1,132 |
-| Cone's Dictionary of Pāli (entry marked as wrong reading), confirmed against the scan | 1,023 |
+| Cone's Dictionary of Pāli (entry marked as wrong reading), approved by hand | 1,023 |
 | Hand-corrected copy of the GRETIL file, checked against the scan of the PTS edition | 886 |
 | Revised edition of the Saṃyutta, vol. IV (apparatus) | 608 |
 | Word Index to the Pāli Tipiṭaka, compared with the copy | 252 |
@@ -63,7 +63,7 @@ popup of each marked word and in `corrections.json`).
 | Transcribed from the scan and approved by hand | 24 |
 | Corrections published by the PTS (2004) | 14 |
 | Answer given by hand during review | 7 |
-| Earlier hand correction | 6 |
+| Scan of the PTS edition, checked word by word on 2026-10-11 | 6 |
 | Corrections published for Majjhima I (W. Pruitt) | 4 |
 | Precision study, confirmed against the scan | 1 |
 
