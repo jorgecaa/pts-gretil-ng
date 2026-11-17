@@ -5,6 +5,10 @@
 Reproducible build of the Pali Text Society (PTS) editions of the Pali canon from
 [GRETIL](https://gretil.sub.uni-goettingen.de/), with proofreading corrections marked in the text.
 
+**Read online:** <https://jorgecaa.github.io/pts-gretil-ng/>. **Licence:** texts, data and built files
+CC BY-SA 4.0; code CC0 1.0 (GitHub's sidebar shows only the first; see [Licence](#licence)).
+**Cite:** [Citing](#citing).
+
     python3 build.py            # 1. download GRETIL  2. read corrections.json  3. write corrected/*.htm and index.html
     python3 build.py --verify   # only check the downloaded files against the expected checksums
 
@@ -59,7 +63,7 @@ for the others, checking needs a copy of the printed edition.
 | `corrections.json` | Pinned mirror commit, checksums, corrections with their sources. |
 | `LICENSE` | Full text of the licence of the texts, the data and this README (CC BY-SA 4.0); the code is CC0 1.0 (see [Licence](#licence)). |
 | `NOTICE` | Licence notice: copyright of the GRETIL texts, what derives from them, credits. |
-| `corrected/` | The built files (44 HTML files, 43 volumes), committed for convenience. |  |
+| `corrected/` | The built files (44 HTML files, 43 volumes), committed for convenience. Each keeps the name of its GRETIL file (`dighn1ou.htm`: Dīgha-nikāya I); [Volumes](#volumes) gives the volume of each. |
 | `index.html` | Entry page with a link to every built file (written by `build.py`; the GitHub Pages home). |
 | `CITATION.cff` | How to cite this repository (cite the release used: `corrections.json` changes between releases). |
 | `CONTRIBUTING.md` | How to report an error. |
@@ -114,12 +118,16 @@ Each correction was approved by a person. Every correction in `corrections.json`
 - Hover over (or tap) a marked word: the popup gives the reading the text replaced and who corrected it:
   `from «ratheni» (GRETIL) corrected by the PTS ed. (scan)` (green: checked on the scan of the PTS
   edition), `from «sattattāya» corrected by DOP (see s.v. pariṇamati)` or
-  `from «Pāgagginā» corrected by Jackson, SN IV (2014)` (orange). «s.v.»: the article of Cone's
+  `from «Pāgagginā» corrected by Jackson, SN IV (2014)` (orange). «DOP»: M. Cone, *A Dictionary of
+  Pāli*. «s.v.»: the article of Cone's
   Dictionary of Pāli where the reading is marked as wrong; when Cone cites the passage in more than one
   article, all are given. The full citation of each source, the kind of evidence and the date of each
   correction are in `corrections.json` (see «Corrections and their sources»).
   Only the words that change are underlined: a line-break hyphen or a neighbouring word that a
   correction repeats as context is left unmarked.
+- Each page of the printed edition can be linked to: add `#p` and its number to the address of the
+  volume (DN I, page 45: `https://jorgecaa.github.io/pts-gretil-ng/corrected/dighn1ou.htm#p45`). The top of
+  every volume links back to the list of volumes and to this repository.
 - Each page shows line numbers in the left margin (1, 5, 10, 15 …), counting only the lines of the text, not
   the running head nor the apparatus. They are drawn by the style sheet and are not part of the text.
 - The pages are set in Noto Sans, loaded from Google Fonts; without a connection the browser's default
@@ -134,7 +142,9 @@ Each correction was approved by a person. Every correction in `corrections.json`
 
 Proofreading corrections: transcription and notation corrections, where GRETIL departs from the printed
 edition. PTS corrections of the edition: corrections published by the PTS (Cone, Jackson, Pruitt, the corrigenda of the volume) of
-readings the printed edition gets wrong. Both are applied to the text.
+readings the printed edition gets wrong. Both are applied to the text. The two columns do not overlap:
+each correction is counted once. Of the 634 PTS corrections of SN IV, 609 come from P. Jackson's revision
+of that volume (2014).
 
 Every volume listed with a file was reviewed in the foureditions review service. The counts give the
 corrections approved so far. A volume with 0 proofreading corrections has no approved correction yet; this
@@ -174,8 +184,8 @@ Yamaka is excluded:
 | AN IV | [`angut4ou.htm`](corrected/angut4ou.htm) | 466 | 46 | 21 | yes |
 | AN V | [`angut5ou.htm`](corrected/angut5ou.htm) | 361 | 23 | 5 | yes |
 | Sn | [`sutnipou.htm`](corrected/sutnipou.htm) | 223 | 827 | 0 |  |
-| Th & Th | [`theragou.htm`](corrected/theragou.htm) | 115 | 31 | 0 | yes |
-|  | [`therigou.htm`](corrected/therigou.htm) | 52 | 32 | 0 | yes |
+| Th | [`theragou.htm`](corrected/theragou.htm) | 115 | 31 | 0 | yes |
+| Thī | [`therigou.htm`](corrected/therigou.htm) | 52 | 32 | 0 | yes |
 | Dhp | [`dhampdou.htm`](corrected/dhampdou.htm) | 120 | 8 | 0 |  |
 | Khp | [`khudp_ou.htm`](corrected/khudp_ou.htm) | 9 | 0 | 0 |  |
 | Ud | [`udana_ou.htm`](corrected/udana_ou.htm) | 94 | 7 | 0 |  |

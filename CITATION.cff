@@ -7,12 +7,18 @@ message: >-
 type: dataset
 title: "pts-gretil-ng: PTS Pali texts from GRETIL, proofread"
 abstract: >-
-  Reproducible build of the Pali Text Society editions as given by GRETIL
-  (digital input by the Dhammakaya Foundation), with proofreading corrections
-  against the scans of the printed editions marked in the text, and
-  corrections of the editions published by the PTS (Cone, Jackson, Pruitt,
-  the corrigenda of the volumes)
-  applied and marked, with the printed reading they replace.
+  The Pali canon (Tipitaka) in the printed editions of the Pali Text Society
+  (PTS), as given by GRETIL, the Göttingen Register of Electronic Texts in
+  Indian Languages (digital input by the Dhammakaya Foundation): 44 HTML files,
+  43 volumes, readable in a browser at https://jorgecaa.github.io/pts-gretil-ng/.
+  Where GRETIL departs from the printed edition, the text was proofread against
+  scans of the printed volumes and the printed reading is restored and marked.
+  Corrections of the editions themselves published by the PTS (M. Cone's
+  Dictionary of Pāli, P. Jackson's revision of Saṃyutta IV, W. Pruitt's
+  correction lists, the corrigenda printed in the volumes) are applied and
+  marked, with the printed reading they replace. The build is reproducible
+  from a pinned commit of the GRETIL mirror; every correction is recorded with
+  its source in corrections.json.
 authors:
   - family-names: Contreras
     given-names: Jorge

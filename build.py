@@ -364,7 +364,9 @@ def page_html(n, head, lines, notes):
     t = html.escape('\n'.join(lines), quote=False).replace('||||', '|| ||')
     t = _SUPERSCRIPT.sub(lambda m: red(m.group(1).translate(_SUPERSCRIPTS)), t)
     t = re.sub(CALL_OPEN + '(.*?)' + CALL_CLOSE, lambda m: red(m.group(1)), t)
-    s = [f'<!-- page-status: corrected --><b>[page {n:03d}]</b><BR>\n']
+    # `id`: a page of the printed edition can be linked to (`…#p45`); the anchor stands before GRETIL's
+    # page marker, which keeps its own form
+    s = [f'<a id="p{n}"></a><!-- page-status: corrected --><b>[page {n:03d}]</b><BR>\n']
     if head:
         s.append(f'<i>{html.escape(head, quote=False)}</i><BR>\n')
     if lines:
@@ -428,6 +430,14 @@ CREDIT = ('<div class="legend"><b>About this copy.</b> The licence and the notic
           'the text gives the reading to adopt, and the popup on the words concerned gives the printed reading it replaces. '
           'The text of GRETIL itself has not been rewritten: every correction is recorded, with its '
           'source and, when recorded, its date, in corrections.json of the repository that built this file.</div>\n')
+REPO = 'https://github.com/jorgecaa/pts-gretil-ng'
+DOI = '10.5281/zenodo.24314138'          # all versions: resolves to the latest release
+#: at the top of every volume: the way back to the list of volumes and to the project
+NAV = ('<div class="legend">Part of <b>PTS Pali texts from GRETIL, proofread</b>: '
+       '<a href="../index.html">all volumes</a> &middot; source, method, licence and how to cite: '
+       f'<a href="{REPO}">github.com/jorgecaa/pts-gretil-ng</a> (DOI <a href="https://doi.org/{DOI}">{DOI}</a>) '
+       '&middot; to link to a page of the printed edition, add <code>#p</code> and its number to the address '
+       '(page 45: <code>#p45</code>).</div>\n')
 #: said only in a file with pages read from the scan in place of GRETIL's (`replaced_pages`)
 REPLACED = {'SN II': (' Pages 109-116, missing or cut short in GRETIL, were read from the scan by machine '
                       '(OCR for 109-112, AI for 113-116) and reviewed by hand; they carry no marks.')}
@@ -437,7 +447,8 @@ LEGEND = ('<div class="legend"><span class="erratum">red underline</span>: an er
           '<span class="correction">green underline</span>: '
           'GRETIL departs from the printed edition; the printed reading is given. &nbsp; '
           '<span class="suggestion">orange dotted underline</span>: a correction of the edition published by '
-          'the PTS (Cone, Jackson, Pruitt, or the corrigenda of the volume), applied: the text gives the reading the authority adopts, the popup the printed reading it marks as wrong. Hover over (or tap) a marked word for the reading it replaced and who corrected it.</div>')
+          'the PTS (M. Cone\'s Dictionary of Pāli, cited in the popups as DOP; P. Jackson; W. Pruitt; or the '
+          'corrigenda of the volume), applied: the text gives the reading the authority adopts, the popup the printed reading it marks as wrong. Hover over (or tap) a marked word for the reading it replaced and who corrected it.</div>')
 NOTE = ('Pali Text Society edition (Ee), digital input by the Dhammakaya Foundation (1989-1996), GRETIL '
         'version. Licence: CC BY-SA 4.0, (c) Pali Text Society and Dhammakaya Foundation, 2015. '
         'This file carries the corrections approved in the foureditions project ({count} pages '
@@ -453,12 +464,13 @@ APPARATUS_PROOFREAD = ('Sn',)
 
 def document(header, note, blocks, warning, credit):
     """GRETIL's own opening (title, introduction, licence notice, terms of use) is kept as it is;
-    the warning about the apparatus, when it applies, stands above it, at the top of the page."""
+    the links to the project and, when it applies, the warning about the apparatus stand above it,
+    at the top of the page."""
     start = header.lower().find('<!doctype')
     head = re.sub(r'(<title>)\s*(.*?)\s*(</title>)', r'\1\2 (with approved corrections marked)\3',
                   header[start:] if start > 0 else header, count=1, flags=re.S)
     head = head.replace('</head>', STYLE + '</head>', 1)
-    head = re.sub(r'(<body[^>]*>)', lambda m: m.group(1) + '\n' + warning, head, count=1)
+    head = re.sub(r'(<body[^>]*>)', lambda m: m.group(1) + '\n' + NAV + warning, head, count=1)
     return (head + f'<!-- {note} -->\n{credit}{LEGEND}<hr>\n' + ''.join(blocks)
             + f'<hr>\n{SCRIPT}</body></html>\n')
 
@@ -521,12 +533,23 @@ INDEX = """<!DOCTYPE html>
 <p>The Pali Text Society editions as GRETIL gives them (digital input by the Dhammakaya Foundation),
 with proofreading corrections against the scans of the printed editions marked in the text. Built
 reproducibly from a pinned commit of the GRETIL mirror; source, method and licence:
-<a href="https://github.com/jorgecaa/pts-gretil-ng">github.com/jorgecaa/pts-gretil-ng</a>.</p>
+<a href="{repo}">github.com/jorgecaa/pts-gretil-ng</a>.</p>
 {legend}
 <p><b>The critical apparatus (footnotes) has NOT been proofread</b>, except in the Sutta Nipāta.
 Licence: CC BY-SA 4.0, &copy; Pali Text Society and Dhammakaya Foundation, 2015.</p>
-<p>Every volume listed with a file was reviewed in the foureditions review service. The counts give the
-corrections approved so far. A volume with 0 proofreading corrections has no approved correction yet; this
+<p><b>Citing.</b> Cite the release used, by its version and DOI (all versions:
+<a href="https://doi.org/{doi}">{doi}</a>, which resolves to the latest release; each release has its
+own DOI, listed in the <a href="{repo}#citing">README</a>), together with the printed PTS edition (volume
+and page). To link to a page of the printed edition, add <code>#p</code> and its number to the address of
+the volume (page 45: <code>…/dighn1ou.htm#p45</code>).</p>
+<p><b>The table.</b> Pages: the pages of the printed edition in the file. Proofreading corrections
+(green): places where GRETIL departs from the printed edition, checked on its scan, including GRETIL's
+signs written as the book prints them. PTS corrections of the edition (orange): corrections of the
+edition itself published by the PTS. The two columns do not overlap: each correction is counted once.
+Of the {sn4_total} PTS corrections of SN IV, {sn4_jackson} come from P. Jackson's revision of that volume (2014).</p>
+<p>Every volume listed with a file was reviewed in the foureditions review service: foureditions is the
+project where the review is done, each correction checked against the scan and approved; it is not public
+(see the README). The counts give the corrections approved so far. A volume with 0 proofreading corrections has no approved correction yet; this
 does not mean it was proofread in full and found free of errors, since the proofreading is not finished
 for every book. Ja I carries only PTS corrections of the edition.</p>
 <p>Struck through, at the end: the books the review service leaves out, which are not built. A review needs
@@ -557,6 +580,10 @@ LEFT_OUT = (('Vimānavatthu', NO_SCAN), ('Petavatthu', NO_SCAN), ('Apadāna', NO
             ('Paṭṭhāna', NO_SCAN))
 
 
+#: the label of each file of a volume given in two files (`corrections.json` names the volume «Th & Th»)
+LABELS = {'theragou': 'Th', 'therigou': 'Thī'}
+
+
 def file_counts(volume, rel):
     """Proofreading corrections and PTS corrections of the edition on the pages of one file."""
     with open(os.path.join(BASE, rel + '.htm'), encoding='utf-8', newline=None) as fh:
@@ -580,7 +607,8 @@ def write_index(pages):
             n_counts, n_emended = counts.get(volume, 0), emended.get(volume, 0)
             if len(rels) > 1:          # a volume in two files (Theragāthā, Therīgāthā): each file its own
                 n_counts, n_emended = file_counts(volume, rel)
-            rows.append(f'<tr><td>{html.escape(volume) if k == 0 else ""}</td>'
+            label = LABELS.get(os.path.basename(rel), volume if k == 0 else '')
+            rows.append(f'<tr><td>{html.escape(label)}</td>'
                         f'<td><a href="corrected/{name}">{name}</a></td><td>{pages[rel]}</td>'
                         f'<td>{n_counts}</td><td>{n_emended}</td></tr>')
     for book, reason in LEFT_OUT:                         # struck through: not reviewed, not built
@@ -588,7 +616,10 @@ def write_index(pages):
     style = STYLE.replace('</style>', 'table{border-collapse:collapse}td,th{padding:.2em .8em;text-align:left}'
                           'td:nth-child(n+3){text-align:right}tr:nth-child(even){background:#f4f4f4}</style>')
     with open(os.path.join(HERE, 'index.html'), 'w', encoding='utf-8', newline='\n') as fh:
-        fh.write(INDEX.format(style=style, legend=LEGEND, rows='\n'.join(rows)))
+        sn4 = [c for c in DATA['corrections'] if c['volume'] == 'SN IV' and c.get('kind') == 'emendation']
+        fh.write(INDEX.format(style=style, legend=LEGEND, rows='\n'.join(rows), doi=DOI, repo=REPO,
+                              sn4_total=len(sn4),
+                              sn4_jackson=sum('revised by P. Jackson' in c['source'] for c in sn4)))
 
 
 def main():
