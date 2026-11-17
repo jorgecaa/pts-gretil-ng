@@ -62,8 +62,11 @@ popup of each marked word and in `corrections.json`).
   Kathāvatthu). A volume without corrections is rebuilt as GRETIL has it, with the licence and the notices.
 - **Left out because the review service blocks them** (no compatible scan of the printed edition to
   check against): Vimānavatthu, Petavatthu, Apadāna, Buddhavaṃsa, Cariyāpiṭaka, Yamaka and Paṭṭhāna.
-- **Nettippakaraṇa and Peṭakopadesa:** the foureditions project also works on them, but GRETIL does not
-  carry their text, so they cannot be part of this build. They are mentioned here only for completeness.
+- **Nettippakaraṇa and Peṭakopadesa** are not in GRETIL. The folder `transcriptions/` holds their PTS text
+  as transcribed from the scans (OCR with automatic corrections). **These are UNREVIEWED drafts: no
+  page has been proofread by a person**, and they are not produced by `build.py`. Each file says so at
+  the top and every page is marked `page-status: draft`. The rights of the printed editions have not
+  been assessed here.
 - **The Sutta Nipāta, Theragāthā and Therīgāthā** were proofread directly in the GRETIL file. Their
   differences from the mirror's file are written in `corrections.json` as ordinary corrections
   (source label: "Hand-corrected copy of the GRETIL file"), so they are reproducible from the mirror too.
