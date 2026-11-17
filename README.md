@@ -319,6 +319,8 @@ release may differ. `CITATION.cff` gives the details; GitHub shows them under «
 The releases are archived at Zenodo:
 
 - all versions (resolves to the latest release): [10.5281/zenodo.24314138](https://doi.org/10.5281/zenodo.24314138);
+- version 2.4.0: [10.5281/zenodo.24323977](https://doi.org/10.5281/zenodo.24323977) (Cone's notes applied
+  by one rule: Ce, then Be, then Se; wrong readings without a reading to adopt marked, left as printed);
 - version 2.3.1: [10.5281/zenodo.24322869](https://doi.org/10.5281/zenodo.24322869) (same text as 2.3.0;
   links back from every volume, page anchors, explanations on the index);
 - version 2.3.0: [10.5281/zenodo.24322444](https://doi.org/10.5281/zenodo.24322444) (corrigenda of the
