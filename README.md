@@ -17,13 +17,14 @@ The build is deterministic: after `python3 build.py`, `git status` must show no 
    [INDOLOGY/GRETIL-mirror](https://github.com/INDOLOGY/GRETIL-mirror) (only the Pali folders).
 2. **Verify.** The SHA-256 of each GRETIL file must equal the one recorded in `corrections.json`;
    otherwise the build stops, because the corrections were made on exactly those files.
-3. **Correct.** Each correction replaces the text GRETIL has with the text the printed book prints.
+3. **Correct.** Where GRETIL departs from the printed edition, the correction replaces GRETIL's text
+   with the printed reading. Emendations of the edition itself (Cone, Jackson, Pruitt) are not applied:
+   the text keeps the printed reading and the words concerned are marked with the suggestion.
    A correction that does not fit exactly the stated number of times stops the build; nothing is
    applied halfway.
 4. **Write.** One HTML file per GRETIL file in `corrected/` (also committed here). GRETIL's own opening
-   (title, notice, licence, terms of use) is kept unchanged. Red underline: an erratum GRETIL prints
-   between braces, kept as printed. Green underline: a correction from `corrections.json`; hovering
-   (or tapping) shows its source, its approval date when recorded, what GRETIL had and what the book prints.
+   (title, notice, licence, terms of use) is kept unchanged. The marks are described under
+   [Reading the pages](#reading-the-pages).
 
 `corrections.json` holds the pinned mirror commit, the checksums, the corrections and eight
 Saṃyutta II pages (109-116) that GRETIL's file lacks; those pages were read from the scan and
@@ -43,35 +44,44 @@ project, where the review is done; it is data, not written by hand, and is updat
 
 ## Corrections and their sources
 
-Manual proofreading corrections against the scans of the printed edition are marked in the text.
-Each correction was approved by a person. Corrections derived from the Cone dictionary, Jackson's
-revised Saṃyutta IV apparatus or word indices are identified by their source label (shown in the
-popup of each marked word and in `corrections.json`).
+Each correction was approved by a person. Every correction in `corrections.json` has a `kind`:
+
+- **transcription**: GRETIL departs from the printed edition; checked against the scan of the edition.
+  Applied to the text.
+- **notation**: GRETIL's encoding of a character (`me^so` for `mêso`); the reading is the same. Applied.
+- **emendation**: a correction of the edition itself, by a later authority. Not applied: the text
+  keeps the printed reading, and the popup gives the suggestion and its authority.
 
 4,191 corrections in total:
 
-| Source label | Corrections |
-|---|---|
-| Sheet corrected by hand against the scan of the PTS edition | 1,132 |
-| Cone's Dictionary of Pāli (entry marked as wrong reading), approved by hand | 1,023 |
-| Hand-corrected copy of the GRETIL file, checked against the scan of the PTS edition | 886 |
-| Revised edition of the Saṃyutta, vol. IV (apparatus) | 608 |
-| Word Index to the Pāli Tipiṭaka, compared with the copy | 252 |
-| Literal reading recorded during review | 135 |
-| PTS word index, compared with the copy | 71 |
-| Character-level repair (characters layer) | 28 |
-| Transcribed from the scan and approved by hand | 24 |
-| Corrections published by the PTS (2004) | 14 |
-| Answer given by hand during review | 7 |
-| Scan of the PTS edition, checked word by word on 2026-10-11 | 6 |
-| Corrections published for Majjhima I (W. Pruitt) | 4 |
-| Precision study, confirmed against the scan | 1 |
+| Kind | Source label (evidence or authority) | Corrections |
+|---|---|---:|
+| transcription | Review sheet, checked by hand against the scan of the PTS edition | 1,132 |
+| transcription | Copy of the GRETIL file corrected by hand, checked against the scan of the PTS edition | 886 |
+| transcription | Flagged by the Word Index to the Pāli Tipiṭaka (Ousaka 2019), checked by hand against the scan of the PTS edition | 252 |
+| transcription | Printed reading recorded as it stands on the scan of the PTS edition (misprints kept) | 135 |
+| transcription | Flagged by the PTS word index (Ousaka, Pruitt and Jackson 2019), checked by hand against the scan of the PTS edition | 71 |
+| transcription | Read on the scan of the PTS edition by machine; checked and approved by hand | 24 |
+| transcription | Answer during review, checked by hand against the scan of the PTS edition | 7 |
+| transcription | Earlier correction, checked by hand word by word against the scan of the PTS edition on 2026-10-11 | 6 |
+| transcription | Precision sample, checked by hand against the scan of the PTS edition | 1 |
+| notation | Notation only: GRETIL's encoding of a character | 28 |
+| emendation | M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition) | 1,023 |
+| emendation | L. Feer, Saṃyutta-nikāya IV, revised by P. Jackson (PTS, 2014) | 608 |
+| emendation | W. Pruitt, Corrections for the 2004 reprint of Majjhima-nikāya II (PTS, 2008) | 14 |
+| emendation | W. Pruitt, M I corrections (PTS, 2009) | 4 |
 
 ## Reading the pages
 
-- Red underline: an erratum GRETIL prints between braces { }, kept as printed.
-- Green underline: a correction (hover or tap for its source). Only the words that change are underlined:
-  a line-break hyphen or a neighbouring word that a correction repeats as context is left unmarked.
+- Red underline: GRETIL encloses the words in braces { }; they are reproduced as in GRETIL (the
+  proofreading left the content between braces unchanged).
+- Green underline: GRETIL departs from the printed edition; the text gives the printed reading.
+- Orange dotted underline: an emendation of the edition, suggested but not applied; the text keeps the
+  printed reading.
+- Hover over (or tap) a marked word: the popup states what kind of change it is, GRETIL's reading, the
+  printed reading or the suggestion, the evidence or authority, and the approval date when recorded.
+  Only the words that change are underlined: a line-break hyphen or a neighbouring word that a
+  correction repeats as context is left unmarked.
 - Each page shows line numbers in the left margin (1, 5, 10, 15 …), counting only the lines of the text, not
   the running head nor the apparatus. They are drawn by the style sheet and are not part of the text.
 - The pages are set in Noto Sans, loaded from Google Fonts; without a connection the browser's default
@@ -79,9 +89,12 @@ popup of each marked word and in `corrections.json`).
 - Note calls are superscript numbers and the apparatus is shown in blue (GRETIL shows both in red). On the eight Saṃyutta II pages read from the
   scan and on three pages GRETIL's markup does not let be read reliably (SN II 60 and 129, Nidd I 161), the
   digits glued to the end of a word are taken as the calls.
-- A correction that only deletes text leaves no mark in the HTML; it is still listed in `corrections.json`.
+- A correction that only deletes text is marked on the word next to the deleted words. Corrections of a
+  running head or of the apparatus are marked too; the content between braces is marked only in the body.
 
 ## Volumes
+
+The count of corrections includes every kind, emendations not applied among them.
 
 | Volume | File | Pages | Corrections |
 |---|---|---:|---:|

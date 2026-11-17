@@ -15,12 +15,14 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap">
 <style>
 body,td{font-family:'Noto Sans',sans-serif}
-body{max-width:60em;margin:1em auto;padding:0 1em;color:#222}
+body{max-width:60em;margin:1em auto;padding:0 1em;color:#222;line-height:1.4;word-spacing:5px}
 .erratum{border-bottom:2px solid #c00;cursor:help}
 .correction{text-decoration:underline #3cb371 2px;text-underline-offset:.32em;text-decoration-skip-ink:none;cursor:help}
 .erratum.correction{border-bottom:2px solid #c00}
+.suggestion{border-bottom:2px dotted #d07a00;cursor:help}
+u.suggestion,u.erratum{text-decoration:none}
 #tip{position:fixed;display:none;max-width:26em;background:#fffbe6;border:1px solid #888;
- padding:.5em .7em;font:13px/1.4 'Noto Sans',sans-serif;box-shadow:0 2px 6px #0004;z-index:9;white-space:normal}
+ padding:.5em .7em;font:13px/1.4 'Noto Sans',sans-serif;box-shadow:0 2px 6px #0004;z-index:9;white-space:pre-line;word-spacing:normal}
 .red{color:#00c}
 .ln{display:inline-block;width:2.2em;margin-right:.9em;text-align:right;color:#000;font:11px/1 'Noto Sans',sans-serif;
  user-select:none;vertical-align:baseline}
@@ -138,8 +140,8 @@ http://gretil.sub.uni-goettingen.de/gretil.htm</p>
 <BR>
 <BR>
 <!-- Pali Text Society edition (Ee), digital input by the Dhammakaya Foundation (1989-1996), GRETIL version. Licence: CC BY-SA 4.0, (c) Pali Text Society and Dhammakaya Foundation, 2015. This file carries the corrections approved in the foureditions project (76 pages changed in this file; built from commit 0baf718d8e45 of the GRETIL mirror). The critical apparatus (footnotes and variant readings) has NOT been proofread. Text between braces is an erratum printed by GRETIL and is kept as is. The original GRETIL file is not modified. -->
-<div class="legend"><b>About this copy.</b> The licence and the notice above are GRETIL's own and apply unchanged (CC BY-SA 4.0, &copy; Pali Text Society and Dhammakaya Foundation, 2015). Manual proofreading corrections against the scans of the printed edition are marked below (Jorge Contreras, github.com/jorgecaa, foureditions project); each was approved by a person. Corrections derived from the Cone dictionary, Jackson's revised Saṃyutta IV apparatus or word indices are identified by their source label. The text of GRETIL itself has not been rewritten: every correction is recorded, with its source and date, in corrections.json of the repository that built this file.</div>
-<div class="legend"><span class="erratum">red underline</span>: an erratum that GRETIL prints between braces { }; kept as printed. &nbsp; <span class="correction">green underline</span>: a correction approved in the foureditions project. Hover over (or tap) a marked word for its source, the date it was approved, and what GRETIL had.</div><hr>
+<div class="legend"><b>About this copy.</b> The licence and the notice above are GRETIL's own and apply unchanged (CC BY-SA 4.0, &copy; Pali Text Society and Dhammakaya Foundation, 2015). Where GRETIL departs from the printed edition, the text below gives the printed reading, checked against the scans of the edition (Jorge Contreras, github.com/jorgecaa, foureditions project); each correction was approved by a person. Emendations of the edition itself (M. Cone's Dictionary of Pāli, P. Jackson's revision of Saṃyutta IV, W. Pruitt's correction lists) are not applied to the text: they are given as suggestions on the words concerned. The text of GRETIL itself has not been rewritten: every correction is recorded, with its source and, when recorded, its date, in corrections.json of the repository that built this file.</div>
+<div class="legend"><span class="erratum">red underline</span>: GRETIL encloses the words in braces { }; reproduced as in GRETIL. &nbsp; <span class="correction">green underline</span>: GRETIL departs from the printed edition; the printed reading is given. &nbsp; <span class="suggestion">orange dotted underline</span>: an emendation of the edition, suggested but not applied. Hover over (or tap) a marked word for the readings, the evidence or authority, and the approval date when recorded.</div><hr>
 <!-- page-status: corrected --><b>[page 001]</b><BR>
 <span class="ln" data-n="1"></span>1<BR>
 <span class="ln"></span>Samyutta-Nikāya<BR>
@@ -341,9 +343,9 @@ http://gretil.sub.uni-goettingen.de/gretil.htm</p>
 <span class="ln"></span>Atha kho bhikkhave Vipassissa bodhisattassa yoniso<BR>
 <span class="ln"></span>manasikārā ahu paññāya abhisamayo ║ bhave kho sati jāti<BR>
 <span class="ln" data-n="25"></span>hoti bhavapaccayā jātīti ║ ║<BR>
-<span class="ln"></span>5 Atha kho bhikkhave <span class="correction" data-info="Correction approved on 2026-10-20. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «Vipassissabodhisattassa». The book prints: «Vipassissa bodhisattassa».">Vipassissa bodhisattassa</span> etad ahosi ║<BR>
+<span class="ln"></span>5 Atha kho bhikkhave <span class="correction" data-info="Transcription corrected | GRETIL: «Vipassissabodhisattassa» → printed edition: «Vipassissa bodhisattassa» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-20.">Vipassissa bodhisattassa</span> etad ahosi ║<BR>
 <span class="ln"></span>Kimhi nu kho sati bhavo hoti kimpaccayā bhavo ti ║ ║<BR>
-<span class="ln"></span>Atha kho bhikkhave <span class="correction" data-info="Correction approved on 2026-10-20. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «Vipassissabodhisattassa». The book prints: «Vipassissa bodhisattassa».">Vipassissa bodhisattassa</span> yoniso manasi-<BR>
+<span class="ln"></span>Atha kho bhikkhave <span class="correction" data-info="Transcription corrected | GRETIL: «Vipassissabodhisattassa» → printed edition: «Vipassissa bodhisattassa» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-20.">Vipassissa bodhisattassa</span> yoniso manasi-<BR>
 <span class="ln"></span>kārā ahu paññāya abhisamayo ║ upādāne kho sati bhavo<BR>
 <span class="ln" data-n="30"></span>hoti upādānapaccayā bhavo ti ║ ║<BR>
 <span class="ln"></span>6 Atha kho bhikkhave Vipassissa bodhisattassa etad ahosi ║ ║<BR>
@@ -647,11 +649,11 @@ http://gretil.sub.uni-goettingen.de/gretil.htm</p>
 <span class="ln"></span>vaṃ ║ ║<BR>
 <span class="ln" data-n="20"></span>9 Viññāṇaṃ cidam bhikkhave kiṃnidānaṃ kiṃsamuda-<BR>
 <span class="ln"></span>yam kiṃjātikaṃ kimpabhavaṃ ║ Viṇṇāṇaṃ saṅkhāranidā-<BR>
-<span class="ln"></span>nam <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{saṅkhārasamudayaṃ}</span> saṅkhārajātikaṃ saṅkhārapa-<BR>
+<span class="ln"></span>nam <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{saṅkhārasamudayaṃ}</span> saṅkhārajātikaṃ saṅkhārapa-<BR>
 <span class="ln"></span>bhavaṃ ║ ║<BR>
 <span class="ln"></span>10 Saṅkhārā cime bhikkhave kiṃnidānā kiṃsamudayā<BR>
 <span class="ln" data-n="25"></span>kiṃjātikā kimpabhavā ║ Saṅkhārā avijjānidānā avijjā-<BR>
-<span class="ln"></span>samudayā avijjājātikā <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{avijjāpabhavā}</span> ║ ║<BR>
+<span class="ln"></span>samudayā avijjājātikā <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{avijjāpabhavā}</span> ║ ║<BR>
 <span class="ln"></span>11 Iti kho bhikkhave avijjāpaccayā saṅkhārā ║ saṅkhāra-<BR>
 <span class="ln"></span>paccayā viññāṇaṃ ║ pe║ ║ Evam etassa kevalassa<BR>
 <span class="ln"></span>dukkhakkhandhassa samudayo hoti ║ ║<BR>
@@ -773,7 +775,7 @@ bhante vediyatīti<BR>
 <span class="ln"></span>jarāmaraṇam pajānanti ║ jarāmaraṇasamudayam pajānan-<BR>
 <span class="ln"></span>ti ║ jarāmaraṇanirodham pajānanti ║ jarāmaraṇaṇanirodha-<BR>
 <span class="ln"></span>gāminiṃ paṭipadaṃ pajānanti ║ jāti ║ bhavaṃ ║ upādānaṃ ║<BR>
-<span class="ln" data-n="10"></span><span class="correction" data-info="Correction approved on 2026-10-20. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «taṇhaṃ». The book prints: «tanhaṃ».">tanhaṃ</span> ║ vedanaṃ ║ phassaṃ ║ saḷāyatanaṃ ║ nāmarūpaṃ ║<BR>
+<span class="ln" data-n="10"></span><span class="correction" data-info="Transcription corrected | GRETIL: «taṇhaṃ» → printed edition: «tanhaṃ» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-20.">tanhaṃ</span> ║ vedanaṃ ║ phassaṃ ║ saḷāyatanaṃ ║ nāmarūpaṃ ║<BR>
 <span class="ln"></span>viññāṇaṃ ║ saṅkhāre pajānanti ║ saṅkhārasamudayaṃ pa-<BR>
 <span class="ln"></span>jānanti ║ saṅkharanirodhaṃ pajānanti ║ saṅkhāranirodha-<BR>
 <span class="ln"></span>gāminiṃ paṭipadaṃ pajānanti ║ te kho me bhikkhave<BR>
@@ -796,7 +798,7 @@ bhante vediyatīti<BR>
 <span class="ln"></span>nirodhagāminiṃ paṭipadaṃ nappajānanti ║<BR>
 <span class="ln" data-n="30"></span>4 Jarāmaraṇaṃ nappajānanti ║ jarāmaraṇasamudayaṃ<BR>
 <span class="ln"></span>nappajānanti ║ jarāmaraṇanirodhagāminiṃ paṭipadaṃ nap-<BR>
-<span class="ln"></span>pajānanti ║ jāti ║ pe║<span class="red"><sup>1</sup></span> bhavaṃ ║ upādānam ║ <span class="correction" data-info="Correction approved on 2026-10-20. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «tanhaṃ». The book prints: «tanḥaṃ».">tanḥaṃ</span> ║ veda-<BR>
+<span class="ln"></span>pajānanti ║ jāti ║ pe║<span class="red"><sup>1</sup></span> bhavaṃ ║ upādānam ║ <span class="correction" data-info="Transcription corrected | GRETIL: «tanhaṃ» → printed edition: «tanḥaṃ» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-20.">tanḥaṃ</span> ║ veda-<BR>
 <span class="ln"></span>naṃ ║ phassaṃ ║ saḷāyatanaṃ ║ nāmarūpaṃ ║ viññāṇaṃ ║ saṅ-<BR>
 <span class="ln"></span>khāre nappajānanti ║ ime dhamme nappajānanti ║ imesaṃ<BR>
 <span class="ln" data-n="35"></span>dhammānaṃ samudayaṃ nappajānanti ║ imesaṃ dham-<BR>
@@ -821,7 +823,7 @@ bhante vediyatīti<BR>
 <span class="ln"></span>nanti ║<BR>
 <span class="ln"></span>7 Katame dhamme pajānanti ║ katamesaṃ dhammā-<BR>
 <span class="ln"></span>naṃ samudayam pajānanti ║ katamesaṃ dhammānaṃ<BR>
-<span class="ln" data-n="15"></span><span class="correction" data-info="Correction approved on 2026-10-20. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «nirodhampajānanti». The book prints: «nirodham pajānanti».">nirodham pajānanti</span> ║ katamesaṃ dhammānaṃ <span class="correction" data-info="Correction approved on 2026-10-12. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «ṇirodha-». The book prints: «nirodha-».">nirodha-</span><BR>
+<span class="ln" data-n="15"></span><span class="correction" data-info="Transcription corrected | GRETIL: «nirodhampajānanti» → printed edition: «nirodham pajānanti» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-20.">nirodham pajānanti</span> ║ katamesaṃ dhammānaṃ <span class="correction" data-info="Transcription corrected | GRETIL: «ṇirodha-» → printed edition: «nirodha-» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-12.">nirodha-</span><BR>
 <span class="ln"></span>gāminiṃ patipadaṃ pajānanti ║<BR>
 <span class="ln"></span>8 Jarāmaraṇam pajānanti ║ jarāmaraṇasamudayaṃ<BR>
 <span class="ln"></span>pajānanti ║ jarāmaraṇanirodham pajānanti ║ jarāmaraṇa-<BR>
@@ -1006,7 +1008,7 @@ bhante vediyatīti<BR>
 <span class="ln" data-n="25"></span>khvāhaṃ Kassapa dukkhaṃ passāmi khvāhaṃ Kassapa<BR>
 <span class="ln"></span>dukkhan ti vadesi ║ ācikkhatu ca<span class="red"><sup>2</sup></span> me bhante Bhagavā duk-<BR>
 <span class="ln"></span>khaṃ desetu ca me bhante Bhagavā dukkhan ti ║ ║<BR>
-<span class="ln"></span>14 So karoti so <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{paṭisaṃvediyatīti}</span> kho Kassapa ādito sato<BR>
+<span class="ln"></span>14 So karoti so <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{paṭisaṃvediyatīti}</span> kho Kassapa ādito sato<BR>
 <span class="ln"></span>sayaṃkataṃ dukkhanti iti vadaṃ sassatam etam pareti ║<BR>
 <span class="ln" data-n="30"></span>Añño karoti añño paṭisaṃvediyatīti kho Kassapa vedanā-<BR>
 <span class="ln"></span>bhitunnassa sato paraṃkataṃ dukkhanti iti vadam ucche-<BR>
@@ -1157,7 +1159,7 @@ bhante vediyatīti<BR>
 <span class="ln" data-n="1"></span>yuttassa<span class="red"><sup>1</sup></span> evam ayaṃ kāyo samudāgato ║ Iti ayaṃ ceva<BR>
 <span class="ln"></span>kāyo bahiddhā ca nāmarūpam ║ itthetaṃ dvayaṃ dvayaṃ<BR>
 <span class="ln"></span>paṭicca phasso saḷevāyatanāni<span class="red"><sup>2</sup></span> ║ yehi phuṭṭho bālo<BR>
-<span class="ln"></span>sukhadukkham <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{paṭisaṃvediyati}</span> ║ etesaṃ vā aññatarena ║ ║<BR>
+<span class="ln"></span>sukhadukkham <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{paṭisaṃvediyati}</span> ║ etesaṃ vā aññatarena ║ ║<BR>
 <span class="ln" data-n="5"></span>3 Avijjānīvaraṇassa bhikkhave paṇḍitassa taṇhāya<BR>
 <span class="ln"></span>sampayuttassa evam ayaṃ kāyo samudāgato ║ Iti ayaṃ<BR>
 <span class="ln"></span>ceva kāyo bahiddhā ca nāmarūpaṃ ║ itthetaṃ dvayaṃ<BR>
@@ -1167,7 +1169,7 @@ bhante vediyatīti<BR>
 <span class="ln"></span>4 Tatra bhikkhave ko viseso ko adhippāyo kiṃ nānā-<BR>
 <span class="ln"></span>karaṇaṃ paṇḍitassa bālenāti ║ ║<BR>
 <span class="ln"></span>5 Bhagavaṃ-mūlakā no bhante dhammā Bhagavaṃ-<BR>
-<span class="ln"></span>nettikā Bhagavaṃ-<span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{paṭisaraṇā}</span> ║ Sādhu vata<span class="red"><sup>3</sup></span> bhante<BR>
+<span class="ln"></span>nettikā Bhagavaṃ-<span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{paṭisaraṇā}</span> ║ Sādhu vata<span class="red"><sup>3</sup></span> bhante<BR>
 <span class="ln" data-n="15"></span>Bhagavantaṃ yeva paṭibhātu etassa bhāsitassa attho ║<BR>
 <span class="ln"></span>Bhagavato sutvā bhikkhū dhāressantīti ║ ║<BR>
 <span class="ln"></span>6 Tena hi bhikkhave suṇātha sādhukam manasi karotha<BR>
@@ -1417,12 +1419,12 @@ be found in the next sutta<BR>
 <!-- page-status: corrected --><b>[page 030]</b><BR>
 <i>30                            NIDĀNA-SAṂYUTTA               [XII. 23. 4</i><BR>
 <span class="ln" data-n="1"></span>4 Yam pissa tam<span class="red"><sup>1</sup></span> bhikkhave khayasmiṃ khaye ñāṇaṃ<BR>
-<span class="ln"></span>taṃ <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{sa-upanisaṃ}</span> vadāmi no <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{anupanisaṃ}</span> ║<span class="red"><sup>2</sup></span> ║<BR>
+<span class="ln"></span>taṃ <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{sa-upanisaṃ}</span> vadāmi no <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{anupanisaṃ}</span> ║<span class="red"><sup>2</sup></span> ║<BR>
 <span class="ln"></span>5 Kā ca bhikkhave khaye ñāṇassa upanisā Vimuttīti-ssa<span class="red"><sup>3</sup></span><BR>
 <span class="ln"></span>vacanīyaṃ ║ vimuttim pāham<span class="red"><sup>4</sup></span> bhikkhave sa-upanisaṃ<BR>
 <span class="ln" data-n="5"></span>vadāmi no anupanisaṃ ║ ║<BR>
 <span class="ln"></span>6 Kā ca bhikkhave vimuttiyā upanisā Virāgo ti-ssa<BR>
-<span class="ln"></span>vacanīyaṃ ║ ║ Virāgam pāham bhikkhave <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{sa-upanisaṃ}</span><BR>
+<span class="ln"></span>vacanīyaṃ ║ ║ Virāgam pāham bhikkhave <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{sa-upanisaṃ}</span><BR>
 <span class="ln"></span>vadāmi no anupanisaṃ ║ ║<BR>
 <span class="ln"></span>7 Kā ca bhikkhave virāgassa upanisā Nibbidāti-ssa va-<BR>
 <span class="ln" data-n="10"></span>canīyaṃ ║ ║ Nibbidam pāham bhikkhave sa-upanisaṃ<BR>
@@ -1440,7 +1442,7 @@ be found in the next sutta<BR>
 <span class="ln"></span>vacanīyaṃ ║ Passadhim pāham bhikkhave sa-upanisaṃ<BR>
 <span class="ln"></span>vadāmi no anupanisaṃ ║ ║<BR>
 <span class="ln"></span>12 Kā ca bhikkhave passaddhiyā upanisā Pītīti<span class="red"><sup>6</sup></span>-ssa<BR>
-<span class="ln" data-n="25"></span><span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{vacanīyaṃ}</span> ║ Pītim pāham bhikkhave <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{sa-upanisaṃ}</span> vadāmi<BR>
+<span class="ln" data-n="25"></span><span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{vacanīyaṃ}</span> ║ Pītim pāham bhikkhave <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{sa-upanisaṃ}</span> vadāmi<BR>
 <span class="ln"></span>no anupanisaṃ ║ ║<BR>
 <span class="ln"></span>13 Kā ca bhikkhave pītiyā upanisā Pāmojjanti-ssa<span class="red"><sup>7</sup></span><BR>
 <span class="ln"></span>vacanīyaṃ ║ Pāmojjam pāham bhikkhave sa-upanisaṃ<BR>
@@ -1462,16 +1464,16 @@ be found in the next sutta<BR>
 <!-- page-status: corrected --><b>[page 031]</b><BR>
 <i>XII. 23. 25]               DASABALA-VAGGO TATIYO                    31</i><BR>
 <span class="ln" data-n="1"></span>15 Kā ca bhikkhave saddhāya<span class="red"><sup>1</sup></span> upanisā Dukkhanti-ssa<BR>
-<span class="ln"></span>vacanīyaṃ ║ Dukkham pāham bhikkhave <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{sa-upanisaṃ}</span><BR>
+<span class="ln"></span>vacanīyaṃ ║ Dukkham pāham bhikkhave <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{sa-upanisaṃ}</span><BR>
 <span class="ln"></span>vadāmi no anupanisaṃ ║ ║<BR>
 <span class="ln"></span>16 Kā ca bhikkhave dukkhassa upanisā Jātīti ssa va-<BR>
-<span class="ln" data-n="5"></span>canīyam ║ Jātim pāham bhikkhave <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{sa-upanisaṃ}</span> vadāmi<BR>
+<span class="ln" data-n="5"></span>canīyam ║ Jātim pāham bhikkhave <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{sa-upanisaṃ}</span> vadāmi<BR>
 <span class="ln"></span>no anupanisaṃ ║ ║<BR>
 <span class="ln"></span>17 Kā ca bhikkhave jātiyā upanisā Bhavoti-ssa vacanīyaṃ ║<BR>
-<span class="ln"></span>bhavam pāham bhikkhave <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{sa-upanisaṃ}</span> vadāmi no anu-<BR>
+<span class="ln"></span>bhavam pāham bhikkhave <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{sa-upanisaṃ}</span> vadāmi no anu-<BR>
 <span class="ln"></span>panisaṃ ║ ║<BR>
 <span class="ln" data-n="10"></span>18 Kā ca bhikkhave bhavassa upanisā Upādānanti-ssa<BR>
-<span class="ln"></span>vacanīyaṃ ║ ║ Upādānam pāham bhikkhave <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{sa-upanisaṃ}</span><BR>
+<span class="ln"></span>vacanīyaṃ ║ ║ Upādānam pāham bhikkhave <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{sa-upanisaṃ}</span><BR>
 <span class="ln"></span>vadāmi no anupanisaṃ ║ ║<BR>
 <span class="ln"></span>19 Kā ca bhikkhave upādānassa upanisā Taṇhāti-ssa<BR>
 <span class="ln"></span>vacanīyaṃ ║ ║ Taṇham<span class="red"><sup>2</sup></span> pāham bhikkhave sa-upanisaṃ<BR>
@@ -1491,7 +1493,7 @@ be found in the next sutta<BR>
 <span class="ln"></span>rūpūpanisaṃ saḷāyatanaṃ ║ saḷāyatanūpaniso phasso ║ phas-<BR>
 <span class="ln"></span>sūpanisā vedanā ║ vedānūpanisā taṇhā ║ taṇhūpanisaṃ<BR>
 <span class="ln" data-n="30"></span>upādānaṃ ║ upādānūpaniso bhavo ║ bhavūpanisā<span class="red"><sup>2</sup></span> jāti ║<BR>
-<span class="ln"></span>jātūpānisaṃ dukkhaṃ ║ dukkhūpanisā saddhā ║ <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{saddhū-</span><span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered."><BR>
+<span class="ln"></span>jātūpānisaṃ dukkhaṃ ║ dukkhūpanisā saddhā ║ <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{saddhū-</span><span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged."><BR>
 <span class="ln"></span>panisaṃ}</span> pāmojjaṃ ║ pāmojjūpanisā pīti ║ pītūpanisā pas-<BR>
 <span class="ln"></span>saddhi ║ passaddhūpanisaṃ sukhaṃ ║ sukhūpaniso samādhi ║<BR>
 <span class="ln"></span>samādhūpanisaṃ yathābhutaṃ ñāṇadassanaṃ ║ yathābhū-<BR>
@@ -1518,9 +1520,9 @@ be found in the next sutta<BR>
 <span class="ln"></span>Saṅkhārūpanisaṃ viññāṇam ║ viññāṇūpanisaṃ nāma-<BR>
 <span class="ln"></span>rūpaṃ ║ nāmarūpūpanisaṃ saḷāyatanaṃ ║ saḷāyātanūpa-<BR>
 <span class="ln"></span>niso phasso ║ phassūpanisā vedanā ║ vedanūpanisā taṇhā ║<BR>
-<span class="ln" data-n="15"></span><span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{taṇhūpanisaṃ}</span> upādānaṃ ║ upādānūpaniso bhavo ║ bhavū-<BR>
+<span class="ln" data-n="15"></span><span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{taṇhūpanisaṃ}</span> upādānaṃ ║ upādānūpaniso bhavo ║ bhavū-<BR>
 <span class="ln"></span>panisā jāti ║ jātūpanisaṃ dukkhaṃ ║ dukkhūpanisā saddhā ║<BR>
-<span class="ln"></span><span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{saddhūpanisaṃ}</span> pāmojjaṃ ║ pāmojjūpanisā pīti ║ pītūpanisā<BR>
+<span class="ln"></span><span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{saddhūpanisaṃ}</span> pāmojjaṃ ║ pāmojjūpanisā pīti ║ pītūpanisā<BR>
 <span class="ln"></span>passaddhi ║ passaddhūpanisaṃ sukhaṃ ║ sukhūpaniso<BR>
 <span class="ln"></span>samādhi ║ samādhūpanisaṃ yathābhūtañāṇadassanaṃ ║<BR>
 <span class="ln" data-n="20"></span>yathābhūtañāṇadassanūpanisā nibbidā ║ nibbidūpaniso<BR>
@@ -1600,10 +1602,10 @@ be found in the next sutta<BR>
 <span class="ln" data-n="5"></span>kataṃ<span class="red"><sup>1</sup></span> dukkhaṃ paññāpenti ║ te vata<span class="red"><sup>2</sup></span> aññatra phassā<BR>
 <span class="ln"></span>paṭisaṃvedissantīti ║ netam<span class="red"><sup>3</sup></span> ṭhānam vijjati ║ ║ Ye pi te<BR>
 <span class="ln"></span>samaṇabrāhmaṇā kammavādā paraṃkataṃ dukkhaṃ<BR>
-<span class="ln"></span>paññapenti ║ te vata aññatra phassā <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{paṭisaṃvedissantīti}</span> ║<BR>
+<span class="ln"></span>paññapenti ║ te vata aññatra phassā <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{paṭisaṃvedissantīti}</span> ║<BR>
 <span class="ln"></span>netaṃ ṭhānaṃ vijjati ║ ║ Ye pi te samaṇabrāhmaṇā kam-<BR>
 <span class="ln" data-n="10"></span>mavādā sayaṃkatañca paraṃkatañca dukkham paññāpenti ║<BR>
-<span class="ln"></span>te vata aññatra phassā <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{paṭisaṃvedissantīti}</span> ║ netaṃ ṭhānaṃ<BR>
+<span class="ln"></span>te vata aññatra phassā <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{paṭisaṃvedissantīti}</span> ║ netaṃ ṭhānaṃ<BR>
 <span class="ln"></span>vijjati ║ ║ Ye pi te samaṇabrāhmaṇā kammavādā asayaṃ-<BR>
 <span class="ln"></span>karam adhiccasamuppannam dukkhaṃ paññāpenti ║ te vata<BR>
 <span class="ln"></span>aññatra phassā paṭisaṃvedissantīti ║ netaṃ ṭhānaṃ<BR>
@@ -1642,10 +1644,10 @@ be found in the next sutta<BR>
 <span class="ln"></span>pannaṃ dukkham paññāpenti tad api phassapaccayā ║ ║<BR>
 <span class="ln"></span>14 Tatrānanda ye pi te samaṇabrāhmaṇā kammavādā<BR>
 <span class="ln" data-n="5"></span>sayaṃkataṃ dukkham paññāpenti ║ te vata aññatra phassā<BR>
-<span class="ln"></span><span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{paṭisaṃvedissantīti}</span> netam ṭhānaṃ vijjati ║ ║ Ye pi te ║ pe║<BR>
+<span class="ln"></span><span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{paṭisaṃvedissantīti}</span> netam ṭhānaṃ vijjati ║ ║ Ye pi te ║ pe║<BR>
 <span class="ln"></span>Ye pi te ║ pe║ ║ Ye pi te samaṇabrāhmaṇā kammavādā<BR>
 <span class="ln"></span>asayaṃkaram aparaṃkāram adhiccasamuppannam duk-<BR>
-<span class="ln"></span>kham paññāpenti ║ te vata aññatra phassā <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{paṭisaṃvedissan-</span><span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered."><BR>
+<span class="ln"></span>kham paññāpenti ║ te vata aññatra phassā <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{paṭisaṃvedissan-</span><span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged."><BR>
 <span class="ln" data-n="10"></span>tīti}</span> netaṃ ṭhānaṃ vijjati ║ ║<BR>
 <span class="ln"></span>15 Ekam idāham Ānanda samayam idheva Rājagahe<BR>
 <span class="ln"></span>viharāmi Veḷuvane Kalandakanivāpe ║ ║<BR>
@@ -1699,7 +1701,7 @@ be found in the next sutta<BR>
 <span class="ln"></span>23 Tatrāvuso ye te samaṇabrāhmaṇā kammavādā sayaṃ<BR>
 <span class="ln"></span>katam dukkhaṃ paññapenti ║ te vata aññatra phassā paṭi-<BR>
 <span class="ln"></span>saṃvedissantīti ║ neṭaṃ ṭhānaṃ vijjati ║ ║ Ye pi te ║ pe║ ║<BR>
-<span class="ln" data-n="20"></span>Ye pi te ║ pe║ ║ Ye pi te <span class="correction" data-info="Correction approved on 2026-10-12. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «samaṇabrāmanā». The book prints: «samaṇabrāmaṇā».">samaṇabrāmaṇā</span> kammavādā<BR>
+<span class="ln" data-n="20"></span>Ye pi te ║ pe║ ║ Ye pi te <span class="correction" data-info="Transcription corrected | GRETIL: «samaṇabrāmanā» → printed edition: «samaṇabrāmaṇā» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-12.">samaṇabrāmaṇā</span> kammavādā<BR>
 <span class="ln"></span>asayaṃkāram aparaṃkāram adhiccasamuppannam duk-<BR>
 <span class="ln"></span>kham paññāpenti ║ te vata aññatra phassā paṭisaṃvedis-<BR>
 <span class="ln"></span>santīti netaṃ ṭhānam vijjatīti ║ ║<BR>
@@ -1801,7 +1803,7 @@ be found in the next sutta<BR>
 <span class="ln"></span>tad api phassapaccayā ║ ║<BR>
 <span class="ln"></span>7 Tatrāvuso ye pi<span class="red"><sup>3</sup></span> te samaṇabrāhmaṇā kammavādā<BR>
 <span class="ln"></span>sayaṃkataṃ sukhadukkhaṃ paññāpenti ║ te vata aññatra<BR>
-<span class="ln" data-n="35"></span>phassā <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{paṭisaṃvedissantīti}</span> netam ṭhānam vijjati ║ Ye pi te ║<BR>
+<span class="ln" data-n="35"></span>phassā <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{paṭisaṃvedissantīti}</span> netam ṭhānam vijjati ║ Ye pi te ║<BR>
 <BR>
 <BR>
 <span class="red">--------------------------------------------------------------------------<BR>
@@ -1812,9 +1814,9 @@ be found in the next sutta<BR>
 <!-- page-status: corrected --><b>[page 039]</b><BR>
 <i>XII. 25. 13]               DASABALA-VAGGO TATIYO                    39</i><BR>
 <span class="ln" data-n="1"></span>pe ║ ║ Ye pi te ║ pe║ ║ Ye pi te samaṇabrāhmaṇā<BR>
-<span class="ln"></span>kammavādā asayaṃ-kāraṃ aparaṃ-kāram <span class="correction" data-info="Correction approved on 2026-10-20. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «aḍhiccasam-». The book prints: «adhiccasam-».">adhiccasam-</span><BR>
+<span class="ln"></span>kammavādā asayaṃ-kāraṃ aparaṃ-kāram <span class="correction" data-info="Transcription corrected | GRETIL: «aḍhiccasam-» → printed edition: «adhiccasam-» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-20.">adhiccasam-</span><BR>
 <span class="ln"></span>uppannaṃ sukhadukkham paññāpenti ║ te vata aññatra<BR>
-<span class="ln"></span>phassā <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{paṭisaṃvedissantīti}</span> netam ṭhanaṃ vijjatīti ║ ║<BR>
+<span class="ln"></span>phassā <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{paṭisaṃvedissantīti}</span> netam ṭhanaṃ vijjatīti ║ ║<BR>
 <BR>
 <span class="ln" data-n="5"></span>II<BR>
 <span class="ln"></span>8 Assosi kho āyasmā Ānando āyasmato Sāriputtassa<BR>
@@ -1840,11 +1842,11 @@ be found in the next sutta<BR>
 <span class="ln"></span>tad api phassapaccayā ║<span class="red"><sup>3</sup></span> ║<BR>
 <span class="ln"></span>12 Tatrānanda ye te samaṇabrāhmaṇā kammavādā<BR>
 <span class="ln"></span>sayaṃ-kataṃ sukhadukkham paññāpenti te vata aññatra<BR>
-<span class="ln"></span>phassā <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{paṭisaṃvedissantīti}</span> netaṃ ṭhanaṃ vijjati ║ ║ Ye pi<BR>
+<span class="ln"></span>phassā <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{paṭisaṃvedissantīti}</span> netaṃ ṭhanaṃ vijjati ║ ║ Ye pi<BR>
 <span class="ln" data-n="30"></span>te ║ pe║ ║ Ye pi te ║ pe║ ║ Ye pi te samaṇabrāhmaṇā<BR>
 <span class="ln"></span>kammavādā asayaṃ-kāram aparaṃ-kāram adhicca-<BR>
 <span class="ln"></span>samuppannaṃ sukhadukkhaṃ paññāpenti ║ te vata aññatra<BR>
-<span class="ln"></span>phassā <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{pāṭisaṃvedissantīti}</span> netaṃ ṭhānaṃ vijjati ║<BR>
+<span class="ln"></span>phassā <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{pāṭisaṃvedissantīti}</span> netaṃ ṭhānaṃ vijjati ║<BR>
 <span class="ln"></span>13 Kāye vā hānanda sati kāyasañcetanā-hetu uppajjati<BR>
 <BR>
 <BR>
@@ -1855,7 +1857,7 @@ be found in the next sutta<BR>
 </span><BR>
 <!-- page-status: corrected --><b>[page 040]</b><BR>
 <i>40                            NIDĀNA-SAṂYUTTA             [XII. 25. 14</i><BR>
-<span class="ln" data-n="1"></span>ajjhattaṃ sukhadukkhaṃ ║ vācāya vā hānanda sati <span class="correction" data-info="Correction approved on 2026-10-12. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «vaci-». The book prints: «vacī-».">vacī-</span><BR>
+<span class="ln" data-n="1"></span>ajjhattaṃ sukhadukkhaṃ ║ vācāya vā hānanda sati <span class="correction" data-info="Transcription corrected | GRETIL: «vaci-» → printed edition: «vacī-» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-12.">vacī-</span><BR>
 <span class="ln"></span>sañcetanā-hetu uppajjati ajjhattaṃ sukhadukkham ║ mane<span class="red"><sup>1</sup></span><BR>
 <span class="ln"></span>vā hānanda sati manosañcetanā-hetu uppajjati ajjhattam<BR>
 <span class="ln"></span>sukhadukkhaṃ ║ ║<BR>
@@ -1864,7 +1866,7 @@ be found in the next sutta<BR>
 <span class="ln"></span>ajjhattaṃ sukhadukkhaṃ ║ pare vāssa<span class="red"><sup>5</sup></span> taṃ Ānanda kāyasaṅ-<BR>
 <span class="ln"></span>khāram abhīsaṅkharonti<span class="red"><sup>6</sup></span> yam paccayāssa tam uppajjati<BR>
 <span class="ln"></span>ajjhattaṃ sukhadukkhaṃ ║ ║ Sampajāno vā<span class="red"><sup>7</sup></span> tam Ānanda<BR>
-<span class="ln" data-n="10"></span>kāyasaṅkhāram abhisaṅkharoti yam <span class="correction" data-info="Correction approved on 2026-10-20. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «paccāyassa». The book prints: «paccayāssa».">paccayāssa</span> tam<BR>
+<span class="ln" data-n="10"></span>kāyasaṅkhāram abhisaṅkharoti yam <span class="correction" data-info="Transcription corrected | GRETIL: «paccāyassa» → printed edition: «paccayāssa» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-20.">paccayāssa</span> tam<BR>
 <span class="ln"></span>uppajjati ajjhattam sukhadukkham ║ asampajāno vā<span class="red"><sup>7</sup></span> tam<BR>
 <span class="ln"></span>Ānanda kāyasaṅkhāram abhisaṅkharoti yam paccayāssa<BR>
 <span class="ln"></span>tam uppajjati ajjhattaṃ sukhadukkham ║ ║<BR>
@@ -1920,7 +1922,7 @@ be found in the next sutta<BR>
 <span class="ln" data-n="15"></span>manā paraṃ-kataṃ dukkhaṃ paññāpenti ║ Santi pana<BR>
 <span class="ln"></span>bhante eke samaṇabrāhmaṇā sayaṃ-katañca paraṃ-katañca<BR>
 <span class="ln"></span>dukkhaṃ paññāpenti ║ Santi pana bhante eke samaṇabrāh-<BR>
-<span class="ln"></span>maṇā <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{asayaṃ}</span>-kāram aparaṃ-kāram adhiccasamuppannaṃ<BR>
+<span class="ln"></span>maṇā <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{asayaṃ}</span>-kāram aparaṃ-kāram adhiccasamuppannaṃ<BR>
 <span class="ln"></span>dukkhaṃ paññāpenti ║ ║<BR>
 <span class="ln" data-n="20"></span>4 Idha no bhante Bhagavā kimvādī kiṃ akkhāyī ║ kathaṃ<BR>
 <span class="ln"></span>vyākaramānā ca mayaṃ vuttavādino ceva Bhagavato assāma<BR>
@@ -2140,7 +2142,7 @@ Upavāṇa ye te samaṇabrāhmaṇā sayaṃ kataṃ dukkhaṃ paññāpenti<BR
 <span class="ln"></span>13 Saṅkhāre nappajānanti ║ saṅkhārasamudayam nap-<BR>
 <span class="ln"></span>pajānanti ║ saṅkhāranirodhaṃ nappajānanti ║ saṅkhārani-<BR>
 <span class="ln"></span>rodhagāminiṃ paṭipadaṃ nappajānanti ║ te vata saṅkhāre<BR>
-<span class="ln"></span>samatikkamma ṭhassantīti ║ netaṃ ṭhānaṃ <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{vijjati}</span> ║ ║<BR>
+<span class="ln"></span>samatikkamma ṭhassantīti ║ netaṃ ṭhānaṃ <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{vijjati}</span> ║ ║<BR>
 <span class="ln" data-n="25"></span>14 Ye ca kho keci bhikkhave samaṇā vā brāhmaṇā vā<BR>
 <span class="ln"></span>jarāmaraṇaṃ pajānanti ║ jarāmaraṇaṃ pajānanti ║ jarāma-<BR>
 <span class="ln"></span>raṇasamudayaṃ pajānanti ║ jarāmaraṇanirodhaṃ pajā-<BR>
@@ -2345,7 +2347,7 @@ Upavāṇa ye te samaṇabrāhmaṇā sayaṃ kataṃ dukkhaṃ paññāpenti<BR
 <span class="ln"></span>II<BR>
 <span class="ln" data-n="15"></span>11 Ekam antam nisinnaṃ kho āyasmantam Sāriputtaṃ<BR>
 <span class="ln"></span>Bhagavā etad avoca ║ ║ Saccaṃ kira tayā Sāriputta aññā<BR>
-<span class="ln"></span>vyākatā khīnā jāti vusitaṃ brahmacariyaṃ kataṃ <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{karaṇī-</span><span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered."><BR>
+<span class="ln"></span>vyākatā khīnā jāti vusitaṃ brahmacariyaṃ kataṃ <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{karaṇī-</span><span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged."><BR>
 <span class="ln"></span>yaṃ}</span> nāparam itthattāyāti pajānāmīti ║ ║<BR>
 <span class="ln"></span>Na kho<span class="red"><sup>2</sup></span> bhante etehi padehi etehi vyañjanehi attho<span class="red"><sup>3</sup></span><BR>
 <span class="ln" data-n="20"></span>vutto ti ║<BR>
@@ -2394,7 +2396,7 @@ Upavāṇa ye te samaṇabrāhmaṇā sayaṃ kataṃ dukkhaṃ paññāpenti<BR
 <span class="ln"></span>vuso Sāriputta kiṃnidaño ║ pa ║ kimpabhavoti ║ evaṃ<BR>
 <span class="ln"></span>puṭṭho bhante evaṃ vyākareyyaṃ ║ Bhavo kho āvuso upā-<BR>
 <span class="ln" data-n="25"></span>dānanidāno upādānasamudayo upādānajātiko upādāna pa-<BR>
-<span class="ln"></span>bhāvoti ║ Evam puṭṭhāham bhante evaṃ <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{vyākareyyanti}</span> ║ ║<BR>
+<span class="ln"></span>bhāvoti ║ Evam puṭṭhāham bhante evaṃ <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{vyākareyyanti}</span> ║ ║<BR>
 <span class="ln"></span>21 Sace pana taṃ Sāriputta evam puccheyyuṃ ║ Upā-<BR>
 <span class="ln"></span>dānam panāvuso ║ pe║<BR>
 <span class="ln"></span>22-23 Sa ce pana taṃ Sāriputta evaṃ puccheyyuṃ ║<BR>
@@ -2470,7 +2472,7 @@ vyākareyyaṃ vedanā phassa- -pabhavāti- -evam vyākareyyanti.<BR>
 <span class="ln" data-n="10"></span>III<BR>
 <span class="ln"></span>34 Tatra kho āyasmā Sāriputto acirapakkantassa Bha-<BR>
 <span class="ln"></span>gavato bhikkhū āmantesi ║ ║<BR>
-<span class="ln"></span>35 Pubbe <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{appaṭisaṃviditaṃ}</span> maṃ āvuso Bhagavā patha-<BR>
+<span class="ln"></span>35 Pubbe <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{appaṭisaṃviditaṃ}</span> maṃ āvuso Bhagavā patha-<BR>
 <span class="ln"></span>mam pañham apucchi tassa me ahosi dandhāyitattam ║ ║<BR>
 <span class="ln" data-n="15"></span>Yato ca kho me āvuso Bhagavā pathamam pañham<BR>
 <span class="ln"></span>anumodi ║ tassa mayham āvuso etad ahosi ║<BR>
@@ -2506,7 +2508,7 @@ vyākareyyaṃ vedanā phassa- -pabhavāti- -evam vyākareyyanti.<BR>
 <span class="ln" data-n="5"></span>puccheyya ║ tīni rattidivāni paham Bhagavato etam attham<BR>
 <span class="ln"></span>vyākareyyam ║<BR>
 <span class="ln"></span>41 Cattāri rattidivāni ce pi mam Bhagavā etam attham<BR>
-<span class="ln"></span><span class="correction" data-info="Correction approved on 2026-10-20. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «puccheya». The book prints: «paccheya».">paccheya</span> ║ cattāri rattidivāni paham Bhagavato etam<BR>
+<span class="ln"></span><span class="correction" data-info="Transcription corrected | GRETIL: «puccheya» → printed edition: «paccheya» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-20.">paccheya</span> ║ cattāri rattidivāni paham Bhagavato etam<BR>
 <span class="ln"></span>atthaṃ vyākareyyaṃ ║ ║<BR>
 <span class="ln" data-n="10"></span>42 Pāñca rattidivāni ce pi mam Bhagavā etam attham<BR>
 <span class="ln"></span>puccheyya ║ pañca rattidivāni paham Bhagavato etam<BR>
@@ -2526,7 +2528,7 @@ vyākareyyaṃ vedanā phassa- -pabhavāti- -evam vyākareyyanti.<BR>
 <span class="ln"></span>vantam abhivādetvā ekam antaṃ nisīdi ║ ║<BR>
 <span class="ln" data-n="25"></span>46 Ekam antaṃ nisinno kho Kaḷārakhattiyo bhikkhu<BR>
 <span class="ln"></span>Bhagavantam etad avoca ║ ║ Āyasmatā bhante Sāriput-<BR>
-<span class="ln"></span>tena sīhanādo nadito pubbe <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{appaṭisaṃviditaṃ}</span> mam<BR>
+<span class="ln"></span>tena sīhanādo nadito pubbe <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{appaṭisaṃviditaṃ}</span> mam<BR>
 <span class="ln"></span>āvuso Bhagavā pathamam pañhaṃ āpucchi ║ tassa me<BR>
 <span class="ln"></span>ahosi dandhāyitattaṃ ║ ║ Yato ca kho me āvuso Bhagavā<BR>
 <span class="ln" data-n="30"></span>pathamam pañham anumodi ║ tassa mayham āvuso etad<BR>
@@ -2544,7 +2546,7 @@ vyākareyyaṃ vedanā phassa- -pabhavāti- -evam vyākareyyanti.<BR>
 <span class="ln" data-n="1"></span>puccheyya aññam aññehi padehi aññam aññehi pariyāyehi ║<BR>
 <span class="ln"></span>satta rattidivāni paham Bhagavato etam atthaṃ vyākarey-<BR>
 <span class="ln"></span>yam aññam aññehi padehi aññam aññehi pariyāyehīti ║ ║<BR>
-<span class="ln"></span>47 Sā hi bhikkhu Sāriputtassa dhammadhātu <span class="correction" data-info="Correction approved on 2026-10-12. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «suppati-». The book prints: «suppaṭi-».">suppaṭi-</span><BR>
+<span class="ln"></span>47 Sā hi bhikkhu Sāriputtassa dhammadhātu <span class="correction" data-info="Transcription corrected | GRETIL: «suppati-» → printed edition: «suppaṭi-» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-12.">suppaṭi-</span><BR>
 <span class="ln" data-n="5"></span>viddhā ║ yassā dhammadhātuyā suppaṭividdhattā divasañce<BR>
 <span class="ln"></span>pahaṃ Sāriputtam etam attham puccheyyam aññam aññehi<BR>
 <span class="ln"></span>padehi aññam aññehi pariyāyehi ║ divasam pi me Sāriputto<BR>
@@ -2723,7 +2725,7 @@ vyākareyyaṃ vedanā phassa- -pabhavāti- -evam vyākareyyanti.<BR>
 <span class="ln" data-n="5"></span>ñāṇaṃ ║ anāgatam pi addhānaṃ jātipaccayā jarāmaraṇanti<BR>
 <span class="ln"></span>ñāṇaṃ ║ asati jātiyā natthi jarāmaraṇanti ñāṇaṃ ║ Yam<BR>
 <span class="ln"></span>pissa taṃ dhammaṭṭhitiñāṇaṃ tam pi khayadhammam<BR>
-<span class="ln"></span>vayadhammam virāgadhammam <span class="correction" data-info="Correction approved on 2026-10-12. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «nirodhamman ti». The book prints: «nirodhammanti».">nirodhammanti</span> ñāṇaṃ ║<BR>
+<span class="ln"></span>vayadhammam virāgadhammam <span class="correction" data-info="Transcription corrected | GRETIL: «nirodhamman ti» → printed edition: «nirodhammanti» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-12.">nirodhammanti</span> ñāṇaṃ ║<BR>
 <span class="ln"></span>4 Bhavapaccayā jātīti ñāṇam ║ pe║<BR>
 <span class="ln" data-n="10"></span>5 Upādānapaccayā bhavo ti ñāṇam ║ pe║<BR>
 <span class="ln"></span>6 Taṇhāpaccayā upādānanti ñāṇaṃ ║ pe║<BR>
@@ -2762,7 +2764,7 @@ vyākareyyaṃ vedanā phassa- -pabhavāti- -evam vyākareyyanti.<BR>
 <span class="ln" data-n="1"></span>maraṇaṃ kassa ca panidam jarāmaraṇanti iti vā bhikkhu<BR>
 <span class="ln"></span>yo vadeyya ║ aññaṃ jarāmaraṇam aññassa ca panidaṃ<BR>
 <span class="ln"></span>jarāmaraṇanti iti vā bhikkhu yo vadeyya ║ ubhayam etam<BR>
-<span class="ln"></span><span class="correction" data-info="Correction approved on 2026-11-05. Source: Cone&#x27;s Dictionary of Pāli (entry marked as wrong reading), approved by hand. GRETIL had: «ekattam1». The book prints: «ekatthaṃ1».">ekatthaṃ<span class="red"><sup>1</sup></span></span> vyañjanam eva nānaṃ ║ ║ Tam jīvaṃ taṃ<BR>
+<span class="ln"></span><span class="suggestion" data-info="Suggested emendation (not applied to the text) | Text, as in GRETIL: «ekattam1» | Suggested: «ekatthaṃ1» | Authority: M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition). Approved on 2026-11-05.">ekattam<span class="red"><sup>1</sup></span></span> vyañjanam eva nānaṃ ║ ║ Tam jīvaṃ taṃ<BR>
 <span class="ln" data-n="5"></span>sarīranti vā bhikkhu diṭṭhiyā sati brahmacariyavāso na<BR>
 <span class="ln"></span>hoti ║ aññaṃ jīvam aññaṃ sarīranti vā bhikkhu diṭṭhiyā<BR>
 <span class="ln"></span>sati brahmacariyavāso na hoti ║ ║ Ete te bhikkhu ubho<BR>
@@ -2815,7 +2817,7 @@ vyākareyyaṃ vedanā phassa- -pabhavāti- -evam vyākareyyanti.<BR>
 <span class="ln"></span>ranti vā bhikkhu diṭṭhiyā sati brahmacariyavāso na hoti ║ ║<BR>
 <span class="ln"></span>Ete te bhikkhu ubho ante anupagamma majjhena Tathāgato<BR>
 <span class="ln"></span>dhammaṃ deseti ║ ║ Avijjāpaccayā saṅkhārāti ║<BR>
-<span class="ln"></span>Avijjāya tveva bhikkhu asesavirāganirodhā <span class="correction" data-info="Correction approved on 2026-10-14. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «yānissitāni». The book prints: «yānissa tāni».">yānissa tāni</span><span class="red"><sup>1</sup></span><BR>
+<span class="ln"></span>Avijjāya tveva bhikkhu asesavirāganirodhā <span class="correction" data-info="Transcription corrected | GRETIL: «yānissitāni» → printed edition: «yānissa tāni» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-14.">yānissa tāni</span><span class="red"><sup>1</sup></span><BR>
 <span class="ln" data-n="15"></span>visūkāyitāni visevitāni<span class="red"><sup>2</sup></span> vipphanditāni kānici kānici ║ ║<BR>
 <span class="ln"></span>15 Katamaṃ ca jarāmaraṇaṃ kassa ca panidaṃ jarā-<BR>
 <span class="ln"></span>maraṇam iti vā ║ aññaṃ jarāmaraṇam aññassa ca panidaṃ<BR>
@@ -2823,7 +2825,7 @@ vyākareyyaṃ vedanā phassa- -pabhavāti- -evam vyākareyyanti.<BR>
 <span class="ln"></span>aññaṃ jīvam aññam sarīram iti vā ║ ║ Sabbānissitāni<BR>
 <span class="ln" data-n="20"></span>pahīnāni bhavantī ║ ucchinnamūlāni tālavatthu katāni<BR>
 <span class="ln"></span>anabhāvakatāni<span class="red"><sup>3</sup></span> āyatiṃ anuppādadhammāni ║ ║ Avijjāya<BR>
-<span class="ln"></span>tveva bhikkhu asesavirāganirodhā yā nissitāni <span class="correction" data-info="Correction approved on 2026-10-20. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «visukāyi- tāni». The book prints: «visukāyitani».">visukāyitani</span> visevitāni<span class="red"><sup>4</sup></span> vipphanditāni kānici kānici ║ ║<BR>
+<span class="ln"></span>tveva bhikkhu asesavirāganirodhā yā nissitāni <span class="correction" data-info="Transcription corrected | GRETIL: «visukāyi- tāni» → printed edition: «visukāyitani» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-20.">visukāyitani</span> visevitāni<span class="red"><sup>4</sup></span> vipphanditāni kānici kānici ║ ║<BR>
 <span class="ln"></span>16 Katamā jāti kassa ca panāyam jāti iti vā ║ ║ Tam<BR>
 <span class="ln"></span>jīvaṃ taṃ sarīram iti vā aññam jivam aññaṃ sarīram iti<BR>
 <span class="ln" data-n="25"></span>vā ║ ║ Sabbānissitāni pahīnāni bhavanti ║ ucchinnamūlāni<BR>
@@ -2853,7 +2855,7 @@ vyākareyyaṃ vedanā phassa- -pabhavāti- -evam vyākareyyanti.<BR>
 <span class="ln"></span>vipphanditāni kānici kānici ║ ║<BR>
 <span class="ln"></span>25 Katame saṅkhārā kassa ca panime saṅkhārā iti vā ║ ║<BR>
 <span class="ln"></span>Aññe saṃkhārā aññassa ca panime saṅkhārā iti vā ║ taṃ<BR>
-<span class="ln" data-n="10"></span>jivaṃ taṃ sarīram iti vā aññaṃ <span class="correction" data-info="Correction approved on 2026-10-12. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «jivam». The book prints: «jīvam».">jīvam</span> aññaṃ sarīram iti<BR>
+<span class="ln" data-n="10"></span>jivaṃ taṃ sarīram iti vā aññaṃ <span class="correction" data-info="Transcription corrected | GRETIL: «jivam» → printed edition: «jīvam» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-12.">jīvam</span> aññaṃ sarīram iti<BR>
 <span class="ln"></span>vā ║ ║ Sabbānissitāni pahīnāni bhavanti ║ ucchinnamūlāni<BR>
 <span class="ln"></span>tālavatthukatāni anabhāvakatāni āyatim anuppādadham-<BR>
 <span class="ln"></span>mānīti ║ ║ pe║ ║ Pañcamaṃ ║ ║<BR>
@@ -2998,7 +3000,7 @@ vyākareyyaṃ vedanā phassa- -pabhavāti- -evam vyākareyyanti.<BR>
 <span class="ln"></span>4 No ce bhikkhave ceteti no ca<span class="red"><sup>1</sup></span> pakappeti atha ce<span class="red"><sup>2</sup></span><BR>
 <span class="ln" data-n="20"></span>anuseti ║ ārammaṇam etaṃ hoti viññāṇassa ṭhitiyā ║ āram-<BR>
 <span class="ln"></span>maṇe sati patiṭṭhā viññāṇassa hoti ║ ║<span class="red"><sup>3</sup></span> Tasmiṃ patiṭṭhite<BR>
-<span class="ln"></span>viññāṇe <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{virūḷhe}</span> nāmarūpassa avakkanti hoti ║ ║<BR>
+<span class="ln"></span>viññāṇe <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{virūḷhe}</span> nāmarūpassa avakkanti hoti ║ ║<BR>
 <span class="ln"></span>5 Nāmarūpapaccayā saḷāyatanaṃ ║ pe║ Evam etassa<BR>
 <span class="ln"></span>kevalassa dukkhakkhandhassa samudayo hoti ║ ║<BR>
 <span class="ln" data-n="25"></span>6 Yato ca kho bhikkhave no ceteti no ca pakappeti no ca<BR>
@@ -3032,7 +3034,7 @@ vyākareyyaṃ vedanā phassa- -pabhavāti- -evam vyākareyyanti.<BR>
 <span class="ln" data-n="10"></span>4 No ce bhikkhave ceteti no ca pakappeti atha ce anuseti<BR>
 <span class="ln"></span>ārammaṇam etaṃ hoti viññāṇassa ṭhitiyā ║ ārammaṇe sati<BR>
 <span class="ln"></span>patiṭṭhā viññāṇassa hoti ║ ║<BR>
-<span class="ln"></span>5 Tasmiṃ patiṭṭhite viññāṇe <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{virūḷhe}</span> nati hoti ║ natiyā<BR>
+<span class="ln"></span>5 Tasmiṃ patiṭṭhite viññāṇe <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{virūḷhe}</span> nati hoti ║ natiyā<BR>
 <span class="ln"></span>sati<span class="red"><sup>5</sup></span> āgatigati hoti ║ āgatigatiyā sati cutūpapāto hoti ║<BR>
 <span class="ln" data-n="15"></span>cutūpapāte sati āyatiṃ jāti jarāmaraṇaṃ sokaparidevaduk-<BR>
 <span class="ln"></span>khadomanassupāyāsā sambhavanti ║ ║<BR>
@@ -3089,12 +3091,12 @@ vyākareyyaṃ vedanā phassa- -pabhavāti- -evam vyākareyyanti.<BR>
 <span class="ln" data-n="20"></span>5 Yaṃ gahapati pāṇātipātī pāṇātipātapaccayā diṭṭha-<BR>
 <span class="ln"></span>dhammikam pi bhayam veram pasavati samparāyikam pi<BR>
 <span class="ln"></span>bhayaṃ veraṃ pasavati ║ cetasikam pi dukkham domanas-<BR>
-<span class="ln"></span>sam <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{paṭisaṃvediyati}</span> ║<span class="red"><sup>7</sup></span> pānātipātāpaṭiviratassa evaṃ tam<BR>
+<span class="ln"></span>sam <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{paṭisaṃvediyati}</span> ║<span class="red"><sup>7</sup></span> pānātipātāpaṭiviratassa evaṃ tam<BR>
 <span class="ln"></span>bhayaṃ veraṃ vūpasantaṃ hoti ║ ║<BR>
 <span class="ln" data-n="25"></span>6 Yam gahapati adinnādāyi adinnādānapaccayā diṭṭha-<BR>
 <span class="ln"></span>dhammikam pi bhayam veram pasavati ║ samparāyikam pi<BR>
 <span class="ln"></span>bhayaṃ veraṃ pasavati ║ cetasikam pi dukkhaṃ domanas-<BR>
-<span class="ln"></span>sam <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{paṭisaṃvediyati}</span> ║<span class="red"><sup>8</sup></span> adinnādānā paṭiviratassa evaṃ taṃ<BR>
+<span class="ln"></span>sam <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{paṭisaṃvediyati}</span> ║<span class="red"><sup>8</sup></span> adinnādānā paṭiviratassa evaṃ taṃ<BR>
 <span class="ln"></span>bhayaṃ veraṃ vūpasantaṃ hoti ║ ║<BR>
 <BR>
 <BR>
@@ -3113,18 +3115,18 @@ vyākareyyaṃ vedanā phassa- -pabhavāti- -evam vyākareyyanti.<BR>
 <span class="ln" data-n="1"></span>7 Yaṃ gahapati kāmesu micchācārī kāmesu micchācāra-<BR>
 <span class="ln"></span>paccayā diṭṭhadhammikam pi bhayaṃ veram pasavati ║<BR>
 <span class="ln"></span>samparāyikam pi bhayam veram pasavati ║ Cetasikam pi<BR>
-<span class="ln"></span>dukkham domanassam <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{paṭisaṃvediyati}</span> ║ kāmesu micchācārā<BR>
+<span class="ln"></span>dukkham domanassam <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{paṭisaṃvediyati}</span> ║ kāmesu micchācārā<BR>
 <span class="ln" data-n="5"></span>paṭiviratassa tam bhayaṃ veraṃ vūpasantaṃ hoti ║ ║<BR>
 <span class="ln"></span>8 Yam gahapati musāvādī musāvādapaccayā diṭṭha-<BR>
 <span class="ln"></span>dhammikam pi bhayam veram pasavati ║ samparāyikam pi<BR>
 <span class="ln"></span>bhayaṃ veram pasavati ║ cetasikam pi dukkham domanas-<BR>
-<span class="ln"></span>sam <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{paṭisaṃvediyati}</span> ║ musāvādā paṭiviratassa evaṃ taṃ<BR>
+<span class="ln"></span>sam <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{paṭisaṃvediyati}</span> ║ musāvādā paṭiviratassa evaṃ taṃ<BR>
 <span class="ln" data-n="10"></span>bhayaṃ veram vūpasantaṃ hoti ║ ║<BR>
 <span class="ln"></span>9 Yaṃ gahapati surāmerayamajjapamādaṭṭhāyī surā-<BR>
 <span class="ln"></span>merayamajjapamādaṭṭhānapaccayā diṭṭhadhammikam pi<BR>
 <span class="ln"></span>bhayaṃ veraṃ pasavati ║ samparāyikam pi bhayaṃ<BR>
 <span class="ln"></span>veram pasavati ║ cetasikam pi dukkhaṃ domanassam<BR>
-<span class="ln" data-n="15"></span><span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{paṭisaṃvedayati}</span> ║ sūrāmerayamajjapamādaṭṭhānā paṭivira-<BR>
+<span class="ln" data-n="15"></span><span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{paṭisaṃvedayati}</span> ║ sūrāmerayamajjapamādaṭṭhānā paṭivira-<BR>
 <span class="ln"></span>tassa evam tam bhayaṃ veraṃ vūpasantaṃ hoti ║ ║<BR>
 <span class="ln"></span>Imāni pañcabhayāni verāni<span class="red"><sup>1</sup></span> vūpasantāni honti ║<BR>
 <BR>
@@ -3175,7 +3177,7 @@ vyākareyyaṃ vedanā phassa- -pabhavāti- -evam vyākareyyanti.<BR>
 <span class="ln" data-n="20"></span>18 Yato ca kho gahapati ariyasāvakassa imāni pañca-<BR>
 <span class="ln"></span>bhayāni verāni vūpasantāni honti ║ imehi catūhi sotāpat-<BR>
 <span class="ln"></span>tiyaṅgehi samannāgato hoti ║ ayaṃ cassa ariyo ñāyo pañ-<BR>
-<span class="ln"></span>ñāya sudiṭṭho hoti suppaṭividdho ║<span class="red"><sup>3</sup></span> so <span class="correction" data-info="Correction approved on 2026-10-12. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «ākaṅkhamano». The book prints: «ākaṅkhamaño».">ākaṅkhamaño</span> at-<BR>
+<span class="ln"></span>ñāya sudiṭṭho hoti suppaṭividdho ║<span class="red"><sup>3</sup></span> so <span class="correction" data-info="Transcription corrected | GRETIL: «ākaṅkhamano» → printed edition: «ākaṅkhamaño» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-12.">ākaṅkhamaño</span> at-<BR>
 <span class="ln"></span>tanā va attānaṃ vyākareyya ║ khīṇanirayomhi khīṇatir-<BR>
 <span class="ln" data-n="25"></span>acchānayoniyo khīṇapettivisayo khīṇāpāyaduggativinipāto ║<BR>
 <span class="ln"></span>sotāpanno ham asmi avinipātadhammo niyato sambodhi-<BR>
@@ -3184,7 +3186,7 @@ vyākareyyaṃ vedanā phassa- -pabhavāti- -evam vyākareyyanti.<BR>
 <span class="ln"></span>(2) Pañcaverabhayā (2)<BR>
 <span class="ln"></span>1 Sāvatthiyaṃ viharati ║ ║<BR>
 <span class="ln" data-n="30"></span>2 Atha kho sambahulā bhikkhū yena Bhagavā°<BR>
-<span class="ln"></span><span class="correction" data-info="Correction approved on 2026-10-22. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «ºPhagavā». The book prints: «ºBhagavā».">°Bhagavā</span> etad avoca ║<span class="red"><sup>5</sup></span> ║<BR>
+<span class="ln"></span><span class="correction" data-info="Transcription corrected | GRETIL: «ºPhagavā» → printed edition: «ºBhagavā» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-22.">°Bhagavā</span> etad avoca ║<span class="red"><sup>5</sup></span> ║<BR>
 <BR>
 <BR>
 <span class="red">--------------------------------------------------------------------------<BR>
@@ -3283,7 +3285,7 @@ vyākareyyaṃ vedanā phassa- -pabhavāti- -evam vyākareyyanti.<BR>
 <!-- page-status: corrected --><b>[page 073]</b><BR>
 <i>XII. 44. 12]               GAHAPATIVAGGO PAÑCAMO                    73</i><BR>
 <span class="ln" data-n="1"></span>sokaparidevadukkhadomanassupāyāsā nirujjhanti ║ ║ Evam<BR>
-<span class="ln"></span>etassa kevalassa <span class="correction" data-info="Correction approved on 2026-10-20. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «dukkhakhandhassa». The book prints: «dukkakhandhassa».">dukkakhandhassa</span> nirodho hoti ║ ║<BR>
+<span class="ln"></span>etassa kevalassa <span class="correction" data-info="Transcription corrected | GRETIL: «dukkhakhandhassa» → printed edition: «dukkakhandhassa» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-20.">dukkakhandhassa</span> nirodho hoti ║ ║<BR>
 <span class="ln"></span>17 Ayaṃ kho bhikkhave dukkhassa atthaṅgamo ti ║ ║<BR>
 <span class="ln"></span>Tatiyaṃ ║ ║<BR>
 <BR>
@@ -3390,7 +3392,7 @@ vyākareyyaṃ vedanā phassa- -pabhavāti- -evam vyākareyyanti.<BR>
 <span class="ln"></span>Evam bhante ti ║ ║<BR>
 <span class="ln"></span>18 Uggaṇhāhi tvaṃ bhikkhu imaṃ dhammapariyāyaṃ ║<BR>
 <span class="ln" data-n="20"></span>pariyāpuṇāhi tvaṃ bhikkhu imaṃ dhammapariyāyaṃ ║ ║<BR>
-<span class="ln"></span>Atthasaṃhitāyam bhikkhu dhammapariyāyo <span class="correction" data-info="Correction approved on 2026-10-20. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «ādibraha-». The book prints: «ādibrahma-».">ādibrahma-</span><BR>
+<span class="ln"></span>Atthasaṃhitāyam bhikkhu dhammapariyāyo <span class="correction" data-info="Transcription corrected | GRETIL: «ādibraha-» → printed edition: «ādibrahma-» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-20.">ādibrahma-</span><BR>
 <span class="ln"></span>macariyako ti ║ ║ Pañcamaṃ ║ ║<BR>
 <BR>
 <span class="ln"></span>(6) Aññataraṃ<BR>
@@ -3401,7 +3403,7 @@ vyākareyyaṃ vedanā phassa- -pabhavāti- -evam vyākareyyanti.<BR>
 <span class="ln"></span>nisīdi ║ ║<BR>
 <span class="ln"></span>Ekam antaṃ nisinno kho so brāhmaṇo Bhagavantam<BR>
 <span class="ln" data-n="30"></span>etad avoca ║<BR>
-<span class="ln"></span>3 Kiṃ nu kho bho Gotama so karoti <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{paṭisaṃvediyatī-</span><span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered."><BR>
+<span class="ln"></span>3 Kiṃ nu kho bho Gotama so karoti <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{paṭisaṃvediyatī-</span><span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged."><BR>
 <span class="ln"></span>ti}</span> ║<span class="red"><sup>2</sup></span> ║<BR>
 <span class="ln"></span>So karoti so paṭisaṃvediyatītī kho brāhmaṇa ayam eko<BR>
 <span class="ln"></span>anto ║ ║<BR>
@@ -3618,9 +3620,9 @@ upādānaṃ || bhavo || jāti ||<BR>
 <span class="ln"></span>2 Tatra Bhagavā bhikkhū āmantesi Bhikkhavo ti ║ ║<BR>
 <span class="ln"></span>Bhadante ti te bhikkhū Bhagavato paccassosum ║ ║<BR>
 <span class="ln" data-n="25"></span>3 Bhagavā etad avoca ║ ║<span class="red"><sup>11</sup></span> Kittāvatā nu kho bhikkhave<BR>
-<span class="ln"></span>bhikkhu <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{pariviṃsamāno}</span> parivīmaṃseyya sabbaso sammā-<BR>
+<span class="ln"></span>bhikkhu <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{pariviṃsamāno}</span> parivīmaṃseyya sabbaso sammā-<BR>
 <span class="ln"></span>dukkhakkhayāyāti ║ ║<BR>
-<span class="ln"></span><span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{Bhagavaṃmūlakā}</span> no bhante dhammā Bhagavaṃnettikā<BR>
+<span class="ln"></span><span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{Bhagavaṃmūlakā}</span> no bhante dhammā Bhagavaṃnettikā<BR>
 <BR>
 <BR>
 <span class="red">--------------------------------------------------------------------------<BR>
@@ -3701,7 +3703,7 @@ upādānaṃ || bhavo || jāti ||<BR>
 <span class="ln"></span>14 Anabhisaṅkharonto anabhisañcetayanto na<span class="red"><sup>6</sup></span> kiñci<BR>
 <span class="ln"></span>loke upādiyati ║ anupādiyaṃ na paritassati ║ aparitassaṃ<BR>
 <span class="ln" data-n="20"></span>paccattaññeva parinibbāyati ║ khīṇā jāti ║ vusitaṃ brahmaca-<BR>
-<span class="ln"></span>riyaṃ kataṃ <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{karaṇīyaṃ}</span> nāparam itthattāyā ti pajānāti ║ ║<BR>
+<span class="ln"></span>riyaṃ kataṃ <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{karaṇīyaṃ}</span> nāparam itthattāyā ti pajānāti ║ ║<BR>
 <span class="ln"></span>15 So<span class="red"><sup>7</sup></span> sukham ce<span class="red"><sup>8</sup></span> vedanaṃ vedayati ║<span class="red"><sup>9</sup></span> sā aniccāti<BR>
 <span class="ln"></span>pajānāti ║ anajjhositā ti pajānāti ║ anabhinanditāti pajā-<BR>
 <span class="ln"></span>nāti ║ ║ Dukkhaṃ ce vedanam vedayati ║ sa aniccā ti pajā-<BR>
@@ -3798,7 +3800,7 @@ upādānaṃ || bhavo || jāti ||<BR>
 <span class="ln"></span>(2) Upādāna<BR>
 <span class="ln"></span>1 Sāvatthiyaṃ viharati ║ ║<BR>
 <span class="ln" data-n="25"></span>2 Upādāniyesu bhikkhave dhammesu assādānupassino<BR>
-<span class="ln"></span>viharato taṇhā <span class="correction" data-info="Correction approved on 2026-10-12. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «pavāḍḍhati». The book prints: «pavaḍḍhati».">pavaḍḍhati</span> ║ taṇhāpaccayā upādānaṃ ║<BR>
+<span class="ln"></span>viharato taṇhā <span class="correction" data-info="Transcription corrected | GRETIL: «pavāḍḍhati» → printed edition: «pavaḍḍhati» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-12.">pavaḍḍhati</span> ║ taṇhāpaccayā upādānaṃ ║<BR>
 <span class="ln"></span>upādānapaccayā bhavo bhavapaccayā jāti ║ jātipaccayā<BR>
 <span class="ln"></span>jarāmaraṇaṃ sokaparidevadukkhadomanassupāyāsā sam-<BR>
 <span class="ln"></span>bhavanti ║ ║ Evam etassa kevalassa dukkhakkhandhassa<BR>
@@ -3818,7 +3820,7 @@ after h is erased<BR>
 <!-- page-status: corrected --><b>[page 085]</b><BR>
 <i>XII. 52. 7]              RUKKHA-VAGGO CHAṬṬHO                        85</i><BR>
 <span class="ln" data-n="1"></span>vīsāya vā kaṭṭhavāhānaṃ tiṃsāya vā kaṭṭhavāhānaṃ cat-<BR>
-<span class="ln"></span>tārīsāya<span class="red"><sup>1</sup></span> vā kaṭṭhavāhānaṃ mahā aggikkhandho <span class="correction" data-info="Correction approved on 2026-10-14. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «jāleyya». The book prints: «jaleyya».">jaleyya</span> ║<BR>
+<span class="ln"></span>tārīsāya<span class="red"><sup>1</sup></span> vā kaṭṭhavāhānaṃ mahā aggikkhandho <span class="correction" data-info="Transcription corrected | GRETIL: «jāleyya» → printed edition: «jaleyya» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-14.">jaleyya</span> ║<BR>
 <span class="ln"></span>Tatra puriso kālena kālaṃ sukkhāni ceva tiṇāni pakkhip-<BR>
 <span class="ln"></span>peyya ║ sukkhāni ca<span class="red"><sup>2</sup></span> gomayāni pakkhippeyya ║ sukkhāni ca<BR>
 <span class="ln" data-n="5"></span>kaṭṭhāni pakkhippeyya ║ Evañhi so bhikkhave mahā aggik-<BR>
@@ -3953,7 +3955,7 @@ erasure of ā); S3 ha<BR>
 <span class="ln"></span>lassa dukkhakkhandhassa nirodho hoti ║ ║<BR>
 <span class="ln" data-n="5"></span>5 Seyyathāpi bhikkhave mahārukkho ║ Atha puriso<BR>
 <span class="ln"></span>āgaccheyya kuddālapiṭakam<span class="red"><sup>1</sup></span> ādāya ║ so taṃ rukkhaṃ mūle<BR>
-<span class="ln"></span>chindeyya ║ mulena chetvā<span class="red"><sup>2</sup></span> <span class="correction" data-info="Correction approved on 2026-10-14. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «paliṃ khaṇeyya». The book prints: «palikhaṇeyya».">palikhaṇeyya</span><span class="red"><sup>3</sup></span> ║ <span class="correction" data-info="Correction approved on 2026-10-14. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «paliṃ khaṇi-». The book prints: «palikhaṇi-».">palikhaṇi-</span><BR>
+<span class="ln"></span>chindeyya ║ mulena chetvā<span class="red"><sup>2</sup></span> <span class="correction" data-info="Transcription corrected | GRETIL: «paliṃ khaṇeyya» → printed edition: «palikhaṇeyya» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-14.">palikhaṇeyya</span><span class="red"><sup>3</sup></span> ║ <span class="correction" data-info="Transcription corrected | GRETIL: «paliṃ khaṇi-» → printed edition: «palikhaṇi-» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-14.">palikhaṇi-</span><BR>
 <span class="ln"></span>tvā mulāni uddhareyya antamaso usīraṇāḷimattānipi ║<span class="red"><sup>4</sup></span> so<BR>
 <span class="ln"></span>taṃ rukkhaṃ khaṇḍākhaṇḍikaṃ chindeyya ║ khaṇḍākhaṇ-<BR>
 <span class="ln" data-n="10"></span>ḍikaṃ chetvā<span class="red"><sup>5</sup></span> phāleyya ║ phāletvā sakalikaṃ sakalikaṃ<span class="red"><sup>6</sup></span><BR>
@@ -4143,7 +4145,7 @@ are missing in B<BR>
 <span class="ln"></span>khāyatīti ║ ║<BR>
 <span class="ln"></span>4 Māhevām Ānanda māhevam Ānanda ║ gambhīro<BR>
 <span class="ln"></span>cāyam Ānanda paṭiccasamuppādo gambhīrāvabhāso ca ║<BR>
-<span class="ln"></span>Etassa<span class="red"><sup>3</sup></span> Ānanda dhammassa <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{aññāṇaṃ}</span><span class="red"><sup>4</sup></span> ananubodhā appa-<BR>
+<span class="ln"></span>Etassa<span class="red"><sup>3</sup></span> Ānanda dhammassa <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{aññāṇaṃ}</span><span class="red"><sup>4</sup></span> ananubodhā appa-<BR>
 <span class="ln" data-n="15"></span>tivedhā<span class="red"><sup>5</sup></span> evam ayaṃ pajā tantākulakajātā guḷigandhi-<BR>
 <span class="ln"></span>kajātā muñjapabbajā bhūtā apāyaṃ duggatiṃ vinipātaṃ<BR>
 <span class="ln"></span>saṃsāraṃ nātivattati ║<BR>
@@ -4377,7 +4379,7 @@ are missing in B<BR>
 <span class="ln"></span>adukkhamasukhavedanā sā nirujjhati sā vūpasammati ║ ║<BR>
 <span class="ln"></span>16 Evaṃ passaṃ bhikkhave sutavā ariyasāvako phasse<span class="red"><sup>6</sup></span><BR>
 <span class="ln" data-n="25"></span>nibbindati ║ vedanāya pi<span class="red"><sup>7</sup></span> nibbindati ║ saññāya pi nibbin-<BR>
-<span class="ln"></span>dati ║ viññāṇasmim <span class="correction" data-info="Correction approved on 2026-10-20. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «pinibbindati». The book prints: «pi nibbindati».">pi nibbindati</span> ║ ║ Nibbindaṃ virajjati ║<BR>
+<span class="ln"></span>dati ║ viññāṇasmim <span class="correction" data-info="Transcription corrected | GRETIL: «pinibbindati» → printed edition: «pi nibbindati» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-20.">pi nibbindati</span> ║ ║ Nibbindaṃ virajjati ║<BR>
 <span class="ln"></span>[virāgā vimuccati ║ vimuttasmiṃ vimuttamhīti nāṇaṃ<BR>
 <span class="ln"></span>hoti ║ ║ Khīnā jāti vusitaṃ brahmacariyaṃ kataṃ karaṇi-<BR>
 <span class="ln"></span>yaṃ<span class="red"><sup>8</sup></span>] nāparam itthattāyā ti pajānātīti ║ ║ Dutiyaṃ ║ ║<BR>
@@ -4517,14 +4519,14 @@ further on ha<BR>
 <span class="ln" data-n="25"></span>samayaṃ sattisatena haneyyuṃ ║ ║<BR>
 <span class="ln"></span>23 Taṃ kim maññatha bhikkhave ║ Api nu so<span class="red"><sup>5</sup></span> puriso<BR>
 <span class="ln"></span>divasaṃ tīhi sattisatehi haññamāno tato nidānaṃ dukkham<BR>
-<span class="ln"></span>domanassam <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{paṭisaṃvediyethāti}</span> ║ ║<BR>
-<span class="ln"></span><span class="correction" data-info="Correction approved on 2026-10-14. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «Ekissa». The book prints: «Ekissā».">Ekissā</span> pi bhante sattiyā haññamāno tato nidānaṃ<BR>
+<span class="ln"></span>domanassam <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{paṭisaṃvediyethāti}</span> ║ ║<BR>
+<span class="ln"></span><span class="correction" data-info="Transcription corrected | GRETIL: «Ekissa» → printed edition: «Ekissā» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-14.">Ekissā</span> pi bhante sattiyā haññamāno tato nidānaṃ<BR>
 <span class="ln" data-n="30"></span>dukkhaṃ domanassaṃ paṭisaṃvediyetha ko pana vādo<BR>
 <span class="ln"></span>tīhi sattisatehi haññayamāno ti ║ ║<BR>
 <span class="ln"></span>24 Evam eva khvāhaṃ bhikkhave viññāṇāharo daṭṭhabbo<BR>
 <span class="ln"></span>ti vadāmi ║ ║<BR>
 <span class="ln"></span>25 Viññāṇe bhikkhave āhāre pariññāte nāmarūpam<BR>
-<span class="ln" data-n="35"></span>pariññātaṃ hoti ║ nāmarūpe pariññāte <span class="correction" data-info="Correction approved on 2026-10-14. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «arivasāvakassa». The book prints: «ariyasāvakassa».">ariyasāvakassa</span><BR>
+<span class="ln" data-n="35"></span>pariññātaṃ hoti ║ nāmarūpe pariññāte <span class="correction" data-info="Transcription corrected | GRETIL: «arivasāvakassa» → printed edition: «ariyasāvakassa» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-14.">ariyasāvakassa</span><BR>
 <span class="ln"></span>natthi kiñci uttariṃkaraṇīyanti vadāmīti ║ ║<span class="red"><sup>6</sup></span> Tatiyaṃ ║ ║<BR>
 <BR>
 <BR>
@@ -4600,17 +4602,17 @@ further on ha<BR>
 <span class="ln" data-n="15"></span>11 Manosañcetanāya ce bhikkhave<span class="red"><sup>5</sup></span> āhāre ║ pe║ ║<BR>
 <span class="ln"></span>12 Viññāne ce bhikkhave āhāre atthi rāgo atthi nandi<BR>
 <span class="ln"></span>atthi taṇhā patiṭṭhitaṃ tattha viññāṇaṃ virūḷhaṃ ║ ║<BR>
-<span class="ln"></span>Yattha patiṭṭhitaṃ viññānaṃ <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{virūḷhaṃ}</span> atthi tattha nāma-<BR>
+<span class="ln"></span>Yattha patiṭṭhitaṃ viññānaṃ <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{virūḷhaṃ}</span> atthi tattha nāma-<BR>
 <span class="ln"></span>rūpassa avakkanti ║ Yattha atthi nāmarūpassa avakkanti<BR>
 <span class="ln" data-n="20"></span>atthi tattha saṅkhārānaṃ vuddhi ║ Yattha atthi saṅkhāra-<BR>
 <span class="ln"></span>naṃ vuddhi atthi tattha āyatiṃ punabbhavābhinibbatti ║<BR>
 <span class="ln"></span>Yattha atthi āyatiṃ punabbhavābhinibbatti atthi tattha<BR>
 <span class="ln"></span>āyatiṃ jātijarāmaraṇaṃ ║ Yattha atthi āyatiṃ jātijarā-<BR>
-<span class="ln"></span>maraṇaṃ <span class="correction" data-info="Correction approved on 2026-10-20. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «sasokanti». The book prints: «sasokantaṃ».">sasokantaṃ</span> bhikkhave sadaram saupāyāsanti<BR>
+<span class="ln"></span>maraṇaṃ <span class="correction" data-info="Transcription corrected | GRETIL: «sasokanti» → printed edition: «sasokantaṃ» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-20.">sasokantaṃ</span> bhikkhave sadaram saupāyāsanti<BR>
 <span class="ln" data-n="25"></span>vādāmi ║ ║<BR>
 <span class="ln"></span>13 Kabaliṃkāre ce bhikkhave āhāre natthi rāgo natthi<BR>
 <span class="ln"></span>nandi natthi taṇhā appatiṭṭhitaṃ tattha viññāṇaṃ avirūḷ-<BR>
-<span class="ln"></span>haṃ ║ ║ Yattha appatiṭṭhitaṃ viññāṇam <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{avirūḷhaṃ}</span> natthi<BR>
+<span class="ln"></span>haṃ ║ ║ Yattha appatiṭṭhitaṃ viññāṇam <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{avirūḷhaṃ}</span> natthi<BR>
 <span class="ln"></span>tattha nāmarūpassa avakkanti ║ Yattha natthi nāmarū-<BR>
 <span class="ln" data-n="30"></span>passa avakkanti natthi tattha saṅkhārānaṃ vuddhi ║<BR>
 <span class="ln"></span>Yattha natthi saṅkhārānam vuddhi natthi tattha āyatim<BR>
@@ -4658,7 +4660,7 @@ further on ha<BR>
 <span class="ln"></span>22 Phasse ce bhikkhave<span class="red"><sup>5</sup></span> āhāre ║ pe║ ║<BR>
 <span class="ln"></span>23 Manosañcetanāya<span class="red"><sup>6</sup></span> ce bhikkhave<span class="red"><sup>5</sup></span> āhāre ║ pe║ ║<BR>
 <span class="ln"></span>24 Viññāṇe ce bhikkhave āhāre natthi rāgo natthi nandi<BR>
-<span class="ln" data-n="30"></span>natthi taṇhā appatiṭṭhitaṃ tattha viññāṇaṃ <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{avirūḷhaṃ}</span> ║ ║<BR>
+<span class="ln" data-n="30"></span>natthi taṇhā appatiṭṭhitaṃ tattha viññāṇaṃ <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{avirūḷhaṃ}</span> ║ ║<BR>
 <span class="ln"></span>Yattha appatiṭṭhitam viññāṇam avirūḷham natthi tattha<BR>
 <span class="ln"></span>nāmarūpassa avakkanti ║ Yattha natthi nāmarūpassa avak-<BR>
 <span class="ln"></span>kanti natthi tattha saṅkhārānaṃ vuddhi ║ Yattha natthi<BR>
@@ -4744,7 +4746,7 @@ further on ha<BR>
 <span class="ln"></span>paññāya abhisamayo ║ nāmarūpe kho asati viññāṇaṃ na<BR>
 <span class="ln"></span>hoti nāmarupanirodhā viññāṇanirodhoti ║ ║<BR>
 <span class="ln" data-n="25"></span>17 Tassa mayhaṃ bhikkhave etad ahosi ║ ║ Adhigato kho<BR>
-<span class="ln"></span>myāyaṃ<span class="red"><sup>1</sup></span> <span class="correction" data-info="Correction approved on 2026-10-20. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «maggobodhāya». The book prints: «maggo bodhāya».">maggo bodhāya</span> yad idaṃ nāmarūpanirodhā viññā-<BR>
+<span class="ln"></span>myāyaṃ<span class="red"><sup>1</sup></span> <span class="correction" data-info="Transcription corrected | GRETIL: «maggobodhāya» → printed edition: «maggo bodhāya» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-20.">maggo bodhāya</span> yad idaṃ nāmarūpanirodhā viññā-<BR>
 <span class="ln"></span>ṇanirodho ║ Viññāṇanirodhā nāmarūpanirodho ║ nāmarū-<BR>
 <span class="ln"></span>panirodhā saḷāyatananirodho ║ saḷāyatananirodhā phassa-<BR>
 <span class="ln"></span>nirodho ║ pe║ ║<BR>
@@ -5189,12 +5191,12 @@ abbreviation of the next paragraph<BR>
 <span class="ln"></span>jātiyo pañca pi jātiyo dasam pi jātiyo vīsaṃ pi jātiyo tiṃsam<BR>
 <span class="ln"></span>pi jātiyo ║<span class="red"><sup>2</sup></span> cattārisam<span class="red"><sup>3</sup></span> pi jātiyo paññāsam pi jātiyo jātisa-<BR>
 <span class="ln"></span>tam pi jātisahassam pi jātisatasahassam pi ║ aneke pi saṃ-<BR>
-<span class="ln"></span>vaṭṭakappe aneke pi vivaṭṭakappe aneke pi <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{saṃvaṭṭavivaṭṭa-</span><span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered."><BR>
+<span class="ln"></span>vaṭṭakappe aneke pi vivaṭṭakappe aneke pi <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{saṃvaṭṭavivaṭṭa-</span><span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged."><BR>
 <span class="ln" data-n="20"></span>kappe}</span> ║ Amutrāsiṃ evaṃ nāmo evaṃgotto evaṃvaṇṇo<BR>
 <span class="ln"></span>evamāhāro evaṃsukhadukkhapaṭisaṃvedī evamāyupari-<BR>
 <span class="ln"></span>yanto ║ so tato cuto amutra udapādiṃ ║<span class="red"><sup>4</sup></span> tatrāpāsiṃ evaṃ<BR>
 <span class="ln"></span>nāmo evaṃgotto evaṃvaṇṇo evamāhāro evaṃsukhaduk-<BR>
-<span class="ln"></span><span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{khapaṭisaṃvedī}</span> evam āyupariyanto ║ so tato cuto idhupapan-<BR>
+<span class="ln"></span><span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{khapaṭisaṃvedī}</span> evam āyupariyanto ║ so tato cuto idhupapan-<BR>
 <span class="ln" data-n="25"></span>noti ║ Iti sākāraṃ sa-uddesaṃ<span class="red"><sup>5</sup></span> anekavihitaṃ pubbenivā-<BR>
 <span class="ln"></span>sam anussarathāti ║ ║<BR>
 <span class="ln"></span>No hetam āvuso ║ ║<BR>
@@ -5400,7 +5402,7 @@ repetition<BR>
 <!-- page-status: corrected --><b>[page 127]</b><BR>
 <i>XII. 70. 59]                 MAHĀVAGGO SATTAMO                     127</i><BR>
 <span class="ln" data-n="1"></span>No hetam bhante ║ ║<BR>
-<span class="ln"></span>53 Api<span class="red"><sup>1</sup></span> pana tvaṃ Susīma <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{evaṃ}</span> jānanto evam passanto<BR>
+<span class="ln"></span>53 Api<span class="red"><sup>1</sup></span> pana tvaṃ Susīma <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{evaṃ}</span> jānanto evam passanto<BR>
 <span class="ln"></span>parasattānam parapuggalānaṃ cetasā ceto paricca parijā-<BR>
 <span class="ln"></span>nati ║ sarāgaṃ vā cittaṃ sarāgaṃ cittanti pajānāsi ║ pe║<BR>
 <span class="ln" data-n="5"></span>avimuttaṃ vā cittam avimuttaṃ<span class="red"><sup>2</sup></span> cittanti pajānāsi<span class="red"><sup>3</sup></span> ║ ║<BR>
@@ -5445,7 +5447,7 @@ repetition<BR>
 <!-- page-status: corrected --><b>[page 128]</b><BR>
 <i>128                           NIDĀNA-SAṂYUTTA              [XII. 70. 60</i><BR>
 <span class="ln" data-n="1"></span>60 Seyyathāpi Susīma coram āgucāriṃ gahetvā rañño<BR>
-<span class="ln"></span>dasseyyum ║ ayaṃ te deva coro āgucārī <span class="correction" data-info="Correction approved on 2026-10-20. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «imassayam». The book prints: «imassa yam».">imassa yam</span> icchasi<BR>
+<span class="ln"></span>dasseyyum ║ ayaṃ te deva coro āgucārī <span class="correction" data-info="Transcription corrected | GRETIL: «imassayam» → printed edition: «imassa yam» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-20.">imassa yam</span> icchasi<BR>
 <span class="ln"></span>taṃ daṇḍaṃ paṇehīti<span class="red"><sup>1</sup></span> ║ tam enaṃ rājā evam vadeyya<BR>
 <span class="ln"></span>Gacchatha bho imam purisaṃ daḷhāya rajjuyā pacchābā-<BR>
 <span class="ln" data-n="5"></span>haṃ gāḷhabandhanaṃ bandhitvā khuramuṇḍaṃ<span class="red"><sup>2</sup></span> kāritvā<BR>
@@ -5458,17 +5460,17 @@ repetition<BR>
 <span class="ln"></span>dakkhiṇena dvārena nikkhāmetvā dakkhiṇato nagarassa<BR>
 <span class="ln"></span>sīsaṃ chindeyyuṃ ║ ║<BR>
 <span class="ln"></span>61 Taṃ kiṃ maññasi Susīma ║ Api nu so puriso tato<BR>
-<span class="ln" data-n="15"></span>nidānaṃ dukkhaṃ domanassam <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{paṭisaṃvediyethā}</span> ti ║ ║<BR>
+<span class="ln" data-n="15"></span>nidānaṃ dukkhaṃ domanassam <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{paṭisaṃvediyethā}</span> ti ║ ║<BR>
 <span class="ln"></span>Evam bhante ║ ║<BR>
-<span class="ln"></span>62 Yaṃ kho so <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{Susīma}</span> puriso tato nidānaṃ dukkhaṃ<BR>
-<span class="ln"></span>domanassaṃ <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{paṭisaṃvediyetha}</span> [vā na vā paṭisaṃvedi-<BR>
+<span class="ln"></span>62 Yaṃ kho so <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{Susīma}</span> puriso tato nidānaṃ dukkhaṃ<BR>
+<span class="ln"></span>domanassaṃ <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{paṭisaṃvediyetha}</span> [vā na vā paṭisaṃvedi-<BR>
 <span class="ln"></span>yetha<span class="red"><sup>3</sup></span>] yā evaṃ svākhyāte dhammavinaye dhammatthena<BR>
-<span class="ln" data-n="20"></span>kassa <span class="correction" data-info="Correction approved on 2026-10-14. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «pabbajā». The book prints: «pabbajjā».">pabbajjā</span> ayaṃ tato dukkhavipākatarā ca kaṭukavipā-<BR>
-<span class="ln"></span>katarā ca<span class="red"><sup>4</sup></span> ║ api ca vinipātāya <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{saṃvattati}</span> ║<BR>
+<span class="ln" data-n="20"></span>kassa <span class="correction" data-info="Transcription corrected | GRETIL: «pabbajā» → printed edition: «pabbajjā» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-14.">pabbajjā</span> ayaṃ tato dukkhavipākatarā ca kaṭukavipā-<BR>
+<span class="ln"></span>katarā ca<span class="red"><sup>4</sup></span> ║ api ca vinipātāya <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{saṃvattati}</span> ║<BR>
 <span class="ln"></span>63 Yato ca kho tvaṃ Susīma accayam accayato disvā<BR>
 <span class="ln"></span>yathādhammaṃ paṭikarosi ║ taṃ te mayam paṭigaṇhāma ║<BR>
 <span class="ln"></span>vuddhi hesā Susīma ariyassa vinaye yo accayam accayato<BR>
-<span class="ln" data-n="25"></span>disvā yathādhammaṃ paṭikaroti āyatiṃ ca <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{saṃvaram}</span><BR>
+<span class="ln" data-n="25"></span>disvā yathādhammaṃ paṭikaroti āyatiṃ ca <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{saṃvaram}</span><BR>
 <span class="ln"></span>āpajjatīti ║ ║ Dasamam ║ ║<BR>
 <span class="ln"></span>Mahāvaggo sattamo ║ ║<BR>
 <span class="ln"></span>Tassuddānaṃ ║ ║<BR>
@@ -5754,7 +5756,7 @@ ekasatañca dva (S1 -kha-) ttiṃsa bhavanti<BR>
 <i>XIII. 5. 1]                 ABHISAMAYA-SAṂYUTTA                    135</i><BR>
 <span class="ln" data-n="1"></span>2 Seyyathāpi bhikkhave yatthimā<span class="red"><sup>1</sup></span> mahānadiyo saṃ-<BR>
 <span class="ln"></span>sandanti samenti ║ seyyathidam Gaṅgā Yamunā Aciravatī<span class="red"><sup>2</sup></span><BR>
-<span class="ln"></span>Sarabhū Mahī ║ tato puriso dve vā <span class="correction" data-info="Correction approved on 2026-10-14. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «ti3». The book prints: «tīṇi3».">tīṇi<span class="red"><sup>3</sup></span></span> vā udakaphusitāni<BR>
+<span class="ln"></span>Sarabhū Mahī ║ tato puriso dve vā <span class="correction" data-info="Transcription corrected | GRETIL: «ti3» → printed edition: «tīṇi3» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-14.">tīṇi<span class="red"><sup>3</sup></span></span> vā udakaphusitāni<BR>
 <span class="ln"></span>uddhareyya ║ ║ Taṃ kiṃ maññatha bhikkhave ║ katamaṃ<BR>
 <span class="ln" data-n="5"></span>nu kho bahutaraṃ<span class="red"><sup>4</sup></span> yāni vā dve vā ti vā udakaphusitāni<BR>
 <span class="ln"></span>ubbhatāni yam vā sambhejja<span class="red"><sup>5</sup></span> udakan ti ║ ║<BR>
@@ -5911,7 +5913,7 @@ ekasatañca dva (S1 -kha-) ttiṃsa bhavanti<BR>
 <span class="ln" data-n="20"></span>pāsāṇasakkharā avasiṭṭhā ti ║ ║<BR>
 <span class="ln"></span>4 Evam eva kho bhikkhave ariyasāvakassa diṭṭhi-<BR>
 <span class="ln"></span>sampannassa puggalassa<span class="red"><sup>5</sup></span> abhisametāvino etad eva bahu-<BR>
-<span class="ln"></span>taraṃ dukkhaṃ yad idaṃ <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{parikkhīṇaṃ}</span> pariyādinnaṃ<BR>
+<span class="ln"></span>taraṃ dukkhaṃ yad idaṃ <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{parikkhīṇaṃ}</span> pariyādinnaṃ<BR>
 <span class="ln"></span>appamattakam avasiṭṭhaṃ ║ neva satimaṃ kalam upeti na<BR>
 <span class="ln" data-n="25"></span>sahassimaṃ kalam upeti na satasahassimaṃ kalam upeti<BR>
 <span class="ln"></span>purimaṃ dukkhakkhandham<span class="red"><sup>6</sup></span> parikkhīṇaṃ pariyādiṇṇam<BR>
@@ -5989,7 +5991,7 @@ ekasatañca dva (S1 -kha-) ttiṃsa bhavanti<BR>
 <span class="ln"></span>3 Bhagavā etad avoca ║ ║ Katamañ ca bhikkhave dhātu-<BR>
 <span class="ln" data-n="10"></span>nānattam ║<BR>
 <span class="ln"></span>4 Cakkhudhātu rūpadhātu cakkhuviññāṇadhātu ║ So-<BR>
-<span class="ln"></span><span class="correction" data-info="Correction approved on 2026-10-20. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «taḍhātu». The book prints: «tadhātu».">tadhātu</span> saddadhātu sotaviññāṇadhātu ║ Ghānadhātu gan-<BR>
+<span class="ln"></span><span class="correction" data-info="Transcription corrected | GRETIL: «taḍhātu» → printed edition: «tadhātu» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-20.">tadhātu</span> saddadhātu sotaviññāṇadhātu ║ Ghānadhātu gan-<BR>
 <span class="ln"></span>dhadhātu ghānaviññāṇadhātu ║ Jivhādhātu rasadhātu<BR>
 <span class="ln"></span>jivhāviññāṇadhātu ║ Kāyadhātu poṭṭhabbadhātu kāya-<BR>
 <span class="ln" data-n="15"></span>viññāṇadhātu ║ Manodhātu dhammadhātu manoviññāṇa-<BR>
@@ -6151,7 +6153,7 @@ dhātunānattaṃ<BR>
 <!-- page-status: corrected --><b>[page 144]</b><BR>
 <i>144                           DHĀTU-SAṂYUTTA                [XIV. 7. 4</i><BR>
 <span class="ln" data-n="1"></span>4 Kathañca<span class="red"><sup>1</sup></span> bhikkhave dhātunānattam paṭicca uppajjati<BR>
-<span class="ln"></span><span class="correction" data-info="Correction approved on 2026-10-12. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «saññānanattam». The book prints: «saññānānattam».">saññānānattam</span> ║ saññānānattam paṭicca uppajjati saṅkap-<BR>
+<span class="ln"></span><span class="correction" data-info="Transcription corrected | GRETIL: «saññānanattam» → printed edition: «saññānānattam» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-12.">saññānānattam</span> ║ saññānānattam paṭicca uppajjati saṅkap-<BR>
 <span class="ln"></span>panānattaṃ ║ saṅkappanānattam paṭicca uppajjati chanda-<BR>
 <span class="ln"></span>nānattaṃ ║ chandanānattam paṭicca uppajjati pariḷāhanā-<BR>
 <span class="ln" data-n="5"></span>nattaṃ ║ pariḷāhanānattam paticca uppajjati pariyesanānā-<BR>
@@ -6203,7 +6205,7 @@ rasadhātuṃ- poṭṭhabbadhātuṃ paṭicca<BR>
 <span class="ln"></span>10 Kathañca<span class="red"><sup>1</sup></span> bhikkhave dhātunānattam paṭicca uppaj-<BR>
 <span class="ln"></span>jati saññānānattaṃ ║ saññānānattam paṭicca uppajjati ║<BR>
 <span class="ln" data-n="10"></span>pe ║ ║<span class="red"><sup>2</sup></span> pariyesanānānattaṃ ║ No pariyesanānānattaṃ<BR>
-<span class="ln"></span>paṭicca uppajjati <span class="correction" data-info="Correction approved on 2026-10-20. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «parilahanānattami». The book prints: «pariḷāhanānattam ||».">pariḷāhanānattam ||</span> no pariḷāhanānattam<BR>
+<span class="ln"></span>paṭicca uppajjati <span class="correction" data-info="Transcription corrected | GRETIL: «parilahanānattami» → printed edition: «pariḷāhanānattam ||» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-20.">pariḷāhanānattam ||</span> no pariḷāhanānattam<BR>
 <span class="ln"></span>paṭicca uppajjati chandanānattam ║ no chandanānattaṃ<BR>
 <span class="ln"></span>paṭicca uppajjati saṅkappanānattam ║ no saṅkappanānat-<BR>
 <span class="ln"></span>tam paṭicca uppajjati saññānattaṃ ║ no saññānānattam<BR>
@@ -6333,7 +6335,7 @@ In B, it is represented by || pe ||<BR>
 <span class="ln"></span>saññānānattaṃ ║ saññānānattam paṭicca uppajjati saṅkap-<BR>
 <span class="ln"></span>panānattam ║ phassa ║ vedanā ║ chanda ║ pariḷāho ║ pariye-<BR>
 <span class="ln"></span>sanā ║ lābha ║<span class="red"><sup>5</sup></span> No lābhanānattam paṭicca uppajjati pari-<BR>
-<span class="ln" data-n="15"></span><span class="correction" data-info="Correction approved on 2026-10-12. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «yesanānanattaṃ». The book prints: «yesanānānattaṃ».">yesanānānattaṃ</span> ║ no pariyesanānānattaṃ paṭicca uppajjati<BR>
+<span class="ln" data-n="15"></span><span class="correction" data-info="Transcription corrected | GRETIL: «yesanānanattaṃ» → printed edition: «yesanānānattaṃ» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-12.">yesanānānattaṃ</span> ║ no pariyesanānānattaṃ paṭicca uppajjati<BR>
 <span class="ln"></span>pariḷāha ║ chanda ║ vedanā ║ phassa ║ no saṅkappanānattam<BR>
 <span class="ln"></span>paṭicca uppajjati saññānānattam ║ no saññānānattam paṭic-<BR>
 <span class="ln"></span>ca uppajjati dhātunānattaṃ. ║<BR>
@@ -6471,7 +6473,7 @@ which have samphassa- instead of phassa- here only.<BR>
 <span class="ln" data-n="15"></span>dānaṃ ║ sanidānam uppajjati vihiṃsāvitakko no anidānaṃ ║<BR>
 <span class="ln"></span>4 Kāmadhātum bhikkhave paṭicca uppajjati kāmasaññā ║<BR>
 <span class="ln"></span>kāmasaññam paṭicca uppajjati kāmasaṅkappo ║ kāmasaṅ-<BR>
-<span class="ln"></span>kappam paṭicca uppajjati kāmachando ║<span class="red"><sup>3</sup></span> <span class="correction" data-info="Correction approved on 2026-10-12. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «kāmacandam». The book prints: «kāmachandam».">kāmachandam</span><BR>
+<span class="ln"></span>kappam paṭicca uppajjati kāmachando ║<span class="red"><sup>3</sup></span> <span class="correction" data-info="Transcription corrected | GRETIL: «kāmacandam» → printed edition: «kāmachandam» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-12.">kāmachandam</span><BR>
 <span class="ln"></span>paṭicca uppajjati kāmapariḷāho ║ kāmapariḷāham paṭicca<BR>
 <span class="ln" data-n="20"></span>uppajjati kāmapariyesanā ║ kāmapariyesanam bhikkhave<BR>
 <span class="ln"></span>pariyesamāno assutavā puthujjano tīhi ṭhānehi micchā-<BR>
@@ -6609,7 +6611,7 @@ which have samphassa- instead of phassa- here only.<BR>
 <span class="ln"></span>1 Sāvatthiyaṃ viharati<span class="red"><sup>3</sup></span> ║<BR>
 <span class="ln" data-n="20"></span>2 Dhātuso bhikkhave sattā saṃsandanti samenti ║ ║<BR>
 <span class="ln"></span>Hīnādhimuttikā sattā<span class="red"><sup>4</sup></span> hīnādhimuttikehi saddhiṃ saṃsan-<BR>
-<span class="ln"></span>danti samenti ║ ║ <span class="correction" data-info="Correction approved on 2026-10-12. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «Kalyānādhimuttikā». The book prints: «Kalyāṇādhimuttikā».">Kalyāṇādhimuttikā</span> kalyāṇādhimuttikehi<BR>
+<span class="ln"></span>danti samenti ║ ║ <span class="correction" data-info="Transcription corrected | GRETIL: «Kalyānādhimuttikā» → printed edition: «Kalyāṇādhimuttikā» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-12.">Kalyāṇādhimuttikā</span> kalyāṇādhimuttikehi<BR>
 <span class="ln"></span>saddhiṃ saṃsandanti samenti ║ ║<BR>
 <span class="ln"></span>3 Atītam pi bhikkhave addhānam dhātuso va sattā saṃ-<BR>
 <span class="ln" data-n="25"></span>sandiṃsu samiṃsu ║ ║ Hīnādhimuttikā hīnādhimuttikehi<BR>
@@ -6820,8 +6822,8 @@ which have samphassa- instead of phassa- here only.<BR>
 <span class="ln"></span>paññā duppaññehi saddhiṃ saṃsandanti samenti ║ ║<BR>
 <span class="ln"></span>4 [Saddhā saddhehi saddhim saṃsandanti samenti ║<BR>
 <span class="ln"></span>hirimanā hirimanehi saddhiṃ saṃsandanti damenti ║<BR>
-<span class="ln"></span>ottāpino ottāpīhi saddhiṃ° ║ bahussutā bahussutehi <span class="correction" data-info="Correction approved on 2026-10-20. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «sad- dhimo». The book prints: «saddhiṃ°».">saddhiṃ°</span> ║ āraddhaviriyā āraddhaviriyehi saddhiṃ° ║ upaṭṭhita-<BR>
-<span class="ln" data-n="15"></span>satino upaṭṭhitasatīhi <span class="correction" data-info="Correction approved on 2026-10-20. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «saddhimo». The book prints: «saddhim°».">saddhim°</span> ║ paññavanto paññavantehi<BR>
+<span class="ln"></span>ottāpino ottāpīhi saddhiṃ° ║ bahussutā bahussutehi <span class="correction" data-info="Transcription corrected | GRETIL: «sad- dhimo» → printed edition: «saddhiṃ°» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-20.">saddhiṃ°</span> ║ āraddhaviriyā āraddhaviriyehi saddhiṃ° ║ upaṭṭhita-<BR>
+<span class="ln" data-n="15"></span>satino upaṭṭhitasatīhi <span class="correction" data-info="Transcription corrected | GRETIL: «saddhimo» → printed edition: «saddhim°» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-20.">saddhim°</span> ║ paññavanto paññavantehi<BR>
 <span class="ln"></span>saddhiṃ saṃsandanti samenti ║<span class="red"><sup>6</sup></span> ║<BR>
 <span class="ln"></span>5 Atītaṃ pi bhikkhave addhānaṃ dhātuso va sattā<BR>
 <span class="ln"></span>saṃsandiṃsu samiṃsu ║ ║<BR>
@@ -6919,7 +6921,7 @@ which have samphassa- instead of phassa- here only.<BR>
 <span class="ln"></span>samentīti ║ ║<BR>
 <span class="ln"></span>7 Atītam pi ║ pe║<BR>
 <span class="ln" data-n="25"></span>8 Anāgatam pi ║ pe║<BR>
-<span class="ln"></span>9 Etarahi paccuppannam <span class="correction" data-info="Correction approved on 2026-10-20. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «addhānamo». The book prints: «addhānam°».">addhānam°</span> ║ ║ Dve<span class="red"><sup>3</sup></span> ║<BR>
+<span class="ln"></span>9 Etarahi paccuppannam <span class="correction" data-info="Transcription corrected | GRETIL: «addhānamo» → printed edition: «addhānam°» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-20.">addhānam°</span> ║ ║ Dve<span class="red"><sup>3</sup></span> ║<BR>
 <BR>
 <span class="ln"></span>III<BR>
 <span class="ln"></span>10 Asaddhā asaddhehi saddhiṃ saṃsandanti samenti ║<BR>
@@ -7004,7 +7006,7 @@ Pañca is missing in B<BR>
 <BR>
 <span class="ln"></span>IV<BR>
 <span class="ln"></span>5 Ahirikā ahirikehi saddhiṃ saṃsandanti samenti ║<BR>
-<span class="ln" data-n="20"></span>muṭṭhasatinomuṭṭhasatīhi <span class="correction" data-info="Correction approved on 2026-10-20. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «saddhiṃº». The book prints: «saddhiṃ°».">saddhiṃ°</span> ║ duppaññā duppaññehi<BR>
+<span class="ln" data-n="20"></span>muṭṭhasatinomuṭṭhasatīhi <span class="correction" data-info="Transcription corrected | GRETIL: «saddhiṃº» → printed edition: «saddhiṃ°» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-20.">saddhiṃ°</span> ║ duppaññā duppaññehi<BR>
 <span class="ln"></span>saddhiṃ° ║ ║ Hirimanā hirimanehi saddhiṃ° ║ upaṭṭhitasa-<BR>
 <span class="ln"></span>tino upaṭṭhitasatīhi saddhiṃ ║ paññavanto paññavantehi<BR>
 <span class="ln"></span>saddhiṃ saṃsandanti samentīti ║ ║<BR>
@@ -7111,7 +7113,7 @@ in B<BR>
 <span class="ln"></span>Cattāro<span class="red"><sup>1</sup></span> ahirikamūlakā ║<BR>
 <span class="ln"></span>Anottappamūlakātīṇi ║<BR>
 <span class="ln"></span>Dve<span class="red"><sup>2</sup></span> Appassutena ca Kusītaṃ ║<BR>
-<span class="ln" data-n="5"></span>Ekakā vuttā<span class="red"><sup>3</sup></span> suttantā ║ tīni <span class="correction" data-info="Correction approved on 2026-10-14. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «pañcavakā». The book prints: «pañcakā».">pañcakā</span> suttaṃ<span class="red"><sup>4</sup></span> ║<BR>
+<span class="ln" data-n="5"></span>Ekakā vuttā<span class="red"><sup>3</sup></span> suttantā ║ tīni <span class="correction" data-info="Transcription corrected | GRETIL: «pañcavakā» → printed edition: «pañcakā» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-14.">pañcakā</span> suttaṃ<span class="red"><sup>4</sup></span> ║<BR>
 <span class="ln"></span>bāvīsati vuttā suttā<span class="red"><sup>5</sup></span> ║ Dutiyo vaggo pavuccatīti<span class="red"><sup>6</sup></span> ║ ║<BR>
 <BR>
 <span class="ln"></span>CHAPTER III KAMMAPATHAVAGGO TATIYO<BR>
@@ -7247,7 +7249,7 @@ in B<BR>
 <span class="ln" data-n="10"></span>saddhiṃ saṃsandanti samentīti ║ ║ Sattamaṃ ║ ║<BR>
 <span class="ln"></span>Sabbattha atītānāgatapaccuppannaṃ kātabbaṃ ║<span class="red"><sup>1</sup></span> ║<BR>
 <span class="ln"></span>Sattannaṃ suttantānam2 uddānaṃ ║ ║<BR>
-<span class="ln"></span>Asamāhitaṃ <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{Dussīlyaṃ}</span> ║<span class="red"><sup>3</sup></span> Pañcasikkhāpadāni ca ║<BR>
+<span class="ln"></span>Asamāhitaṃ <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{Dussīlyaṃ}</span> ║<span class="red"><sup>3</sup></span> Pañcasikkhāpadāni ca ║<BR>
 <span class="ln"></span>Sattakammapathā vuttā ║ Dasakammapathena ca ║<BR>
 <span class="ln" data-n="15"></span>Chaṭṭham Aṭṭhaṅgiko vutto ║ Dasaṅgena<span class="red"><sup>4</sup></span> ca sattamam ║ ║<BR>
 <span class="ln"></span>Kammapathavaggo tatiyo ║ ║<BR>
@@ -7292,7 +7294,7 @@ in B<BR>
 <span class="ln"></span>6 Yam āpodhātum paṭicca ║ pe║ ║<BR>
 <span class="ln" data-n="15"></span>7 Yaṃ tejodhātum paṭicca ║ pe║ ║<BR>
 <span class="ln"></span>8 Yaṃ vāyodhātum paṭicca uppajjati sukhaṃ somanas-<BR>
-<span class="ln"></span>saṃ ║ ayaṃ vāyodhātuyā assādo ║ ║ Yaṃ<span class="red"><sup>5</sup></span> <span class="correction" data-info="Correction approved on 2026-10-12. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «vāyodhatuyā». The book prints: «vāyodhātuyā».">vāyodhātuyā</span><BR>
+<span class="ln"></span>saṃ ║ ayaṃ vāyodhātuyā assādo ║ ║ Yaṃ<span class="red"><sup>5</sup></span> <span class="correction" data-info="Transcription corrected | GRETIL: «vāyodhatuyā» → printed edition: «vāyodhātuyā» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-12.">vāyodhātuyā</span><BR>
 <span class="ln"></span>aniccā dukkhā vipariṇāmadhammā ║ ayaṃ vāyodhātuyā<BR>
 <span class="ln"></span>ādīnavo ║ ║ Yaṃ<span class="red"><sup>6</sup></span> vāyodhātuyā chandarāgavinayo chan-<BR>
 <span class="ln" data-n="20"></span>darāgappahānaṃ ║ idaṃ vāyodhātuyā nissaraṇaṃ ║ ║<BR>
@@ -7303,7 +7305,7 @@ in B<BR>
 <span class="ln" data-n="25"></span>make sassamaṇabrāhmaṇiyā pajāya sadevamanussāya<BR>
 <span class="ln"></span>anuttaraṃ sammāsambodhiṃ abhisambuddhoti paccañ-<BR>
 <span class="ln"></span>ñāsiṃ ║ ║<BR>
-<span class="ln"></span>10 Yato <span class="correction" data-info="Correction approved on 2026-10-20. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «cakkvāham». The book prints: «cakhvāham».">cakhvāham</span> bhikkhave imāsaṃ catunnaṃ dhā-<BR>
+<span class="ln"></span>10 Yato <span class="correction" data-info="Transcription corrected | GRETIL: «cakkvāham» → printed edition: «cakhvāham» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-20.">cakhvāham</span> bhikkhave imāsaṃ catunnaṃ dhā-<BR>
 <span class="ln"></span>tūnam evam assādañ ca assādato ādīnavañ ca ādīnavato<BR>
 <span class="ln" data-n="30"></span>nissaraṇañca nissaraṇato yathābhūtaṃ abbhaññāsiṃ ║<BR>
 <span class="ln"></span>athāham bhikkhave sadevake loke samārake sabrahmake<BR>
@@ -7351,7 +7353,7 @@ in B<BR>
 <span class="ln" data-n="25"></span>acariṃ ║ ║ Yaṃ<span class="red"><sup>9</sup></span> vāyodhātuyā nissaraṇaṃ tad ajjhagamaṃ ║<BR>
 <span class="ln"></span>yāvatā vāyodhātuyā nissaraṇam paññāya me taṃ sudiṭ-<BR>
 <span class="ln"></span>ṭhaṃ ║ ║<BR>
-<span class="ln"></span>14 Yāva <span class="correction" data-info="Correction approved on 2026-10-20. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «kīvañcāham». The book prints: «kivāncāham».">kivāncāham</span> bhikkhave imāsaṃ catunnaṃ<BR>
+<span class="ln"></span>14 Yāva <span class="correction" data-info="Transcription corrected | GRETIL: «kīvañcāham» → printed edition: «kivāncāham» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-20.">kivāncāham</span> bhikkhave imāsaṃ catunnaṃ<BR>
 <span class="ln"></span>dhātūnaṃ assādañca assādato ādīnavañca ādīnavato nis-<BR>
 <span class="ln" data-n="30"></span>saraṇañca nissaraṇato yathābhūtaṃ na abbhaññāsiṃ<span class="red"><sup>10</sup></span> ║<BR>
 <BR>
@@ -7374,7 +7376,7 @@ in B<BR>
 <span class="ln"></span>anuttaraṃ sammāsambodhim abhisambuddhoti paccaññā-<BR>
 <span class="ln"></span>siṃ ║ ║<BR>
 <span class="ln" data-n="5"></span>15 Yato ca khvāham bhikkhave imāsaṃ catunnaṃ dhātū-<BR>
-<span class="ln"></span>nam assādañca assādato ādīnavañca ādīnavato <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{nissaraṇañ-</span><span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered."><BR>
+<span class="ln"></span>nam assādañca assādato ādīnavañca ādīnavato <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{nissaraṇañ-</span><span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged."><BR>
 <span class="ln"></span>ca}</span> nissaraṇato yathābhūtam abbhaññāsiṃ ║ athāham<BR>
 <span class="ln"></span>bhikkhave sadevake loke samāra ke sabrahmake sas-<BR>
 <span class="ln"></span>samaṇabrāhmaṇiyā pajāya sadevamanussāya anuttaraṃ<BR>
@@ -7614,7 +7616,7 @@ in B<BR>
 <span class="ln"></span>āminiṃ paṭipadam pajānanti ║ te ca kho me<span class="red"><sup>1</sup></span> bhikkhave<BR>
 <span class="ln"></span>samaṇā vā brāhmaṇā va samaṇesu ceva samaṇasammatā<BR>
 <span class="ln" data-n="20"></span>brāhmaṇesu ca brāhmaṇasammatā ║ te ca panāyasmanto<BR>
-<span class="ln"></span>sāmaññatthañ ca <span class="correction" data-info="Correction approved on 2026-11-16. Source: Word Index to the Pāli Tipiṭaka, compared with the copy. GRETIL had: «brahmaññatthañ». The book prints: «brāhmaññatthañ».">brāhmaññatthañ</span> ca diṭṭheva dhamme<BR>
+<span class="ln"></span>sāmaññatthañ ca <span class="correction" data-info="Transcription corrected | GRETIL: «brahmaññatthañ» → printed edition: «brāhmaññatthañ» | Evidence: Flagged by the Word Index to the Pāli Tipiṭaka (Ousaka 2019), checked by hand against the scan of the PTS edition. Approved on 2026-11-16.">brāhmaññatthañ</span> ca diṭṭheva dhamme<BR>
 <span class="ln"></span>sayam abhiññā sacchikatvā upasampajja viharantīti ║ ║<BR>
 <span class="ln"></span>Dasamaṃ ║<span class="red"><sup>2</sup></span> ║<BR>
 <span class="ln"></span>Catuttha-vaggo ║<span class="red"><sup>3</sup></span> ║<BR>
@@ -7709,7 +7711,7 @@ ekajjham saṃhareyya<BR>
 <span class="ln"></span>3 Taṃ kiṃ maññatha bhikkhave ║ Katamaṃ nu kho<BR>
 <span class="ln"></span>bahutaraṃ ║ yaṃ vā vo iminā dīghena addhunā sandhāva-<BR>
 <span class="ln"></span>taṃ saṃsarataṃ amanāpasampayogā manāpavippayogā<BR>
-<span class="ln"></span>kandantānaṃ rodantānaṃ<span class="red"><sup>5</sup></span> <span class="correction" data-info="Correction approved on 2026-10-20. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «assupasanaṃ». The book prints: «assupasaṇnaṃ».">assupasaṇnaṃ</span> paggharitaṃ<BR>
+<span class="ln"></span>kandantānaṃ rodantānaṃ<span class="red"><sup>5</sup></span> <span class="correction" data-info="Transcription corrected | GRETIL: «assupasanaṃ» → printed edition: «assupasaṇnaṃ» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-20.">assupasaṇnaṃ</span> paggharitaṃ<BR>
 <span class="ln" data-n="30"></span>yaṃ vā catūsu mahāsamuddesu udakanti ║ ║<BR>
 <span class="ln"></span>4 Yathā kho mayam bhante Bhagavatā dhammaṃ<BR>
 <span class="ln"></span>desitam ājānāma ║ etad eva bhante bahutaraṃ yaṃ no<BR>
@@ -7825,7 +7827,7 @@ ekajjham saṃhareyya<BR>
 <span class="ln"></span>1 Sāvatthi ║<span class="red"><sup>4</sup></span> ║<BR>
 <span class="ln"></span>2 Atha kho aññataro bhikkhu yena Bhagavā ║ pe║ ║<BR>
 <span class="ln"></span>3 Ekam antaṃ nisinno kho so bhikkhu Bhagavantam<BR>
-<span class="ln" data-n="10"></span>etad avoca ║ ║ <span class="correction" data-info="Correction approved on 2026-10-14. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «Kiṃ va dīgho». The book prints: «Kīvadīgho».">Kīvadīgho</span> nu kho bhante kappoti ║ ║<BR>
+<span class="ln" data-n="10"></span>etad avoca ║ ║ <span class="correction" data-info="Transcription corrected | GRETIL: «Kiṃ va dīgho» → printed edition: «Kīvadīgho» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-14.">Kīvadīgho</span> nu kho bhante kappoti ║ ║<BR>
 <span class="ln"></span>4 Dīgho kho bhikkhu kappo ║ so na sukaro saṅkhātuṃ ║<BR>
 <span class="ln"></span>ettakāni vassāni iti vā ║ pe║ ettakāni vassasatasahassāni iti<BR>
 <span class="ln"></span>vā ti ║<BR>
@@ -7865,7 +7867,7 @@ ekajjham saṃhareyya<BR>
 <i>XV. 8. 4]                      PAṬHAMO VAGGO                           183</i><BR>
 <span class="ln" data-n="1"></span>2 Atha kho sambahulā bhikkhū yena Bhagavā ║ pe║ ║<BR>
 <span class="ln"></span>3 Ekam antaṃ nisinnā kho te bhikkhū Bhagavantam<BR>
-<span class="ln"></span>etad avocuṃ ║ ║ <span class="correction" data-info="Correction approved on 2026-11-05. Source: Cone&#x27;s Dictionary of Pāli (entry marked as wrong reading), approved by hand. GRETIL had: «Kiṃva bahukā». The book prints: «Kīvabahukā».">Kīvabahukā</span> nu kho bhante kappā<BR>
+<span class="ln"></span>etad avocuṃ ║ ║ <span class="suggestion" data-info="Suggested emendation (not applied to the text) | Text, as in GRETIL: «Kiṃva bahukā» | Suggested: «Kīvabahukā» | Authority: M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition). Approved on 2026-11-05.">Kiṃva bahukā</span> nu kho bhante kappā<BR>
 <span class="ln"></span>abbhatītā atikkantāti ║ ║<BR>
 <span class="ln" data-n="5"></span>4 Bahukā kho bhikkhave kappā abbhatītā atikkantā ║ te<BR>
 <span class="ln"></span>na sukarā saṅkhātuṃ ║ ettakā kappā iti vā ║ ettakāni kap-<BR>
@@ -7874,7 +7876,7 @@ ekajjham saṃhareyya<BR>
 <span class="ln"></span>5 Sakkā pana bhante upamā kātunti ║ ║<BR>
 <span class="ln" data-n="10"></span>6 Sakkā bhikkhave ti Bhagavā avoca ║ Idhassu<span class="red"><sup>1</sup></span> bhik-<BR>
 <span class="ln"></span>khave cattāro sāvakā vassasatāyukā vassasatajīvino ║ te<BR>
-<span class="ln"></span>divase divase kappasatasahassam<span class="red"><sup>2</sup></span> anussareyyuṃ ║ <span class="correction" data-info="Correction approved on 2026-10-14. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «anus-». The book prints: «ananus-».">ananus-</span><BR>
+<span class="ln"></span>divase divase kappasatasahassam<span class="red"><sup>2</sup></span> anussareyyuṃ ║ <span class="correction" data-info="Transcription corrected | GRETIL: «anus-» → printed edition: «ananus-» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-14.">ananus-</span><BR>
 <span class="ln"></span>saritā va bhikkhave tehi kappā assu ║ ║ Atha<span class="red"><sup>3</sup></span> te cattāro<BR>
 <span class="ln"></span>sāvakā vassasatāyukā vassasatajīvino vassasatassa accayena<BR>
 <span class="ln" data-n="15"></span>kālaṃ kareyyuṃ ║ ║<BR>
@@ -7912,7 +7914,7 @@ ekajjham saṃhareyya<BR>
 <i>184                    ANAMATAGGA-SAṂYUTTA                   [XV. 8. 5</i><BR>
 <span class="ln" data-n="1"></span>5 Sakkā pana bho Gotama upamā kātunti ║ ║<BR>
 <span class="ln"></span>6 Sakkā brāhmaṇāti Bhagavā avoca ║ ║ Seyyathāpi brāh-<BR>
-<span class="ln"></span>maṇa yato cāyaṃ Gaṅgā nadī pahoti ║ yattha ca <span class="correction" data-info="Correction approved on 2026-10-12. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «makāsa-». The book prints: «mahāsa-».">mahāsa-</span><BR>
+<span class="ln"></span>maṇa yato cāyaṃ Gaṅgā nadī pahoti ║ yattha ca <span class="correction" data-info="Transcription corrected | GRETIL: «makāsa-» → printed edition: «mahāsa-» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-12.">mahāsa-</span><BR>
 <span class="ln"></span>muddam appeti ║ yā ca tasmiṃ<span class="red"><sup>1</sup></span> antare vālikā<span class="red"><sup>2</sup></span> sā na<BR>
 <span class="ln" data-n="5"></span>sukarā saṅkhātuṃ ettakā vālikā iti vā ettakāni vālikasatāni<BR>
 <span class="ln"></span>iti vā ettakāni vālikāsahassāni iti vā ettakāni vālikasatasa-<BR>
@@ -7921,7 +7923,7 @@ ekajjham saṃhareyya<BR>
 <span class="ln"></span>kantā ║ te na sukarā saṅkhātuṃ ettakā kappā iti vā ettakāni<BR>
 <span class="ln" data-n="10"></span>kappasatāni iti vā ettakāni kappasahassāni iti vā ettakāni<BR>
 <span class="ln"></span>kappasatasahassāni iti vā ║ ║<BR>
-<span class="ln"></span>8 Taṃ kissa hetuṃ ║ ║ Anamataggāyam brāhmaṇa <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{saṃ-</span><span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered."><BR>
+<span class="ln"></span>8 Taṃ kissa hetuṃ ║ ║ Anamataggāyam brāhmaṇa <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{saṃ-</span><span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged."><BR>
 <span class="ln"></span>sāro}</span> pubbakoṭi<span class="red"><sup>3</sup></span> na paññāyati avijjānīvaraṇānaṃ sattā-<BR>
 <span class="ln"></span>naṃ taṇhāsaṃyojanānam sandhāvataṃ saṃsarataṃ ║ ║<BR>
 <span class="ln" data-n="15"></span>9 Evam dīgharattaṃ kho brāhmaṇa dukkham paccanu-<BR>
@@ -7932,7 +7934,7 @@ ekajjham saṃhareyya<BR>
 <span class="ln" data-n="20"></span>10 Evaṃ vutte so brāhmaṇo Bhagavantam etad avoca ║ ║<BR>
 <span class="ln"></span>Abhikkantam bho Gotama abhikkantam bho Gotama ║<BR>
 <span class="ln"></span>pe ║ Upāsakam mam bhavaṃ Gotamo dhāretu<span class="red"><sup>4</sup></span> ajjatagge<BR>
-<span class="ln"></span><span class="correction" data-info="Correction approved on 2026-10-12. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «pāṇupeṭaṃ». The book prints: «pāṇupetaṃ».">pāṇupetaṃ</span> saraṇaṃ gatanti ║ ║ Aṭṭhamaṃ ║<span class="red"><sup>5</sup></span> ║<BR>
+<span class="ln"></span><span class="correction" data-info="Transcription corrected | GRETIL: «pāṇupeṭaṃ» → printed edition: «pāṇupetaṃ» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-12.">pāṇupetaṃ</span> saraṇaṃ gatanti ║ ║ Aṭṭhamaṃ ║<span class="red"><sup>5</sup></span> ║<BR>
 <BR>
 <span class="ln"></span>(9) Daṇḍo<BR>
 <span class="ln" data-n="25"></span>1 Sāvatthiyaṃ viharati ║<span class="red"><sup>6</sup></span> ║<BR>
@@ -7958,7 +7960,7 @@ ekajjham saṃhareyya<BR>
 <span class="ln" data-n="1"></span>varaṇā<span class="red"><sup>1</sup></span> sattā<span class="red"><sup>1</sup></span> taṇhāsaṃyojanā<span class="red"><sup>1</sup></span> sandhāvantā saṃsarantā<BR>
 <span class="ln"></span>sakim pi asmā lokā paraṃ<span class="red"><sup>2</sup></span> lokam gacchanti ║ sakim pi<BR>
 <span class="ln"></span>parasmā lokā imaṃ lokam āgacchanti ║ ║<BR>
-<span class="ln"></span>4 Taṃ kissa hetu ║ Anamataggāyaṃ bhikkhave <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{saṃ-</span><span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered."><BR>
+<span class="ln"></span>4 Taṃ kissa hetu ║ Anamataggāyaṃ bhikkhave <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{saṃ-</span><span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged."><BR>
 <span class="ln" data-n="5"></span>sāro}</span> ║ la ║<span class="red"><sup>3</sup></span> alaṃ vimuccitunti ║ ║ Navamaṃ ║<span class="red"><sup>4</sup></span> ║<BR>
 <BR>
 <span class="ln"></span>(10) Puggala<BR>
@@ -7976,7 +7978,7 @@ ekajjham saṃhareyya<BR>
 <span class="ln"></span>Ekassekena kappena ║ puggalassaṭṭhisañcayo ║<BR>
 <span class="ln"></span>siyā pabbatasamo rāsi ║ iti vuttam mahesinā<span class="red"><sup>6</sup></span> ║1║<BR>
 <span class="ln" data-n="20"></span>So kho panāyam akkhāto ║ Vepullo pabbato mahā ║<BR>
-<span class="ln"></span>uttaro Gijjhakūṭassa ║ Magadhānam <span class="correction" data-info="Correction approved on 2026-11-05. Source: Cone&#x27;s Dictionary of Pāli (entry marked as wrong reading), approved by hand. GRETIL had: «giribbajo». The book prints: «giribbaje».">giribbaje</span><span class="red"><sup>10</sup></span> ║2║<BR>
+<span class="ln"></span>uttaro Gijjhakūṭassa ║ Magadhānam <span class="suggestion" data-info="Suggested emendation (not applied to the text) | Text, as in GRETIL: «giribbajo» | Suggested: «giribbaje» | Authority: M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition). Approved on 2026-11-05.">giribbajo</span><span class="red"><sup>10</sup></span> ║2║<BR>
 <span class="ln"></span>Yato<span class="red"><sup>11</sup></span> ariyasaccāni ║ sammappaññāya passati ║<BR>
 <span class="ln"></span>dukkhaṃ dukkhasamuppādaṃ ║ dukkhassaca atikkamaṃ ║3║<BR>
 <span class="ln"></span>Ariyaṭṭhaṅgikam<span class="red"><sup>12</sup></span> maggaṃ ║ dukkhūpasamagāminaṃ ║<BR>
@@ -8020,7 +8022,7 @@ ekajjham saṃhareyya<BR>
 <span class="ln"></span>4 Yaṃ bhikkhave passeyyātha duggataṃ durūpetaṃ<BR>
 <span class="ln"></span>niṭṭham ettha gantabbam Amhehi pi evarūpaṃ paccanu-<BR>
 <span class="ln"></span>bhūtaṃ iminā dīghena addhunā ti ║ ║<BR>
-<span class="ln"></span>5 Taṃ kissa hetu ║ ║ Anamataggāyaṃ bhikkhave <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{saṃ-</span><span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered."><BR>
+<span class="ln"></span>5 Taṃ kissa hetu ║ ║ Anamataggāyaṃ bhikkhave <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{saṃ-</span><span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged."><BR>
 <span class="ln" data-n="20"></span>sāro}</span> ║ pe║ ║ alaṃ vimuccitunti ║<span class="red"><sup>8</sup></span> ║<BR>
 <span class="ln"></span>Pathamaṃ ║<span class="red"><sup>9</sup></span> ║<BR>
 <BR>
@@ -8113,7 +8115,7 @@ durūpetaṃ of the preceding sutta<BR>
 <span class="ln" data-n="20"></span>16 sūkarāṇaṃ sataṃ sūkarabhūtānaṃ ║ pe║<span class="red"><sup>4</sup></span> ║<BR>
 <span class="ln"></span>17 Dīgharattaṃ vo bhikkhave corā gāmaghātā ti gahetvā<BR>
 <span class="ln"></span>sīsacchinnānaṃ lohitam pasannam paggharitaṃ ║ pe║ ║<BR>
-<span class="ln"></span>18 Dīgharattaṃ vo bhikkhave corā <span class="correction" data-info="Correction approved on 2026-10-27. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «pāripantakā». The book prints: «pāripanthakā».">pāripanthakā</span><span class="red"><sup>5</sup></span> ti<BR>
+<span class="ln"></span>18 Dīgharattaṃ vo bhikkhave corā <span class="correction" data-info="Transcription corrected | GRETIL: «pāripantakā» → printed edition: «pāripanthakā» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-27.">pāripanthakā</span><span class="red"><sup>5</sup></span> ti<BR>
 <span class="ln"></span>gahetvā sīsacchinnānam lohitaṃ pasannam paggharitaṃ ║<BR>
 <span class="ln" data-n="25"></span>pe ║ ║<BR>
 <span class="ln"></span>19 Dīgharattaṃ vo bhikkhave corā paradārikā ti gahetvā<BR>
@@ -8368,7 +8370,7 @@ durūpetaṃ of the preceding sutta<BR>
 <BR>
 <span class="ln"></span>Santuṭṭhaṃ<BR>
 <span class="ln"></span>1 Sāvatthiyaṃ viharati ║<span class="red"><sup>1</sup></span> ║<BR>
-<span class="ln"></span>2 Santuṭṭhāyam<span class="red"><sup>2</sup></span> bhikkhave<span class="red"><sup>3</sup></span> Kassapo itarītarena <span class="correction" data-info="Correction approved on 2026-10-23. Source: Transcribed from the scan and approved by hand. GRETIL had: «cīva- ḥrena». The book prints: «cīvarena».">cīvarena</span> ║ Itarītaracīvarasantuṭṭhiyā<span class="red"><sup>4</sup></span> ca vaṇṇavādī ║ na ca<BR>
+<span class="ln"></span>2 Santuṭṭhāyam<span class="red"><sup>2</sup></span> bhikkhave<span class="red"><sup>3</sup></span> Kassapo itarītarena <span class="correction" data-info="Transcription corrected | GRETIL: «cīva- ḥrena» → printed edition: «cīvarena» | Evidence: Read on the scan of the PTS edition by machine; checked and approved by hand. Approved on 2026-10-23.">cīvarena</span> ║ Itarītaracīvarasantuṭṭhiyā<span class="red"><sup>4</sup></span> ca vaṇṇavādī ║ na ca<BR>
 <span class="ln" data-n="5"></span>cīvarahetu anesanam appatirūpam<span class="red"><sup>5</sup></span> āpajjati ║ Aladdhā<BR>
 <span class="ln"></span>cīvaram na paritassati laddhā ca cīvaram agadhito<span class="red"><sup>6</sup></span> amuc-<BR>
 <span class="ln"></span>chito anajjhāpanno ādīnavadassāvī nissaraṇapañño pari-<BR>
@@ -8424,7 +8426,7 @@ durūpetaṃ of the preceding sutta<BR>
 <span class="ln"></span>anajjhāpannā ādīnavadassāvino nissaraṇapaññā paribhuñ-<BR>
 <span class="ln" data-n="15"></span>jissāma ti ║ ║ Evaṃ hi vo bhikkhave sikkhitabbaṃ ║ ║<BR>
 <span class="ln"></span>7 Kassapena vā hi vo bhikkhave ovadissāmi yo vā Kassa-<BR>
-<span class="ln"></span>pasadiso ║ <span class="correction" data-info="Correction approved on 2026-10-14. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «ovāditehi». The book prints: «ovaditehi».">ovaditehi</span> ca pana vo tathattāya paṭipajjitab-<BR>
+<span class="ln"></span>pasadiso ║ <span class="correction" data-info="Transcription corrected | GRETIL: «ovāditehi» → printed edition: «ovaditehi» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-14.">ovaditehi</span> ca pana vo tathattāya paṭipajjitab-<BR>
 <span class="ln"></span>banti ║ ║ Pathamaṃ ║ ║<BR>
 <BR>
 <span class="ln"></span>Anottāpi<BR>
@@ -8568,7 +8570,7 @@ S1 adds nu, S1 an after dhammā<BR>
 <span class="ln" data-n="25"></span>bhikkhave bhikkhu arahati kulāni upasaṅkamituṃ ║ ║<BR>
 <span class="ln"></span>Kassapassa bhikkhave kulāni upasaṅkamato kulesu cittaṃ<BR>
 <span class="ln"></span>na sajjati na gayhati na bajjhati ║ labhantu lābhakāmā<BR>
-<span class="ln"></span>puññakāmā karontu <span class="correction" data-info="Correction approved on 2026-10-20. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «puññāñīti». The book prints: «puññañīti».">puññañīti</span> ║ ║<BR>
+<span class="ln"></span>puññakāmā karontu <span class="correction" data-info="Transcription corrected | GRETIL: «puññāñīti» → printed edition: «puññañīti» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-20.">puññañīti</span> ║ ║<BR>
 <span class="ln"></span>8 Yathā sakena lābhena attamano hoti sumano ║ Evaṃ<BR>
 <span class="ln" data-n="30"></span>paresaṃ lābhena attamano hoti sumano ║ ║<BR>
 <span class="ln"></span>[<span class="red"><sup>9</sup></span> Evarūpo kho bhikkhave bhikkhu arahati kulāni upa-<BR>
@@ -8647,7 +8649,7 @@ S1 adds nu, S1 an after dhammā<BR>
 <span class="ln"></span>3 Bhagavaṃmūlakā no bhante dhammā ║ pe║ ║ Bhagavā<BR>
 <span class="ln" data-n="15"></span>etad avoca ║ ║<BR>
 <span class="ln"></span>4 Yo hi koci bhikkhave bhikkhu evaṃcitto kulāni upasaṅ-<BR>
-<span class="ln"></span>kamati ║ ║ Dentu yeva<span class="red"><sup>6</sup></span> me mā<span class="red"><sup>7</sup></span> <span class="correction" data-info="Correction approved on 2026-10-14. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «adaṃsu». The book prints: «nādaṃsu».">nādaṃsu</span> ║ bahukañ-<BR>
+<span class="ln"></span>kamati ║ ║ Dentu yeva<span class="red"><sup>6</sup></span> me mā<span class="red"><sup>7</sup></span> <span class="correction" data-info="Transcription corrected | GRETIL: «adaṃsu» → printed edition: «nādaṃsu» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-14.">nādaṃsu</span> ║ bahukañ-<BR>
 <span class="ln"></span>ñeva me dentu mā thokam ║ paṇītaññeva me dentu mā<BR>
 <span class="ln"></span>lukhaṃ ║ sīghaññeva me dentu mā dandham ║ sakkaccañ-<BR>
 <span class="ln" data-n="20"></span>ñeva me dentu mā asakkaccanti ║<BR>
@@ -8656,7 +8658,7 @@ S1 adds nu, S1 an after dhammā<BR>
 <span class="ln"></span>nidānaṃ dukkhaṃ domanassam paṭisaṃvediyati ║ thokaṃ<BR>
 <span class="ln"></span>denti no bahukaṃ ║ pe║ ║<span class="red"><sup>9</sup></span> lukhaṃ denti no paṇītaṃ ║ pe║<span class="red"><sup>9</sup></span> ║<BR>
 <span class="ln" data-n="25"></span>dandham denti no sīghaṃ ║ tena bhikkhu sandiyyati ║ so<BR>
-<span class="ln"></span>tato nidānaṃ dukkhaṃ domanassaṃ <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{paṭisaṃvediyati}</span> ║<BR>
+<span class="ln"></span>tato nidānaṃ dukkhaṃ domanassaṃ <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{paṭisaṃvediyati}</span> ║<BR>
 <span class="ln"></span>asakaccaṃ denti no sakkaccaṃ ║ tena bhikkhu sandiyyati ║<BR>
 <BR>
 <BR>
@@ -8673,8 +8675,8 @@ S1 adds nu, S1 an after dhammā<BR>
 </span><BR>
 <!-- page-status: corrected --><b>[page 201]</b><BR>
 <i>XVI. 4. 9]                   KASSAPA-SAṂYUTTA                         201</i><BR>
-<span class="ln" data-n="1"></span>so tatonidānaṃ dukkhaṃ domanassaṃ <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{paṭisaṃvediyati}</span> ║ ║<BR>
-<span class="ln"></span>Evarūpo kho bhikkhave bhikkhu na arahati <span class="correction" data-info="Correction approved on 2026-10-12. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «kudūpako». The book prints: «kulūpako».">kulūpako</span><BR>
+<span class="ln" data-n="1"></span>so tatonidānaṃ dukkhaṃ domanassaṃ <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{paṭisaṃvediyati}</span> ║ ║<BR>
+<span class="ln"></span>Evarūpo kho bhikkhave bhikkhu na arahati <span class="correction" data-info="Transcription corrected | GRETIL: «kudūpako» → printed edition: «kulūpako» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-12.">kulūpako</span><BR>
 <span class="ln"></span>hotuṃ ║ ║<BR>
 <span class="ln"></span>6 Yo ca kho<span class="red"><sup>1</sup></span> bhikkhave bhikkhu evaṃcitto kulāni upasaṅ-<BR>
 <span class="ln" data-n="5"></span>kamati ║ Taṃ kutettha labbhā parakulesu dentu yeva me<BR>
@@ -8687,7 +8689,7 @@ S1 adds nu, S1 an after dhammā<BR>
 <span class="ln"></span>thokam denti no bahukaṃ-<span class="red"><sup>4</sup></span> ║ lukhaṃ denti no paṇītaṃ-<span class="red"><sup>4</sup></span> ║<BR>
 <span class="ln"></span>dandhaṃ denti no sīghaṃ-<span class="red"><sup>4</sup></span> ║ asakkaccaṃ denti no sakkac-<BR>
 <span class="ln"></span>caṃ ║ tena bhikkhu na sandiyyati ║ so na tato nidānaṃ duk-<BR>
-<span class="ln" data-n="15"></span>khaṃ domanassaṃ <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{paṭisaṃvediyati}</span> ║ ║<BR>
+<span class="ln" data-n="15"></span>khaṃ domanassaṃ <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{paṭisaṃvediyati}</span> ║ ║<BR>
 <span class="ln"></span>Evarūpo kho bhikkhave bhikkhu arahati kulūpako<BR>
 <span class="ln"></span>hotuṃ ║ ║<BR>
 <span class="ln"></span>8 Kassapo bhikkhave evaṃcitto<span class="red"><sup>5</sup></span> kulāni upasaṅkamati ║<BR>
@@ -8792,7 +8794,7 @@ S1 adds nu, S1 an after dhammā<BR>
 <span class="ln" data-n="25"></span>rāhīti ║ ║<BR>
 <span class="ln"></span>Pañcamaṃ<span class="red"><sup>2</sup></span> ║ ║<BR>
 <BR>
-<span class="ln"></span><span class="correction" data-info="Correction approved on 2026-10-20. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «Orādo». The book prints: «Ovādo».">Ovādo</span> (1)<BR>
+<span class="ln"></span><span class="correction" data-info="Transcription corrected | GRETIL: «Orādo» → printed edition: «Ovādo» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-20.">Ovādo</span> (1)<BR>
 <span class="ln"></span>1 Rājagahe<span class="red"><sup>3</sup></span> Veḷuvane ║ ║<BR>
 <span class="ln"></span>2 Atha kho āyasmā Mahā-Kassapo yena Bhagavā tenupa-<BR>
 <span class="ln" data-n="30"></span>saṅkami ║ pe<span class="red"><sup>4</sup></span> ║ ║<BR>
@@ -8866,14 +8868,14 @@ S1 adds nu, S1 an after dhammā<BR>
 <span class="ln"></span>sissati ko cirataraṃ bhāsissatīti ║ ║<BR>
 <span class="ln"></span>11 Atha kho te bhikkhū Bhagavato pādesu sirasā nipa-<BR>
 <span class="ln"></span>titvā Bhagavantam etad avocuṃ ║ ║<BR>
-<span class="ln" data-n="10"></span>Accayo no bhante <span class="correction" data-info="Correction approved on 2026-11-05. Source: Cone&#x27;s Dictionary of Pāli (entry marked as wrong reading), approved by hand. GRETIL had: «accayamā». The book prints: «accagamā».">accagamā</span> yathā bāle yathā mūḷhe<BR>
+<span class="ln" data-n="10"></span>Accayo no bhante <span class="suggestion" data-info="Suggested emendation (not applied to the text) | Text, as in GRETIL: «accayamā» | Suggested: «accagamā» | Authority: M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition). Approved on 2026-11-05.">accayamā</span> yathā bāle yathā mūḷhe<BR>
 <span class="ln"></span>yathā akusale ║ ye mayam evaṃ svākkhāte dhammavinaye<BR>
 <span class="ln"></span>pabbajitā samānā aññamaññaṃsu tena accāvadimha ║<BR>
 <span class="ln"></span>Ehi bhikkhu ║ ko bahutaram bhāsissati ko sundarataram<BR>
 <span class="ln"></span>bhāsissati ko cirataraṃ bhāsissatīti ║ ║ Tesanno bhante<BR>
 <span class="ln" data-n="15"></span>Bhagavā accayam accayato paṭigaṇhātu āyatiṃ saṃvarāyā<BR>
 <span class="ln"></span>ti ║ ║<BR>
-<span class="ln"></span>12 Taggha tumhe bhikkhave accayo <span class="correction" data-info="Correction approved on 2026-11-05. Source: Cone&#x27;s Dictionary of Pāli (entry marked as wrong reading), approved by hand. GRETIL had: «accayamā». The book prints: «accagamā».">accagamā</span> yathā bāle<BR>
+<span class="ln"></span>12 Taggha tumhe bhikkhave accayo <span class="suggestion" data-info="Suggested emendation (not applied to the text) | Text, as in GRETIL: «accayamā» | Suggested: «accagamā» | Authority: M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition). Approved on 2026-11-05.">accayamā</span> yathā bāle<BR>
 <span class="ln"></span>yathā mūḷhe yathā akusale ║ ye tumhe evaṃ svākhāte dham-<BR>
 <span class="ln"></span>mavinaye pabbajitā samānā aññamaññaṃsu tena accāvadit-<BR>
 <span class="ln" data-n="20"></span>tha ║ Ehi bhikkhu ║ ko bahutaraṃ bhāsissati ko sunda-<BR>
@@ -8917,7 +8919,7 @@ S1 adds nu, S1 an after dhammā<BR>
 <span class="ln" data-n="15"></span>bhante yassa kassaci saddhā natthi kusalesu dhammesu ║<BR>
 <span class="ln"></span>pe ║ hiri natthi ║ ottappaṃ natthi ║ viriyaṃ natthi ║ paññā<BR>
 <span class="ln"></span>natthi kusalesu dhammesu ║ tassa yā ratti vā divaso vā<BR>
-<span class="ln"></span>āgacchati hāni yeva <span class="correction" data-info="Correction approved on 2026-10-12. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «pātikaṅkhā». The book prints: «pāṭikaṅkhā».">pāṭikaṅkhā</span> kusalesu dhammesu no<BR>
+<span class="ln"></span>āgacchati hāni yeva <span class="correction" data-info="Transcription corrected | GRETIL: «pātikaṅkhā» → printed edition: «pāṭikaṅkhā» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-12.">pāṭikaṅkhā</span> kusalesu dhammesu no<BR>
 <span class="ln"></span>vuddhi ║ ║<BR>
 <span class="ln" data-n="20"></span>7 Asaddho purisapuggalo ti bhante parihānam etaṃ ║<BR>
 <span class="ln"></span>ahiriko purisapuggalo ti bhante parihānaṃ etaṃ ║ anottāpi<BR>
@@ -9103,7 +9105,7 @@ lābhī civarapiṇḍapātasenāsanagilānapaccaya bhesajjānañ ca<BR>
 <span class="ln"></span>Jhānābhiññā<BR>
 <span class="ln"></span>1 Sāvatthiyaṃ viharati ║<span class="red"><sup>7</sup></span> ║<BR>
 <span class="ln" data-n="25"></span>2 Aham bhikkhave yāvadeva<span class="red"><sup>8</sup></span> ākaṅkhāmi vivicceva<BR>
-<span class="ln"></span>kāmehi vivicca akusalehi dhammehi savitakkaṃ <span class="correction" data-info="Correction approved on 2026-10-12. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «savecāraṃ». The book prints: «savicāraṃ».">savicāraṃ</span><BR>
+<span class="ln"></span>kāmehi vivicca akusalehi dhammehi savitakkaṃ <span class="correction" data-info="Transcription corrected | GRETIL: «savecāraṃ» → printed edition: «savicāraṃ» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-12.">savicāraṃ</span><BR>
 <span class="ln"></span>vivekajaṃ pītisukham pathamaṃ jhānam upasampajja<BR>
 <span class="ln"></span>viharāmi ║ ║<BR>
 <BR>
@@ -9133,7 +9135,7 @@ lābhī civarapiṇḍapātasenāsanagilānapaccaya bhesajjānañ ca<BR>
 <span class="ln"></span>viharati ║<BR>
 <span class="ln"></span>4 Aham bhikkhave yāvadeva ākaṅkhāmi pītiyā ca virāgā<BR>
 <span class="ln"></span>upekkhako<span class="red"><sup>2</sup></span> ca viharāmi sato ca sampajāno sukhañ ca<BR>
-<span class="ln"></span>kāyena <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{paṭisaṃvedemi}</span> ║ yan tam ariyā ācikkhanti Upek-<BR>
+<span class="ln"></span>kāyena <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{paṭisaṃvedemi}</span> ║ yan tam ariyā ācikkhanti Upek-<BR>
 <span class="ln" data-n="15"></span>khako satimā sukhavihārīti ║ tatiyaṃ jhānam upāsampajja<BR>
 <span class="ln"></span>viharāmi ║ ║<BR>
 <span class="ln"></span>Kassapo pi bhikkhave yāvadeva ākaṅkhati pītiyā ca<BR>
@@ -9166,7 +9168,7 @@ lābhī civarapiṇḍapātasenāsanagilānapaccaya bhesajjānañ ca<BR>
 <!-- page-status: corrected --><b>[page 212]</b><BR>
 <i>212               KASSAPA-SAṂYUTTA                   [XVI. 9. 8</i><BR>
 <span class="ln" data-n="1"></span>Kassapo pi bhikkhave yāvadeva ākaṅkhati ║ pe║ ║<span class="red"><sup>1</sup></span> viññā-<BR>
-<span class="ln"></span>ṇañ <span class="correction" data-info="Correction approved on 2026-10-20. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «cāyatanaṃ». The book prints: «cāyataṅaṃ».">cāyataṅaṃ</span> upasampajja viharati ║ ║<BR>
+<span class="ln"></span>ṇañ <span class="correction" data-info="Transcription corrected | GRETIL: «cāyatanaṃ» → printed edition: «cāyataṅaṃ» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-20.">cāyataṅaṃ</span> upasampajja viharati ║ ║<BR>
 <span class="ln"></span>8 Aham bhikkhave yāvadeva ākaṅkhāmi ║ sabbaso viññā-<BR>
 <span class="ln"></span>ṇañcāyatanaṃ samatikkamma natthi kiñcīti ākiñcaññāya-<BR>
 <span class="ln" data-n="5"></span>tanam upasampajja viharāmi ║ ║<BR>
@@ -9188,14 +9190,14 @@ lābhī civarapiṇḍapātasenāsanagilānapaccaya bhesajjānañ ca<BR>
 <span class="ln"></span>tirokuḍḍaṃ<span class="red"><sup>3</sup></span> tiropākāraṃ tiropabbatam asajjamāno gac-<BR>
 <span class="ln"></span>chāmi seyyathāpi ākāse ║ pathaviyāpi ummujja nimujjaṃ<BR>
 <span class="ln"></span>kāromi seyyathāpi udake ║ udake pi abhijjamāne gacchāmi<BR>
-<span class="ln"></span>seyyathāpi pathaviyaṃ ║ ākāse pi pallaṅkena <span class="correction" data-info="Correction approved on 2026-10-12. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «caṅkamāni». The book prints: «caṅkamāmi».">caṅkamāmi</span><span class="red"><sup>4</sup></span><BR>
+<span class="ln"></span>seyyathāpi pathaviyaṃ ║ ākāse pi pallaṅkena <span class="correction" data-info="Transcription corrected | GRETIL: «caṅkamāni» → printed edition: «caṅkamāmi» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-12.">caṅkamāmi</span><span class="red"><sup>4</sup></span><BR>
 <span class="ln" data-n="25"></span>seyyathāpi pakkhisakuṇo ║ ║ Ime pi candimasūriye evam<BR>
 <span class="ln"></span>mahiddhike evam mahānubhāve pāṇinā parimasāmi pari-<BR>
 <span class="ln"></span>majjāmi ║ yāva brahmalokā pi kāyena vasaṃ vattemi ║ ║<BR>
 <span class="ln"></span>Kassapo pi bhikkhave yāvadeva ākaṅkhati anekavidham<BR>
 <span class="ln"></span>iddhividhaṃ paccanubhoti ║ pe║ ║ Yāva brahmalokā pi<BR>
 <span class="ln" data-n="30"></span>kāyena vasaṃ vatteti ║ ║<BR>
-<span class="ln"></span>12 Aham bhikkhave yāvadeva <span class="correction" data-info="Correction approved on 2026-10-20. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «ākaṅkhāmidibbāya». The book prints: «ākaṅkhāmi dibbāya».">ākaṅkhāmi dibbāya</span> sotadhā-<BR>
+<span class="ln"></span>12 Aham bhikkhave yāvadeva <span class="correction" data-info="Transcription corrected | GRETIL: «ākaṅkhāmidibbāya» → printed edition: «ākaṅkhāmi dibbāya» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-20.">ākaṅkhāmi dibbāya</span> sotadhā-<BR>
 <span class="ln"></span>tuyā visuddhāya atikkantamānusakena<span class="red"><sup>5</sup></span> ubho sadde suṇāmi<BR>
 <span class="ln"></span>dibbe ca mānuse<span class="red"><sup>6</sup></span> ca ye dūre santike ca ║ ║<BR>
 <span class="ln"></span>Kassapo pi bhikkhave yāvadeva ākaṅkhati dibbāya sota-<BR>
@@ -9303,7 +9305,7 @@ here and further on<BR>
 <span class="ln"></span>tenupasaṅkami ║ ║<BR>
 <span class="ln"></span>3 Upasaṅkamitvā āyasmantam Mahā-Kassapam etad<BR>
 <span class="ln"></span>avoca ║ ║ Āyāma bhante Kassapa yena aññataro<span class="red"><sup>1</sup></span> bhikkhu-<BR>
-<span class="ln" data-n="5"></span>nupassayo<span class="red"><sup>2</sup></span> <span class="correction" data-info="Correction approved on 2026-10-12. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «tenupasaṅkissāmāti». The book prints: «tenupasaṅkossāmāti».">tenupasaṅkossāmāti</span> ║ ║<BR>
+<span class="ln" data-n="5"></span>nupassayo<span class="red"><sup>2</sup></span> <span class="correction" data-info="Transcription corrected | GRETIL: «tenupasaṅkissāmāti» → printed edition: «tenupasaṅkossāmāti» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-12.">tenupasaṅkossāmāti</span> ║ ║<BR>
 <span class="ln"></span>Gaccha tvam āvuso Ānanda bahukicco tvam bahukaraṇī-<BR>
 <span class="ln"></span>yoti ║ ║<BR>
 <span class="ln"></span>4 Dutiyam pi kho āyasmā Ānando āyasmantam Mahā-<BR>
@@ -9332,7 +9334,7 @@ here and further on<BR>
 <span class="ln" data-n="30"></span>10 Atha kho Thullatissā<span class="red"><sup>3</sup></span> bhikkhunī anattamanā anatta-<BR>
 <span class="ln"></span>manavācaṃ nicchāresi ║ ║ Kim pana ayyo<span class="red"><sup>4</sup></span> Mahā-Kassapo<BR>
 <span class="ln"></span>ayyassa Ānandassa vedehamunino sammukhā dhammam<BR>
-<span class="ln"></span>bhāsitabbam maññati ║ seyyathāpi nāma <span class="correction" data-info="Correction approved on 2026-10-20. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «sūcivānijako». The book prints: «sūcivāṇijako».">sūcivāṇijako</span><BR>
+<span class="ln"></span>bhāsitabbam maññati ║ seyyathāpi nāma <span class="correction" data-info="Transcription corrected | GRETIL: «sūcivānijako» → printed edition: «sūcivāṇijako» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-20.">sūcivāṇijako</span><BR>
 <BR>
 <BR>
 <span class="red">--------------------------------------------------------------------------<BR>
@@ -9403,7 +9405,7 @@ here and further on<BR>
 <span class="ln"></span>Kassapo pi bhikkhave āsavānaṃ khayā anāsavaṃ ceto-<BR>
 <span class="ln" data-n="15"></span>vimuttim paññāvimuttiṃ diṭṭheva dhamme sayam abhiññā<BR>
 <span class="ln"></span>sacchikatvā upasampajja viharatīti ║ ║<BR>
-<span class="ln"></span>32 Sattaratanaṃ vā<span class="red"><sup>2</sup></span> āvuso nāgam <span class="correction" data-info="Correction approved on 2026-10-14. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «aḍḍhaṭṭharatanaṃ». The book prints: «aḍḍha-aṭṭhamaratanaṃ».">aḍḍha-aṭṭhamaratanaṃ</span><BR>
+<span class="ln"></span>32 Sattaratanaṃ vā<span class="red"><sup>2</sup></span> āvuso nāgam <span class="correction" data-info="Transcription corrected | GRETIL: «aḍḍhaṭṭharatanaṃ» → printed edition: «aḍḍha-aṭṭhamaratanaṃ» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-14.">aḍḍha-aṭṭhamaratanaṃ</span><BR>
 <span class="ln"></span>vā tālapattikāya<span class="red"><sup>3</sup></span> chādetabbam maññeyya yo me cha<BR>
 <span class="ln"></span>abhiññā chādetabbaṃ maññeyyāti ║ ║<BR>
 <BR>
@@ -9628,7 +9630,7 @@ here and further on<BR>
 <span class="ln"></span>49 Cavittha<span class="red"><sup>5</sup></span> pana Thullanandā bhikkhunī brahmacari-<BR>
 <span class="ln"></span>yamhāti ║ ║ Ekādasamaṃ ║<span class="red"><sup>6</sup></span> ║<BR>
 <BR>
-<span class="ln" data-n="15"></span><span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{Paraṃmaraṇaṃ}</span><BR>
+<span class="ln" data-n="15"></span><span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{Paraṃmaraṇaṃ}</span><BR>
 <span class="ln"></span>1 Ekaṃ samayaṃ āyasmā Mahā-Kassapo āyasmā ca<BR>
 <span class="ln"></span>Sāriputto Bārāṇasiyaṃ viharanti Isipatane Migadāye ║ ║<BR>
 <span class="ln"></span>2 Atha kho āyasmā Sāriputto sāyaṇhasamayaṃ paṭisal-<BR>
@@ -9668,7 +9670,7 @@ here and further on<BR>
 <span class="ln"></span>7 Kasmā cetam āvuso avyākataṃ Bhagavatā ti ║ ║<BR>
 <span class="ln" data-n="10"></span>Na hetam āvuso atthasañhitam nādibrahmacāriyakaṃ<span class="red"><sup>3</sup></span><BR>
 <span class="ln"></span>na nibbidāya na virāgāya na nirodhāya na upasamāya na<BR>
-<span class="ln"></span>abhiññāya na sambodhāya na nibbāṇāya <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{saṃvattati}</span> ║ tasmā<BR>
+<span class="ln"></span>abhiññāya na sambodhāya na nibbāṇāya <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{saṃvattati}</span> ║ tasmā<BR>
 <span class="ln"></span>tam avyākatam Bhagavatā ti ║<span class="red"><sup>4</sup></span> ║<BR>
 <span class="ln"></span>8 Atha kiṃ carahāvuso<span class="red"><sup>5</sup></span> vyākataṃ Bhagavatāti ║ ║<BR>
 <span class="ln" data-n="15"></span>Idaṃ dukkhanti kho āvuso vyākataṃ Bhagavatā ayaṃ<BR>
@@ -9725,13 +9727,13 @@ here and further on<BR>
 <span class="ln" data-n="20"></span>jati ║ yato ca kho Kassapa saddhammapatirūpakam loke<BR>
 <span class="ln"></span>uppajjati atha saddhammassa antaradhānaṃ hoti ║ ║<BR>
 <span class="ln"></span>8-11 Na kho Kassapa pathavīdhātu saddhammam anta-<BR>
-<span class="ln"></span>radhāpeti ║ nā āpodhātu ║ pe║ na tejodhātu ║ pe║ ║ na <span class="correction" data-info="Correction approved on 2026-10-20. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «vayo- dhātu». The book prints: «vayodhatu».">vayodhatu</span> saddhammam antaradhāpeti ║ ║<BR>
+<span class="ln"></span>radhāpeti ║ nā āpodhātu ║ pe║ na tejodhātu ║ pe║ ║ na <span class="correction" data-info="Transcription corrected | GRETIL: «vayo- dhātu» → printed edition: «vayodhatu» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-20.">vayodhatu</span> saddhammam antaradhāpeti ║ ║<BR>
 <span class="ln"></span>12 Atha kho idheva te uppajjanti moghapurisā ye imaṃ<BR>
 <span class="ln" data-n="25"></span>saddhammaṃ antaradhāpenti ║ ║<BR>
 <span class="ln"></span>13 Seyyathāpi Kassapa nāvā ādikeneva opilavati<span class="red"><sup>3</sup></span> na<BR>
 <span class="ln"></span>kho Kassapa evaṃ saddhammassa antaradhānaṃ hoti ║ ║<BR>
 <span class="ln"></span>14 Pañca kho me Kassapa okkamaniyā dhammā sadd-<BR>
-<span class="ln"></span>hammassa sammosāya antaradhānāya <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{saṃvattanti}</span> ║ ║<BR>
+<span class="ln"></span>hammassa sammosāya antaradhānāya <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{saṃvattanti}</span> ║ ║<BR>
 <span class="ln" data-n="30"></span>Katame pañca ║ ║<BR>
 <span class="ln"></span>15 Idha Kassapa bhikkhū bhikkhuniyo upāsakā upāsi-<BR>
 <span class="ln"></span>kāyo satthari agāravā viharanti appaṭissā ║ dhamme agāravā<BR>
@@ -9800,7 +9802,7 @@ here and further on<BR>
 <span class="ln"></span>4 Tasmā ti ha bhikkhave evaṃ sikkhitabbaṃ ║ ║ Uppan-<BR>
 <span class="ln" data-n="5"></span>naṃ lābhasakkārasilokaṃ pajahissāma na ca no<span class="red"><sup>1</sup></span> uppanno<BR>
 <span class="ln"></span>lābhasakkārasiloko cittam pariyādāya ṭhassatīti ║ ║<BR>
-<span class="ln"></span>6 Evaṃhi vo bhikkhave <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{sikkhitabbanti}</span> ║ ║ Pathamaṃ ║ ║<BR>
+<span class="ln"></span>6 Evaṃhi vo bhikkhave <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{sikkhitabbanti}</span> ║ ║ Pathamaṃ ║ ║<BR>
 <BR>
 <span class="ln"></span>(2) Baḷisam<BR>
 <span class="ln"></span>1 Sāvatthi ║<span class="red"><sup>2</sup></span> ║<BR>
@@ -9910,7 +9912,7 @@ here and further on<BR>
 <span class="ln"></span>1 Sāvatthi ║ ║<BR>
 <span class="ln"></span>2 Dāruṇo bhikkhave lābhasakkārasiloko ║ pe║ ║ adhiga-<BR>
 <span class="ln"></span>māya ║ ║<BR>
-<span class="ln"></span>3 Seyyathāpi bhikkhave <span class="correction" data-info="Correction approved on 2026-11-05. Source: Cone&#x27;s Dictionary of Pāli (entry marked as wrong reading), approved by hand. GRETIL had: «piḷhakā8». The book prints: «mīḷhakā8».">mīḷhakā<span class="red"><sup>8</sup></span></span> gūthādī<span class="red"><sup>9</sup></span> gūthapurā<BR>
+<span class="ln"></span>3 Seyyathāpi bhikkhave <span class="suggestion" data-info="Suggested emendation (not applied to the text) | Text, as in GRETIL: «piḷhakā8» | Suggested: «mīḷhakā8» | Authority: M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition). Approved on 2026-11-05.">piḷhakā<span class="red"><sup>8</sup></span></span> gūthādī<span class="red"><sup>9</sup></span> gūthapurā<BR>
 <span class="ln" data-n="25"></span>puṇṇā gūthassa ║ pūrato cassa mahā gūthapuñjo ║ ║<BR>
 <span class="ln"></span>4 Sā<span class="red"><sup>10</sup></span> tena aññā piḷhakā<span class="red"><sup>11</sup></span> atimaññeyya Ahaṃ hi gū-<BR>
 <span class="ln"></span>thādī<span class="red"><sup>12</sup></span> gūthapūrā puṇṇā gūthassa ║ pūrato ca myāyam<span class="red"><sup>13</sup></span><BR>
@@ -9986,7 +9988,7 @@ here and further on<BR>
 <span class="ln"></span>3 Kam bhikkhave diṭṭhagatena<span class="red"><sup>1</sup></span> [visallena] <span class="red"><sup>2</sup></span> sallena vij-<BR>
 <span class="ln"></span>jhanti taṃ<span class="red"><sup>3</sup></span> sekkham appattamānasaṃ lābhasakkāra-<BR>
 <span class="ln" data-n="5"></span>siloko<span class="red"><sup>4</sup></span> anupāpuṇāti ║ ║<BR>
-<span class="ln"></span>4 Sallanti kho bhikkhave lābhasakkārasilokassetam <span class="correction" data-info="Correction approved on 2026-10-14. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «adha-». The book prints: «adh-».">adh-</span><BR>
+<span class="ln"></span>4 Sallanti kho bhikkhave lābhasakkārasilokassetam <span class="correction" data-info="Transcription corrected | GRETIL: «adha-» → printed edition: «adh-» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-14.">adh-</span><BR>
 <span class="ln"></span>vacanaṃ ║ ║<BR>
 <span class="ln"></span>5 Evaṃ dāruṇo kho bhikkhave lābhasakkārasiloko ║ pe║ ║<BR>
 <span class="ln"></span>6 Evañhi vo bhikkhave sikkhitabbanti ║<BR>
@@ -9996,7 +9998,7 @@ here and further on<BR>
 <span class="ln"></span>1 Sāvatthi ║ ║<BR>
 <span class="ln"></span>2 Dāruṇo bhikkhave lābhasakkārasiloko ║ pe║ adhiga-<BR>
 <span class="ln"></span>māya ║ ║<BR>
-<span class="ln" data-n="15"></span>3 Assuttha no tumhe bhikkhave rattiyā <span class="correction" data-info="Correction approved on 2026-10-14. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «paccusasama-». The book prints: «paccūsasama-».">paccūsasama-</span><BR>
+<span class="ln" data-n="15"></span>3 Assuttha no tumhe bhikkhave rattiyā <span class="correction" data-info="Transcription corrected | GRETIL: «paccusasama-» → printed edition: «paccūsasama-» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-14.">paccūsasama-</span><BR>
 <span class="ln"></span>yaṃ siṅgālassa<span class="red"><sup>5</sup></span> vassamānassāti ║ ║<BR>
 <span class="ln"></span>Evam bhante ║ ║<BR>
 <span class="ln"></span>4 Eso kho bhikkhave jarasiṅgālo<span class="red"><sup>6</sup></span> ukkaṇṇakena<span class="red"><sup>7</sup></span> nāma<BR>
@@ -10126,7 +10128,7 @@ here and further on<BR>
 <span class="ln" data-n="5"></span>māya ║<span class="red"><sup>2</sup></span> ║<BR>
 <span class="ln"></span>3 Idhāham bhikkhave ekaccam puggalam evaṃ cetasā<BR>
 <span class="ln"></span>ceto paricca pajānāmi ║ na cāyam āyasmā suvaṇṇapatiyā<BR>
-<span class="ln"></span>pi<span class="red"><sup>3</sup></span> rūpiyacuṇṇa<span class="correction" data-info="Correction approved on 2026-10-20. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «-paripuṇṇāya». The book prints: «paripuṇṇāya»."> paripuṇṇāya</span><span class="red"><sup>4</sup></span> hetu sampajānamusā<BR>
+<span class="ln"></span>pi<span class="red"><sup>3</sup></span> rūpiyacuṇṇa<span class="correction" data-info="Transcription corrected | GRETIL: «-paripuṇṇāya» → printed edition: «paripuṇṇāya» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-20."> paripuṇṇāya</span><span class="red"><sup>4</sup></span> hetu sampajānamusā<BR>
 <span class="ln"></span>bhāseyyā ti ║ ║<BR>
 <span class="ln" data-n="10"></span>4 Tam enam passāmi aparena samayena lābhasakkārasi-<BR>
 <span class="ln"></span>lokena abhibhūtam pariyādiṇṇacittaṃ sampajānamusā<BR>
@@ -10358,7 +10360,7 @@ here and further on<BR>
 <span class="ln"></span>2 Dāruṇo bhikkhave lābhasakkārasiloko ║<BR>
 <span class="ln"></span>3 Lābhasakkārasiloko bhikkhave chaviṃ chindati ║ cha-<BR>
 <span class="ln"></span>viṃ chetvā cammaṃ chindati ║ cammaṃ chetvā maṃsaṃ<BR>
-<span class="ln" data-n="15"></span>chindati ║ maṃsaṃ <span class="correction" data-info="Correction approved on 2026-10-20. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «chetvā-nahāruṃ». The book prints: «chetvā nahāruṃ».">chetvā nahāruṃ</span> chindati ║ nahāruṃ<BR>
+<span class="ln" data-n="15"></span>chindati ║ maṃsaṃ <span class="correction" data-info="Transcription corrected | GRETIL: «chetvā-nahāruṃ» → printed edition: «chetvā nahāruṃ» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-20.">chetvā nahāruṃ</span> chindati ║ nahāruṃ<BR>
 <span class="ln"></span>chetvā aṭṭhiṃ chindati ║ aṭṭhiṃ chetvā aṭṭhimiñjam āhacca<BR>
 <span class="ln"></span>tiṭṭhati ║ ║<BR>
 <span class="ln"></span>4 Seyyathāpi bhikkhave balavā puriso daḷhāya vālaraj-<BR>
@@ -10441,7 +10443,7 @@ here and further on<BR>
 <span class="ln"></span>bhikkhave Devadatto saṅghaṃ bhindati ║<span class="red"><sup>1</sup></span> ║<BR>
 <span class="ln"></span>4 Evaṃ dāruṇo kho bhikkhave lābhasakkārasiloko ║<BR>
 <span class="ln"></span>pe ║ ║<BR>
-<span class="ln" data-n="5"></span>5 <span class="correction" data-info="Correction approved on 2026-10-20. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «oSikkhitabbanti». The book prints: «°Sikkhitabbanti».">°Sikkhitabbanti</span> ║ ║ Pathamaṃ ║ ║<BR>
+<span class="ln" data-n="5"></span>5 <span class="correction" data-info="Transcription corrected | GRETIL: «oSikkhitabbanti» → printed edition: «°Sikkhitabbanti» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-20.">°Sikkhitabbanti</span> ║ ║ Pathamaṃ ║ ║<BR>
 <BR>
 <span class="ln"></span>(2) Mūla<BR>
 <span class="ln"></span>1 Sāvatthi ║<BR>
@@ -10461,7 +10463,7 @@ here and further on<BR>
 <span class="ln" data-n="20"></span>chedam agamā ║ ║<BR>
 <span class="ln"></span>4 Evaṃ dāruṇo kho bhikkhave lābhasakkārasiloko ║<BR>
 <span class="ln"></span>pe ║ ║<BR>
-<span class="ln"></span>5 <span class="correction" data-info="Correction approved on 2026-10-20. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «oSikkhitabbanti». The book prints: «Sikkhitabbanti».">Sikkhitabbanti</span> ║ ║ Tatiyaṃ ║ ║<BR>
+<span class="ln"></span>5 <span class="correction" data-info="Transcription corrected | GRETIL: «oSikkhitabbanti» → printed edition: «Sikkhitabbanti» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-20.">Sikkhitabbanti</span> ║ ║ Tatiyaṃ ║ ║<BR>
 <BR>
 <span class="ln"></span>(4) Sukko<BR>
 <span class="ln" data-n="25"></span>1 Sāvatthi ║ ║<BR>
@@ -10805,7 +10807,7 @@ here and further on<BR>
 <span class="ln"></span>2 Taṃ kim maññasi Rāhula ║ ║ Rūpataṇhā niccā vā<BR>
 <span class="ln"></span>aniccā vāti ║ ║<BR>
 <span class="ln"></span>Aniccā bhante ║ ║<BR>
-<span class="ln"></span>3-7 Saddataṇhā ║ Gandhataṇhā ║ Rasataṇhā ║ <span class="correction" data-info="Correction approved on 2026-10-12. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «Poṭṭhab-». The book prints: «Potthab-».">Potthab-</span><BR>
+<span class="ln"></span>3-7 Saddataṇhā ║ Gandhataṇhā ║ Rasataṇhā ║ <span class="correction" data-info="Transcription corrected | GRETIL: «Poṭṭhab-» → printed edition: «Potthab-» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-12.">Potthab-</span><BR>
 <span class="ln" data-n="15"></span>bataṇha ║ Dhammataṇhā ṇiccā vā aniccā vāti ║ ║<BR>
 <span class="ln"></span>Aniccā bhante ║ ║<BR>
 <span class="ln"></span>8-9 Evam passaṃ Rāhula sutavā ariyasāvako rūpataṇ-<BR>
@@ -10930,7 +10932,7 @@ here and further on<BR>
 <BR>
 <span class="ln" data-n="5"></span>(3) Viññānaṃ<BR>
 <span class="ln"></span>3-20 Cakkhuviññāṇaṃ ║ sotaviññāṇaṃ ║ ghānaviññāṇaṃ ║<BR>
-<span class="ln"></span>jivhāviññāṇaṃ ║ <span class="correction" data-info="Correction approved on 2026-10-12. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «kāyaviññaṃ». The book prints: «kāyaviṇṇaṃ».">kāyaviṇṇaṃ</span> ║ manoviññāṇaṃ ║ ║<BR>
+<span class="ln"></span>jivhāviññāṇaṃ ║ <span class="correction" data-info="Transcription corrected | GRETIL: «kāyaviññaṃ» → printed edition: «kāyaviṇṇaṃ» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-12.">kāyaviṇṇaṃ</span> ║ manoviññāṇaṃ ║ ║<BR>
 <BR>
 <span class="ln"></span>(4) Samphasso<BR>
 <span class="ln"></span>3-30 Cakkhusamphasso ║ sotasamphasso ║ ghānasamphas-<BR>
@@ -11109,7 +11111,7 @@ suvimutta] ntīti-- the part between [] being between the lines<BR>
 <span class="ln" data-n="15"></span>karoti ║<BR>
 <span class="ln"></span>10 Tassa mayhaṃ āvuso etad ahosi ║ ║ Acchariyaṃ vata<BR>
 <span class="ln"></span>bho abbhutaṃ vata bho ║ evarūpo pi nāma satto bhavissati<BR>
-<span class="ln"></span><span class="correction" data-info="Correction approved on 2026-10-20. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «[evarupo». The book prints: «[evarūpo».">[evarūpo</span> pi nāma yakkho bhavissati] <span class="red"><sup>4</sup></span> evarūpo pi nāma<BR>
+<span class="ln"></span><span class="correction" data-info="Transcription corrected | GRETIL: «[evarupo» → printed edition: «[evarūpo» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-20.">[evarūpo</span> pi nāma yakkho bhavissati] <span class="red"><sup>4</sup></span> evarūpo pi nāma<BR>
 <span class="ln"></span>attabhāvapaṭilābho<span class="red"><sup>5</sup></span> bhavissatīti ║<BR>
 <span class="ln" data-n="20"></span>11 Atha kho Bhagavā bhikkhū āmantesi ║ ║ Cakkhubhūtā<BR>
 <span class="ln"></span>bhikkhave sāvakā viharanti ║ ñāṇabhūtā vata bhikkhave<BR>
@@ -11139,7 +11141,7 @@ suvimutta] ntīti-- the part between [] being between the lines<BR>
 </span><BR>
 <!-- page-status: corrected --><b>[page 256]</b><BR>
 <i>256                    LAKKHAṆA-SAṂYUTTA                [XIX. 2. 1</i><BR>
-<span class="ln" data-n="1"></span>vasesena evarūpam attabhāvapaṭilābhaṃ<span class="red"><sup>1</sup></span> <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{paṭisaṃvedi-</span><span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered."><BR>
+<span class="ln" data-n="1"></span>vasesena evarūpam attabhāvapaṭilābhaṃ<span class="red"><sup>1</sup></span> <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{paṭisaṃvedi-</span><span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged."><BR>
 <span class="ln"></span>yatīti}</span><span class="red"><sup>2</sup></span> ║ ║<BR>
 <span class="ln"></span>Pathamaṃ<span class="red"><sup>3</sup></span> ║ ║<BR>
 <span class="ln"></span>Sabbesaṃ suttantānam eseva<span class="red"><sup>4</sup></span> peyyālo ║ ║<BR>
@@ -11229,8 +11231,8 @@ suvimutta] ntīti-- the part between [] being between the lines<BR>
 <i>258                  LAKKHAṆA-SAṂYUTTA                 [XIX. 9. 2</i><BR>
 <span class="ln" data-n="1"></span>2 Tassa tā sūciyo sīse pavisitvā mukhato nikkhamanti ║<BR>
 <span class="ln"></span>mukhe<span class="red"><sup>1</sup></span> pavisitvā urato nikkhamanti ║ ure<span class="red"><sup>2</sup></span> pavisitvā<BR>
-<span class="ln"></span>udarato nikkhamanti ║ udare<span class="red"><sup>3</sup></span> pavisitvā <span class="correction" data-info="Correction approved on 2026-10-14. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «urūhi». The book prints: «ūrūhi».">ūrūhi</span><span class="red"><sup>4</sup></span> nikkha-<BR>
-<span class="ln"></span>manti ║ <span class="correction" data-info="Correction approved on 2026-11-05. Source: Cone&#x27;s Dictionary of Pāli (entry marked as wrong reading), approved by hand. GRETIL had: «urūsu». The book prints: «ūrūsu».">ūrūsu</span> pavisitvā jaṅghāhi nikkhamanti ║ jaṅghāsu<BR>
+<span class="ln"></span>udarato nikkhamanti ║ udare<span class="red"><sup>3</sup></span> pavisitvā <span class="correction" data-info="Transcription corrected | GRETIL: «urūhi» → printed edition: «ūrūhi» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-14.">ūrūhi</span><span class="red"><sup>4</sup></span> nikkha-<BR>
+<span class="ln"></span>manti ║ <span class="suggestion" data-info="Suggested emendation (not applied to the text) | Text, as in GRETIL: «urūsu» | Suggested: «ūrūsu» | Authority: M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition). Approved on 2026-11-05.">urūsu</span> pavisitvā jaṅghāhi nikkhamanti ║ jaṅghāsu<BR>
 <span class="ln" data-n="5"></span>pavisitvā pādehi nikkhamanti ║ ║ So sudam aṭṭassaraṃ<BR>
 <span class="ln"></span>karoti ║ ║<BR>
 <span class="ln"></span>3 Eso bhikkhave satto imasmiññeva Rājagahe sūcako<BR>
@@ -11278,7 +11280,7 @@ suvimutta] ntīti-- the part between [] being between the lines<BR>
 <span class="ln"></span>(1) Kupe nimuggo paradāriko<BR>
 <span class="ln"></span>1 Evam me sutaṃ ║ Ekaṃ samayaṃ Rājagahe Veḷu-<BR>
 <span class="ln"></span>vane ║<span class="red"><sup>1</sup></span> ║<BR>
-<span class="ln" data-n="5"></span>2 Idhāham āvuso <span class="correction" data-info="Correction approved on 2026-10-12. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «Gijjhakuṭā». The book prints: «Gijjhakūṭā».">Gijjhakūṭā</span> pabbatā orohanto addasaṃ<BR>
+<span class="ln" data-n="5"></span>2 Idhāham āvuso <span class="correction" data-info="Transcription corrected | GRETIL: «Gijjhakuṭā» → printed edition: «Gijjhakūṭā» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-12.">Gijjhakūṭā</span> pabbatā orohanto addasaṃ<BR>
 <span class="ln"></span>purisaṃ gūthakūpe sasīsakaṃ<span class="red"><sup>2</sup></span> nimuggaṃ ║ ║<BR>
 <span class="ln"></span>3 Eso bhikkhave satto imasmiññeva Rājagahe pāra-<BR>
 <span class="ln"></span>dāriko<span class="red"><sup>3</sup></span> ahosi ║ ║<BR>
@@ -11296,7 +11298,7 @@ suvimutta] ntīti-- the part between [] being between the lines<BR>
 <span class="ln"></span>Dutiyaṃ ║ ║<BR>
 <BR>
 <span class="ln" data-n="20"></span>(3) Nicchavitthi-aticārini<BR>
-<span class="ln"></span>1 Idhāham āvuso <span class="correction" data-info="Correction approved on 2026-10-12. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «Gijjhakuṭā». The book prints: «Gijjhakūṭā».">Gijjhakūṭā</span> pabbatā orohanto addasaṃ<BR>
+<span class="ln"></span>1 Idhāham āvuso <span class="correction" data-info="Transcription corrected | GRETIL: «Gijjhakuṭā» → printed edition: «Gijjhakūṭā» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-12.">Gijjhakūṭā</span> pabbatā orohanto addasaṃ<BR>
 <span class="ln"></span>nicchaviṃ itthiṃ<span class="red"><sup>6</sup></span> vehāsaṃ gacchantiṃ ║ tam enaṃ<span class="red"><sup>7</sup></span> gij-<BR>
 <span class="ln"></span>jhā pi dhaṅkā<span class="red"><sup>7</sup></span> pi kulalā pi anupatitvā anupatitvā vitac-<BR>
 <span class="ln"></span>chenti vibhajenti<span class="red"><sup>7</sup></span> ║ ║ Sāsudaṃ<span class="red"><sup>8</sup></span> aṭṭassaraṃ karoti ║ ║<BR>
@@ -11348,7 +11350,7 @@ suvimutta] ntīti-- the part between [] being between the lines<BR>
 <BR>
 <span class="ln"></span>(7) Bhikkhu<BR>
 <span class="ln"></span>1 Idhāham āvuso Gijjhakūṭā pabbatā orohanto addasaṃ<BR>
-<span class="ln"></span>bhikkhuṃ <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{vehāsaṃ}</span> gacchantaṃ ║ ║<BR>
+<span class="ln"></span>bhikkhuṃ <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{vehāsaṃ}</span> gacchantaṃ ║ ║<BR>
 <span class="ln"></span>2 Tassa saṅghāṭī pi ādittā sampajjalitā sajotibhūtā ║<BR>
 <span class="ln" data-n="30"></span>patto pi āditto sampajjalito sajotibhūto ║ Kāyabandhanam<BR>
 <BR>
@@ -11375,7 +11377,7 @@ suvimutta] ntīti-- the part between [] being between the lines<BR>
 <BR>
 <span class="ln" data-n="10"></span>(9) Sikkhamānā<BR>
 <span class="ln"></span>1 Addasaṃ sikkhamānaṃ vehāsaṃ gacchantiṃ ║<BR>
-<span class="ln"></span>2 Tassā <span class="correction" data-info="Correction approved on 2026-10-12. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «saṅghaṭi». The book prints: «saṅghāṭi».">saṅghāṭi</span> pi ādittā ║ pe║ ║<BR>
+<span class="ln"></span>2 Tassā <span class="correction" data-info="Transcription corrected | GRETIL: «saṅghaṭi» → printed edition: «saṅghāṭi» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-12.">saṅghāṭi</span> pi ādittā ║ pe║ ║<BR>
 <span class="ln"></span>3 pāpasikkhamānā ahosi ║ ║<BR>
 <span class="ln"></span>Navamaṃ ║<BR>
 <BR>
@@ -11422,7 +11424,7 @@ suvimutta] ntīti-- the part between [] being between the lines<BR>
 <span class="ln"></span>Dutiyo vaggo ║ ║<BR>
 <span class="ln"></span>Tassuddānaṃ ║ ║<BR>
 <span class="ln"></span>Kūpe nimuggo hi so<span class="red"><sup>3</sup></span> pāradāriko ║<BR>
-<span class="ln"></span>Guthakhādi ahu<span class="red"><sup>4</sup></span> <span class="correction" data-info="Correction approved on 2026-10-12. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «duṭṭhabrāhmano». The book prints: «duṭṭhabrāhmaṅo».">duṭṭhabrāhmaṅo</span> ║<BR>
+<span class="ln"></span>Guthakhādi ahu<span class="red"><sup>4</sup></span> <span class="correction" data-info="Transcription corrected | GRETIL: «duṭṭhabrāhmano» → printed edition: «duṭṭhabrāhmaṅo» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-12.">duṭṭhabrāhmaṅo</span> ║<BR>
 <span class="ln" data-n="15"></span>Nicchavitthi aticārinī āhu ║<BR>
 <span class="ln"></span>Maṅgulitthi<span class="red"><sup>5</sup></span> ahu ikkhinitthi yā<span class="red"><sup>5</sup></span> ║ ║<BR>
 <span class="ln"></span>Okilinī sapattaṅgārokirī<span class="red"><sup>6</sup></span> ║<BR>
@@ -11510,7 +11512,7 @@ suvimutta] ntīti-- the part between [] being between the lines<BR>
 <span class="ln"></span>bahupurisāni tāni duppadhaṃsiyāni honti corehi kum-<BR>
 <span class="ln"></span>bhatthenakehi ║<BR>
 <span class="ln" data-n="10"></span>5 Evam eva kho bhikkhave yassa kassaci bhikkhuno<BR>
-<span class="ln"></span>mettā cetovimutti <span class="correction" data-info="Correction approved on 2026-11-16. Source: Word Index to the Pāli Tipiṭaka, compared with the copy. GRETIL had: «bhavitā». The book prints: «bhāvitā».">bhāvitā</span> bahulikatā ║ so duppadhaṃsiyo<BR>
+<span class="ln"></span>mettā cetovimutti <span class="correction" data-info="Transcription corrected | GRETIL: «bhavitā» → printed edition: «bhāvitā» | Evidence: Flagged by the Word Index to the Pāli Tipiṭaka (Ousaka 2019), checked by hand against the scan of the PTS edition. Approved on 2026-11-16.">bhāvitā</span> bahulikatā ║ so duppadhaṃsiyo<BR>
 <span class="ln"></span>hoti amanussehi ║ ║<BR>
 <span class="ln"></span>6 Tasmā tiha bhikkhave evam sikkhitabbaṃ ║ ║ Met-<BR>
 <span class="ln"></span>tā no cetovimutti bhāvitā bhavissati ║ bahulikatā<span class="red"><sup>3</sup></span> yānikatā<BR>
@@ -11685,7 +11687,7 @@ canāmapurisānam-) purato dhavanti tāsam devatānaṃ javo<BR>
 <span class="ln"></span>Māgadho Ajātasattu vedehiputto na labhati otāraṃ na<BR>
 <span class="ln"></span>labhati ārammaṇam ║ ║<BR>
 <span class="ln"></span>4 Bhavissanti bhikkhave anāgatam addhānaṃ Licchavī<BR>
-<span class="ln" data-n="5"></span>sukhumālā mudutaluṇahatthapādā ║ te <span class="correction" data-info="Correction approved on 2026-10-14. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «mudukā suseyyā sutulabimbohanāsu». The book prints: «mudukāsu seyyāsu tūlabimbohanāsu».">mudukāsu seyyāsu</span><span class="correction" data-info="Correction approved on 2026-10-14. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «mudukā suseyyā sutulabimbohanāsu». The book prints: «mudukāsu seyyāsu tūlabimbohanāsu»."><BR>
+<span class="ln" data-n="5"></span>sukhumālā mudutaluṇahatthapādā ║ te <span class="correction" data-info="Transcription corrected | GRETIL: «mudukā suseyyā sutulabimbohanāsu» → printed edition: «mudukāsu seyyāsu tūlabimbohanāsu» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-14.">mudukāsu seyyāsu</span><span class="correction" data-info="Transcription corrected | GRETIL: «mudukā suseyyā sutulabimbohanāsu» → printed edition: «mudukāsu seyyāsu tūlabimbohanāsu» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-14."><BR>
 <span class="ln"></span>tūlabimbohanāsu</span><span class="red"><sup>2</sup></span> yāva sūriyuggamanā<span class="red"><sup>3</sup></span> seyyaṃ kap-<BR>
 <span class="ln"></span>pessanti ║ ║<span class="red"><sup>4</sup></span> Tesaṃ rājā Māgadho Ajātasattu vedehiputto<BR>
 <span class="ln"></span>lacchati otāraṃ lacchati ārammaṇaṃ ║ ║<BR>
@@ -11730,7 +11732,7 @@ canāmapurisānam-) purato dhavanti tāsam devatānaṃ javo<BR>
 <span class="ln"></span>etad avocuṃ ║ ║ Idha bhante aññataro navo bhikkhu ative-<BR>
 <span class="ln"></span>laṃ kulāni upasaṅkamati ║ tam enaṃ bhikkhū evam āhaṃsu<BR>
 <span class="ln"></span>Māyasmā ativelaṃ kulāni upasaṅkamīti ║ ║ So bhikkhu<span class="red"><sup>1</sup></span><BR>
-<span class="ln" data-n="5"></span>bhikkhūhi <span class="correction" data-info="Correction approved on 2026-10-20. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «vucamāno». The book prints: «vuccamāno».">vuccamāno</span> evam āha ║ Ime hi nāma therā bhik-<BR>
+<span class="ln" data-n="5"></span>bhikkhūhi <span class="correction" data-info="Transcription corrected | GRETIL: «vucamāno» → printed edition: «vuccamāno» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-20.">vuccamāno</span> evam āha ║ Ime hi nāma therā bhik-<BR>
 <span class="ln"></span>khū kulāni upasaṅkamitabbaṃ maññissanti ║ kim aṅgaṃ<BR>
 <span class="ln"></span>panāhan ti ║ ║<BR>
 <span class="ln"></span>6 Bhūtapubbaṃ bhikkhave araññāyatane mahāsarasi<BR>
@@ -11889,7 +11891,7 @@ canāmapurisānam-) purato dhavanti tāsam devatānaṃ javo<BR>
 <span class="ln"></span>Tassa uddānaṃ ║<span class="red"><sup>9</sup></span> ║<BR>
 <span class="ln"></span>Kūṭaṃ Nakhasikhaṃ Kulaṃ ║<BR>
 <span class="ln" data-n="25"></span>Ukkā Satti<span class="red"><sup>10</sup></span> Danuggaho ║<BR>
-<span class="ln"></span><span class="correction" data-info="Correction approved on 2026-10-27. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «Aṇi». The book prints: «Āṇi».">Āṇi</span><span class="red"><sup>11</sup></span> Kaliṅgaro Nāgo ║<BR>
+<span class="ln"></span><span class="correction" data-info="Transcription corrected | GRETIL: «Aṇi» → printed edition: «Āṇi» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-27.">Āṇi</span><span class="red"><sup>11</sup></span> Kaliṅgaro Nāgo ║<BR>
 <span class="ln"></span>Biḷāro<span class="red"><sup>12</sup></span> dve Siṅgālakā ti ║ ║<BR>
 <BR>
 <BR>
@@ -12021,7 +12023,7 @@ canāmapurisānam-) purato dhavanti tāsam devatānaṃ javo<BR>
 <span class="ln"></span>vītisāretvā ekam antaṃ nisīdi ║<span class="red"><sup>5</sup></span> ║<BR>
 <span class="ln"></span>4 Ekam antaṃ nisinno kho āyasmā Sāriputto āyasman-<BR>
 <span class="ln"></span>taṃ Mahā-Moggallānam etad avoca ║ ║ Vippasannāni kho<BR>
-<span class="ln" data-n="20"></span>te āvuso Moggalāna indriyāni ║ parisuddho <span class="correction" data-info="Correction approved on 2026-10-12. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «mukhaveṇṇo». The book prints: «mukhavaṇṇo».">mukhavaṇṇo</span><BR>
+<span class="ln" data-n="20"></span>te āvuso Moggalāna indriyāni ║ parisuddho <span class="correction" data-info="Transcription corrected | GRETIL: «mukhaveṇṇo» → printed edition: «mukhavaṇṇo» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-12.">mukhavaṇṇo</span><BR>
 <span class="ln"></span>pariyodāto ║ santena nunāyasmā<span class="red"><sup>6</sup></span> Mahā-Moggallāno ajja<span class="red"><sup>7</sup></span><BR>
 <span class="ln"></span>vihārena vihāsiti ║ ║<BR>
 <span class="ln"></span>Oḷārikena khvāhaṃ āvuso ajja vihārena<span class="red"><sup>8</sup></span> vihāsiṃ ║ api ca<BR>
@@ -12063,7 +12065,7 @@ canāmapurisānam-) purato dhavanti tāsam devatānaṃ javo<BR>
 <span class="ln" data-n="10"></span>bhante āraddhaviriyo hotīti ║ ║<BR>
 <span class="ln"></span>10 Evaṃ vutte āvuso mam Bhagavā etad avoca ║ ║ Idha<BR>
 <span class="ln"></span>Moggallāna bhikkhu āraddhaviriyo viharati ║<span class="red"><sup>5</sup></span> kāmaṃ taco<BR>
-<span class="ln"></span>ca nahāru<span class="red"><sup>6</sup></span> ca aṭṭhi ca <span class="correction" data-info="Correction approved on 2026-11-05. Source: Cone&#x27;s Dictionary of Pāli (entry marked as wrong reading), approved by hand. GRETIL had: «avasussatu». The book prints: «avasissatu».">avasissatu</span> ║<span class="red"><sup>7</sup></span> sarīre upasussatu<BR>
+<span class="ln"></span>ca nahāru<span class="red"><sup>6</sup></span> ca aṭṭhi ca <span class="suggestion" data-info="Suggested emendation (not applied to the text) | Text, as in GRETIL: «avasussatu» | Suggested: «avasissatu» | Authority: M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition). Approved on 2026-11-05.">avasussatu</span> ║<span class="red"><sup>7</sup></span> sarīre upasussatu<BR>
 <span class="ln"></span>maṃsalohitaṃ ║ ║ Yaṃ tam purisathāmena purisaviriyena<BR>
 <span class="ln" data-n="15"></span>purisaparakkamena pattabbaṃ ║ na taṃ apāpuṇitvā viri-<BR>
 <span class="ln"></span>yassa saṇṭhānam<span class="red"><sup>8</sup></span> bhavissatīti ║ ║ Evaṃ kho Moggallāna<BR>
@@ -12300,7 +12302,7 @@ canāmapurisānam-) purato dhavanti tāsam devatānaṃ javo<BR>
 <span class="ln"></span>ca paṃsukuliko ca ║ kāmesu ca anapekkho vihareyyasīti ║ ║<BR>
 <span class="ln"></span>4 Idam avoca Bhagavā ║ pe║ satthā ║ ║<BR>
 <span class="ln"></span>Kadāhaṃ Nandam passeyyaṃ ║<BR>
-<span class="ln"></span><span class="correction" data-info="Correction approved on 2026-10-14. Source: Sheet corrected by hand against the scan of the PTS edition. GRETIL had: «Araññaṃ». The book prints: «Āraññaṃ».">Āraññaṃ</span> paṃsukūlikam ║<BR>
+<span class="ln"></span><span class="correction" data-info="Transcription corrected | GRETIL: «Araññaṃ» → printed edition: «Āraññaṃ» | Evidence: Review sheet, checked by hand against the scan of the PTS edition. Approved on 2026-10-14.">Āraññaṃ</span> paṃsukūlikam ║<BR>
 <span class="ln" data-n="20"></span>Aññātuñchena<span class="red"><sup>5</sup></span> yāpentaṃ ║<BR>
 <span class="ln"></span>Kāmesu anapekkhinanti<span class="red"><sup>6</sup></span> ║<BR>
 <span class="ln"></span>5 Atha kho āyasmā Nando aparena samayena āraññako<BR>
@@ -12481,7 +12483,7 @@ canāmapurisānam-) purato dhavanti tāsam devatānaṃ javo<BR>
 <span class="ln"></span>sacchi katvā upasampajja viharanti ║ ║<BR>
 <span class="ln"></span>6 Idam avoca Bhagavā ║ ║ Idaṃ vatvāna<span class="red"><sup>5</sup></span> Sugato athā-<BR>
 <span class="ln"></span>param etad avoca satthā ║ ║<BR>
-<span class="ln"></span>Sahāyā vatime bhikkhū ║ <span class="correction" data-info="Correction approved on 2026-11-05. Source: Cone&#x27;s Dictionary of Pāli (entry marked as wrong reading), approved by hand. GRETIL had: «cīrarattaṃ». The book prints: «cirarattaṃ».">cirarattaṃ</span> sametikā<span class="red"><sup>6</sup></span> ║<BR>
+<span class="ln"></span>Sahāyā vatime bhikkhū ║ <span class="suggestion" data-info="Suggested emendation (not applied to the text) | Text, as in GRETIL: «cīrarattaṃ» | Suggested: «cirarattaṃ» | Authority: M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition). Approved on 2026-11-05.">cīrarattaṃ</span> sametikā<span class="red"><sup>6</sup></span> ║<BR>
 <span class="ln" data-n="20"></span>sameti nesaṃ saddhammo ║ dhamme buddhappavedite ║<span class="red"><sup>7</sup></span> ║<BR>
 <span class="ln"></span>Suvinītā<span class="red"><sup>8</sup></span> Kappinena ║ dhamme ariyappavedite ║1║<BR>
 <span class="ln"></span>dhārenti antimaṃ dehaṃ ║ jetvā Māraṃ savāhananti ║2║<BR>

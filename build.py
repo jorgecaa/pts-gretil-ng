@@ -196,17 +196,39 @@ def apply(volume, n, part, text, flags=None):
         if c.get('part', 'text') != part:
             continue
         old, new = c['gretil'], c['book']
+        if c.get('kind') == 'emendation':
+            # an authority's correction of the edition: the text stays as printed, the words are only marked
+            at = [j for j in range(len(t)) if t.startswith(old, j)]
+            if len(at) != c['times']:
+                # the emendation was written on the text with the earlier emendations of the page applied:
+                # where one of them stands, its words are no longer there to be found
+                at = [j for j in at if not any(x.get('kind') == 'emendation' for w in who[j:j + len(old)] for x in w)]
+            if len(at) != c['times']:
+                sys.exit(f'{volume} p. {n}: {old!r} is there {len(at)} times, the correction says {c["times"]}')
+            keep_l, mid_old, _, _ = _trim(old, new)
+            a, b = len(keep_l), len(keep_l) + len(mid_old)
+            if not mid_old.strip():         # an addition: the words it would follow or precede are marked
+                a, b = len(old) - len(old.lstrip()), len(old.rstrip())
+            who = list(who)
+            for j in at:
+                for x in range(j + a, j + b):
+                    who[x] = who[x] + (c,)
+            continue
         if t.count(old) != c['times']:
             sys.exit(f'{volume} p. {n}: {old!r} is there {t.count(old)} times, the correction says {c["times"]}')
         # only the words that change are marked: what the correction repeats around them (a
         # line-break hyphen, a neighbouring word) is context, not part of the correction
         keep_l, mid_old, mid_new, keep_r = _trim(old, new)
         out, owners, calls, i = [], [], [], 0
+        gone = not mid_new.strip() and mid_old.strip()      # words deleted: nothing of the correction is left
+        where, length = [], 0                               # where, in the new text, the deleted words stood
         while True:
             j = t.find(old, i)
             if j < 0:
                 break
             a, b = j + len(keep_l), j + len(keep_l) + len(mid_old)
+            where.append(length + (j - i) + len(keep_l))
+            length += (j - i) + len(keep_l) + len(mid_new) + len(keep_r)
             out.append(t[i:j] + keep_l + mid_new + keep_r)
             owners += who[i:a]
             owners += [tuple(x for w in who[a:b] for x in w) + (c,)] * len(mid_new)
@@ -221,6 +243,24 @@ def apply(volume, n, part, text, flags=None):
         owners += who[i:]
         calls += call[i:]
         t, who, call = ''.join(out), owners, calls
+        if gone:
+            # a deletion is shown on the word before it (or, at the start, the word after it)
+            for w in where:
+                x = w
+                while x > 0 and t[x - 1].isspace():
+                    x -= 1
+                y = x
+                while y > 0 and not t[y - 1].isspace():
+                    y -= 1
+                if x == y:
+                    y = w
+                    while y < len(t) and t[y].isspace():
+                        y += 1
+                    x = y
+                    while x < len(t) and not t[x].isspace():
+                        x += 1
+                for z in range(min(x, y), max(x, y)):
+                    who[z] = who[z] + (c,)
     return t, who, call
 
 
@@ -237,13 +277,50 @@ def _with_calls(text, call, k, j):
     return ''.join(out)
 
 
-def mark(text, who, call):
+BRACES_NOTE = ('GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left '
+               'the content between braces unchanged.')
+
+
+def describe(c):
+    """The popup's text for one correction; ` | ` separates its lines."""
+    _, old, new, _ = _trim(c['gretil'], c['book'])        # only the words that change
+    old, new = ' '.join(old.split()), ' '.join(new.split())
+    full_old, full_new = ' '.join(c['gretil'].split()), ' '.join(c['book'].split())
+    date = f"Approved on {c['date']}." if c['date'] else 'Approval date not recorded.'
+    kind = c.get('kind', 'transcription')
+    if kind == 'emendation':
+        if not old or not new:                            # an addition or an omission: show the context
+            old, new = full_old, full_new
+        lines = ['Suggested emendation (not applied to the text)', f'Text, as in GRETIL: «{old}»',
+                 f'Suggested: «{new}»', f"Authority: {c['source']}. {date}"]
+    elif kind == 'notation':
+        lines = ['Notation only (same reading)', f"GRETIL: «{old}» → «{new}» (GRETIL's encoding of the character)",
+                 date]
+    elif c['gretil'] == c['book']:
+        lines = ['Printed reading confirmed', f'The printed edition reads «{new}» (sic), as GRETIL has; kept.',
+                 f"Evidence: {c['source']}. {date}"]
+    elif old == new:
+        lines = ['Line division corrected', f'Same reading: «{new}»', f"Evidence: {c['source']}. {date}"]
+    elif not old:
+        lines = ['Transcription corrected', f'GRETIL omits «{new}»; the printed edition has it.',
+                 f"Evidence: {c['source']}. {date}"]
+    elif not new:
+        lines = ['Transcription corrected', f'GRETIL has «{old}» next to the marked word; the printed edition does not have it.',
+                 f"Evidence: {c['source']}. {date}"]
+    else:
+        lines = ['Transcription corrected', f'GRETIL: «{old}» → printed edition: «{new}»',
+                 f"Evidence: {c['source']}. {date}"]
+    return ' | '.join(lines)
+
+
+def mark(text, who, call, infos=None, braces=True, tag='span'):
     """The text with markers around braced errata, corrected words and note calls; the popups' texts."""
     brace = [0] * len(text)
-    for m in _BRACES.finditer(text):
+    for m in _BRACES.finditer(text) if braces else ():
         for k in range(m.start(), m.end()):
             brace[k] = 1
-    out, infos, k = [], [], 0
+    out, k = [], 0
+    infos = [] if infos is None else infos
     while k < len(text):
         key = (brace[k], tuple(id(x) for x in who[k]))
         j = k
@@ -253,19 +330,14 @@ def mark(text, who, call):
         if not chunk.strip() or (not brace[k] and not owners):     # spacing alone is not underlined
             out.append(chunk)
         else:
-            classes, lines = [], []
+            classes, items = [], []
             if brace[k]:
                 classes.append('erratum')
-                lines.append('GRETIL erratum: this word is printed between braces { } in GRETIL. '
-                             'It is kept as printed; its content is not altered.')
+                items.append(BRACES_NOTE)
             for c in owners:
-                classes.append('correction')
-                _, old, new, _ = _trim(c['gretil'], c['book'])    # only the words that change
-                old, new = ' '.join(old.split()), ' '.join(new.split())
-                when = f" approved on {c['date']}" if c['date'] else ''
-                lines.append(f"Correction{when}. Source: {c['source']}. "
-                             f"GRETIL had: «{old.strip()}». The book prints: «{new.strip()}».")
-            infos.append((' '.join(dict.fromkeys(classes)), ' | '.join(dict.fromkeys(lines))))
+                classes.append('suggestion' if c.get('kind') == 'emendation' else 'correction')
+                items.append(describe(c))
+            infos.append((' '.join(dict.fromkeys(classes)), ' |  | '.join(dict.fromkeys(items)), tag))
             out.append(f'{OPEN}{len(infos) - 1}{MID}{chunk}{CLOSE}')
         k = j
     return ''.join(out), infos
@@ -273,9 +345,21 @@ def mark(text, who, call):
 
 def spans(block, infos):
     def open_(m):
-        cls, info = infos[int(m.group(1))]
-        return f'<span class="{cls}" data-info="{html.escape(info, quote=True)}">'
-    return re.sub(OPEN + r'(\d+)' + MID, open_, block).replace(CLOSE, '</span>')
+        cls, info, tag = infos[int(m.group(1))]
+        return f'<{tag} class="{cls}" data-info="{html.escape(info, quote=True)}">'
+    block = re.sub(OPEN + r'(\d+)' + MID, open_, block)
+    # each mark is closed by the tag it was opened with
+    out, stack = [], []
+    for piece in re.split('(<(?:span|u) class="[^"]*" data-info="[^"]*">|' + CLOSE + ')', block):
+        if piece == CLOSE:
+            out.append(f'</{stack.pop()}>')
+        else:
+            if piece.startswith('<u class='):
+                stack.append('u')
+            elif piece.startswith('<span class=') and 'data-info=' in piece:
+                stack.append('span')
+            out.append(piece)
+    return ''.join(out)
 
 
 _SUPERSCRIPTS = str.maketrans('⁰¹²³⁴⁵⁶⁷⁸⁹', '0123456789')
@@ -316,12 +400,14 @@ def page_html(n, head, lines, notes):
 STYLE = """<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap">
 <style>
 body,td{font-family:'Noto Sans',sans-serif}
-body{max-width:60em;margin:1em auto;padding:0 1em;color:#222}
+body{max-width:60em;margin:1em auto;padding:0 1em;color:#222;line-height:1.4;word-spacing:5px}
 .erratum{border-bottom:2px solid #c00;cursor:help}
 .correction{text-decoration:underline #3cb371 2px;text-underline-offset:.32em;text-decoration-skip-ink:none;cursor:help}
 .erratum.correction{border-bottom:2px solid #c00}
+.suggestion{border-bottom:2px dotted #d07a00;cursor:help}
+u.suggestion,u.erratum{text-decoration:none}
 #tip{position:fixed;display:none;max-width:26em;background:#fffbe6;border:1px solid #888;
- padding:.5em .7em;font:13px/1.4 'Noto Sans',sans-serif;box-shadow:0 2px 6px #0004;z-index:9;white-space:normal}
+ padding:.5em .7em;font:13px/1.4 'Noto Sans',sans-serif;box-shadow:0 2px 6px #0004;z-index:9;white-space:pre-line;word-spacing:normal}
 .red{color:#00c}
 .ln{display:inline-block;width:2.2em;margin-right:.9em;text-align:right;color:#000;font:11px/1 'Noto Sans',sans-serif;
  user-select:none;vertical-align:baseline}
@@ -345,16 +431,19 @@ WARNING = ('<div class="legend" style="border:2px solid #c00;background:#fff4f4"
            'edition; they may contain errors and should not be relied on without checking the book.</div>\n')
 CREDIT = ('<div class="legend"><b>About this copy.</b> The licence and the notice above are GRETIL\'s '
           'own and apply unchanged (CC BY-SA 4.0, &copy; Pali Text Society and Dhammakaya Foundation, 2015). '
-          'Manual proofreading corrections against the scans of the printed edition are marked below '
-          '(Jorge Contreras, github.com/jorgecaa, foureditions project); each was approved by a person. '
-          'Corrections derived from the Cone dictionary, Jackson\'s revised Sa\u1e43yutta IV apparatus or '
-          'word indices are identified by their source label. '
+          'Where GRETIL departs from the printed edition, the text below gives the printed reading, '
+          'checked against the scans of the edition (Jorge Contreras, github.com/jorgecaa, foureditions '
+          'project); each correction was approved by a person. Emendations of the edition itself (M. Cone\'s '
+          'Dictionary of P\u0101li, P. Jackson\'s revision of Sa\u1e43yutta IV, W. Pruitt\'s correction lists) '
+          'are not applied to the text: they are given as suggestions on the words concerned. '
           'The text of GRETIL itself has not been rewritten: every correction is recorded, with its '
-          'source and date, in corrections.json of the repository that built this file.</div>\n')
-LEGEND = ('<div class="legend"><span class="erratum">red underline</span>: an erratum that GRETIL '
-          'prints between braces { }; kept as printed. &nbsp; <span class="correction">green underline</span>: '
-          'a correction approved in the foureditions project. Hover over (or tap) a marked word for '
-          'its source, the date it was approved, and what GRETIL had.</div>')
+          'source and, when recorded, its date, in corrections.json of the repository that built this file.</div>\n')
+LEGEND = ('<div class="legend"><span class="erratum">red underline</span>: GRETIL encloses the words in '
+          'braces { }; reproduced as in GRETIL. &nbsp; <span class="correction">green underline</span>: '
+          'GRETIL departs from the printed edition; the printed reading is given. &nbsp; '
+          '<span class="suggestion">orange dotted underline</span>: an emendation of the edition, suggested '
+          'but not applied. Hover over (or tap) a marked word for the readings, the evidence or authority, '
+          'and the approval date when recorded.</div>')
 NOTE = ('Pali Text Society edition (Ee), digital input by the Dhammakaya Foundation (1989-1996), GRETIL '
         'version. Licence: CC BY-SA 4.0, (c) Pali Text Society and Dhammakaya Foundation, 2015. '
         'This file carries the corrections approved in the foureditions project ({count} pages '
@@ -391,15 +480,20 @@ def build_file(volume, rel):
         if replaced:
             head, text, notes = replaced['head'], replaced['text'], replaced['notes']
             who, call = [()] * len(text), glued_calls(text)
+            head_who, notes_who = [()] * len(head), [()] * len(notes)
         else:
-            head = apply(volume, n, 'head', head)[0]
-            notes = apply(volume, n, 'notes', notes)[0]
+            head, head_who, _ = apply(volume, n, 'head', head)
+            notes, notes_who, _ = apply(volume, n, 'notes', notes)
             text, who, call = apply(volume, n, 'text', text, calls[n] or glued_calls(text))
             if volume.startswith('SN '):          # the Saṃyutta writes its abbreviation sign as `°`
                 text = text.replace('º', '°')
-        changed += any(who)
+        changed += any(who) or any(head_who) or any(notes_who)
         marked, infos = mark(text, who, call)
-        block = page_html(n, head, marked.replace('ṁ', KEEP).split('\n'), notes).replace(KEEP, 'ṁ')
+        # the running head and the apparatus: corrected words are marked, braces are not
+        # (`<u>`, not `<span>`: GRETIL's apparatus is itself a span, which a nested span would cut short)
+        head_marked = mark(head, head_who, [False] * len(head), infos, braces=False, tag='u')[0]
+        notes_marked = mark(notes, notes_who, [False] * len(notes), infos, braces=False, tag='u')[0]
+        block = page_html(n, head_marked, marked.replace('ṁ', KEEP).split('\n'), notes_marked).replace(KEEP, 'ṁ')
         block = spans(block, infos)
         # the page reads back exactly as written
         back = parts(block, abbreviate=False)[n]

@@ -15,12 +15,14 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap">
 <style>
 body,td{font-family:'Noto Sans',sans-serif}
-body{max-width:60em;margin:1em auto;padding:0 1em;color:#222}
+body{max-width:60em;margin:1em auto;padding:0 1em;color:#222;line-height:1.4;word-spacing:5px}
 .erratum{border-bottom:2px solid #c00;cursor:help}
 .correction{text-decoration:underline #3cb371 2px;text-underline-offset:.32em;text-decoration-skip-ink:none;cursor:help}
 .erratum.correction{border-bottom:2px solid #c00}
+.suggestion{border-bottom:2px dotted #d07a00;cursor:help}
+u.suggestion,u.erratum{text-decoration:none}
 #tip{position:fixed;display:none;max-width:26em;background:#fffbe6;border:1px solid #888;
- padding:.5em .7em;font:13px/1.4 'Noto Sans',sans-serif;box-shadow:0 2px 6px #0004;z-index:9;white-space:normal}
+ padding:.5em .7em;font:13px/1.4 'Noto Sans',sans-serif;box-shadow:0 2px 6px #0004;z-index:9;white-space:pre-line;word-spacing:normal}
 .red{color:#00c}
 .ln{display:inline-block;width:2.2em;margin-right:.9em;text-align:right;color:#000;font:11px/1 'Noto Sans',sans-serif;
  user-select:none;vertical-align:baseline}
@@ -144,8 +146,8 @@ Therīgāthā<BR>
   Uddāna : saṭṭhisat- A, satis- B, sattas- C.-- cattāro ca A, pañcapaññe BC.<BR>
 </span><BR>
 <!-- Pali Text Society edition (Ee), digital input by the Dhammakaya Foundation (1989-1996), GRETIL version. Licence: CC BY-SA 4.0, (c) Pali Text Society and Dhammakaya Foundation, 2015. This file carries the corrections approved in the foureditions project (17 pages changed in this file; built from commit 0baf718d8e45 of the GRETIL mirror). The critical apparatus (footnotes and variant readings) has NOT been proofread. Text between braces is an erratum printed by GRETIL and is kept as is. The original GRETIL file is not modified. -->
-<div class="legend"><b>About this copy.</b> The licence and the notice above are GRETIL's own and apply unchanged (CC BY-SA 4.0, &copy; Pali Text Society and Dhammakaya Foundation, 2015). Manual proofreading corrections against the scans of the printed edition are marked below (Jorge Contreras, github.com/jorgecaa, foureditions project); each was approved by a person. Corrections derived from the Cone dictionary, Jackson's revised Saṃyutta IV apparatus or word indices are identified by their source label. The text of GRETIL itself has not been rewritten: every correction is recorded, with its source and date, in corrections.json of the repository that built this file.</div>
-<div class="legend"><span class="erratum">red underline</span>: an erratum that GRETIL prints between braces { }; kept as printed. &nbsp; <span class="correction">green underline</span>: a correction approved in the foureditions project. Hover over (or tap) a marked word for its source, the date it was approved, and what GRETIL had.</div><hr>
+<div class="legend"><b>About this copy.</b> The licence and the notice above are GRETIL's own and apply unchanged (CC BY-SA 4.0, &copy; Pali Text Society and Dhammakaya Foundation, 2015). Where GRETIL departs from the printed edition, the text below gives the printed reading, checked against the scans of the edition (Jorge Contreras, github.com/jorgecaa, foureditions project); each correction was approved by a person. Emendations of the edition itself (M. Cone's Dictionary of Pāli, P. Jackson's revision of Saṃyutta IV, W. Pruitt's correction lists) are not applied to the text: they are given as suggestions on the words concerned. The text of GRETIL itself has not been rewritten: every correction is recorded, with its source and, when recorded, its date, in corrections.json of the repository that built this file.</div>
+<div class="legend"><span class="erratum">red underline</span>: GRETIL encloses the words in braces { }; reproduced as in GRETIL. &nbsp; <span class="correction">green underline</span>: GRETIL departs from the printed edition; the printed reading is given. &nbsp; <span class="suggestion">orange dotted underline</span>: an emendation of the edition, suggested but not applied. Hover over (or tap) a marked word for the readings, the evidence or authority, and the approval date when recorded.</div><hr>
 <!-- page-status: corrected --><b>[page 123]</b><BR>
 <i>123</i><BR>
 <span class="ln" data-n="1"></span>                          THERĪ-GĀTHĀ.<BR>
@@ -1197,7 +1199,7 @@ Therīgāthā<BR>
 <span class="ln"></span>kiṃ nu jātiṃ na rocesi jāto kāmāni bhuñjati |<BR>
 <span class="ln"></span>bhuñjāhi kāmaratiyo māhu pacchānutāpinī. ║ ║<BR>
 <span class="ln" data-n="20"></span>jātassa maraṇaṃ hoti hatthapādāna chedanaṃ |<BR>
-<span class="ln"></span><span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{vadhabandhaparikilesaṃ}</span> jāto dukkhaṃ nigacchati. ║ ║<BR>
+<span class="ln"></span><span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{vadhabandhaparikilesaṃ}</span> jāto dukkhaṃ nigacchati. ║ ║<BR>
 <span class="ln"></span>atthi Sakyakule jāto sambuddho aparājito |<BR>
 <span class="ln"></span>so me dhammam adesesi jātiyā samatikkamaṃ. ║ ║<BR>
 <span class="ln"></span>dukkhaṃ dukkhasamuppādaṃ dukkhassa ca atikkamaṃ |<BR>
@@ -1467,7 +1469,7 @@ Therīgāthā<BR>
 <span class="ln"></span>vedhamānehi gattehi sītaṃ vedayase bhusaṃ. ║ ║<BR>
 <span class="ln" data-n="5"></span>jānantī ca tuvaṃ bhoti Puṇṇike paripucchasi |<BR>
 <span class="ln"></span>karontaṃ kusalaṃ kammaṃ rudhantaṃ kamma pāpakaṃ. ║ ║<BR>
-<span class="ln"></span>yo ca vuḍḍho vā <span class="correction" data-info="Correction. Source: Hand-corrected copy of the GRETIL file, checked against the scan of the PTS edition. GRETIL had: «dabaro». The book prints: «daharo».">daharo</span> vā pāpakammaṃ pakubbati |<BR>
+<span class="ln"></span>yo ca vuḍḍho vā <span class="correction" data-info="Transcription corrected | GRETIL: «dabaro» → printed edition: «daharo» | Evidence: Copy of the GRETIL file corrected by hand, checked against the scan of the PTS edition. Approval date not recorded.">daharo</span> vā pāpakammaṃ pakubbati |<BR>
 <span class="ln"></span>udakābhisecanā so pi pāpakammā pamuccati. ║ ║<BR>
 <span class="ln"></span>ko nu te idam akkhāsi ajānantassa ajānato |<BR>
 <span class="ln" data-n="10"></span>udakābhisecanā nāma pāpakammā pamuccati ║ ║<BR>
@@ -1632,7 +1634,7 @@ Therīgāthā<BR>
 <span class="ln"></span>te rindī va lambante 'nodakā saccavādivacanaṃ anaññathā. ║ ║<BR>
 <span class="ln"></span>kañcanassa phalakaṃ va sumaṭṭhaṃ sobhate su kāyo pure<BR>
 <span class="ln" data-n="10"></span>mama |<BR>
-<span class="ln"></span>so <span class="correction" data-info="Correction. Source: Hand-corrected copy of the GRETIL file, checked against the scan of the PTS edition. GRETIL had: «valini». The book prints: «valihi».">valihi</span> sukhumāhi otato saccavādivacanaṃ anaññathā. ║ ║<BR>
+<span class="ln"></span>so <span class="correction" data-info="Transcription corrected | GRETIL: «valini» → printed edition: «valihi» | Evidence: Copy of the GRETIL file corrected by hand, checked against the scan of the PTS edition. Approval date not recorded.">valihi</span> sukhumāhi otato saccavādivacanaṃ anaññathā. ║ ║<BR>
 <span class="ln"></span>nāgabhogasadisopamā ubho sobhate su ūrū pure mama |<BR>
 <span class="ln"></span>te jarāya yathā veḷunāḷiyo saccavādivacanaṃ anaññathā. ║ ║<BR>
 <span class="ln"></span>saṇhanūpurasuvaṇṇamaṇḍitā sobhate su jaṅghā pure mama |<BR>
@@ -1799,17 +1801,17 @@ Therīgāthā<BR>
 <span class="ln" data-n="5"></span>etto ceva catubbhāgaṃ yathā bhāsasi taṃ Cāpe |<BR>
 <span class="ln"></span>tayi rattassa posassa uḷāraṃ vata taṃ siyā. ║ ║<BR>
 <span class="ln"></span>Kāḷa 'ṅginiṃ va takkāriṃ pupphitaṃ girimuddhani |<BR>
-<span class="ln"></span>phullaṃ <span class="correction" data-info="Correction. Source: Hand-corrected copy of the GRETIL file, checked against the scan of the PTS edition. GRETIL had: «dālikalaṭhiṃ». The book prints: «dālikalaṭṭhiṃ».">dālikalaṭṭhiṃ</span> va antodīpe va pāṭaliṃ ║ ║<BR>
+<span class="ln"></span>phullaṃ <span class="correction" data-info="Transcription corrected | GRETIL: «dālikalaṭhiṃ» → printed edition: «dālikalaṭṭhiṃ» | Evidence: Copy of the GRETIL file corrected by hand, checked against the scan of the PTS edition. Approval date not recorded.">dālikalaṭṭhiṃ</span> va antodīpe va pāṭaliṃ ║ ║<BR>
 <span class="ln"></span>haricandanalittaṅgiṃ kāsikuttamadhāriniṃ |<BR>
 <span class="ln" data-n="10"></span>taṃ maṃ rūpavatiṃ santiṃ kassa ohāya gacchasi. ║ ║<BR>
-<span class="ln"></span><span class="correction" data-info="Correction. Source: Hand-corrected copy of the GRETIL file, checked against the scan of the PTS edition. GRETIL had: «sākunitikko». The book prints: «sākunitiko». | Correction approved on 2026-11-04. Source: Literal reading recorded during review. GRETIL had: «sākunitiko». The book prints: «sākuntiko».">sākuntiko</span> va sakuṇiṃ yathā bandhitum icchati |<BR>
+<span class="ln"></span><span class="correction" data-info="Transcription corrected | GRETIL: «sākunitikko» → printed edition: «sākunitiko» | Evidence: Copy of the GRETIL file corrected by hand, checked against the scan of the PTS edition. Approval date not recorded. |  | Transcription corrected | GRETIL: «sākunitiko» → printed edition: «sākuntiko» | Evidence: Printed reading recorded as it stands on the scan of the PTS edition (misprints kept). Approved on 2026-11-04.">sākuntiko</span> va sakuṇiṃ yathā bandhitum icchati |<BR>
 <span class="ln"></span>āharimena rūpena na maṃ tvaṃ bādhayissasi. ║ ║<BR>
 <span class="ln"></span>imaṃ ca me puttaphalaṃ Kāḷa uppāditaṃ tayā |<BR>
 <span class="ln"></span>taṃ maṃ puttavatiṃ santiṃ kassa ohāya gacchasi. ║ ║<BR>
 <span class="ln" data-n="15"></span>jahanti putte sappaññā tato ñātī tato dhanaṃ |<BR>
 <span class="ln"></span>pabbajanti mahāvīrā nāgo chetvā va bandhanaṃ. ║ ║<BR>
 <span class="ln"></span>idāni te imaṃ puttaṃ daṇḍena churikāya vā |<BR>
-<span class="ln"></span><span class="correction" data-info="Correction approved on 2026-11-04. Source: Literal reading recorded during review. GRETIL had: «bhūmiyyaṃ». The book prints: «bhūmiyaṃ».">bhūmiyaṃ</span> vā nisumbheyyaṃ puttasokā na gacchasi. ║ ║<BR>
+<span class="ln"></span><span class="correction" data-info="Transcription corrected | GRETIL: «bhūmiyyaṃ» → printed edition: «bhūmiyaṃ» | Evidence: Printed reading recorded as it stands on the scan of the PTS edition (misprints kept). Approved on 2026-11-04.">bhūmiyaṃ</span> vā nisumbheyyaṃ puttasokā na gacchasi. ║ ║<BR>
 <span class="ln"></span>sace puttaṃ sigālānaṃ kukkurānaṃ padāhisi |<BR>
 <span class="ln" data-n="20"></span>na maṃ puttakate jammi punar āvattayissasi. ║ ║<BR>
 <span class="ln"></span>handa kho dāni bhaddan te kuhiṃ Kāḷa gamissasi |<BR>
@@ -1850,7 +1852,7 @@ Therīgāthā<BR>
 </span><BR>
 <!-- page-status: corrected --><b>[page 153]</b><BR>
 <i>THERĪ-GĀTHĀ.                          153</i><BR>
-<span class="ln" data-n="1"></span>katamaṃ gāmaṃ nigamaṃ <span class="correction" data-info="Correction. Source: Hand-corrected copy of the GRETIL file, checked against the scan of the PTS edition. GRETIL had: «nagraṃ». The book prints: «nagaraṃ».">nagaraṃ</span> rājadhāniyo. ║ ║<BR>
+<span class="ln" data-n="1"></span>katamaṃ gāmaṃ nigamaṃ <span class="correction" data-info="Transcription corrected | GRETIL: «nagraṃ» → printed edition: «nagaraṃ» | Evidence: Copy of the GRETIL file corrected by hand, checked against the scan of the PTS edition. Approval date not recorded.">nagaraṃ</span> rājadhāniyo. ║ ║<BR>
 <span class="ln"></span>ahumha pubbe gaṇino asamaṇā samaṇamānino |<BR>
 <span class="ln"></span>gāmena gāmaṃ vicarimha nagare rājadhāniyo. ║ ║<BR>
 <span class="ln"></span>eso hi bhagavā buddho nadiṃ Nerañjaraṃ pati |<BR>
@@ -1914,7 +1916,7 @@ Therīgāthā<BR>
 <span class="ln" data-n="1"></span>abbhutaṃ vata Vāseṭṭhi vācaṃ bhāsasi edisaṃ |<BR>
 <span class="ln"></span>kassa tvaṃ dhammam aññāya giraṃ bhāsasi edisaṃ. ║ ║<BR>
 <span class="ln"></span>esa brāhmaṇa sambuddho nagaraṃ Mithilaṃ pati |<BR>
-<span class="ln"></span>sabbadukkhappahānāya dhammaṃ <span class="correction" data-info="Correction. Source: Hand-corrected copy of the GRETIL file, checked against the scan of the PTS edition. GRETIL had: «desisi». The book prints: «desesi».">desesi</span> pāṇinaṃ. ║ ║<BR>
+<span class="ln"></span>sabbadukkhappahānāya dhammaṃ <span class="correction" data-info="Transcription corrected | GRETIL: «desisi» → printed edition: «desesi» | Evidence: Copy of the GRETIL file corrected by hand, checked against the scan of the PTS edition. Approval date not recorded.">desesi</span> pāṇinaṃ. ║ ║<BR>
 <span class="ln" data-n="5"></span>tassāhaṃ brāhmaṇa arahato dhammaṃ sutvā nirupadhiṃ |<BR>
 <span class="ln"></span>tattha viññātasaddhammā puttasokaṃ byapānudiṃ. ║ ║<BR>
 <span class="ln"></span>so ahaṃ pi gamissāmi nagaraṃ Mithilaṃ pati |<BR>
@@ -1932,7 +1934,7 @@ Therīgāthā<BR>
 <span class="ln"></span>ārogyaṃ brāhmaṇiṃ avoca pabbajito dāni brāhmaṇo |<BR>
 <span class="ln" data-n="20"></span>Sujāto tīhi rattīhi tisso vijjā aphassayi. ║ ║<BR>
 <span class="ln"></span>etaṃ c' ahaṃ assarathaṃ sahassaṃ cāpi sārathi |<BR>
-<span class="ln"></span>tevijjaṃ brāhmaṇaṃ sutvā <span class="correction" data-info="Correction. Source: Hand-corrected copy of the GRETIL file, checked against the scan of the PTS edition. GRETIL had: «puṇṇapataṃ». The book prints: «puṇṇapattaṃ».">puṇṇapattaṃ</span> dadāmi te. ║ ║<BR>
+<span class="ln"></span>tevijjaṃ brāhmaṇaṃ sutvā <span class="correction" data-info="Transcription corrected | GRETIL: «puṇṇapataṃ» → printed edition: «puṇṇapattaṃ» | Evidence: Copy of the GRETIL file corrected by hand, checked against the scan of the PTS edition. Approval date not recorded.">puṇṇapattaṃ</span> dadāmi te. ║ ║<BR>
 <span class="ln"></span>tumh' eva hotu assaratho sahassaṃ cāpi brāhmaṇi |<BR>
 <span class="ln"></span>ahaṃ pi pabbajissāmi varapaññassa santike. ║ ║<BR>
 <BR>
@@ -1977,7 +1979,7 @@ Therīgāthā<BR>
 <i>THERĪ-GĀTHĀ.                          155</i><BR>
 <span class="ln" data-n="1"></span>hatthigavassaṃ maṇikuṇḍalañ ca phītañ c' imaṃ gehavi-<BR>
 <span class="ln"></span>gataṃ pahāya |<BR>
-<span class="ln"></span>pitā <span class="correction" data-info="Correction. Source: Hand-corrected copy of the GRETIL file, checked against the scan of the PTS edition. GRETIL had: «pabbajjito». The book prints: «pabbajito».">pabbajito</span> tuyhaṃ bhuñja bhogāni Sundari tuvaṃ<BR>
+<span class="ln"></span>pitā <span class="correction" data-info="Transcription corrected | GRETIL: «pabbajjito» → printed edition: «pabbajito» | Evidence: Copy of the GRETIL file corrected by hand, checked against the scan of the PTS edition. Approval date not recorded.">pabbajito</span> tuyhaṃ bhuñja bhogāni Sundari tuvaṃ<BR>
 <span class="ln"></span>dāyādikā kule. ║ ║<BR>
 <span class="ln" data-n="5"></span>hatthigavassaṃ maṇikuṇḍalañ ca rammañ c' imaṃ gehavi-<BR>
 <span class="ln"></span>gataṃ pahāya |<BR>
@@ -1995,9 +1997,9 @@ Therīgāthā<BR>
 <span class="ln"></span>passa Sundari satthāraṃ hemavaṇṇaṃ harittacaṃ |<BR>
 <span class="ln"></span>adantānaṃ dametāraṃ sambuddhaṃ akutobhayaṃ. ║ ║<BR>
 <span class="ln" data-n="20"></span>passa Sundariṃ āyantiṃ vippamuttaṃ nirupadhiṃ |<BR>
-<span class="ln"></span>vītarāgaṃ <span class="correction" data-info="Correction. Source: Hand-corrected copy of the GRETIL file, checked against the scan of the PTS edition. GRETIL had: «visuṃyuttaṃ». The book prints: «visaṃyuttaṃ».">visaṃyuttaṃ</span> katakiccam anāsavaṃ. ║ ║<BR>
+<span class="ln"></span>vītarāgaṃ <span class="correction" data-info="Transcription corrected | GRETIL: «visuṃyuttaṃ» → printed edition: «visaṃyuttaṃ» | Evidence: Copy of the GRETIL file corrected by hand, checked against the scan of the PTS edition. Approval date not recorded.">visaṃyuttaṃ</span> katakiccam anāsavaṃ. ║ ║<BR>
 <span class="ln"></span>Bārāṇasīto nikkhamma tava santikam āgatā |<BR>
-<span class="ln"></span>sāvikā te <span class="correction" data-info="Correction. Source: Hand-corrected copy of the GRETIL file, checked against the scan of the PTS edition. GRETIL had: «mahāvīre». The book prints: «mahāvīra».">mahāvīra</span> pāde vandati Sundarī. ║ ║<BR>
+<span class="ln"></span>sāvikā te <span class="correction" data-info="Transcription corrected | GRETIL: «mahāvīre» → printed edition: «mahāvīra» | Evidence: Copy of the GRETIL file corrected by hand, checked against the scan of the PTS edition. Approval date not recorded.">mahāvīra</span> pāde vandati Sundarī. ║ ║<BR>
 <span class="ln"></span>tuvaṃ. buddho tuvaṃ satthā tuyhaṃ dhīta mhi brāhmaṇa |<BR>
 <span class="ln" data-n="25"></span>orasā mukhato jātā katakiccā anāsavā. ║ ║<BR>
 <BR>
@@ -2043,21 +2045,21 @@ Therīgāthā<BR>
 <span class="ln"></span>tato 'haṃ sabbakāmesu bhūsaṃ aratim ajjhagaṃ |<BR>
 <span class="ln"></span>sakkāyasmiṃ bhayaṃ disvā nekkhammaṃ yeva pihaye. ║ ║<BR>
 <span class="ln"></span>hitvān' ahaṃ ñātigaṇaṃ dāsakammakarāni ca |<BR>
-<span class="ln" data-n="10"></span>gāmakhettāni <span class="correction" data-info="Correction. Source: Hand-corrected copy of the GRETIL file, checked against the scan of the PTS edition. GRETIL had: «bhītāni». The book prints: «phītāni».">phītāni</span> ramaṇīye pamodite |<BR>
+<span class="ln" data-n="10"></span>gāmakhettāni <span class="correction" data-info="Transcription corrected | GRETIL: «bhītāni» → printed edition: «phītāni» | Evidence: Copy of the GRETIL file corrected by hand, checked against the scan of the PTS edition. Approval date not recorded.">phītāni</span> ramaṇīye pamodite |<BR>
 <span class="ln"></span>pahāy' ahaṃ pabbajitā sāpateyyam anappakaṃ. ║ ║<BR>
 <span class="ln"></span>evaṃ saddhāya nikkhamma saddhamme suppavedite |<BR>
 <span class="ln"></span>na me taṃ assa patirūpaṃ ākiñcaññaṃ hi patthaye |<BR>
 <span class="ln"></span>yā jātarūparajataṃ ṭhapetvā punar āgame. ║ ║<BR>
 <span class="ln" data-n="15"></span>rajataṃ jātarūpaṃ vā na bodhāya na santaye |<BR>
-<span class="ln"></span>na etaṃ samaṇasāruppaṃ na etaṃ <span class="correction" data-info="Correction. Source: Hand-corrected copy of the GRETIL file, checked against the scan of the PTS edition. GRETIL had: «ariyavaḍḍhanaṃ». The book prints: «ariyadhanaṃ».">ariyadhanaṃ</span> ║ ║<BR>
+<span class="ln"></span>na etaṃ samaṇasāruppaṃ na etaṃ <span class="correction" data-info="Transcription corrected | GRETIL: «ariyavaḍḍhanaṃ» → printed edition: «ariyadhanaṃ» | Evidence: Copy of the GRETIL file corrected by hand, checked against the scan of the PTS edition. Approval date not recorded.">ariyadhanaṃ</span> ║ ║<BR>
 <span class="ln"></span>lobhanaṃ madanaṃ c' etaṃ mohanaṃ rajavaḍḍhanaṃ |<BR>
-<span class="ln"></span>sāsaṅkaṃ bahuāyāsaṃ n' atthi c' ettha <span class="correction" data-info="Correction. Source: Hand-corrected copy of the GRETIL file, checked against the scan of the PTS edition. GRETIL had: «dhavaṃ». The book prints: «dhuvaṃ».">dhuvaṃ</span> ṭhiti. ║ ║<BR>
+<span class="ln"></span>sāsaṅkaṃ bahuāyāsaṃ n' atthi c' ettha <span class="correction" data-info="Transcription corrected | GRETIL: «dhavaṃ» → printed edition: «dhuvaṃ» | Evidence: Copy of the GRETIL file corrected by hand, checked against the scan of the PTS edition. Approval date not recorded.">dhuvaṃ</span> ṭhiti. ║ ║<BR>
 <span class="ln"></span>ettha rattā pamattā ca saṃkiliṭṭhamanā narā |<BR>
 <span class="ln" data-n="20"></span>aññamaññena byāruddhā puthukubbanti medhagaṃ. ║ ║<BR>
-<span class="ln"></span>vadho bandho <span class="correction" data-info="Correction. Source: Hand-corrected copy of the GRETIL file, checked against the scan of the PTS edition. GRETIL had: «parikeso». The book prints: «parikleso».">parikleso</span> jāni sokapariddavo |<BR>
+<span class="ln"></span>vadho bandho <span class="correction" data-info="Transcription corrected | GRETIL: «parikeso» → printed edition: «parikleso» | Evidence: Copy of the GRETIL file corrected by hand, checked against the scan of the PTS edition. Approval date not recorded.">parikleso</span> jāni sokapariddavo |<BR>
 <span class="ln"></span>kāmesu adhipannānaṃ dissate byasanaṃ bahuṃ. ║ ║<BR>
 <span class="ln"></span>taṃ mañ ñātī amittā va kiṃ maṃ kāmesu yuñjatha |<BR>
-<span class="ln"></span>jānātha maṃ <span class="correction" data-info="Correction. Source: Hand-corrected copy of the GRETIL file, checked against the scan of the PTS edition. GRETIL had: «babbajitaṃ». The book prints: «pabbajitaṃ».">pabbajitaṃ</span> kāmesu <span class="correction" data-info="Correction. Source: Hand-corrected copy of the GRETIL file, checked against the scan of the PTS edition. GRETIL had: «bhayadassina.». The book prints: «bhayadassiniṃ.».">bhayadassiniṃ.</span> ║ ║<BR>
+<span class="ln"></span>jānātha maṃ <span class="correction" data-info="Transcription corrected | GRETIL: «babbajitaṃ» → printed edition: «pabbajitaṃ» | Evidence: Copy of the GRETIL file corrected by hand, checked against the scan of the PTS edition. Approval date not recorded.">pabbajitaṃ</span> kāmesu <span class="correction" data-info="Transcription corrected | GRETIL: «bhayadassina.» → printed edition: «bhayadassiniṃ.» | Evidence: Copy of the GRETIL file corrected by hand, checked against the scan of the PTS edition. Approval date not recorded.">bhayadassiniṃ.</span> ║ ║<BR>
 <BR>
 <BR>
 <span class="red">--------------------------------------------------------------------------<BR>
@@ -2101,7 +2103,7 @@ Therīgāthā<BR>
 <span class="ln" data-n="10"></span>amittā vadhakā kāmā aggikhandhūpamā dukhā. ║ ║<BR>
 <span class="ln"></span>paripantho eso sabhayo savighāto sakaṇṭako |<BR>
 <span class="ln"></span>gedho suvisamo c' eso mahanto mohanāmukho. ║ ║<BR>
-<span class="ln"></span>upasaggo bhīmarūpo <span class="correction" data-info="Correction. Source: Hand-corrected copy of the GRETIL file, checked against the scan of the PTS edition. GRETIL had: «cakāmā». The book prints: «ca kāmā».">ca kāmā</span> sappasirūpamā |<BR>
+<span class="ln"></span>upasaggo bhīmarūpo <span class="correction" data-info="Transcription corrected | GRETIL: «cakāmā» → printed edition: «ca kāmā» | Evidence: Copy of the GRETIL file corrected by hand, checked against the scan of the PTS edition. Approval date not recorded.">ca kāmā</span> sappasirūpamā |<BR>
 <span class="ln"></span>ye bālā abhinandanti andhabhūtā puthujjanā. ║ ║<BR>
 <span class="ln" data-n="15"></span>kāmapaṅkasattā hi janā bahū loke aviddasū |<BR>
 <span class="ln"></span>pariyantaṃ nābhijānanti jātiyā maraṇassa ca. ║ ║<BR>
@@ -2156,10 +2158,10 @@ Therīgāthā<BR>
 <span class="ln" data-n="5"></span>appamattā vihissāmi tesaṃ saṃyojanakkhaye. ║ ║<BR>
 <span class="ln"></span>asokaṃ virajaṃ khemaṃ ariyaṭṭhaṅgikaṃ ujuṃ |<BR>
 <span class="ln"></span>taṃ maggaṃ anugacchāmi yena tiṇṇā mahesino. ║ ║<BR>
-<span class="ln"></span>imaṃ passatha dhammaṭṭhaṃ <span class="correction" data-info="Correction. Source: Hand-corrected copy of the GRETIL file, checked against the scan of the PTS edition. GRETIL had: «Subbaṃ». The book prints: «Subhaṃ».">Subhaṃ</span> kammāradhītaraṃ |<BR>
+<span class="ln"></span>imaṃ passatha dhammaṭṭhaṃ <span class="correction" data-info="Transcription corrected | GRETIL: «Subbaṃ» → printed edition: «Subhaṃ» | Evidence: Copy of the GRETIL file corrected by hand, checked against the scan of the PTS edition. Approval date not recorded.">Subhaṃ</span> kammāradhītaraṃ |<BR>
 <span class="ln"></span>anejaṃ upasampajja rukkhamūlamhi jhāyati. ║ ║<BR>
 <span class="ln" data-n="10"></span>ajj' aṭṭhamī pabbajitā saddhā saddhammasobhaṇā |<BR>
-<span class="ln"></span>vinītā Uppalavaṇṇāya tevijjā <span class="correction" data-info="Correction. Source: Hand-corrected copy of the GRETIL file, checked against the scan of the PTS edition. GRETIL had: «maccuhāyini.». The book prints: «maccuhāyinī.».">maccuhāyinī.</span> ║ ║<BR>
+<span class="ln"></span>vinītā Uppalavaṇṇāya tevijjā <span class="correction" data-info="Transcription corrected | GRETIL: «maccuhāyini.» → printed edition: «maccuhāyinī.» | Evidence: Copy of the GRETIL file corrected by hand, checked against the scan of the PTS edition. Approval date not recorded.">maccuhāyinī.</span> ║ ║<BR>
 <span class="ln"></span>sāyaṃ bhujissā anaṇā bhikkhunī bhāvitindriyā |<BR>
 <span class="ln"></span>sabbayogavisaṃyuttā katakiccā anāsavā. ║ ║<BR>
 <span class="ln"></span>taṃ Sakko devasaṅghena upasaṃgamma iddhiyā |<BR>
@@ -2223,7 +2225,7 @@ Therīgāthā<BR>
 <span class="ln"></span>ahaṃ tava vasānugo siyaṃ yadi viharemasi kānanantare |<BR>
 <span class="ln"></span>na hi m' atthi tayā piyataro pāṇo kinnarimandalocane. ║ ║<BR>
 <span class="ln"></span>yadi me vacanaṃ karissasi sukhitā ehi agāram āvasa |<BR>
-<span class="ln"></span><span class="correction" data-info="Correction. Source: Hand-corrected copy of the GRETIL file, checked against the scan of the PTS edition. GRETIL had: «pāsādanivātavāsinā». The book prints: «pāsādanivātavāsinī».">pāsādanivātavāsinī</span> parikamman te karontu nāriyo. ║ ║<BR>
+<span class="ln"></span><span class="correction" data-info="Transcription corrected | GRETIL: «pāsādanivātavāsinā» → printed edition: «pāsādanivātavāsinī» | Evidence: Copy of the GRETIL file corrected by hand, checked against the scan of the PTS edition. Approval date not recorded.">pāsādanivātavāsinī</span> parikamman te karontu nāriyo. ║ ║<BR>
 <span class="ln" data-n="20"></span>kāsikasukhumāni dhāraya abhiropehi ca mālavaṇṇakaṃ |<BR>
 <BR>
 <BR>
@@ -2267,7 +2269,7 @@ Therīgāthā<BR>
 <span class="ln"></span>uppalaṃ ca udakato ubbhataṃ yathā yaṃ amanussasevitaṃ |<BR>
 <span class="ln"></span>evaṃ tuvaṃ brahmacārini sakesu aṅgesu jaraṃ gamissasi. ║ ║<BR>
 <span class="ln"></span>kin te idha sārasammataṃ kuṇapapūramhi susānavaḍḍhane |<BR>
-<span class="ln" data-n="10"></span>bhedanadhamme kaḷevare yaṃ disvā vimano <span class="correction" data-info="Correction. Source: Hand-corrected copy of the GRETIL file, checked against the scan of the PTS edition. GRETIL had: «dikkhasi.». The book prints: «udikkhasi.».">udikkhasi.</span> ║ ║<BR>
+<span class="ln" data-n="10"></span>bhedanadhamme kaḷevare yaṃ disvā vimano <span class="correction" data-info="Transcription corrected | GRETIL: «dikkhasi.» → printed edition: «udikkhasi.» | Evidence: Copy of the GRETIL file corrected by hand, checked against the scan of the PTS edition. Approval date not recorded.">udikkhasi.</span> ║ ║<BR>
 <span class="ln"></span>akkhīni ca turiyā-r-iva kinnariyā-r-iva pabbatantare |<BR>
 <span class="ln"></span>tava me nayanāni dakkhiya bhiyyo kāmarati pavaḍḍhati. ║ ║<BR>
 <span class="ln"></span>uppalasikharopamānite vimale hāṭakasannibhe mukhe |<BR>
@@ -2360,7 +2362,7 @@ Therīgāthā<BR>
 <!-- page-status: corrected --><b>[page 162]</b><BR>
 <i>162                          THERĪ-GĀTHĀ.</i><BR>
 <span class="ln" data-n="1"></span>tamhi te viparītadassanaṃ paññā mānusikā niratthikā. ║ ║<BR>
-<span class="ln"></span>māyaṃ viya aggato kataṃ supinante <span class="correction" data-info="Correction. Source: Hand-corrected copy of the GRETIL file, checked against the scan of the PTS edition. GRETIL had: «vasuvaṇṇapādapaṃ». The book prints: «va suvaṇṇapādapaṃ».">va suvaṇṇapādapaṃ</span> |<BR>
+<span class="ln"></span>māyaṃ viya aggato kataṃ supinante <span class="correction" data-info="Transcription corrected | GRETIL: «vasuvaṇṇapādapaṃ» → printed edition: «va suvaṇṇapādapaṃ» | Evidence: Copy of the GRETIL file corrected by hand, checked against the scan of the PTS edition. Approval date not recorded.">va suvaṇṇapādapaṃ</span> |<BR>
 <span class="ln"></span>upadhāvasi andha rittakaṃ janamajjhe-r-iva rupparūpakaṃ. ║ ║<BR>
 <span class="ln"></span>vaṭṭani-r-iva koṭar' ohitā majjhebubbuḷakā sāssukā |<BR>
 <span class="ln" data-n="5"></span>pīḷikoḷikā c' ettha jāyati vividhā cakkhuvidhā 'va piṇḍitā. ║ ║<BR>
@@ -2547,7 +2549,7 @@ Therīgāthā<BR>
 <span class="ln" data-n="20"></span>dhammaṃ |<BR>
 <span class="ln"></span>annena ca pānena ca tappaya samaṇe dvijātī ca. ║ ║<BR>
 <span class="ln"></span>athā 'haṃ bhaṇāmi tātaṃ rodantī añjaliṃ paṇāmetvā |<BR>
-<span class="ln"></span>pāpaṃ hi <span class="correction" data-info="Correction. Source: Hand-corrected copy of the GRETIL file, checked against the scan of the PTS edition. GRETIL had: «may». The book prints: «mayā».">mayā</span> pakataṃ kammaṃ taṃ nijjaressāmi. ║ ║<BR>
+<span class="ln"></span>pāpaṃ hi <span class="correction" data-info="Transcription corrected | GRETIL: «may» → printed edition: «mayā» | Evidence: Copy of the GRETIL file corrected by hand, checked against the scan of the PTS edition. Approval date not recorded.">mayā</span> pakataṃ kammaṃ taṃ nijjaressāmi. ║ ║<BR>
 <BR>
 <BR>
 <span class="red">--------------------------------------------------------------------------<BR>
@@ -2703,7 +2705,7 @@ Therīgāthā<BR>
 <i>168                        THERĪ-GĀTHĀ.</i><BR>
 <span class="ln" data-n="1"></span>saccāni amma buddhavaradesitāni te bahutarā ajānantā |<BR>
 <span class="ln"></span>ye abhinandanti bhavagataṃ pihanti devesu upapattiṃ. ║ ║<BR>
-<span class="ln"></span><span class="correction" data-info="Correction. Source: Hand-corrected copy of the GRETIL file, checked against the scan of the PTS edition. GRETIL had: «devedu». The book prints: «devesu».">devesu</span> pi upapatti asassatā bhavagate aniccamhi |<BR>
+<span class="ln"></span><span class="correction" data-info="Transcription corrected | GRETIL: «devedu» → printed edition: «devesu» | Evidence: Copy of the GRETIL file corrected by hand, checked against the scan of the PTS edition. Approval date not recorded.">devesu</span> pi upapatti asassatā bhavagate aniccamhi |<BR>
 <span class="ln"></span>na ca santasanti bālā punappunaṃ jāyitabbassa. ║ ║<BR>
 <span class="ln" data-n="5"></span>cattāro vinipātā dve ca gatiyo kathañci labbhanti |<BR>
 <span class="ln"></span>na ca vinipātagatānaṃ pabbajjā atthi nirayesu. ║ ║<BR>
@@ -2824,8 +2826,8 @@ Therīgāthā<BR>
 <!-- page-status: corrected --><b>[page 170]</b><BR>
 <i>170                          THERĪ-GĀTHĀ.</i><BR>
 <span class="ln" data-n="1"></span>petesu ca nirayesu ca aparimitā dīyante ghātā. ║ ║<BR>
-<span class="ln"></span><span class="correction" data-info="Correction approved on 2026-11-04. Source: Literal reading recorded during review. GRETIL had: «nirayyesu». The book prints: «nirayesu».">nirayesu</span> bahū vinipātagatassa kilissamānassa |<BR>
-<span class="ln"></span>devesu pi attaṇaṃ <span class="correction" data-info="Correction. Source: Hand-corrected copy of the GRETIL file, checked against the scan of the PTS edition. GRETIL had: «nibānasukhā». The book prints: «nibbānasukhā».">nibbānasukhā</span> paraṃ n' atthi. ║ ║<BR>
+<span class="ln"></span><span class="correction" data-info="Transcription corrected | GRETIL: «nirayyesu» → printed edition: «nirayesu» | Evidence: Printed reading recorded as it stands on the scan of the PTS edition (misprints kept). Approved on 2026-11-04.">nirayesu</span> bahū vinipātagatassa kilissamānassa |<BR>
+<span class="ln"></span>devesu pi attaṇaṃ <span class="correction" data-info="Transcription corrected | GRETIL: «nibānasukhā» → printed edition: «nibbānasukhā» | Evidence: Copy of the GRETIL file corrected by hand, checked against the scan of the PTS edition. Approval date not recorded.">nibbānasukhā</span> paraṃ n' atthi. ║ ║<BR>
 <span class="ln"></span>pattā te nibbānaṃ ye yuttā dasabalassa pāvacane |<BR>
 <span class="ln" data-n="5"></span>appossukkā ghaṭenti jātimaraṇappahānāya. ║ ║<BR>
 <span class="ln"></span>ajj' eva tāta abhinikkhamissaṃ bhogehi kiṃ asārehi |<BR>
@@ -2948,7 +2950,7 @@ Therīgāthā<BR>
 <span class="ln" data-n="1"></span>anamatagge saṃsarato mahiṃ Jambudīpam upanītaṃ |<BR>
 <span class="ln"></span>kolaṭṭhimattaguḷikā mātāpitusv eva na ppahonti. ║ ║<BR>
 <span class="ln"></span>sara tiṇakaṭṭhaṃ sākhāpalāsaṃ upanītaṃ anamataggato |<BR>
-<span class="ln"></span>pitusu caturaṅgulikā ghaṭikā pitupitusv eva na <span class="correction" data-info="Correction approved on 2026-11-14. Source: Literal reading recorded during review. GRETIL had: «ppahonit». The book prints: «ppahonti».">ppahonti</span>. ║ ║<BR>
+<span class="ln"></span>pitusu caturaṅgulikā ghaṭikā pitupitusv eva na <span class="correction" data-info="Transcription corrected | GRETIL: «ppahonit» → printed edition: «ppahonti» | Evidence: Printed reading recorded as it stands on the scan of the PTS edition (misprints kept). Approved on 2026-11-14.">ppahonti</span>. ║ ║<BR>
 <span class="ln" data-n="5"></span>sara kāṇakacchapaṃ pubbe samudde aparato ca yu-<BR>
 <span class="ln"></span>gacchiddaṃ |<BR>
 <span class="ln"></span>siraṃ tassa ca paṭimukkaṃ manussalābhamhi opammaṃ. ║ ║<BR>
@@ -2962,8 +2964,8 @@ Therīgāthā<BR>
 <span class="ln" data-n="15"></span>sabbā hi kāmaratiyo jalitā kuthitā kupitā santāpitā. ║ ║<BR>
 <span class="ln"></span>asapattamhi samāne kin tava kāmehi ye bahusapattā |<BR>
 <span class="ln"></span>rājaggicoraudakappiyehi sādhāraṇā kāmā bahusapattā. ║ ║<BR>
-<span class="ln"></span>mokkhamhi vijjamāne kin tava kāmehi yesu <span class="correction" data-info="Correction. Source: Hand-corrected copy of the GRETIL file, checked against the scan of the PTS edition. GRETIL had: «vaḍhabandho». The book prints: «vadhabandho».">vadhabandho</span> |<BR>
-<span class="ln"></span>kāmesu hi vadhabandho kāmakāmā dukkhāni <span class="correction" data-info="Correction. Source: Hand-corrected copy of the GRETIL file, checked against the scan of the PTS edition. GRETIL had: «anubhoni.». The book prints: «anubhonti.».">anubhonti.</span> ║ ║<BR>
+<span class="ln"></span>mokkhamhi vijjamāne kin tava kāmehi yesu <span class="correction" data-info="Transcription corrected | GRETIL: «vaḍhabandho» → printed edition: «vadhabandho» | Evidence: Copy of the GRETIL file corrected by hand, checked against the scan of the PTS edition. Approval date not recorded.">vadhabandho</span> |<BR>
+<span class="ln"></span>kāmesu hi vadhabandho kāmakāmā dukkhāni <span class="correction" data-info="Transcription corrected | GRETIL: «anubhoni.» → printed edition: «anubhonti.» | Evidence: Copy of the GRETIL file corrected by hand, checked against the scan of the PTS edition. Approval date not recorded.">anubhonti.</span> ║ ║<BR>
 <BR>
 <BR>
 <span class="red">--------------------------------------------------------------------------<BR>
@@ -3007,7 +3009,7 @@ Therīgāthā<BR>
 <span class="ln"></span>ukkopamā hi kāmā dahanti ye te na muñcanti. ║ ║<BR>
 <span class="ln"></span>mā appakassa hetu kāmasukhassa vipulaṃ jahi sukhaṃ |<BR>
 <span class="ln"></span>mā puthulomo va baḷisaṃ giḷitvā pacchā vihaññasi. ║ ║<BR>
-<span class="ln" data-n="5"></span>kāmaṃ kāmesu damassu tāva sunakho va <span class="correction" data-info="Correction. Source: Hand-corrected copy of the GRETIL file, checked against the scan of the PTS edition. GRETIL had: «saṅkhalāboddho». The book prints: «saṅkhalābaddho».">saṅkhalābaddho</span> |<BR>
+<span class="ln" data-n="5"></span>kāmaṃ kāmesu damassu tāva sunakho va <span class="correction" data-info="Transcription corrected | GRETIL: «saṅkhalāboddho» → printed edition: «saṅkhalābaddho» | Evidence: Copy of the GRETIL file corrected by hand, checked against the scan of the PTS edition. Approval date not recorded.">saṅkhalābaddho</span> |<BR>
 <span class="ln"></span>khāhinti khu taṃ kāmā chātā sunakhaṃ va caṇḍālā. ║ ║<BR>
 <span class="ln"></span>aparimitañ ca sukkhaṃ bahūni ca cittadomanassāni |<BR>
 <span class="ln"></span>anubhohisi kāmesu yutto paṭinissaja addhuve kāme. ║ ║<BR>

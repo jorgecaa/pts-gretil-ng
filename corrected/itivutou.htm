@@ -15,12 +15,14 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap">
 <style>
 body,td{font-family:'Noto Sans',sans-serif}
-body{max-width:60em;margin:1em auto;padding:0 1em;color:#222}
+body{max-width:60em;margin:1em auto;padding:0 1em;color:#222;line-height:1.4;word-spacing:5px}
 .erratum{border-bottom:2px solid #c00;cursor:help}
 .correction{text-decoration:underline #3cb371 2px;text-underline-offset:.32em;text-decoration-skip-ink:none;cursor:help}
 .erratum.correction{border-bottom:2px solid #c00}
+.suggestion{border-bottom:2px dotted #d07a00;cursor:help}
+u.suggestion,u.erratum{text-decoration:none}
 #tip{position:fixed;display:none;max-width:26em;background:#fffbe6;border:1px solid #888;
- padding:.5em .7em;font:13px/1.4 'Noto Sans',sans-serif;box-shadow:0 2px 6px #0004;z-index:9;white-space:normal}
+ padding:.5em .7em;font:13px/1.4 'Noto Sans',sans-serif;box-shadow:0 2px 6px #0004;z-index:9;white-space:pre-line;word-spacing:normal}
 .red{color:#00c}
 .ln{display:inline-block;width:2.2em;margin-right:.9em;text-align:right;color:#000;font:11px/1 'Noto Sans',sans-serif;
  user-select:none;vertical-align:baseline}
@@ -133,8 +135,8 @@ http://gretil.sub.uni-goettingen.de/gretil.htm</p>
 Itivuttaka<BR>
 <BR>
 <!-- Pali Text Society edition (Ee), digital input by the Dhammakaya Foundation (1989-1996), GRETIL version. Licence: CC BY-SA 4.0, (c) Pali Text Society and Dhammakaya Foundation, 2015. This file carries the corrections approved in the foureditions project (0 pages changed in this file; built from commit 0baf718d8e45 of the GRETIL mirror). The critical apparatus (footnotes and variant readings) has NOT been proofread. Text between braces is an erratum printed by GRETIL and is kept as is. The original GRETIL file is not modified. -->
-<div class="legend"><b>About this copy.</b> The licence and the notice above are GRETIL's own and apply unchanged (CC BY-SA 4.0, &copy; Pali Text Society and Dhammakaya Foundation, 2015). Manual proofreading corrections against the scans of the printed edition are marked below (Jorge Contreras, github.com/jorgecaa, foureditions project); each was approved by a person. Corrections derived from the Cone dictionary, Jackson's revised Saṃyutta IV apparatus or word indices are identified by their source label. The text of GRETIL itself has not been rewritten: every correction is recorded, with its source and date, in corrections.json of the repository that built this file.</div>
-<div class="legend"><span class="erratum">red underline</span>: an erratum that GRETIL prints between braces { }; kept as printed. &nbsp; <span class="correction">green underline</span>: a correction approved in the foureditions project. Hover over (or tap) a marked word for its source, the date it was approved, and what GRETIL had.</div><hr>
+<div class="legend"><b>About this copy.</b> The licence and the notice above are GRETIL's own and apply unchanged (CC BY-SA 4.0, &copy; Pali Text Society and Dhammakaya Foundation, 2015). Where GRETIL departs from the printed edition, the text below gives the printed reading, checked against the scans of the edition (Jorge Contreras, github.com/jorgecaa, foureditions project); each correction was approved by a person. Emendations of the edition itself (M. Cone's Dictionary of Pāli, P. Jackson's revision of Saṃyutta IV, W. Pruitt's correction lists) are not applied to the text: they are given as suggestions on the words concerned. The text of GRETIL itself has not been rewritten: every correction is recorded, with its source and, when recorded, its date, in corrections.json of the repository that built this file.</div>
+<div class="legend"><span class="erratum">red underline</span>: GRETIL encloses the words in braces { }; reproduced as in GRETIL. &nbsp; <span class="correction">green underline</span>: GRETIL departs from the printed edition; the printed reading is given. &nbsp; <span class="suggestion">orange dotted underline</span>: an emendation of the edition, suggested but not applied. Hover over (or tap) a marked word for the readings, the evidence or authority, and the approval date when recorded.</div><hr>
 <!-- page-status: corrected --><b>[page 001]</b><BR>
 <i>1</i><BR>
 <span class="ln" data-n="1"></span>                                Itivuttakaṃ.<BR>
@@ -474,7 +476,7 @@ Itivuttaka<BR>
 <span class="ln"></span>pi samanupassāmi evaṃ bahūpakāraṃ<span class="red"><sup>12</sup></span> yathayidaṃ<span class="red"><sup>13</sup></span><BR>
 <span class="ln" data-n="15"></span>bhikkhave yoniso manasikāro. Yoniso bhikkhave<BR>
 <span class="ln"></span>bhikkhu manasi<span class="red"><sup>14</sup></span> karonto akusalaṃ pajahati kusalaṃ bhā-<BR>
-<span class="ln"></span>vetīti. Etam-atthaṃ bhagavā avoca, tatthetaṃ iti vuccati.<span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{<span class="red"><sup>15</sup></span>}</span><BR>
+<span class="ln"></span>vetīti. Etam-atthaṃ bhagavā avoca, tatthetaṃ iti vuccati.<span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{<span class="red"><sup>15</sup></span>}</span><BR>
 <BR>
 <BR>
 <span class="red">--------------------------------------------------------------------------<BR>
@@ -611,7 +613,7 @@ Itivuttaka<BR>
 <span class="ln"></span>hatā ti me sutaṃ. Idhāhaṃ bhikkhave ekaccaṃ pugga-<BR>
 <span class="ln"></span>laṃ paduṭṭhacittaṃ evaṃ cetasā ceto paricca<BR>
 <span class="ln"></span>pajānāmi, imamhi cāyaṃ samaye puggalo kālaṃ kareyya<BR>
-<span class="ln"></span><span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{yathābhataṃ}</span> nikkhitto evaṃ niraye.<span class="red"><sup>12</sup></span> Taṃ kissa hetu?<BR>
+<span class="ln"></span><span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{yathābhataṃ}</span> nikkhitto evaṃ niraye.<span class="red"><sup>12</sup></span> Taṃ kissa hetu?<BR>
 <span class="ln" data-n="20"></span>Cittañ-hi-ssa bhikkhave paduṭṭham. Cetopadosahetu kho<BR>
 <span class="ln"></span>pana<span class="red"><sup>13</sup></span> bhikkhave evam-idhekacce sattā kāyassa bhedā<BR>
 <span class="ln"></span>param-maraṇā apāyaṃ duggatiṃ vinipātaṃ nirayaṃ upa-<BR>
@@ -679,7 +681,7 @@ Itivuttaka<BR>
 </span><BR>
 <!-- page-status: corrected --><b>[page 014]</b><BR>
 <i>14                      ITIVUTTAKAṂ.   EKANIPĀTO.</i><BR>
-<span class="ln" data-n="1"></span>nāmi, imamhi<span class="red"><sup>1</sup></span> cāyaṃ samaye puggalo kālaṃ kareyya <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{yathā-</span><span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered."><BR>
+<span class="ln" data-n="1"></span>nāmi, imamhi<span class="red"><sup>1</sup></span> cāyaṃ samaye puggalo kālaṃ kareyya <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{yathā-</span><span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged."><BR>
 <span class="ln"></span>bhataṃ}</span> nikkhitto evaṃ sagge. Taṃ kissa hetu? Cittañ-<BR>
 <span class="ln"></span>hi-ssa bhikkhave pasannaṃ. Cetopasādahetu kho pana bhik-<BR>
 <span class="ln"></span>khave evam-idhekacce sattā kāyassa bhedā param-maraṇā<BR>
@@ -773,7 +775,7 @@ Itivuttaka<BR>
 <span class="ln" data-n="1"></span>                 dānañca samacariyañca<BR>
 <span class="ln"></span>                 mettacittañca<span class="red"><sup>1</sup></span> bhāvaye ║<BR>
 <span class="ln"></span>                 Ete dhamme bhāvayitvā<BR>
-<span class="ln"></span>                 tayo <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{sukha-samudraye}</span><span class="red"><sup>2</sup></span> |<BR>
+<span class="ln"></span>                 tayo <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{sukha-samudraye}</span><span class="red"><sup>2</sup></span> |<BR>
 <span class="ln" data-n="5"></span>                 abyāpajjhaṃ<span class="red"><sup>3</sup></span> sukhaṃ lokaṃ<BR>
 <span class="ln"></span>                 paṇḍito upapajjatīti ║<BR>
 <span class="ln"></span>     Ayam-pi attho vutto bhagavatā iti me sutan-ti ║2║<BR>
@@ -1447,15 +1449,15 @@ Itivuttaka<BR>
 <span class="ln"></span>     38. (Duk. II.1) Vuttaṃ hetaṃ bhagavatā vuttam-<BR>
 <span class="ln"></span>arahatā-ti me sutaṃ. Tathāgataṃ bhikkhave arahantaṃ<span class="red"><sup>7</sup></span><BR>
 <span class="ln"></span>sammāsambuddhaṃ dve vitakkā<span class="red"><sup>8</sup></span> bahulaṃ<span class="red"><sup>8</sup></span> samudācaran-<BR>
-<span class="ln"></span>ti, khemo ca vitakko paviveko<span class="red"><sup>9</sup></span> ca.<span class="red"><sup>9</sup></span> <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{Avyāpajjhārāmo}</span><span class="red"><sup>10</sup></span> bhik-<BR>
-<span class="ln" data-n="10"></span>khave tathāgato <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{avyāpajjharato}</span>.<span class="red"><sup>11</sup></span> Tam-enaṃ bhikkhave<BR>
-<span class="ln"></span>tathāgataṃ <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{avyāpajjhārāmaṃ}</span> <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{avyāpajjharataṃ}</span><span class="red"><sup>12</sup></span> eseva<span class="red"><sup>13</sup></span><BR>
+<span class="ln"></span>ti, khemo ca vitakko paviveko<span class="red"><sup>9</sup></span> ca.<span class="red"><sup>9</sup></span> <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{Avyāpajjhārāmo}</span><span class="red"><sup>10</sup></span> bhik-<BR>
+<span class="ln" data-n="10"></span>khave tathāgato <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{avyāpajjharato}</span>.<span class="red"><sup>11</sup></span> Tam-enaṃ bhikkhave<BR>
+<span class="ln"></span>tathāgataṃ <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{avyāpajjhārāmaṃ}</span> <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{avyāpajjharataṃ}</span><span class="red"><sup>12</sup></span> eseva<span class="red"><sup>13</sup></span><BR>
 <span class="ln"></span>vitakko bahulaṃ samudācarati: Imāyāhaṃ iriyāya na kiñci<BR>
 <span class="ln"></span>byābādhemi<span class="red"><sup>14</sup></span> tasaṃ<span class="red"><sup>15</sup></span> vā thāvaraṃ vā ti. Pavivekārāmo<span class="red"><sup>16</sup></span><BR>
 <span class="ln"></span>bhikkhave tathāgato pavivekarato.<span class="red"><sup>17</sup></span> Tam-enaṃ bhikkhave<BR>
 <span class="ln" data-n="15"></span>tathāgataṃ pavivekārāmaṃ pavivekarataṃ<span class="red"><sup>18</sup></span> eseva<span class="red"><sup>19</sup></span> vitakko<BR>
 <span class="ln"></span>bahulaṃ samudācarati: Yaṃ akusalaṃ taṃ pahīnan-ti.<BR>
-<span class="ln"></span>Tasmā ti ha<span class="red"><sup>20</sup></span> bhikkhave tumhe pi<span class="red"><sup>21</sup></span> <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{avyāpajjhārāmā}</span> viha-<BR>
+<span class="ln"></span>Tasmā ti ha<span class="red"><sup>20</sup></span> bhikkhave tumhe pi<span class="red"><sup>21</sup></span> <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{avyāpajjhārāmā}</span> viha-<BR>
 <BR>
 <BR>
 <span class="red">--------------------------------------------------------------------------<BR>
@@ -1486,8 +1488,8 @@ Itivuttaka<BR>
 </span><BR>
 <!-- page-status: corrected --><b>[page 032]</b><BR>
 <i>32                      ITIVUTTAKAṂ,  DUKANIPĀTO,</i><BR>
-<span class="ln" data-n="1"></span>ratha <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{avyāpajjharatā.}</span><span class="red"><sup>1</sup></span> Tesaṃ vo<span class="red"><sup>2</sup></span> bhikkhave tumhākaṃ<BR>
-<span class="ln"></span><span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{avyāpajjhārāmānaṃ}</span><span class="red"><sup>3</sup></span> viharataṃ<span class="red"><sup>4</sup></span> <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{avyāpajjharatānaṃ}</span><span class="red"><sup>5</sup></span><BR>
+<span class="ln" data-n="1"></span>ratha <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{avyāpajjharatā.}</span><span class="red"><sup>1</sup></span> Tesaṃ vo<span class="red"><sup>2</sup></span> bhikkhave tumhākaṃ<BR>
+<span class="ln"></span><span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{avyāpajjhārāmānaṃ}</span><span class="red"><sup>3</sup></span> viharataṃ<span class="red"><sup>4</sup></span> <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{avyāpajjharatānaṃ}</span><span class="red"><sup>5</sup></span><BR>
 <span class="ln"></span>eseva vitakko bahulaṃ samudācarissati<span class="red"><sup>6</sup></span>: Imāya mayaṃ<span class="red"><sup>7</sup></span><BR>
 <span class="ln"></span>iriyāya na kiñci byābādhema<span class="red"><sup>8</sup></span> tasaṃ<span class="red"><sup>9</sup></span> vā thāvaraṃ vā ti.<BR>
 <span class="ln" data-n="5"></span>Pavivekārāmā<span class="red"><sup>10</sup></span> bhikkhave viharatha<span class="red"><sup>11</sup></span> pavivekaratā.<span class="red"><sup>12</sup></span><BR>
@@ -1502,7 +1504,7 @@ Itivuttaka<BR>
 <span class="ln"></span>                 tato<span class="red"><sup>20</sup></span> viveko dutiyo pakāsito ║<BR>
 <span class="ln" data-n="15"></span>                 Tamonudaṃ pāragataṃ<span class="red"><sup>21</sup></span> mahesiṃ<span class="red"><sup>22</sup></span><BR>
 <span class="ln"></span>                 taṃ<span class="red"><sup>23</sup></span> pattipattaṃ vasimaṃ<span class="red"><sup>24</sup></span> anāsavaṃ<BR>
-<span class="ln"></span>                 <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{Vessantaraṃ}</span><span class="red"><sup>25</sup></span> taṇhakkhaye vimuttaṃ |<BR>
+<span class="ln"></span>                 <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{Vessantaraṃ}</span><span class="red"><sup>25</sup></span> taṇhakkhaye vimuttaṃ |<BR>
 <span class="ln"></span>                 taṃ ve muniṃ<span class="red"><sup>26</sup></span> antimadehadhāriṃ<span class="red"><sup>27</sup></span><BR>
 <BR>
 <BR>
@@ -1688,8 +1690,8 @@ Itivuttaka<BR>
 <span class="ln"></span>tulānīti vā ācariyabhariyā ti vā garūnaṃ<span class="red"><sup>7</sup></span> dārā ti vā ti.<BR>
 <span class="ln"></span>Etam-atthaṃ bhagavā avoca, tatthetaṃ iti vuccati:<BR>
 <span class="ln" data-n="15"></span>                 Yesaṃ ce<span class="red"><sup>14</sup></span> hiriottappaṃ<BR>
-<span class="ln"></span>                 <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{sabbadā ca na}</span> vijjati |<BR>
-<span class="ln"></span>                 <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{okkantā}</span><span class="red"><sup>15</sup></span> sukkamūlā te<BR>
+<span class="ln"></span>                 <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{sabbadā ca na}</span> vijjati |<BR>
+<span class="ln"></span>                 <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{okkantā}</span><span class="red"><sup>15</sup></span> sukkamūlā te<BR>
 <span class="ln"></span>                 jātimaraṇagāmino ║<BR>
 <span class="ln"></span>                 Yesañca<span class="red"><sup>16</sup></span> hiriottappaṃ<BR>
 <span class="ln" data-n="20"></span>                 sadā sammā<span class="red"><sup>17</sup></span> upaṭṭhitā |<BR>
@@ -2043,11 +2045,11 @@ Itivuttaka<BR>
 <span class="ln"></span>virāgāya nirodhāya paṭipanno hoti, evaṃ kho bhikkhave<BR>
 <span class="ln"></span>cakkhumanto<span class="red"><sup>5</sup></span> passantīti. Etam-atthaṃ bhagavā avoca,<BR>
 <span class="ln"></span>tatthetaṃ iti vuccati:<BR>
-<span class="ln" data-n="10"></span>                 <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{Yo}</span><span class="red"><sup>6</sup></span> bhūtaṃ bhūtato disvā<BR>
+<span class="ln" data-n="10"></span>                 <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{Yo}</span><span class="red"><sup>6</sup></span> bhūtaṃ bhūtato disvā<BR>
 <span class="ln"></span>                 bhūtassa ca atikkamaṃ |<BR>
-<span class="ln"></span>                 yathābhūte<span class="red"><sup>7</sup></span> <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{vimuccati}</span><BR>
+<span class="ln"></span>                 yathābhūte<span class="red"><sup>7</sup></span> <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{vimuccati}</span><BR>
 <span class="ln"></span>                 bhavataṇhāparikkhayā ║<BR>
-<span class="ln"></span>                 <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{Sa ve}</span><span class="red"><sup>8</sup></span> bhūtapariñño so<span class="red"><sup>9</sup></span><BR>
+<span class="ln"></span>                 <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{Sa ve}</span><span class="red"><sup>8</sup></span> bhūtapariñño so<span class="red"><sup>9</sup></span><BR>
 <span class="ln" data-n="15"></span>                 vītataṇho<span class="red"><sup>10</sup></span> bhavābhave |<BR>
 <span class="ln"></span>                 bhūtassa vibhavā bhikkhu<BR>
 <span class="ln"></span>                 nāgacchati<span class="red"><sup>11</sup></span> punabbhavan-ti ║<BR>
@@ -2104,7 +2106,7 @@ Itivuttaka<BR>
 <span class="ln"></span>bhikkhave tisso dhātuyo ti. Etam-atthaṃ bhagavā avoca,<BR>
 <span class="ln"></span>tatthetaṃ iti vuccati:<BR>
 <span class="ln" data-n="25"></span>                 Rūpadhātupariññāya<BR>
-<span class="ln"></span>                 arūpesu <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{susaṇṭhitā}</span> |<BR>
+<span class="ln"></span>                 arūpesu <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{susaṇṭhitā}</span> |<BR>
 <BR>
 <BR>
 <span class="red">--------------------------------------------------------------------------<BR>
@@ -2176,7 +2178,7 @@ Itivuttaka<BR>
 <span class="ln"></span>sukhā<span class="red"><sup>6</sup></span> vedanā dukkhato diṭṭhā hoti, dukkhā<span class="red"><sup>7</sup></span> vedanā<BR>
 <span class="ln"></span>sallato diṭṭhā hoti, adukkhamasukhā vedanā aniccato<BR>
 <span class="ln"></span>diṭṭhā hoti, ayaṃ<span class="red"><sup>8</sup></span> vuccati bhikkhave bhikkhu ariyo sam-<BR>
-<span class="ln" data-n="10"></span>maddaso,<span class="red"><sup>9</sup></span> acchejji<span class="red"><sup>10</sup></span> taṇhaṃ<span class="red"><sup>11</sup></span> <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{vivaṭṭayi}</span><span class="red"><sup>12</sup></span> saṃyojanaṃ,<BR>
+<span class="ln" data-n="10"></span>maddaso,<span class="red"><sup>9</sup></span> acchejji<span class="red"><sup>10</sup></span> taṇhaṃ<span class="red"><sup>11</sup></span> <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{vivaṭṭayi}</span><span class="red"><sup>12</sup></span> saṃyojanaṃ,<BR>
 <span class="ln"></span>sammāmānābhisamayā<span class="red"><sup>13</sup></span> antam-akāsi dukkhassā-ti. Etam-<BR>
 <span class="ln"></span>atthaṃ bhagavā avoca, tatthetaṃ iti vuccati:<BR>
 <span class="ln"></span>                 Yo sukhaṃ dukkhato dakkhi<span class="red"><sup>14</sup></span><BR>
@@ -2398,7 +2400,7 @@ Itivuttaka<BR>
 <span class="ln"></span>                 paṇḍito upapajjatīti<span class="red"><sup>4</sup></span> ║<BR>
 <span class="ln"></span>     Ayam-pi attho vutto bhagavatā iti me sutan-ti ║1║<BR>
 <span class="ln" data-n="10"></span>     61. (Tik. II.2) Vuttaṃ hetaṃ bhagavatā vuttam-arahatā<BR>
-<span class="ln"></span>ti me sutaṃ. <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{Tīṇ'imāni}</span> bhikkhave cakkhūni. Katamāni<BR>
+<span class="ln"></span>ti me sutaṃ. <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{Tīṇ'imāni}</span> bhikkhave cakkhūni. Katamāni<BR>
 <span class="ln"></span>tīṇi? Maṃsacakkhu dibbacakkhu paññācakkhu, imāni<BR>
 <span class="ln"></span>kho bhikkhave tīṇi cakkhūnīti. Etam-atthaṃ bhagavā<BR>
 <span class="ln"></span>avoca, tatthetaṃ iti vuccati<span class="red"><sup>5</sup></span>:<BR>
@@ -2572,10 +2574,10 @@ Itivuttaka<BR>
 <span class="ln"></span>     68. (Tik. II.9) Vuttaṃ hetaṃ bhagavatā vuttam-<BR>
 <span class="ln" data-n="15"></span>arahatā ti me sutaṃ. Yassa kassaci bhikkhave rāgo<BR>
 <span class="ln"></span>appahīno doso appahīno moho appahīno, ayaṃ vuccati<BR>
-<span class="ln"></span>bhikkhave bandho mārassa,<span class="red"><sup>6</sup></span> <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{paṭimukk'assa}</span> mārapāso,<span class="red"><sup>7</sup></span><BR>
+<span class="ln"></span>bhikkhave bandho mārassa,<span class="red"><sup>6</sup></span> <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{paṭimukk'assa}</span> mārapāso,<span class="red"><sup>7</sup></span><BR>
 <span class="ln"></span>yathākāmakaraṇīyo ca<span class="red"><sup>8</sup></span> pāpimato. Yassa kassaci bhik-<BR>
 <span class="ln"></span>khave rāgo pahīno doso pahīno moho pahīno, ayaṃ vuccati<BR>
-<span class="ln" data-n="20"></span>bhikkhave abandho<span class="red"><sup>9</sup></span> mārassa,<span class="red"><sup>6</sup></span> <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{omukk'assa}</span><span class="red"><sup>10</sup></span> mārapāso,<BR>
+<span class="ln" data-n="20"></span>bhikkhave abandho<span class="red"><sup>9</sup></span> mārassa,<span class="red"><sup>6</sup></span> <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{omukk'assa}</span><span class="red"><sup>10</sup></span> mārapāso,<BR>
 <span class="ln"></span>na<span class="red"><sup>11</sup></span>-yathākāmakaraṇīyo ca<span class="red"><sup>12</sup></span> pāpimato ti. Etam-atthaṃ<BR>
 <span class="ln"></span>bhagavā avoca, tatthetaṃ iti vuccati:<BR>
 <BR>
@@ -2829,7 +2831,7 @@ Itivuttaka<BR>
 <span class="ln"></span>                 nirodhaṃ appajānantā<span class="red"><sup>6</sup></span><BR>
 <span class="ln"></span>                 āgantāro<span class="red"><sup>7</sup></span> punabbhavaṃ ║<BR>
 <span class="ln"></span>                 Ye ca rūpe<span class="red"><sup>8</sup></span> pariññāya<BR>
-<span class="ln"></span>                 arūpesu<span class="red"><sup>9</sup></span> <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{susaṇṭhitā}</span> |<BR>
+<span class="ln"></span>                 arūpesu<span class="red"><sup>9</sup></span> <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{susaṇṭhitā}</span> |<BR>
 <span class="ln" data-n="10"></span>                 nirodhe ye vimuccanti<BR>
 <span class="ln"></span>                 te janā maccuhāyino<span class="red"><sup>10</sup></span> ║<BR>
 <span class="ln"></span>                 Kāyena amataṃ dhātuṃ<BR>
@@ -3088,7 +3090,7 @@ Itivuttaka<BR>
 <span class="ln"></span>                 sahavāso<span class="red"><sup>2</sup></span> hi<span class="red"><sup>3</sup></span> tādiso ║<BR>
 <span class="ln"></span>                 Sevamāno sevamānaṃ<BR>
 <span class="ln"></span>                 samphuṭṭho samphusaṃ<span class="red"><sup>4</sup></span> paraṃ |<BR>
-<span class="ln" data-n="5"></span>                 saro <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{diḍḍho}</span><span class="red"><sup>5</sup></span> kalāpaṃ va<BR>
+<span class="ln" data-n="5"></span>                 saro <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{diḍḍho}</span><span class="red"><sup>5</sup></span> kalāpaṃ va<BR>
 <span class="ln"></span>                 alittam-upalimpati<span class="red"><sup>6</sup></span> |<BR>
 <span class="ln"></span>                 upalepabhayā<span class="red"><sup>7</sup></span> dhīro<span class="red"><sup>8</sup></span><BR>
 <span class="ln"></span>                 neva pāpasakhā<span class="red"><sup>9</sup></span> siyā ║<BR>
@@ -3101,7 +3103,7 @@ Itivuttaka<BR>
 <span class="ln" data-n="15"></span>                 pattā pi surabhi<span class="red"><sup>12</sup></span> vāyanti<BR>
 <span class="ln"></span>                 evaṃ dhīrūpasevanā ║<BR>
 <span class="ln"></span>                 Tasmā palāsapuṭasseva<span class="red"><sup>13</sup></span><BR>
-<span class="ln"></span>                 ñatvā <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{sampākam}</span><span class="red"><sup>14</sup></span>-attano |<BR>
+<span class="ln"></span>                 ñatvā <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{sampākam}</span><span class="red"><sup>14</sup></span>-attano |<BR>
 <span class="ln"></span>                 asante nupaseveyya<BR>
 <BR>
 <BR>
@@ -3135,7 +3137,7 @@ Itivuttaka<BR>
 <span class="ln"></span>vipariṇāmadhammā ti. Etam-atthaṃ bhagavā avoca, tat-<BR>
 <span class="ln"></span>thetaṃ iti vuccati<span class="red"><sup>5</sup></span>:<BR>
 <span class="ln" data-n="10"></span>                 Kāyañca bhindantaṃ<span class="red"><sup>6</sup></span> ñatvā<BR>
-<span class="ln"></span>                 viññāṇañca <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{virāgikaṃ}</span><span class="red"><sup>7</sup></span> |<BR>
+<span class="ln"></span>                 viññāṇañca <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{virāgikaṃ}</span><span class="red"><sup>7</sup></span> |<BR>
 <span class="ln"></span>                 upadhīsu bhayaṃ disvā<BR>
 <span class="ln"></span>                 jātimaraṇam-ajjhagā<span class="red"><sup>8</sup></span> |<BR>
 <span class="ln"></span>                 saṃpatvā paramaṃ santiṃ<span class="red"><sup>9</sup></span><BR>
@@ -3368,7 +3370,7 @@ Itivuttaka<BR>
 <span class="ln"></span>                 Yassa sakkarīyamānassa<span class="red"><sup>6</sup></span><BR>
 <span class="ln"></span>                 asakkārena cūbhayaṃ |<BR>
 <span class="ln"></span>                 samādhi na vikampati<span class="red"><sup>7</sup></span><BR>
-<span class="ln" data-n="25"></span>                 <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{appamāṇavihārino}</span><span class="red"><sup>8</sup></span> ║<BR>
+<span class="ln" data-n="25"></span>                 <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{appamāṇavihārino}</span><span class="red"><sup>8</sup></span> ║<BR>
 <span class="ln"></span>                 taṃ<span class="red"><sup>9</sup></span> jhāyinaṃ<span class="red"><sup>9</sup></span> sātatikaṃ<span class="red"><sup>10</sup></span><BR>
 <BR>
 <BR>
@@ -3500,7 +3502,7 @@ Itivuttaka<BR>
 <span class="ln"></span>                 manussānaṃ sahavyataṃ<span class="red"><sup>15</sup></span> |<BR>
 <span class="ln" data-n="20"></span>                 manussabhūto<span class="red"><sup>16</sup></span> saddhamme<BR>
 <span class="ln"></span>                 labha saddhaṃ anuttaraṃ ║<BR>
-<span class="ln"></span>                 Sā<span class="red"><sup>17</sup></span> te saddhā <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{niviṭṭhā'ssa}</span><span class="red"><sup>18</sup></span><BR>
+<span class="ln"></span>                 Sā<span class="red"><sup>17</sup></span> te saddhā <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{niviṭṭhā'ssa}</span><span class="red"><sup>18</sup></span><BR>
 <span class="ln"></span>                 mūlajātā patiṭṭhitā |<BR>
 <BR>
 <BR>
@@ -3993,7 +3995,7 @@ Itivuttaka<BR>
 <span class="ln"></span>anuttaraṃ puññakkhettaṃ<span class="red"><sup>12</sup></span> lokassa.<span class="red"><sup>13</sup></span> Ye bhikkhave<BR>
 <span class="ln"></span>saṃghe pasannā agge te pasannā, agge kho pana<span class="red"><sup>14</sup></span><BR>
 <span class="ln" data-n="15"></span>pasannānaṃ<span class="red"><sup>14</sup></span> aggo<span class="red"><sup>14</sup></span> vipāko hoti. Ime kho bhikkhave<BR>
-<span class="ln"></span>tayo aggappasādā<span class="red"><sup>15</sup></span> ti. Etam-<span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{atthaṃ}</span> bhagavā avoca,<BR>
+<span class="ln"></span>tayo aggappasādā<span class="red"><sup>15</sup></span> ti. Etam-<span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{atthaṃ}</span> bhagavā avoca,<BR>
 <span class="ln"></span>tatthetaṃ iti vuccati<span class="red"><sup>16</sup></span>:<BR>
 <span class="ln"></span>                 Aggato<span class="red"><sup>17</sup></span> ve pasannānaṃ<BR>
 <span class="ln"></span>                 aggaṃ dhammaṃ<span class="red"><sup>18</sup></span> vijānataṃ |<BR>
@@ -4041,7 +4043,7 @@ Itivuttaka<BR>
 <span class="ln"></span>Piṇḍolo vicarasi pattapāṇīti. Tañca kho etaṃ bhikkhave<BR>
 <span class="ln"></span>kulaputtā upenti atthavasikā<span class="red"><sup>9</sup></span> atthavasaṃ<span class="red"><sup>9</sup></span> paṭicca, neva<BR>
 <span class="ln"></span>rājābhinītā na corābhinītā na iṇaṭṭhā<span class="red"><sup>10</sup></span> na bhayaṭṭhā<span class="red"><sup>11</sup></span> na<BR>
-<span class="ln" data-n="15"></span><span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{ājīvikāpakatā<span class="red"><sup>12</sup></span>,<span class="red"><sup>13</sup></span>.}</span> Apica kho<span class="red"><sup>14</sup></span> otiṇṇamhā<span class="red"><sup>15</sup></span> jātiyā jarāya<span class="red"><sup>16</sup></span><BR>
+<span class="ln" data-n="15"></span><span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{ājīvikāpakatā<span class="red"><sup>12</sup></span>,<span class="red"><sup>13</sup></span>.}</span> Apica kho<span class="red"><sup>14</sup></span> otiṇṇamhā<span class="red"><sup>15</sup></span> jātiyā jarāya<span class="red"><sup>16</sup></span><BR>
 <span class="ln"></span>maraṇena sokehi paridevehi dukkhehi domanassehi<BR>
 <span class="ln"></span>upāyāsehi dukkhābhikiṇṇā<span class="red"><sup>17</sup></span> dukkhaparetā, appeva nāma<BR>
 <span class="ln"></span>imassa kevalassa dukkhakkhandhassa antakiriyā<span class="red"><sup>18</sup></span> paññā-<BR>
@@ -4252,7 +4254,7 @@ Itivuttaka<BR>
 <i>94                      ITIVUTTAKAṂ,  TIKANIPĀTO,</i><BR>
 <span class="ln" data-n="1"></span>parikkheyya,<span class="red"><sup>1</sup></span> yathā yathā<span class="red"><sup>2</sup></span> upaparikkhato<span class="red"><sup>3</sup></span> bahiddhā<BR>
 <span class="ln"></span>cassa<span class="red"><sup>4</sup></span> viññāṇaṃ avikkhittaṃ<span class="red"><sup>5</sup></span> hoti avisaṭaṃ<span class="red"><sup>6</sup></span> ajjhattaṃ<BR>
-<span class="ln"></span>asaṇṭhitaṃ<span class="red"><sup>7</sup></span> <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{anupādāya na paritasseyya}</span> anupādāya<span class="red"><sup>8</sup></span> aparitassato<BR>
+<span class="ln"></span>asaṇṭhitaṃ<span class="red"><sup>7</sup></span> <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{anupādāya na paritasseyya}</span> anupādāya<span class="red"><sup>8</sup></span> aparitassato<BR>
 <span class="ln"></span>āyatiṃ<span class="red"><sup>9</sup></span> jātijarāmaraṇadukkhasamudayasambhavo na hotīti.<BR>
 <span class="ln" data-n="5"></span>                 Sattasaṅgapahīnassa<span class="red"><sup>10</sup></span><BR>
 <span class="ln"></span>                 netticchinnassa bhikkhuno |<BR>
@@ -4267,7 +4269,7 @@ Itivuttaka<BR>
 <span class="ln" data-n="15"></span>                 nimmānaratino devā<BR>
 <span class="ln"></span>                 ye caññe kāmabhogino ║<BR>
 <span class="ln"></span>                 itthabhāvaññathābhāvaṃ<span class="red"><sup>16</sup></span><BR>
-<span class="ln"></span>                 <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{saṃsāraṃ nātivattati}</span><BR>
+<span class="ln"></span>                 <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{saṃsāraṃ nātivattati}</span><BR>
 <span class="ln"></span>                 kāmabhogesu paṇḍito<span class="red"><sup>17</sup></span> |<BR>
 <span class="ln" data-n="20"></span>                 sabbe pariccaje<span class="red"><sup>18</sup></span> kāme<BR>
 <span class="ln"></span>                 ye<span class="red"><sup>19</sup></span> dibbā ye ca mānusā ║<BR>
@@ -5535,7 +5537,7 @@ Itivuttaka<BR>
 <span class="ln" data-n="10"></span>                 Sabbalokaṃ abhiññāya<BR>
 <span class="ln"></span>                 sabbaloke yathātathaṃ<span class="red"><sup>6</sup></span> |<BR>
 <span class="ln"></span>                 sabbalokavisaṃyutto<span class="red"><sup>7</sup></span><BR>
-<span class="ln"></span>                 sabbaloke <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{anūpayo}</span><span class="red"><sup>8</sup></span> ║<BR>
+<span class="ln"></span>                 sabbaloke <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{anūpayo}</span><span class="red"><sup>8</sup></span> ║<BR>
 <span class="ln"></span>                 Sabbe<span class="red"><sup>9</sup></span> sabbābhibhū dhīro<BR>
 <span class="ln" data-n="15"></span>                 sabbaganthappamocano<span class="red"><sup>10</sup></span> |<BR>
 <span class="ln"></span>                 phuṭṭhassa paramā santi<span class="red"><sup>11</sup></span><BR>

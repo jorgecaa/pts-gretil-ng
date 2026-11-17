@@ -15,12 +15,14 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap">
 <style>
 body,td{font-family:'Noto Sans',sans-serif}
-body{max-width:60em;margin:1em auto;padding:0 1em;color:#222}
+body{max-width:60em;margin:1em auto;padding:0 1em;color:#222;line-height:1.4;word-spacing:5px}
 .erratum{border-bottom:2px solid #c00;cursor:help}
 .correction{text-decoration:underline #3cb371 2px;text-underline-offset:.32em;text-decoration-skip-ink:none;cursor:help}
 .erratum.correction{border-bottom:2px solid #c00}
+.suggestion{border-bottom:2px dotted #d07a00;cursor:help}
+u.suggestion,u.erratum{text-decoration:none}
 #tip{position:fixed;display:none;max-width:26em;background:#fffbe6;border:1px solid #888;
- padding:.5em .7em;font:13px/1.4 'Noto Sans',sans-serif;box-shadow:0 2px 6px #0004;z-index:9;white-space:normal}
+ padding:.5em .7em;font:13px/1.4 'Noto Sans',sans-serif;box-shadow:0 2px 6px #0004;z-index:9;white-space:pre-line;word-spacing:normal}
 .red{color:#00c}
 .ln{display:inline-block;width:2.2em;margin-right:.9em;text-align:right;color:#000;font:11px/1 'Noto Sans',sans-serif;
  user-select:none;vertical-align:baseline}
@@ -144,8 +146,8 @@ http://gretil.sub.uni-goettingen.de/gretil.htm</p>
 Dhātukathā<BR>
 <BR>
 <!-- Pali Text Society edition (Ee), digital input by the Dhammakaya Foundation (1989-1996), GRETIL version. Licence: CC BY-SA 4.0, (c) Pali Text Society and Dhammakaya Foundation, 2015. This file carries the corrections approved in the foureditions project (0 pages changed in this file; built from commit 0baf718d8e45 of the GRETIL mirror). The critical apparatus (footnotes and variant readings) has NOT been proofread. Text between braces is an erratum printed by GRETIL and is kept as is. The original GRETIL file is not modified. -->
-<div class="legend"><b>About this copy.</b> The licence and the notice above are GRETIL's own and apply unchanged (CC BY-SA 4.0, &copy; Pali Text Society and Dhammakaya Foundation, 2015). Manual proofreading corrections against the scans of the printed edition are marked below (Jorge Contreras, github.com/jorgecaa, foureditions project); each was approved by a person. Corrections derived from the Cone dictionary, Jackson's revised Saṃyutta IV apparatus or word indices are identified by their source label. The text of GRETIL itself has not been rewritten: every correction is recorded, with its source and date, in corrections.json of the repository that built this file.</div>
-<div class="legend"><span class="erratum">red underline</span>: an erratum that GRETIL prints between braces { }; kept as printed. &nbsp; <span class="correction">green underline</span>: a correction approved in the foureditions project. Hover over (or tap) a marked word for its source, the date it was approved, and what GRETIL had.</div><hr>
+<div class="legend"><b>About this copy.</b> The licence and the notice above are GRETIL's own and apply unchanged (CC BY-SA 4.0, &copy; Pali Text Society and Dhammakaya Foundation, 2015). Where GRETIL departs from the printed edition, the text below gives the printed reading, checked against the scans of the edition (Jorge Contreras, github.com/jorgecaa, foureditions project); each correction was approved by a person. Emendations of the edition itself (M. Cone's Dictionary of Pāli, P. Jackson's revision of Saṃyutta IV, W. Pruitt's correction lists) are not applied to the text: they are given as suggestions on the words concerned. The text of GRETIL itself has not been rewritten: every correction is recorded, with its source and, when recorded, its date, in corrections.json of the repository that built this file.</div>
+<div class="legend"><span class="erratum">red underline</span>: GRETIL encloses the words in braces { }; reproduced as in GRETIL. &nbsp; <span class="correction">green underline</span>: GRETIL departs from the printed edition; the printed reading is given. &nbsp; <span class="suggestion">orange dotted underline</span>: an emendation of the edition, suggested but not applied. Hover over (or tap) a marked word for the readings, the evidence or authority, and the approval date when recorded.</div><hr>
 <!-- page-status: corrected --><b>[page 001]</b><BR>
 <i>1</i><BR>
 <span class="ln" data-n="1"></span>                        Dhātu-Kathā Pakaraṇaṃ.<BR>
@@ -159,7 +161,7 @@ Dhātukathā<BR>
 <span class="ln"></span>payuttena saṃgahītaṃ asaṃgahītaṃ, [13] asaṃgahītena<BR>
 <span class="ln" data-n="10"></span>sampayuttaṃ vippayuttaṃ, [14] vippayuttena saṃgahītaṃ<BR>
 <span class="ln"></span>asaṃgahītaṃ.<BR>
-<span class="ln"></span>     <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{Pañcakkhandhā}</span>, dvādasāyatanāni, aṭṭhārasa dhātuyo,<BR>
+<span class="ln"></span>     <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{Pañcakkhandhā}</span>, dvādasāyatanāni, aṭṭhārasa dhātuyo,<BR>
 <span class="ln"></span>cattāri saccāni, bāvīsatindriyāni, paṭiccasamuppādo, cattāro<BR>
 <span class="ln"></span>satipaṭṭhānā, cattāro sammappadhānā, cattāro iddhipādā,<BR>
 <span class="ln" data-n="15"></span>cattāri jhānāni, catasso appamaññāyo, pañcindriyāni, pañca<BR>
@@ -188,7 +190,7 @@ Dhātukathā<BR>
 <span class="ln"></span>     Vedanākhandho ekena khandhena ekenāyatanena ekāya<BR>
 <span class="ln"></span>dhātuyā saṃgahīto.<BR>
 <span class="ln" data-n="10"></span>     Katīhi asaṃgahīto?<BR>
-<span class="ln"></span>     Catuhi khandhehi ekādasahi <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{āyatanehi}</span> sattarasahi dhā-<BR>
+<span class="ln"></span>     Catuhi khandhehi ekādasahi <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{āyatanehi}</span> sattarasahi dhā-<BR>
 <span class="ln"></span>tūhi asaṃgahīto.<BR>
 <span class="ln"></span>      Saññākkhandho katīhi khandhehi katīhāyatanehi katīhi<BR>
 <span class="ln"></span>dhātūhi saṃgahīto?<BR>
@@ -411,7 +413,7 @@ Dhātukathā<BR>
 <span class="ln"></span>     Kāyaviññāṇadhātu . . . pe . . .<BR>
 <span class="ln"></span>     Manodhātu . . . pe . . .<BR>
 <span class="ln"></span>     Manoviññāṇadhātu . . . pe . . .<BR>
-<span class="ln"></span>     Ekena khandhena <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{ekenāyatanena}</span> ekāya dhātuyā saṃ-<BR>
+<span class="ln"></span>     Ekena khandhena <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{ekenāyatanena}</span> ekāya dhātuyā saṃ-<BR>
 <span class="ln" data-n="20"></span>gahītā.<BR>
 <span class="ln"></span>     Katīhi asaṃgahītā?<BR>
 <span class="ln"></span>     Catūhi khandhehi ekādasahi āyatanehi sattarasahi dhā-<BR>
@@ -685,7 +687,7 @@ Dhātukathā<BR>
 <span class="ln" data-n="35"></span>     Katīhi asaṃgahītā?<BR>
 <span class="ln"></span>     Catuhi khandhehi ekādasahi āyatanehi sattarasahi dhā-<BR>
 <span class="ln"></span>tūhi asaṃgahītā.<BR>
-<span class="ln"></span>      <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{Saṃkhāra-paccayā}</span> viññāṇaṃ . . . pe . . .<BR>
+<span class="ln"></span>      <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{Saṃkhāra-paccayā}</span> viññāṇaṃ . . . pe . . .<BR>
 <BR>
 <BR>
 <BR>
@@ -911,7 +913,7 @@ Dhātukathā<BR>
 <span class="ln"></span>     Katīhi asaṃgahītā?<BR>
 <span class="ln"></span>     Dvīhi khandhehi dasahāyatanehi ekādasahi dhātūhi<BR>
 <span class="ln" data-n="5"></span>asaṃgahītā.<BR>
-<span class="ln"></span>      Dassanena pahātabbā <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{dhammā}</span> --<BR>
+<span class="ln"></span>      Dassanena pahātabbā <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{dhammā}</span> --<BR>
 <span class="ln"></span>      Bhāvanāya pahātabbā dhammā --<BR>
 <span class="ln"></span>      Dassanena pahātabba-hetukā dhammā --<BR>
 <span class="ln"></span>      Bhāvanāya pahātabba-hetukā dhammā --<BR>
@@ -1221,7 +1223,7 @@ Dhātukathā<BR>
 <span class="ln"></span>      Parāmaṭṭhā dhammā -- Parāmaṭṭhā c'eva no ca<BR>
 <span class="ln"></span>parāmāsā dhammā -- Parāmāsa-vippayuttā paramaṭṭhā<BR>
 <span class="ln" data-n="15"></span>dhammā. . . . pe . . . .<BR>
-<span class="ln"></span>     Pañcahi khandhehi dvādasahi āyatanehi <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{aṭṭhārasahi}</span><BR>
+<span class="ln"></span>     Pañcahi khandhehi dvādasahi āyatanehi <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{aṭṭhārasahi}</span><BR>
 <span class="ln"></span>dhātūhi saṃgahītā.<BR>
 <span class="ln"></span>     Katīhi asaṃgahītā?<BR>
 <span class="ln"></span>     Na kehici khandhehi na kehici āyatanehi na kāhici dhā-<BR>
@@ -1637,7 +1639,7 @@ Dhātukathā<BR>
 <span class="ln"></span>ye dhammā -- Kammabhavena ye dhammā khandhasaṃga-<BR>
 <span class="ln"></span>hena asaṃgahītā āyatanasaṃgahena saṃgahītā dhātu-<BR>
 <span class="ln"></span>saṃgahena saṃgahītā te dhammā. . . . pe . . . .<BR>
-<span class="ln" data-n="5"></span>     Asaṃkhataṃ khandhato <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{ṭhapetvā}</span> tīhi khandhehi ekenā-<BR>
+<span class="ln" data-n="5"></span>     Asaṃkhataṃ khandhato <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{ṭhapetvā}</span> tīhi khandhehi ekenā-<BR>
 <span class="ln"></span>yatanena ekāva dhātuyā saṃgahītā.<BR>
 <span class="ln"></span>      Jātiyā ye dhammā -- Jarāya ye dhammā -- Maraṇena<BR>
 <span class="ln"></span>ye dhammā -- Jhānena ye dhammā khandhasaṃgahena<BR>
@@ -1869,7 +1871,7 @@ Dhātukathā<BR>
 <span class="ln"></span>hītā.<BR>
 <span class="ln"></span>      Saḷāyatana-paccayā phassena ye dhammā -- Phassa-<BR>
 <span class="ln"></span>paccayā vedanāya ye dhammā -- Vedanā-paccayā taṇhayā<BR>
-<span class="ln" data-n="20"></span>ye dhammā -- Taṇhā-paccayā upādānena ye <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{dhammā}</span> --<BR>
+<span class="ln" data-n="20"></span>ye dhammā -- Taṇhā-paccayā upādānena ye <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{dhammā}</span> --<BR>
 <span class="ln"></span>Kamma-bhavena ye dhammā khandhasaṃgahena asaṃ-<BR>
 <span class="ln"></span>gahītā āyatanasaṃgahena asaṃgahītā dhātusaṃgahena<BR>
 <span class="ln"></span>asaṃgahītā tehi dhammehi ye dhammā. . . . pe . . .<BR>
@@ -1986,9 +1988,9 @@ Dhātukathā<BR>
 <span class="ln" data-n="5"></span>mā . . . pe . . . .<BR>
 <span class="ln"></span>     Dvīhi khandhehi ekādasahi āyatanehi sattarasahi dhā-<BR>
 <span class="ln"></span>tūhi asaṃgahītā.<BR>
-<span class="ln"></span>      Sahetukehi dhammehi ye dhammā -- Hetu-<span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{sampayut-</span><span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered."><BR>
+<span class="ln"></span>      Sahetukehi dhammehi ye dhammā -- Hetu-<span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{sampayut-</span><span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged."><BR>
 <span class="ln"></span>tehi}</span> dhammehi ye dhammā -- Sahetukā c'eva na ca hetuhi<BR>
-<span class="ln" data-n="10"></span>dhammehi ye dhammā -- Hetu-<span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{sampayuttā}</span> ceva na ca hetuhi<BR>
+<span class="ln" data-n="10"></span>dhammehi ye dhammā -- Hetu-<span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{sampayuttā}</span> ceva na ca hetuhi<BR>
 <span class="ln"></span>dhammehi ye dhammā -- Nahetu-sahetukehi dhammehi ye<BR>
 <span class="ln"></span>dhammā khandhasaṃgahena asaṃgahītā āyatanasaṃga-<BR>
 <span class="ln"></span>hena asaṃgahītā dhātusaṃgahena asaṃgahītā tehi dham-<BR>
@@ -2071,7 +2073,7 @@ Dhātukathā<BR>
 <span class="ln"></span>gahītā.<BR>
 <span class="ln" data-n="5"></span>      Anārammaṇehi dhammehi ye dhammā -- Nocittehi<BR>
 <span class="ln"></span>dhammehi ye dhammā -- Citta-vippayuttehi dhammehi ye<BR>
-<span class="ln"></span>dhammā -- <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{Citta-visaṃsaṭṭhehi}</span> dhammehi ye dhammā --<BR>
+<span class="ln"></span>dhammā -- <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{Citta-visaṃsaṭṭhehi}</span> dhammehi ye dhammā --<BR>
 <span class="ln"></span>Citta-samuṭṭhānehi dhammehi ye dhammā -- Citta-saha-<BR>
 <span class="ln"></span>bhūhi dhammehi ye dhammā -- Cittānuparivattīhi dhammehi<BR>
 <span class="ln" data-n="10"></span>ye dhammā -- Bāhirehi dhammehi ye dhammā -- Upādānehi<BR>
@@ -2082,7 +2084,7 @@ Dhātukathā<BR>
 <span class="ln" data-n="15"></span>     Ekena khandhena ekenāyatanena sattahi dhātūhi asaṃ-<BR>
 <span class="ln"></span>gahītā.<BR>
 <span class="ln"></span>      Cittehi dhammehi ye dhammā khandhasaṃgahena<BR>
-<span class="ln"></span>asaṃgahītā āyatanasaṃgahena asaṃgahītā <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{dhātusaṃga-</span><span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered."><BR>
+<span class="ln"></span>asaṃgahītā āyatanasaṃgahena asaṃgahītā <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{dhātusaṃga-</span><span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged."><BR>
 <span class="ln"></span>hena}</span> asaṃgahītā tehi dhammehi ye dhammā. . . . pe<BR>
 <span class="ln" data-n="20"></span>. . . . te dhammā . . . pe . . . .<BR>
 <span class="ln"></span>     Catuhi khandhehi ekādasahi āyatanehi ekādasahi dhā-<BR>
@@ -2168,7 +2170,7 @@ Dhātukathā<BR>
 <i>51</i><BR>
 <span class="ln" data-n="1"></span>                      VI.-- SAMPAYOGO  VIPPAYOGO.<BR>
 <span class="ln"></span>      Rūpakkhandho katīhi khandhehi katīhi āyatanehi<BR>
-<span class="ln"></span><span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{katīhi}</span> dhātūhi sampayutto ti? <BR>
+<span class="ln"></span><span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{katīhi}</span> dhātūhi sampayutto ti? <BR>
 <span class="ln"></span>     Natthi. Katīhi vippayutto?<BR>
 <span class="ln" data-n="5"></span>     Catuhi khandhehi ekenāyatanena sattahi dhātūhi vippa-<BR>
 <span class="ln"></span>yutto, ekenāyatanena ekāya dhātuyā kehici vippayutto.<BR>
@@ -2209,7 +2211,7 @@ Dhātukathā<BR>
 <span class="ln"></span>katīhi vippayuttā?<BR>
 <span class="ln"></span>     Ekena khandhena dasahāyatanehi soḷasahi dhātūhi vip-<BR>
 <span class="ln" data-n="15"></span>payuttā ekenāyatanena ekāya dhātuyā kehici vippayuttā.<BR>
-<span class="ln"></span>      Samudayasaccaṃ maggasaccaṃ <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{tīhi}</span> khandhehi eke-<BR>
+<span class="ln"></span>      Samudayasaccaṃ maggasaccaṃ <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{tīhi}</span> khandhehi eke-<BR>
 <span class="ln"></span>nāyatanena ekāya dhātuyā sampayuttaṃ ekena khandhena<BR>
 <span class="ln"></span>ekenāyatanena ekāya dhātuyā kehici sampayuttaṃ, katīhi<BR>
 <span class="ln"></span>vippayuttaṃ?<BR>
@@ -2664,7 +2666,7 @@ Dhātukathā<BR>
 <span class="ln"></span>     Catuhi khandhehi ekenāyatanena sattahi dhātūhi vippa-<BR>
 <span class="ln" data-n="20"></span>yuttā ekenāyatanena ekāya dhātuyā kehici vippayuttā.<BR>
 <span class="ln"></span>      Upekhindriyena ye dhammā sampayuttā tehi dham-<BR>
-<span class="ln"></span>mehi ye dhammā vippayuttā te <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{dhammā}</span> . . . pe . . .?<BR>
+<span class="ln"></span>mehi ye dhammā vippayuttā te <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{dhammā}</span> . . . pe . . .?<BR>
 <span class="ln"></span>     Na kehici khandhehi na kehici āyatanehi pañcahi<BR>
 <span class="ln"></span>dhātūhi vippayuttā.<BR>
 <span class="ln" data-n="25"></span>      Saṃkhārapaccayā viññāṇena ye dhammā -- Saḷāyatana-<BR>
@@ -3527,7 +3529,7 @@ Dhātukathā<BR>
 <i>86</i><BR>
 <span class="ln" data-n="1"></span>            XII.-- SAMPAYUTTENA SAṂGAHĪTAṂ ASAṂGAHĪTAṂ.<BR>
 <span class="ln"></span>      Vedanākkhandhena ye dhammā -- Saññākkhandhena<BR>
-<span class="ln"></span>ye dhammā -- <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{Saṃkhārakkhandhena}</span> ye dhammā sampa-<BR>
+<span class="ln"></span>ye dhammā -- <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{Saṃkhārakkhandhena}</span> ye dhammā sampa-<BR>
 <span class="ln"></span>yuttā te dhammā katīhi khandhehi katīhāyatanehi katīhi<BR>
 <span class="ln" data-n="5"></span>dhātūhi saṃgahītā.<BR>
 <span class="ln"></span>     Te dhammā tīhi khandhehi divīhāyatanehi aṭṭhahi dhā-<BR>
@@ -3579,7 +3581,7 @@ Dhātukathā<BR>
 <span class="ln"></span>asaṃgahītā.<BR>
 <span class="ln"></span>      Saddhindriyena ye dhammā -- Viriyindriyena ye dham-<BR>
 <span class="ln"></span>mā -- Satindriyena ye dhammā -- Samādhindriyena ye<BR>
-<span class="ln" data-n="20"></span>dhammā -- <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{Paññindriyena}</span> ye dhammā -- Anaññātaṃ ñas-<BR>
+<span class="ln" data-n="20"></span>dhammā -- <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{Paññindriyena}</span> ye dhammā -- Anaññātaṃ ñas-<BR>
 <span class="ln"></span>sāmītindriyena ye dhammā -- Aññindriyena ye dhammā --<BR>
 <span class="ln"></span>Aññatāvindriyena ye dhammā -- Avijjāya ye dhammā --<BR>
 <span class="ln"></span>Avijjā-paccayā saṃkhārena ye dhammā sampayuttā te<BR>
@@ -3734,7 +3736,7 @@ Dhātukathā<BR>
 <span class="ln"></span>     Ekena khandhena dasahāyatanehi soḷasahi dhātūhi<BR>
 <span class="ln"></span>asaṃgahītā.<BR>
 <span class="ln"></span>      Āsava-sampayuttā c'eva no ca āsavehi dhammehi ye<BR>
-<span class="ln" data-n="5"></span>dhammā <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{sampayuttā}</span> te dhammā . . . pe . . .?<BR>
+<span class="ln" data-n="5"></span>dhammā <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{sampayuttā}</span> te dhammā . . . pe . . .?<BR>
 <span class="ln"></span>     Ekena khandhena ekenāyatanena ekāya dhātuyā saṃ-<BR>
 <span class="ln"></span>gahītā.<BR>
 <span class="ln"></span>     Katīhi asaṃgahītā?<BR>
@@ -3761,7 +3763,7 @@ Dhātukathā<BR>
 <span class="ln"></span>      Cittehi dhammehi ye dhammā sampayuttā te<BR>
 <span class="ln" data-n="30"></span>dhammā . . . pe . . .?<BR>
 <span class="ln"></span>     Tīhi khandhehi ekenāyatanena ekāya dhātuyā saṃgahītā.<BR>
-<span class="ln"></span>     <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{Katīhi}</span> asaṃgahītā?<BR>
+<span class="ln"></span>     <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{Katīhi}</span> asaṃgahītā?<BR>
 <span class="ln"></span>     Dvīhi khandhehi ekādasahi āyatanehi sattarasahi dhā-<BR>
 <span class="ln"></span>tūhi asaṃgahītā.<BR>
 <span class="ln" data-n="35"></span>      Cetasikehi dhammehi ye dhammā -- Citta-saṃsaṭṭhehi<BR>
@@ -4070,7 +4072,7 @@ Dhātukathā<BR>
 <i>100                  DHĀTU KATHĀ {PAKARAṆAṂ}.                 [XIV.</i><BR>
 <span class="ln" data-n="1"></span>     Asaṃkhataṃ khandhato ṭhapetvā pañcahi khandhehi<BR>
 <span class="ln"></span>dvādasahi āyatanhehi aṭṭhārasahi dhātūhi saṃgahītā.<BR>
-<span class="ln"></span>     Katīhi <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{asaṃgahītā}</span>?<BR>
+<span class="ln"></span>     Katīhi <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{asaṃgahītā}</span>?<BR>
 <span class="ln"></span>     Na kehici khandhehi na kehici ayatanehi pañcahi dhātūhi<BR>
 <span class="ln" data-n="5"></span>asaṃgahītā.<BR>
 <span class="ln"></span>      Saddhindriyena ye dhammā -- Viriyindriyena ye<BR>
@@ -4190,7 +4192,7 @@ Dhātukathā<BR>
 <span class="ln"></span>     Katīhi asaṃgahītā?<BR>
 <span class="ln"></span>     Na kehici khandhehi na kehici āyatanehi pañcahi dhā-<BR>
 <span class="ln" data-n="35"></span>tūhi asaṃgahītā.<BR>
-<span class="ln"></span>      Vipāka-dhamma-dhammehi ye dhammā -- <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{Saṃkiliṭ-</span><span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered."><BR>
+<span class="ln"></span>      Vipāka-dhamma-dhammehi ye dhammā -- <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{Saṃkiliṭ-</span><span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged."><BR>
 <span class="ln"></span>ṭha-saṃkilesikehi}</span> dhammehi ye dhammā vippayuttā te<BR>
 <span class="ln"></span>dhammā . . . pe . . .?<BR>
 <BR>
@@ -4293,7 +4295,7 @@ Dhātukathā<BR>
 <span class="ln"></span>asaṃgahītā.<BR>
 <span class="ln" data-n="10"></span>      Appamāṇehi dhammehi ye dhammā -- Paṇītehi dham-<BR>
 <span class="ln"></span>mehi ye dhammā vippayuttā te dhammā . . . pe . . .?<BR>
-<span class="ln"></span>     Catuhi khandhehi dvīhāyatanehi aṭṭhahi dhātūhi <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{saṃga-</span><span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered."><BR>
+<span class="ln"></span>     Catuhi khandhehi dvīhāyatanehi aṭṭhahi dhātūhi <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{saṃga-</span><span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged."><BR>
 <span class="ln"></span>hītā}</span>.<BR>
 <span class="ln"></span>     Katīhi asaṃgahītā?<BR>
 <span class="ln" data-n="15"></span>     Ekena khandhena dasahāyatanehi dasahi dhātūhi asaṃ-<BR>
@@ -4381,7 +4383,7 @@ Dhātukathā<BR>
 <span class="ln"></span>dhammā vippayuttā te dhammā . . . pe . . .?<BR>
 <span class="ln"></span>     Catuhi khandhehi dvīhāyatanehi dvīhi dhātūhi saṃga-<BR>
 <span class="ln"></span>hītā.<BR>
-<span class="ln"></span>     <span class="erratum" data-info="GRETIL erratum: this word is printed between braces { } in GRETIL. It is kept as printed; its content is not altered.">{Katīhi}</span> asaṃgahītā?<BR>
+<span class="ln"></span>     <span class="erratum" data-info="GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left the content between braces unchanged.">{Katīhi}</span> asaṃgahītā?<BR>
 <span class="ln" data-n="15"></span>     Ekena khandhena dasahāyatanehi soḷasahi dhātūhi<BR>
 <span class="ln"></span>asaṃgahītā.<BR>
 <span class="ln"></span>      Appaccayehi dhammehi ye dhammā -- Asaṃkhatehi<BR>
