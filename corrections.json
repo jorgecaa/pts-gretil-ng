@@ -370,9 +370,13 @@
 "gretil": "saññi-vādā, uddham āghatanā",
 "book": "saññi-vādā, uddham āghātanā",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"āghatana",
+"āghātana"
+]
 },
 {
 "volume": "DN I",
@@ -436,9 +440,12 @@
 "gretil": "brūmetūti",
 "book": "bravitūti",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-11-05",
+"entry": [
+"brūmetūti"
+]
 },
 {
 "volume": "DN I",
@@ -480,9 +487,12 @@
 "gretil": "anuppādānaṃ",
 "book": "anuppadānaṃ",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"anuppadāna"
+]
 },
 {
 "volume": "DN I",
@@ -502,9 +512,13 @@
 "gretil": "anugaṇhanto",
 "book": "anuggaṇhanto",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"anugaṇhanta",
+"uggaṇhāti"
+]
 },
 {
 "volume": "DN I",
@@ -557,9 +571,12 @@
 "gretil": "paripphuṭṭhāni",
 "book": "paripphuṭāni",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"parippharati"
+]
 },
 {
 "volume": "DN I",
@@ -637,9 +654,12 @@
 "gretil": "pāpiko",
 "book": "pāpito",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"pāpika"
+]
 },
 {
 "volume": "DN I",
@@ -648,9 +668,12 @@
 "gretil": "anojagghantā",
 "book": "anujagghantā",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"*anujagghati (and * anojagghati)"
+]
 },
 {
 "volume": "DN I",
@@ -659,9 +682,12 @@
 "gretil": "bho Gotama",
 "book": "bho Gotamo",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"bhava(t)"
+]
 },
 {
 "volume": "DN I",
@@ -698,9 +724,12 @@
 "gretil": "anuppanno",
 "book": "anupapanno",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"uppajjati"
+]
 },
 {
 "volume": "DN I",
@@ -764,9 +793,12 @@
 "gretil": "anuppādetu,9",
 "book": "anuppadetu,9",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"anuppadeti, anupadeti"
+]
 },
 {
 "volume": "DN I",
@@ -775,9 +807,12 @@
 "gretil": "anuppādesi,1",
 "book": "anuppadāsi,1",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"anuppadeti, anupadeti"
+]
 },
 {
 "volume": "DN I",
@@ -786,9 +821,12 @@
 "gretil": "paṭivinodetuṃ",
 "book": "paṭivinodesi",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"paṭivinodeti, ~ayati"
+]
 },
 {
 "volume": "DN I",
@@ -808,9 +846,13 @@
 "gretil": "anukūla1-yaññāni",
 "book": "anukula1-yaññāni",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"anukulaṃ",
+"anukūla"
+]
 },
 {
 "volume": "DN I",
@@ -819,9 +861,12 @@
 "gretil": "arahanta-maggaṃ vā samāpannā. Taṃ",
 "book": "arahatta-maggaṃ vā samāpannā. Taṃ",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"araha(t)"
+]
 },
 {
 "volume": "DN I",
@@ -1026,9 +1071,13 @@
 "gretil": "adhimutti.",
 "book": "adhivimutti.",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"adhimutti",
+"adhivimutti"
+]
 },
 {
 "volume": "DN I",
@@ -1059,9 +1108,13 @@
 "gretil": "Khattī",
 "book": "Khattiyī",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"khattiyī",
+"khattī"
+]
 },
 {
 "volume": "DN I",
@@ -1081,9 +1134,12 @@
 "gretil": "ossakkantiyā",
 "book": "osakkantiyā",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"osakkati"
+]
 },
 {
 "volume": "DN I",
@@ -1136,9 +1192,13 @@
 "gretil": "vuccanti, onahā",
 "book": "vuccanti, onāhā",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"onaha",
+"onāha"
+]
 },
 {
 "volume": "DN I",
@@ -1147,9 +1207,12 @@
 "gretil": "avassaṭaṃ",
 "book": "avasaṭaṃ",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"*avasarati"
+]
 },
 {
 "volume": "DN I",
@@ -2022,9 +2085,12 @@
 "gretil": "parivāreti.",
 "book": "paricāreti.",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"parivāreti, ~ayati"
+]
 },
 {
 "volume": "DN II",
@@ -2044,9 +2110,12 @@
 "gretil": "parivārayamāno",
 "book": "paricārayamāno",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"parivāreti, ~ayati"
+]
 },
 {
 "volume": "DN II",
@@ -2099,9 +2168,12 @@
 "gretil": "ucchejjāmi5",
 "book": "ucchecchāmi5",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"ucchindati"
+]
 },
 {
 "volume": "DN II",
@@ -2110,9 +2182,13 @@
 "gretil": "aparāparaṃ4",
 "book": "orā pāraṃ4",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"apara",
+"pāra"
+]
 },
 {
 "volume": "DN II",
@@ -2121,9 +2197,12 @@
 "gretil": "pāpimaṃ",
 "book": "pāpimantaṃ",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"pāpima(t)"
+]
 },
 {
 "volume": "DN II",
@@ -2154,9 +2233,12 @@
 "gretil": "parikariṃsu",
 "book": "parikiriṃsu",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"parikaroti"
+]
 },
 {
 "volume": "DN II",
@@ -2165,9 +2247,13 @@
 "gretil": "anusāyitvā",
 "book": "anuyāyitvā",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"anusāyitvā",
+"anuyāti"
+]
 },
 {
 "volume": "DN II",
@@ -2213,9 +2299,12 @@
 "gretil": "ekante19",
 "book": "ekattena19",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"eka"
+]
 },
 {
 "volume": "DN II",
@@ -2224,9 +2313,13 @@
 "gretil": "Apārūtā",
 "book": "Apārutā",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"apāpurati (and avāpurati)",
+"apārūta"
+]
 },
 {
 "volume": "DN II",
@@ -2235,9 +2328,12 @@
 "gretil": "adhun-uppannā",
 "book": "adhunūpapannā",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"adhunā"
+]
 },
 {
 "volume": "DN II",
@@ -2268,9 +2364,13 @@
 "gretil": "pajāhāsi",
 "book": "jahāsi",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"jahati",
+"pajāhāsi"
+]
 },
 {
 "volume": "DN II",
@@ -2279,9 +2379,12 @@
 "gretil": "jalit' assu",
 "book": "jalati su",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"jalati"
+]
 },
 {
 "volume": "DN II",
@@ -2290,9 +2393,13 @@
 "gretil": "ogahe",
 "book": "ogāhe",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"ogahe",
+"ogāhati"
+]
 },
 {
 "volume": "DN II",
@@ -2301,9 +2408,12 @@
 "gretil": "anussarā",
 "book": "anussaraṃ",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"anussarati"
+]
 },
 {
 "volume": "DN II",
@@ -2312,9 +2422,12 @@
 "gretil": "abhinipphattiyā",
 "book": "abhinibbattiyā",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"abhinibbatti"
+]
 },
 {
 "volume": "DN II",
@@ -2345,9 +2458,13 @@
 "gretil": "opādesi",
 "book": "opāṭesi",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"*opāṭeti",
+"opādesi"
+]
 },
 {
 "volume": "DN II",
@@ -2367,9 +2484,12 @@
 "gretil": "tumhaṃ",
 "book": "tuyhaṃ",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"tvaṃ"
+]
 },
 {
 "volume": "DN II",
@@ -2820,9 +2940,12 @@
 "gretil": "dhanañjāni",
 "book": "dhanajāni",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"dhana"
+]
 },
 {
 "volume": "DN III",
@@ -2952,9 +3075,12 @@
 "gretil": "kokilābhīhi",
 "book": "kokilādīhi",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"kokila, kokilā"
+]
 },
 {
 "volume": "DN III",
@@ -3483,9 +3609,12 @@
 "gretil": "athaddo",
 "book": "atthaddho",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"thambhati"
+]
 },
 {
 "volume": "DN III",
@@ -3494,9 +3623,12 @@
 "gretil": "sabhā7 gāyissanti",
 "book": "sabhāgayissanti7",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"gāyati"
+]
 },
 {
 "volume": "DN III",
@@ -3516,9 +3648,12 @@
 "gretil": "pabbajjam",
 "book": "pabbajam",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"pabbajati"
+]
 },
 {
 "volume": "DN III",
@@ -3538,9 +3673,13 @@
 "gretil": "atujā",
 "book": "atrajā",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"atraja",
+"atujā"
+]
 },
 {
 "volume": "DN III",
@@ -3549,9 +3688,13 @@
 "gretil": "ciraṃ",
 "book": "sugiraṃ",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"cira",
+"girā"
+]
 },
 {
 "volume": "DN III",
@@ -3560,9 +3703,13 @@
 "gretil": "ubbāyikaṃ",
 "book": "ubbādhikaṃ",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"ubbādhaka",
+"ubbāyikaṃ"
+]
 },
 {
 "volume": "DN III",
@@ -3571,9 +3718,12 @@
 "gretil": "thūlā",
 "book": "puthulā",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"thūla"
+]
 },
 {
 "volume": "DN III",
@@ -3618,9 +3768,12 @@
 "gretil": "anuppādeti",
 "book": "anuppadeti",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"anuppadeti, anupadeti"
+]
 },
 {
 "volume": "DN III",
@@ -3629,9 +3782,12 @@
 "gretil": "nimmetvā nimmetvā",
 "book": "nimminitvā nimminitvā",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"nimmetvā"
+]
 },
 {
 "volume": "DN III",
@@ -3673,9 +3829,12 @@
 "gretil": "anussutānuttariyaṃ.",
 "book": "anussatānuttariyaṃ.",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"anussati"
+]
 },
 {
 "volume": "DN III",
@@ -5254,9 +5413,12 @@
 "gretil": "khurakāye",
 "book": "khurakāse",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"khura"
+]
 },
 {
 "volume": "MN I",
@@ -5353,9 +5515,13 @@
 "gretil": "paladdho,",
 "book": "paluddho,",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"palambhati",
+"paluddha"
+]
 },
 {
 "volume": "MN I",
@@ -5514,9 +5680,12 @@
 "gretil": "ārūgyaṃ",
 "book": "ārogyaṃ",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"ārogya"
+]
 },
 {
 "volume": "MN I",
@@ -5525,9 +5694,12 @@
 "gretil": "sāsane pariyogāya vattato",
 "book": "sāsane pariyogāhiya vattato",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"pariyogāhati"
+]
 },
 {
 "volume": "MN I",
@@ -5949,9 +6121,12 @@
 "gretil": "bhagavataṃ",
 "book": "bhavataṃ",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"bhagava(t)"
+]
 },
 {
 "volume": "MN II",
@@ -6015,9 +6190,12 @@
 "gretil": "dakkhīti4.",
 "book": "dakkhiti4.",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"√dis"
+]
 },
 {
 "volume": "MN II",
@@ -6026,9 +6204,12 @@
 "gretil": "kāḷāyapabhivattāni",
 "book": "kaḷāyapaṭibhastāni",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"kalāya, kaḷāya"
+]
 },
 {
 "volume": "MN II",
@@ -6063,9 +6244,12 @@
 "gretil": "ajjha",
 "book": "ajja",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"ajjha"
+]
 },
 {
 "volume": "MN II",
@@ -6074,9 +6258,13 @@
 "gretil": "aṭṭhitañcena",
 "book": "aṭṭhi tacena",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"aṭṭhi",
+"onayhati, onandhati"
+]
 },
 {
 "volume": "MN II",
@@ -6085,9 +6273,12 @@
 "gretil": "Aṭṭhapādakatā",
 "book": "Aṭṭhāpadakatā",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"aṭṭha"
+]
 },
 {
 "volume": "MN II",
@@ -6096,9 +6287,13 @@
 "gretil": "nihaniṃ",
 "book": "nihiniṃ",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"nihanati",
+"ni√hi"
+]
 },
 {
 "volume": "MN II",
@@ -6129,9 +6324,13 @@
 "gretil": "āvikatvā",
 "book": "āvīkattā",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"āvi, āvī",
+"āvikaroti"
+]
 },
 {
 "volume": "MN II",
@@ -6151,9 +6350,13 @@
 "gretil": "kassakā\npadhāvino Bhagavantaṃ",
 "book": "kassakā\npathāvino Bhagavantaṃ",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"padhāvino",
+"pathāvi(n)"
+]
 },
 {
 "volume": "MN II",
@@ -6195,9 +6398,13 @@
 "gretil": "āpānakoṭikaṃ",
 "book": "āpāṇakoṭikaṃ",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"āpānakoṭikaṃ",
+"āpāṇakoṭikaṃ"
+]
 },
 {
 "volume": "MN II",
@@ -6933,9 +7140,12 @@
 "gretil": "gaṇānaṃ gaṇānājīvānaṃ",
 "book": "gaṇakānaṃ gaṇanājīvānaṃ",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"gaṇa"
+]
 },
 {
 "volume": "MN III",
@@ -7236,9 +7446,13 @@
 "gretil": "Abhā",
 "book": "Ābhā",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"abhā",
+"ābhā"
+]
 },
 {
 "volume": "MN III",
@@ -7247,9 +7461,12 @@
 "gretil": "Ākiñcāyatanūpagā",
 "book": "Ākiñcaññāyatanūpagā",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"ākiñca"
+]
 },
 {
 "volume": "MN III",
@@ -7291,9 +7508,12 @@
 "gretil": "ākiñcaññāsaññāyāti",
 "book": "ākiñcaññāyatanasaññāyāti",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"ākiñcañña"
+]
 },
 {
 "volume": "MN III",
@@ -7313,9 +7533,12 @@
 "gretil": "uyyojaniyapaṭisaṃyuttaṃ",
 "book": "uyyojanikapaṭisaṃyuttaṃ",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"uyyojanika"
+]
 },
 {
 "volume": "MN III",
@@ -7412,9 +7635,12 @@
 "gretil": "abhinindriyaṃ.4",
 "book": "ahīnindriyaṃ.4",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"jahati"
+]
 },
 {
 "volume": "MN III",
@@ -8788,9 +9014,13 @@
 "gretil": "kumārī",
 "book": "komārī",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"komāra",
+"kumārī"
+]
 },
 {
 "volume": "SN I",
@@ -8890,9 +9120,12 @@
 "gretil": "evādādato",
 "book": "evādadato",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+""
+]
 },
 {
 "volume": "SN I",
@@ -8912,9 +9145,12 @@
 "gretil": "asādetabbaṃ",
 "book": "āsādetabbaṃ",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"āsīdati"
+]
 },
 {
 "volume": "SN I",
@@ -8970,9 +9206,13 @@
 "gretil": "akujano",
 "book": "akūjano",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"akujana",
+"kūjana"
+]
 },
 {
 "volume": "SN I",
@@ -8981,9 +9221,13 @@
 "gretil": "ajāyare",
 "book": "ājāyare",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"ajāyare",
+"ājāyati"
+]
 },
 {
 "volume": "SN I",
@@ -9014,9 +9258,12 @@
 "gretil": "pāpiyaṃ",
 "book": "pāpikaṃ",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"pāpiya(s)"
+]
 },
 {
 "volume": "SN I",
@@ -9152,9 +9399,13 @@
 "gretil": "uppattitesu",
 "book": "uppatitesu",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"uppatati",
+"uppattita"
+]
 },
 {
 "volume": "SN I",
@@ -9240,9 +9491,13 @@
 "gretil": "āccikkhaṃ",
 "book": "ācikkhaṃ",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"āccikkhaṃ",
+"ācikkhati"
+]
 },
 {
 "volume": "SN I",
@@ -9251,9 +9506,12 @@
 "gretil": "kutthako",
 "book": "kotthuko",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"kutthaka"
+]
 },
 {
 "volume": "SN I",
@@ -9312,9 +9570,13 @@
 "gretil": "anukūlaṃ",
 "book": "anukulaṃ",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"anukulaṃ",
+"anukūlaṃ"
+]
 },
 {
 "volume": "SN I",
@@ -9323,9 +9585,13 @@
 "gretil": "ocaritā",
 "book": "ocaritvā",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"ocarati",
+"ocaritā"
+]
 },
 {
 "volume": "SN I",
@@ -9469,9 +9735,12 @@
 "gretil": "aparaṃ",
 "book": "amaraṃ",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"apara"
+]
 },
 {
 "volume": "SN I",
@@ -9480,9 +9749,12 @@
 "gretil": "agamettha",
 "book": "agamittha",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"gacchati"
+]
 },
 {
 "volume": "SN I",
@@ -9524,9 +9796,12 @@
 "gretil": "pathaviṃ",
 "book": "pathavī",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"calati"
+]
 },
 {
 "volume": "SN I",
@@ -9579,9 +9854,12 @@
 "gretil": "jiṇṇo",
 "book": "jīno",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"*jarati"
+]
 },
 {
 "volume": "SN I",
@@ -9634,9 +9912,12 @@
 "gretil": "cittaṃ",
 "book": "vittaṃ",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"citta"
+]
 },
 {
 "volume": "SN I",
@@ -9645,9 +9926,13 @@
 "gretil": "anubodhaṃ",
 "book": "anubodhiṃ",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"anubodha",
+"anubujjhati"
+]
 },
 {
 "volume": "SN I",
@@ -9670,9 +9955,12 @@
 "gretil": "vā Māruto",
 "book": "va Māluto",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"tūla"
+]
 },
 {
 "volume": "SN I",
@@ -9795,9 +10083,12 @@
 "gretil": "nādhigacchaye",
 "book": "nādhigaccheyya",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"adhigacchati"
+]
 },
 {
 "volume": "SN I",
@@ -9817,9 +10108,13 @@
 "gretil": "upakkamitvā",
 "book": "upakkhalitvā",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"upakkamati",
+"upakkhalati"
+]
 },
 {
 "volume": "SN I",
@@ -9861,9 +10156,12 @@
 "gretil": "chaṭṭehi",
 "book": "chaḍḍehi",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"chaṭṭeti, ~ayati"
+]
 },
 {
 "volume": "SN I",
@@ -9927,9 +10225,13 @@
 "gretil": "isā",
 "book": "īsā",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"isā",
+"īsā"
+]
 },
 {
 "volume": "SN I",
@@ -10128,9 +10430,12 @@
 "gretil": "etadisikāya",
 "book": "etādisikāya",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"etādisikā"
+]
 },
 {
 "volume": "SN I",
@@ -10150,9 +10455,12 @@
 "gretil": "bhuñjati",
 "book": "bhañjati",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"bhañjati"
+]
 },
 {
 "volume": "SN I",
@@ -10172,9 +10480,13 @@
 "gretil": "upājīvāmi",
 "book": "upajīvāmi",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"upajīvati",
+"upājīvāmi"
+]
 },
 {
 "volume": "SN I",
@@ -10197,9 +10509,12 @@
 "gretil": "nibhataṃ",
 "book": "nīhataṃ",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"nīharati"
+]
 },
 {
 "volume": "SN I",
@@ -10222,9 +10537,12 @@
 "gretil": "antimasarīro",
 "book": "antimasārīro",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"antima"
+]
 },
 {
 "volume": "SN I",
@@ -10280,9 +10598,12 @@
 "gretil": "asurindam kaṇṭhe pañcamehi bandhanehi",
 "book": "asurindam kaṇṭhapañcamehi bandhanehi",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"kaṇṭha"
+]
 },
 {
 "volume": "SN I",
@@ -11131,9 +11452,12 @@
 "gretil": "yānissitāni",
 "book": "yānissa tāni",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"nissayati"
+]
 },
 {
 "volume": "SN II",
@@ -11197,9 +11521,12 @@
 "gretil": "mahā aggikkhandho jāleyya ║\nTatra",
 "book": "mahā aggikkhandho jaleyya ║\nTatra",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"jalati"
+]
 },
 {
 "volume": "SN II",
@@ -11230,9 +11557,12 @@
 "gretil": "Ekissa",
 "book": "Ekissā",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"eka"
+]
 },
 {
 "volume": "SN II",
@@ -11252,9 +11582,12 @@
 "gretil": "pabbajā",
 "book": "pabbajjā",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"pabbāja"
+]
 },
 {
 "volume": "SN II",
@@ -11274,9 +11607,12 @@
 "gretil": "ti3",
 "book": "tīṇi3",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"ti"
+]
 },
 {
 "volume": "SN II",
@@ -11329,9 +11665,12 @@
 "gretil": "pañcavakā",
 "book": "pañcakā",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"pañcaka"
+]
 },
 {
 "volume": "SN II",
@@ -11420,9 +11759,12 @@
 "gretil": "ovāditehi",
 "book": "ovaditehi",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"ovadati"
+]
 },
 {
 "volume": "SN II",
@@ -11530,9 +11872,12 @@
 "gretil": "aḍḍhaṭṭharatanaṃ",
 "book": "aḍḍha-aṭṭhamaratanaṃ",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"aḍḍha"
+]
 },
 {
 "volume": "SN II",
@@ -11644,9 +11989,12 @@
 "gretil": "mudukā suseyyā\nsutulabimbohanāsu",
 "book": "mudukāsu seyyāsu\ntūlabimbohanāsu",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"bimbohana"
+]
 },
 {
 "volume": "SN II",
@@ -12149,9 +12497,12 @@
 "gretil": "supadhāritā",
 "book": "sūpadhāritā",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"padhāreti"
+]
 },
 {
 "volume": "SN III",
@@ -12171,9 +12522,13 @@
 "gretil": "abbhuyha",
 "book": "abbuyha",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"abbahati",
+"abbhuyha"
+]
 },
 {
 "volume": "SN III",
@@ -12240,9 +12595,12 @@
 "gretil": "veluvalaṭṭhitāya",
 "book": "veluvalatthitāya",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"beluva"
+]
 },
 {
 "volume": "SN III",
@@ -12262,9 +12620,13 @@
 "gretil": "abhijjālu",
 "book": "abhijjhālu",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"abhijjhālu",
+"abhijjālu"
+]
 },
 {
 "volume": "SN III",
@@ -12284,9 +12646,12 @@
 "gretil": "aniṭṭhaṅgatā",
 "book": "aniṭṭhaṅgatatā",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"niṭṭhā"
+]
 },
 {
 "volume": "SN III",
@@ -12339,9 +12704,12 @@
 "gretil": "paṭṭhiyamāne",
 "book": "paṭṭhapiyamāne",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"paṭṭhapeti, ~ayati"
+]
 },
 {
 "volume": "SN III",
@@ -12350,9 +12718,12 @@
 "gretil": "akukkajātaṃ",
 "book": "akukkukajātaṃ",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"akukkukajāta"
+]
 },
 {
 "volume": "SN III",
@@ -12394,9 +12765,12 @@
 "gretil": "paṭiccayo",
 "book": "paticayo",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"paṭicaya"
+]
 },
 {
 "volume": "SN III",
@@ -12438,9 +12812,13 @@
 "gretil": "Assa",
 "book": "Accasarā",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"assa",
+"atisarati"
+]
 },
 {
 "volume": "SN III",
@@ -12675,9 +13053,13 @@
 "gretil": "Anejanto anuppattā",
 "book": "Anejaṃ te anuppattā",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-20"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-20",
+"entry": [
+"ejati",
+"ejā"
+]
 },
 {
 "volume": "SN III",
@@ -21000,9 +21382,13 @@
 "gretil": "ārakkasārathi",
 "book": "ārakkhasārathi",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"ārakkasārathi",
+"ārakkha"
+]
 },
 {
 "volume": "SN V",
@@ -21226,9 +21612,12 @@
 "gretil": "nivāretvā",
 "book": "nivāretā",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"nivāreti, ~ayati"
+]
 },
 {
 "volume": "SN V",
@@ -21292,9 +21681,13 @@
 "gretil": "Uppatika.",
 "book": "Uppaṭipāṭika.",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"uppatika",
+"uppaṭipāṭika"
+]
 },
 {
 "volume": "SN V",
@@ -21479,9 +21872,12 @@
 "gretil": "akaṇḍehi",
 "book": "akhaṇḍehi",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"khaṇḍa"
+]
 },
 {
 "volume": "SN V",
@@ -22405,9 +22801,13 @@
 "gretil": "Nāya",
 "book": "Tāya",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"na",
+"nāya"
+]
 },
 {
 "volume": "AN I",
@@ -22431,9 +22831,12 @@
 "gretil": "dhamme uppajje vā",
 "book": "dhamme upapajje vā",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"uppajjati"
+]
 },
 {
 "volume": "AN I",
@@ -22665,9 +23068,12 @@
 "gretil": "abhinivaddhetvā2",
 "book": "abhinivajjetvā2",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"abhinivatteti"
+]
 },
 {
 "volume": "AN I",
@@ -22676,9 +23082,13 @@
 "gretil": "paṭigacchati",
 "book": "paṭivigacchati",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"paṭigacchati",
+"paṭivigacchati"
+]
 },
 {
 "volume": "AN I",
@@ -23263,9 +23673,12 @@
 "gretil": "anuppanno6,",
 "book": "anupapanno6,",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"uppajjati"
+]
 },
 {
 "volume": "AN II",
@@ -23379,9 +23792,13 @@
 "gretil": "paṭihaññanti",
 "book": "paṭihaññati",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"disā",
+"paṭihanati"
+]
 },
 {
 "volume": "AN II",
@@ -23390,9 +23807,12 @@
 "gretil": "mahantaṃ",
 "book": "mahattaṃ",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"pāpuṇāti"
+]
 },
 {
 "volume": "AN II",
@@ -23401,9 +23821,12 @@
 "gretil": "antimāsarīro",
 "book": "antimasārīro",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"antima"
+]
 },
 {
 "volume": "AN II",
@@ -23434,9 +23857,13 @@
 "gretil": "anukūlaṃ",
 "book": "anukulaṃ",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"anukulaṃ",
+"anukūlaṃ"
+]
 },
 {
 "volume": "AN II",
@@ -23456,9 +23883,12 @@
 "gretil": "brahmacariyā",
 "book": "brahmacārayo",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"brahmacariya"
+]
 },
 {
 "volume": "AN II",
@@ -23621,9 +24051,12 @@
 "gretil": "Catuppādāya",
 "book": "Catuppadāya",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"gāthā"
+]
 },
 {
 "volume": "AN II",
@@ -23643,9 +24076,12 @@
 "gretil": "cintamāno",
 "book": "cintayamāno",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"cinteti, ~ayati"
+]
 },
 {
 "volume": "AN II",
@@ -23654,9 +24090,12 @@
 "gretil": "paṇḍitaro",
 "book": "paṇḍitataro",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"paṇḍita"
+]
 },
 {
 "volume": "AN II",
@@ -23665,9 +24104,12 @@
 "gretil": "cutuppāto",
 "book": "cutūpapāto",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"cuti"
+]
 },
 {
 "volume": "AN II",
@@ -23720,9 +24162,13 @@
 "gretil": "issamānikā5",
 "book": "issāmanikā5",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"issamānikā",
+"issā"
+]
 },
 {
 "volume": "AN II",
@@ -23731,9 +24177,12 @@
 "gretil": "anissamānikā",
 "book": "anissāmanikā",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"issā"
+]
 },
 {
 "volume": "AN II",
@@ -23742,9 +24191,12 @@
 "gretil": "pesā",
 "book": "pessā",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"pesa"
+]
 },
 {
 "volume": "AN II",
@@ -23753,9 +24205,12 @@
 "gretil": "giriṃ guhaṃ",
 "book": "giriguhaṃ",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"giri"
+]
 },
 {
 "volume": "AN II",
@@ -24227,9 +24682,12 @@
 "gretil": "tena ca1 appaññātikena no\nparitassati8.",
 "book": "tena ca1 appaññātakena no\nparitassati8.",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"appaññātaka"
+]
 },
 {
 "volume": "AN III",
@@ -24238,9 +24696,12 @@
 "gretil": "Avappakāsadukkhāni",
 "book": "Vapakāsadukkhāni",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"avappakāsa-"
+]
 },
 {
 "volume": "AN III",
@@ -24249,9 +24710,12 @@
 "gretil": "kuṭumbiṃ",
 "book": "kuṭumbaṃ",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"kuṭumba"
+]
 },
 {
 "volume": "AN III",
@@ -24639,9 +25103,12 @@
 "gretil": "-\nmahānubhāve ucchejjissāmi",
 "book": "-\nmahānubhāve ucchecchāmi",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"ucchindati"
+]
 },
 {
 "volume": "AN IV",
@@ -24694,9 +25161,13 @@
 "gretil": "anissukā",
 "book": "anussukā",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"anissuka",
+"ussuka"
+]
 },
 {
 "volume": "AN IV",
@@ -24716,9 +25187,13 @@
 "gretil": "sotthinā abhinibbijjituṃ. Taṃ",
 "book": "sotthinā abhinibbhijjituṃ. Taṃ",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"abhinibbhijjati",
+"abhinibbijjituṃ"
+]
 },
 {
 "volume": "AN IV",
@@ -24936,9 +25411,12 @@
 "gretil": "nantikavāsī",
 "book": "nantakavāsī",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"nantaka"
+]
 },
 {
 "volume": "AN IV",
@@ -25461,9 +25939,12 @@
 "gretil": "pārihāniṃ.",
 "book": "parihāniṃ.",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"pārihāniṃ"
+]
 },
 {
 "volume": "AN V",
@@ -25494,9 +25975,12 @@
 "gretil": "khiḍḍaṃ kiḷeyya, kaṇṇasan-",
 "book": "khiḍḍaṃ kīḷeyya, kaṇṇasan-",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition)",
+"kind": "emendation",
+"date": "2026-10-14",
+"entry": [
+"kīḷati"
+]
 },
 {
 "volume": "AN V",

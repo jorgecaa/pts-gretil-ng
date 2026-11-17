@@ -85,7 +85,7 @@ Each correction was approved by a person. Every correction in `corrections.json`
 
 | Kind | Source label (evidence or authority) | Corrections |
 |---|---|---:|
-| transcription | Review sheet, checked by hand against the scan of the PTS edition | 1,132 |
+| transcription | Review sheet, checked by hand against the scan of the PTS edition | 986 |
 | transcription | Copy of the GRETIL file corrected by hand, checked against the scan of the PTS edition | 886 |
 | transcription | Flagged by the Word Index to the Pāli Tipiṭaka (Ousaka 2019), checked by hand against the scan of the PTS edition | 252 |
 | transcription | Printed reading, checked by hand against the scan of the PTS edition | 134 |
@@ -95,7 +95,7 @@ Each correction was approved by a person. Every correction in `corrections.json`
 | transcription | Earlier correction, checked by hand word by word against the scan of the PTS edition on 2026-10-11 | 6 |
 | transcription | Precision sample, checked by hand against the scan of the PTS edition | 1 |
 | notation | Notation only: GRETIL's signs (^ for a circumflex, <…> for brackets or parentheses) written as the book prints them; same letters | 28 |
-| emendation | M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition) | 1,023 |
+| emendation | M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition) | 1,169 |
 | emendation | L. Feer, Saṃyutta-nikāya IV, revised by P. Jackson (PTS, 2014) | 609 |
 | emendation | W. Pruitt, Corrections for the 2004 reprint of Majjhima-nikāya II (PTS, 2008) | 14 |
 | emendation | W. Pruitt, M I corrections (PTS, 2009) | 4 |
@@ -154,22 +154,22 @@ Yamaka is excluded:
 
 | Volume | File | Pages | Proofreading corrections | PTS corrections of the edition | Public scan |
 |---|---|---:|---:|---:|---|
-| DN I | [`dighn1ou.htm`](corrected/dighn1ou.htm) | 253 | 73 | 25 |  |
-| DN II | [`dighn2ou.htm`](corrected/dighn2ou.htm) | 358 | 101 | 12 |  |
-| DN III | [`dighn3ou.htm`](corrected/dighn3ou.htm) | 293 | 113 | 24 |  |
-| MN I | [`majjn1ou.htm`](corrected/majjn1ou.htm) | 524 | 137 | 14 | yes |
-| MN II | [`majjn2ou.htm`](corrected/majjn2ou.htm) | 266 | 46 | 33 |  |
-| MN III | [`majjn3ou.htm`](corrected/majjn3ou.htm) | 302 | 134 | 30 |  |
-| SN I | [`samyu1ou.htm`](corrected/samyu1ou.htm) | 240 | 169 | 29 |  |
-| SN II | [`samyu2ou.htm`](corrected/samyu2ou.htm) | 279 | 87 | 9 | yes |
-| SN III | [`samyu3ou.htm`](corrected/samyu3ou.htm) | 279 | 52 | 8 | yes |
+| DN I | [`dighn1ou.htm`](corrected/dighn1ou.htm) | 253 | 54 | 44 |  |
+| DN II | [`dighn2ou.htm`](corrected/dighn2ou.htm) | 358 | 84 | 29 |  |
+| DN III | [`dighn3ou.htm`](corrected/dighn3ou.htm) | 293 | 101 | 36 |  |
+| MN I | [`majjn1ou.htm`](corrected/majjn1ou.htm) | 524 | 133 | 18 | yes |
+| MN II | [`majjn2ou.htm`](corrected/majjn2ou.htm) | 266 | 36 | 43 |  |
+| MN III | [`majjn3ou.htm`](corrected/majjn3ou.htm) | 302 | 128 | 36 |  |
+| SN I | [`samyu1ou.htm`](corrected/samyu1ou.htm) | 240 | 141 | 57 |  |
+| SN II | [`samyu2ou.htm`](corrected/samyu2ou.htm) | 279 | 78 | 18 | yes |
+| SN III | [`samyu3ou.htm`](corrected/samyu3ou.htm) | 279 | 42 | 18 | yes |
 | SN IV | [`samyu4ou.htm`](corrected/samyu4ou.htm) | 403 | 102 | 634 | yes |
-| SN V | [`samyu5ou.htm`](corrected/samyu5ou.htm) | 478 | 80 | 26 | yes |
-| AN I | [`angut1ou.htm`](corrected/angut1ou.htm) | 304 | 65 | 19 | yes |
-| AN II | [`angut2ou.htm`](corrected/angut2ou.htm) | 257 | 65 | 17 | yes |
-| AN III | [`angut3ou.htm`](corrected/angut3ou.htm) | 452 | 25 | 12 | yes |
-| AN IV | [`angut4ou.htm`](corrected/angut4ou.htm) | 466 | 50 | 17 | yes |
-| AN V | [`angut5ou.htm`](corrected/angut5ou.htm) | 361 | 25 | 3 | yes |
+| SN V | [`samyu5ou.htm`](corrected/samyu5ou.htm) | 478 | 76 | 30 | yes |
+| AN I | [`angut1ou.htm`](corrected/angut1ou.htm) | 304 | 61 | 23 | yes |
+| AN II | [`angut2ou.htm`](corrected/angut2ou.htm) | 257 | 51 | 31 | yes |
+| AN III | [`angut3ou.htm`](corrected/angut3ou.htm) | 452 | 22 | 15 | yes |
+| AN IV | [`angut4ou.htm`](corrected/angut4ou.htm) | 466 | 46 | 21 | yes |
+| AN V | [`angut5ou.htm`](corrected/angut5ou.htm) | 361 | 23 | 5 | yes |
 | Sn | [`sutnipou.htm`](corrected/sutnipou.htm) | 223 | 827 | 0 |  |
 | Th & Th | [`theragou.htm`](corrected/theragou.htm) | 115 | 63 | 0 | yes |
 |  | [`therigou.htm`](corrected/therigou.htm) | 52 |  |  | yes |
