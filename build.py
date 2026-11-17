@@ -263,7 +263,7 @@ def _with_calls(text, call, k, j):
     return ''.join(out)
 
 
-BRACES_NOTE = '{ } as in GRETIL; content unchanged except for notation.'
+BRACES_NOTE = '{ } erratum already corrected in GRETIL: not the printed reading, which GRETIL does not give'
 
 #: who corrected the edition, as the popup names it (the full citation is in the README)
 BY = (
@@ -430,8 +430,9 @@ CREDIT = ('<div class="legend"><b>About this copy.</b> The licence and the notic
 #: said only in a file with pages read from the scan in place of GRETIL's (`replaced_pages`)
 REPLACED = {'SN II': (' Pages 109-116, missing or cut short in GRETIL, were read from the scan by machine '
                       '(OCR for 109-112, AI for 113-116) and reviewed by hand; they carry no marks.')}
-LEGEND = ('<div class="legend"><span class="erratum">red underline</span>: GRETIL encloses the words in '
-          'braces { }; reproduced as in GRETIL, unchanged except for notation. &nbsp; '
+LEGEND = ('<div class="legend"><span class="erratum">red underline</span>: an erratum already '
+          'corrected in GRETIL, which puts its correction in braces { } in place of the printed reading; '
+          'kept as in GRETIL. &nbsp; '
           '<span class="correction">green underline</span>: '
           'GRETIL departs from the printed edition; the printed reading is given. &nbsp; '
           '<span class="suggestion">orange dotted underline</span>: a correction of the edition published by '

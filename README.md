@@ -102,8 +102,10 @@ Each correction was approved by a person. Every correction in `corrections.json`
 
 ## Reading the pages
 
-- Red underline: GRETIL encloses the words in braces { }; they are reproduced as in GRETIL (the
-  proofreading left the content between braces unchanged, except for notation).
+- Red underline: an erratum already corrected in GRETIL. GRETIL puts its correction in braces { } in
+  place of the printed reading, which it does not give (e.g. MN I 4: the book prints «maññi», GRETIL
+  «{maññī}»). The content between braces is kept as in GRETIL (unchanged by the proofreading, except
+  for notation).
 - Green underline: GRETIL departs from the printed edition; the text gives the printed reading.
 - Orange dotted underline: the PTS has published a correction of the edition here (Cone, Jackson or
   Pruitt), marking the printed reading as wrong; applied: the text gives the reading the authority adopts,
