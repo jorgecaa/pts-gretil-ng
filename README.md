@@ -22,7 +22,7 @@ The build is deterministic: after `python3 build.py`, `git status` must show no 
    applied halfway.
 4. **Write.** One HTML file per GRETIL file in `corrected/` (also committed here). GRETIL's own opening
    (title, notice, licence, terms of use) is kept unchanged. Red underline: an erratum GRETIL prints
-   between braces, kept as printed. Blue underline: a correction from `corrections.json`; hovering
+   between braces, kept as printed. Green underline: a correction from `corrections.json`; hovering
    shows its source, approval date, what GRETIL had and what the book prints.
 
 `corrections.json` holds the pinned mirror commit, the checksums, the corrections and eight

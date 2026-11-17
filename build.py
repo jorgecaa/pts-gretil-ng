@@ -312,7 +312,7 @@ def page_html(n, head, lines, notes):
 STYLE = """<style>
 body{font-family:Georgia,serif;max-width:60em;margin:1em auto;padding:0 1em;color:#222}
 .erratum{border-bottom:2px solid #c00;cursor:help}
-.correction{text-decoration:underline #05c 2px;cursor:help}
+.correction{text-decoration:underline #0a7a2f 2px;cursor:help}
 .erratum.correction{border-bottom:2px solid #c00}
 #tip{position:fixed;display:none;max-width:26em;background:#fffbe6;border:1px solid #888;
  padding:.5em .7em;font:13px/1.4 sans-serif;box-shadow:0 2px 6px #0004;z-index:9;white-space:normal}
@@ -346,7 +346,7 @@ CREDIT = ('<div class="legend"><b>About this copy.</b> The licence and the notic
           'The text of GRETIL itself has not been rewritten: every correction is recorded, with its '
           'source and date, in corrections.json of the repository that built this file.</div>\n')
 LEGEND = ('<div class="legend"><span class="erratum">red underline</span>: an erratum that GRETIL '
-          'prints between braces { }; kept as printed. &nbsp; <span class="correction">blue underline</span>: '
+          'prints between braces { }; kept as printed. &nbsp; <span class="correction">green underline</span>: '
           'a correction approved in the foureditions project. Hover over (or tap) a marked word for '
           'its source, the date it was approved, and what GRETIL had.</div>')
 NOTE = ('Pali Text Society edition (Ee), digital input by the Dhammakaya Foundation (1989-1996), GRETIL '
