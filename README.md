@@ -69,9 +69,8 @@ popup of each marked word and in `corrections.json`).
 ## Scope and limits
 
 - **The critical apparatus (footnotes and variant readings) has NOT been proofread.** The corrections
-  apply to the main text only. One exception in the data, not in the claim: the hand-corrected Sutta
-  Nipāta file also differs from GRETIL in its footnotes (mostly notation); those differences are applied
-  so that the file is reproduced exactly, but its apparatus has not been systematically proofread either.
+  apply to the main text only, and every built file says so at the top of the page. The one exception
+  is the Sutta Nipāta, whose footnotes were proofread together with its text; its file carries no such warning.
 - A correction that only deletes text leaves no mark in the HTML; it is still listed in `corrections.json`.
 - **Included:** every GRETIL volume of the PTS editions that the foureditions review service does not
   block: 43 volumes (Dīgha, Majjhima, Saṃyutta, Aṅguttara, Vinaya, Khuddakapāṭha, Dhammapada, Udāna,
@@ -94,5 +93,6 @@ popup of each marked word and in `corrections.json`).
 ## Licence
 
 The GRETIL texts are © Pali Text Society and Dhammakaya Foundation, 2015, under
-[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/); the files in `corrected/` are
-derivatives and carry the same licence and notice.
+[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Everything in this repository (the
+code, `corrections.json` and the built files in `corrected/`) is a derivative and is released under
+the same licence, with the same notice.

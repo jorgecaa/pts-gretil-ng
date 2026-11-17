@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 """Rebuild the corrected GRETIL files.
 
+Licence of this repository (code, data and built files): CC BY-SA 4.0, the licence of the GRETIL
+files it derives from (see README.md).
+
     python3 build.py            # 1. download  2. read corrections.json  3. write corrected/*.htm
     python3 build.py --verify   # only check that the downloaded files are the ones corrections.json expects
 
@@ -290,13 +293,19 @@ NOTE = ('Pali Text Society edition (Ee), digital input by the Dhammakaya Foundat
         'is kept as is. The original GRETIL file is not modified.')
 
 
-def document(header, note, blocks):
-    """GRETIL's own opening (title, introduction, licence notice, terms of use) is kept as it is."""
+#: volumes whose footnotes were proofread too: the warning about the apparatus does not apply
+APPARATUS_PROOFREAD = ('Sn',)
+
+
+def document(header, note, blocks, warning):
+    """GRETIL's own opening (title, introduction, licence notice, terms of use) is kept as it is;
+    the warning about the apparatus, when it applies, stands above it, at the top of the page."""
     start = header.lower().find('<!doctype')
     head = re.sub(r'(<title>)\s*(.*?)\s*(</title>)', r'\1\2 (with approved corrections marked)\3',
                   header[start:] if start > 0 else header, count=1, flags=re.S)
     head = head.replace('</head>', STYLE + '</head>', 1)
-    return (head + f'<!-- {note} -->\n{WARNING}{CREDIT}{LEGEND}<hr>\n' + ''.join(blocks)
+    head = re.sub(r'(<body[^>]*>)', lambda m: m.group(1) + '\n' + warning, head, count=1)
+    return (head + f'<!-- {note} -->\n{CREDIT}{LEGEND}<hr>\n' + ''.join(blocks)
             + f'<hr>\n{SCRIPT}</body></html>\n')
 
 
@@ -329,9 +338,12 @@ def build_file(volume, rel):
             sys.exit(f'{volume} p. {n}: does not read back identical')
         blocks.append(block)
     os.makedirs(OUT_DIR, exist_ok=True)
+    proofread = volume in APPARATUS_PROOFREAD
     note = NOTE.format(count=changed, commit=DATA['commit'][:12])
+    if proofread:
+        note = note.replace(' The critical apparatus (footnotes and variant readings) has NOT been proofread.', '')
     with open(os.path.join(OUT_DIR, os.path.basename(rel) + '.htm'), 'w', encoding='utf-8', newline='\n') as fh:
-        fh.write(document(header, note, blocks))
+        fh.write(document(header, note, blocks, '' if proofread else WARNING))
     print(f'{os.path.basename(rel)}.htm: {len(blocks)} pages, {changed} with corrections')
 
 
