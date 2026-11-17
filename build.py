@@ -538,9 +538,10 @@ reproducibly from a pinned commit of the GRETIL mirror; source, method and licen
 {legend}
 <p><b>The critical apparatus (footnotes) has NOT been proofread</b>, except in the Sutta Nipāta.
 Licence: CC BY-SA 4.0, &copy; Pali Text Society and Dhammakaya Foundation, 2015.</p>
-<p>Struck through: volumes with no correction applied. Their proofreading against the scan has not been
-done yet, so their text is GRETIL's as it stands (Ja I carries only suggested emendations, which do not
-change the text). The built file is still published, with the licence and the notices.</p>
+<p>Every volume listed with a file was reviewed in the foureditions review service. A volume with 0
+corrections applied was reviewed and the review found nothing to correct in it (Ja I carries only
+suggested emendations, which do not change the text). Struck through, at the end: the books the review
+service leaves out, which are not built.</p>
 <table>
 <tr><th>Volume</th><th>File</th><th>Pages</th><th>Corrections applied</th><th>Emendations suggested</th></tr>
 {rows}
@@ -551,6 +552,14 @@ change the text). The built file is still published, with the licence and the no
 </body>
 </html>
 """
+
+
+#: the books the foureditions review service leaves out: not reviewed, so not built (README, «Volumes»)
+NO_SCAN = 'not reviewed: the review service has no compatible scan of the printed PTS edition'
+LEFT_OUT = (('Vimānavatthu', NO_SCAN), ('Petavatthu', NO_SCAN), ('Apadāna', NO_SCAN),
+            ('Buddhavaṃsa', NO_SCAN), ('Cariyāpiṭaka', NO_SCAN),
+            ('Yamaka', 'not reviewed: the review service excludes its PTS edition (too many abbreviations)'),
+            ('Paṭṭhāna', NO_SCAN))
 
 
 def write_index(pages):
@@ -564,12 +573,12 @@ def write_index(pages):
     for volume, rels in FILES.items():
         for k, rel in enumerate(rels):
             name = os.path.basename(rel) + '.htm'
-            # a volume with no correction applied is struck through: not yet proofread (README, «Volumes»)
-            s, e = ('<s>', '</s>') if not counts.get(volume) else ('', '')
-            rows.append(f'<tr><td>{s + html.escape(volume) + e if k == 0 else ""}</td>'
-                        f'<td>{s}<a href="corrected/{name}">{name}</a>{e}</td><td>{pages[rel]}</td>'
+            rows.append(f'<tr><td>{html.escape(volume) if k == 0 else ""}</td>'
+                        f'<td><a href="corrected/{name}">{name}</a></td><td>{pages[rel]}</td>'
                         f'<td>{counts.get(volume, 0) if k == 0 else ""}</td>'
                         f'<td>{emended.get(volume, 0) if k == 0 else ""}</td></tr>')
+    for book, reason in LEFT_OUT:                         # struck through: not reviewed, not built
+        rows.append(f'<tr><td><s>{html.escape(book)}</s></td><td colspan="4">{html.escape(reason)}</td></tr>')
     style = STYLE.replace('</style>', 'table{border-collapse:collapse}td,th{padding:.2em .8em;text-align:left}'
                           'td:nth-child(n+3){text-align:right}tr:nth-child(even){background:#f4f4f4}</style>')
     with open(os.path.join(HERE, 'index.html'), 'w', encoding='utf-8', newline='\n') as fh:

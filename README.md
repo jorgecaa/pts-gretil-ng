@@ -110,9 +110,10 @@ Each correction was approved by a person. Every correction in `corrections.json`
 Corrections applied: transcription and notation corrections, which change the text. Emendations suggested:
 shown on the words concerned but not applied.
 
-Struck through: volumes with no correction applied. Their proofreading against the scan has not been
-done yet, so their text is GRETIL's as it stands (Ja I carries only suggested emendations, which do not
-change the text). The built file is still published, with the licence and the notices.
+Every volume listed with a file was reviewed in the foureditions review service. A volume with 0
+corrections applied was reviewed and the review found nothing to correct in it (Ja I carries only
+suggested emendations, which do not change the text). Struck through, at the end: the books the review
+service leaves out, which are not built.
 
 | Volume | File | Pages | Corrections applied | Emendations suggested |
 |---|---|---:|---:|---:|
@@ -135,31 +136,38 @@ change the text). The built file is still published, with the licence and the no
 | Sn | [`sutnipou.htm`](corrected/sutnipou.htm) | 223 | 827 | 0 |
 | Th & Th | [`theragou.htm`](corrected/theragou.htm) | 115 | 63 | 0 |
 |  | [`therigou.htm`](corrected/therigou.htm) | 52 |  |  |
-| ~~Dhp~~ | ~~[`dhampdou.htm`](corrected/dhampdou.htm)~~ | 120 | 0 | 0 |
-| ~~Khp~~ | ~~[`khudp_ou.htm`](corrected/khudp_ou.htm)~~ | 9 | 0 | 0 |
+| Dhp | [`dhampdou.htm`](corrected/dhampdou.htm) | 120 | 0 | 0 |
+| Khp | [`khudp_ou.htm`](corrected/khudp_ou.htm) | 9 | 0 | 0 |
 | Ud | [`udana_ou.htm`](corrected/udana_ou.htm) | 94 | 7 | 0 |
-| ~~It~~ | ~~[`itivutou.htm`](corrected/itivutou.htm)~~ | 124 | 0 | 0 |
-| ~~Ja I~~ | ~~[`jatak1ou.htm`](corrected/jatak1ou.htm)~~ | 511 | 0 | 86 |
+| It | [`itivutou.htm`](corrected/itivutou.htm) | 124 | 0 | 0 |
+| Ja I | [`jatak1ou.htm`](corrected/jatak1ou.htm) | 511 | 0 | 86 |
 | Ja II | [`jatak2ou.htm`](corrected/jatak2ou.htm) | 451 | 1 | 68 |
 | Ja III | [`jatak3ou.htm`](corrected/jatak3ou.htm) | 543 | 5 | 106 |
 | Ja IV | [`jatak4ou.htm`](corrected/jatak4ou.htm) | 499 | 19 | 106 |
 | Ja V | [`jatak5ou.htm`](corrected/jatak5ou.htm) | 511 | 24 | 198 |
 | Ja VI | [`jatak6ou.htm`](corrected/jatak6ou.htm) | 596 | 7 | 174 |
 | Nidd I | [`nidde1ou.htm`](corrected/nidde1ou.htm) | 509 | 2 | 0 |
-| ~~Nidd II~~ | ~~[`nidde2ou.htm`](corrected/nidde2ou.htm)~~ | 72 | 0 | 0 |
+| Nidd II | [`nidde2ou.htm`](corrected/nidde2ou.htm) | 72 | 0 | 0 |
 | Patis I | [`patis1ou.htm`](corrected/patis1ou.htm) | 196 | 73 | 0 |
 | Patis II | [`patis2ou.htm`](corrected/patis2ou.htm) | 246 | 38 | 0 |
-| ~~Mil~~ | ~~[`milindou.htm`](corrected/milindou.htm)~~ | 420 | 0 | 0 |
+| Mil | [`milindou.htm`](corrected/milindou.htm) | 420 | 0 | 0 |
 | Vin I | [`vin1maou.htm`](corrected/vin1maou.htm) | 360 | 8 | 0 |
 | Vin II | [`vin2cuou.htm`](corrected/vin2cuou.htm) | 308 | 14 | 0 |
 | Vin III | [`vin3s1ou.htm`](corrected/vin3s1ou.htm) | 266 | 7 | 0 |
 | Vin IV | [`vin4s2ou.htm`](corrected/vin4s2ou.htm) | 351 | 1 | 0 |
-| ~~Vin V~~ | ~~[`vin5paou.htm`](corrected/vin5paou.htm)~~ | 226 | 0 | 0 |
+| Vin V | [`vin5paou.htm`](corrected/vin5paou.htm) | 226 | 0 | 0 |
 | Dhs | [`dhamsgou.htm`](corrected/dhamsgou.htm) | 264 | 1 | 0 |
-| ~~Vibh~~ | ~~[`vibhanou.htm`](corrected/vibhanou.htm)~~ | 436 | 0 | 0 |
-| ~~Dhātuk~~ | ~~[`dhatukou.htm`](corrected/dhatukou.htm)~~ | 113 | 0 | 0 |
+| Vibh | [`vibhanou.htm`](corrected/vibhanou.htm) | 436 | 0 | 0 |
+| Dhātuk | [`dhatukou.htm`](corrected/dhatukou.htm) | 113 | 0 | 0 |
 | Pp | [`pugpan_ou.htm`](corrected/pugpan_ou.htm) | 74 | 13 | 0 |
 | Kv | [`kathavou.htm`](corrected/kathavou.htm) | 628 | 136 | 0 |
+| ~~Vimānavatthu~~ | not reviewed: no compatible scan of the printed PTS edition |  |  |  |
+| ~~Petavatthu~~ | not reviewed: no compatible scan of the printed PTS edition |  |  |  |
+| ~~Apadāna~~ | not reviewed: no compatible scan of the printed PTS edition |  |  |  |
+| ~~Buddhavaṃsa~~ | not reviewed: no compatible scan of the printed PTS edition |  |  |  |
+| ~~Cariyāpiṭaka~~ | not reviewed: no compatible scan of the printed PTS edition |  |  |  |
+| ~~Yamaka~~ | not reviewed: the review service excludes its PTS edition (too many abbreviations) |  |  |  |
+| ~~Paṭṭhāna~~ | not reviewed: no compatible scan of the printed PTS edition |  |  |  |
 
 Page counts are those of each built file; corrections are counted per volume.
 
@@ -173,8 +181,9 @@ Page counts are those of each built file; corrections are counted per volume.
   Itivuttaka, Sutta Nipāta, Theragāthā and Therīgāthā, Jātaka, Mahāniddesa and Cūḷaniddesa,
   Paṭisambhidāmagga, Milindapañha, Dhammasaṅgaṇī, Vibhaṅga, Dhātukathā, Puggalapaññatti,
   Kathāvatthu). A volume without corrections is rebuilt as GRETIL has it, with the licence and the notices.
-- **Left out because the review service blocks them** (no compatible scan of the printed edition to
-  check against): Vimānavatthu, Petavatthu, Apadāna, Buddhavaṃsa, Cariyāpiṭaka, Yamaka and Paṭṭhāna.
+- **Left out because the review service blocks them**: Vimānavatthu, Petavatthu, Apadāna, Buddhavaṃsa,
+  Cariyāpiṭaka and Paṭṭhāna (no compatible scan of the printed edition to check against), and Yamaka (its
+  PTS edition is excluded from the review: too many abbreviations). They are listed struck through in «Volumes».
 - **Nettippakaraṇa and Peṭakopadesa**: GRETIL has them only in the Sinhala edition (input by the Sri Lanka
   Tripitaka Project, with the PTS page numbers), not in the PTS edition, so they are not part of this build.
   The folder `transcriptions/` holds one HTML file for each, transcribed from the scans of the printed PTS
