@@ -254,3 +254,8 @@ credits) is in `NOTICE`.
 Cite the release you used, by its version (and its DOI, when one is given), together with the printed
 PTS edition (volume and page): `corrections.json` changes between releases, so the text at a later
 release may differ. `CITATION.cff` gives the details; GitHub shows them under «Cite this repository».
+
+The releases are archived at Zenodo:
+
+- all versions (resolves to the latest release): [10.5281/zenodo.24314138](https://doi.org/10.5281/zenodo.24314138);
+- version 1.0.0: [10.5281/zenodo.24314139](https://doi.org/10.5281/zenodo.24314139).
