@@ -15,7 +15,7 @@ Python 3.9 and 3.13.
 
 **Reading online:** the pages are meant to be opened in a browser, where hovering over a marked word
 shows its popup; GitHub's file view shows their source instead. They are published with GitHub Pages
-at <https://jorgecaa.github.io/pts-gretil-ng/> (active once the repository is public).
+at <https://jorgecaa.github.io/pts-gretil-ng/>.
 
 ## How it works
 
@@ -46,8 +46,7 @@ project, where the review is done; it is data, not written by hand, and is updat
 |---|---|
 | `build.py` | The whole build: download, verify, correct, write. |
 | `corrections.json` | Pinned mirror commit, checksums, corrections with their sources. |
-| `transcriptions/` | Two HTML files: unreviewed draft transcriptions of the Nettippakaraṇa and Peṭakopadesa. Not built by `build.py`. |
-| `LICENSE` | Licence notice (CC BY-SA 4.0; the scope of the drafts in `transcriptions/` is stated apart). |
+| `LICENSE` | Licence notice (CC BY-SA 4.0). |
 | `corrected/` | The built files (44 HTML files, 43 volumes), committed for convenience. |
 | `index.html` | Entry page with a link to every built file (written by `build.py`; the GitHub Pages home). |
 | `CITATION.cff` | How to cite this repository. |
@@ -110,9 +109,11 @@ Each correction was approved by a person. Every correction in `corrections.json`
 Corrections applied: transcription and notation corrections, which change the text. Emendations suggested:
 shown on the words concerned but not applied.
 
-Every volume listed with a file was reviewed in the foureditions review service. A volume with 0
-corrections applied was reviewed and the review found nothing to correct in it (Ja I carries only
-suggested emendations, which do not change the text).
+Every volume listed with a file was reviewed in the foureditions review service. The counts give the
+corrections approved so far. A volume with 0 corrections applied has no approved correction yet; this
+does not mean it was proofread in full and found free of errors, since the proofreading is not finished
+for every book (see «Scope and limits»). Ja I carries only suggested emendations, which do not change
+the text.
 
 Struck through, at the end: the books the review service leaves out, which are not built. A review needs
 a scan of the same printed edition that GRETIL transcribes; six of these books have none usable, and the
@@ -196,9 +197,6 @@ Page counts are those of each built file; corrections are counted per volume.
   PTS edition is excluded from the review: too many abbreviations). They are listed struck through in «Volumes».
 - **Nettippakaraṇa and Peṭakopadesa**: GRETIL has them only in the Sinhala edition (input by the Sri Lanka
   Tripitaka Project, with the PTS page numbers), not in the PTS edition, so they are not part of this build.
-  The folder `transcriptions/` holds one HTML file for each, transcribed from the scans of the printed PTS
-  editions.
-  **They are unreviewed drafts**: no page has been proofread by a person; each file says so at the top.
 - **The Sutta Nipāta, Theragāthā and Therīgāthā** were proofread directly in the GRETIL file. Their
   differences from the mirror's file are written in `corrections.json` as ordinary corrections
   (source label: "Copy of the GRETIL file corrected by hand, checked against the scan of the PTS edition"),
@@ -227,6 +225,3 @@ The GRETIL texts are © Pali Text Society and Dhammakaya Foundation, 2015, under
 [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). `corrections.json` and the built
 files in `corrected/` derive from those texts and are released under the same licence, with the same
 notice. `build.py` and this README contain no GRETIL text and are released under the same licence.
-
-The two files in `transcriptions/` are not derived from GRETIL (they are drafts transcribed from printed
-PTS editions); their rights have not been assessed. See `LICENSE`.

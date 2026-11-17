@@ -538,9 +538,10 @@ reproducibly from a pinned commit of the GRETIL mirror; source, method and licen
 {legend}
 <p><b>The critical apparatus (footnotes) has NOT been proofread</b>, except in the Sutta Nipāta.
 Licence: CC BY-SA 4.0, &copy; Pali Text Society and Dhammakaya Foundation, 2015.</p>
-<p>Every volume listed with a file was reviewed in the foureditions review service. A volume with 0
-corrections applied was reviewed and the review found nothing to correct in it (Ja I carries only
-suggested emendations, which do not change the text).</p>
+<p>Every volume listed with a file was reviewed in the foureditions review service. The counts give the
+corrections approved so far. A volume with 0 corrections applied has no approved correction yet; this
+does not mean it was proofread in full and found free of errors, since the proofreading is not finished
+for every book. Ja I carries only suggested emendations, which do not change the text.</p>
 <p>Struck through, at the end: the books the review service leaves out, which are not built. A review needs
 a scan of the same printed edition that GRETIL transcribes; six of these books have none usable, and the
 Yamaka is excluded:</p>
@@ -556,9 +557,6 @@ Minayeff 1888, Morris 1882), a different text.</li>
 <tr><th>Volume</th><th>File</th><th>Pages</th><th>Corrections applied</th><th>Emendations suggested</th></tr>
 {rows}
 </table>
-<p>Not built from GRETIL: unreviewed draft transcriptions of the
-<a href="transcriptions/Nettippakarana.htm">Nettippakaraṇa</a> and the
-<a href="transcriptions/Petakopadesa.htm">Peṭakopadesa</a> (no page proofread by a person).</p>
 </body>
 </html>
 """
