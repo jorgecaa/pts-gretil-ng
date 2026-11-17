@@ -71,6 +71,9 @@ popup of each marked word and in `corrections.json`).
 - **The critical apparatus (footnotes and variant readings) has NOT been proofread.** The corrections
   apply to the main text only, and every built file says so at the top of the page. The one exception
   is the Sutta Nipāta, whose footnotes were proofread together with its text; its file carries no such warning.
+- Note calls keep GRETIL's format (red superscript numbers). On the eight Saṃyutta II pages read from the
+  scan and on three pages GRETIL's markup does not let be read reliably (SN II 60 and 129, Nidd I 161), the
+  digits glued to the end of a word are taken as the calls.
 - A correction that only deletes text leaves no mark in the HTML; it is still listed in `corrections.json`.
 - **Included:** every GRETIL volume of the PTS editions that the foureditions review service does not
   block: 43 volumes (Dīgha, Majjhima, Saṃyutta, Aṅguttara, Vinaya, Khuddakapāṭha, Dhammapada, Udāna,

@@ -9,6 +9,7 @@ files it derives from (see README.md).
 
 Needs Python 3.9+ and git. No other dependency. See README.md.
 """
+import difflib
 import hashlib
 import html
 import json
@@ -91,10 +92,14 @@ def plain(t):
     return html.unescape(_LABEL.sub('', t.replace('<BR>\n', '\n').replace('<BR>', '\n')))
 
 
-def body(chunk, abbreviate=True):
+CALL_OPEN, CALL_CLOSE = '\ue020', '\ue021'
+
+
+def body(chunk, abbreviate=True, keep_calls=False):
     """The body of a GRETIL page: note calls as digits, GRETIL's markers removed, the
-    abbreviation sign `º` and the elision apostrophe `’` rebuilt from GRETIL's hyphen and `';`."""
-    c = _CALL.sub(r'\1', chunk)
+    abbreviation sign `º` and the elision apostrophe `’` rebuilt from GRETIL's hyphen and `';`.
+    With `keep_calls`, every note call stays between two marks, to know afterwards which digits are calls."""
+    c = _CALL.sub(CALL_OPEN + r'\1' + CALL_CLOSE if keep_calls else r'\1', chunk)
     c = _SN_MARKER.sub('', c)
     c = _AS_IN.sub('. . .', c)
     c = plain(c).replace('||', '║')
@@ -109,8 +114,37 @@ def body(chunk, abbreviate=True):
     return _CONTROL.sub('', c)
 
 
-def parts(source, abbreviate=True):
-    """`{page: (running head, body, footnotes)}` of a whole GRETIL file."""
+def call_flags(chunk, text):
+    """For every character of `text` (the body of the page), whether it belongs to a note call.
+    The page is read again with its calls marked; if that reading does not give the same text,
+    nothing is flagged (the calls of that page stay as plain digits)."""
+    flags, plain_text, inside = [], [], False
+    for ch in body(chunk, keep_calls=True):
+        if ch == CALL_OPEN:
+            inside = True
+        elif ch == CALL_CLOSE:
+            inside = False
+        else:
+            plain_text.append(ch)
+            flags.append(inside)
+    return flags if ''.join(plain_text) == text else None
+
+
+_GLUED = re.compile(r'(?<=[^\s\d])\d+')
+
+
+def glued_calls(text):
+    """Where GRETIL does not tell (a page read from the scan, or one that cannot be read twice the
+    same way): the digits glued to the end of a word are its note calls; a paragraph number stands alone."""
+    flags = [False] * len(text)
+    for m in _GLUED.finditer(text):
+        flags[m.start():m.end()] = [True] * (m.end() - m.start())
+    return flags
+
+
+def parts(source, abbreviate=True, calls=None):
+    """`{page: (running head, body, footnotes)}` of a whole GRETIL file. `calls`, a dict, receives
+    for each page the flags of `call_flags`."""
     z = _PAGE.split(source)
     out = {}
     for i in range(1, len(z), 2):
@@ -122,6 +156,8 @@ def parts(source, abbreviate=True):
         if m:
             c = c[m.end():]
         out[int(z[i])] = (head, body(c, abbreviate), notes)
+        if calls is not None:
+            calls[int(z[i])] = call_flags(c, out[int(z[i])][1])
     return out
 
 
@@ -148,9 +184,11 @@ def _trim(old, new):
     return ''.join(a[:i]), ''.join(a[i:len(a) - j]), ''.join(b[i:len(b) - j]), ''.join(a[len(a) - j:])
 
 
-def apply(volume, n, part, text):
-    """The text with its corrections, and for every character the corrections that wrote it."""
+def apply(volume, n, part, text, flags=None):
+    """The text with its corrections; for every character, the corrections that wrote it and
+    whether it belongs to a note call."""
     t, who = text, [()] * len(text)
+    call = list(flags) if flags else [False] * len(text)
     for c in CORRECTIONS.get((volume, n), []):
         if c.get('part', 'text') != part:
             continue
@@ -158,32 +196,44 @@ def apply(volume, n, part, text):
         if t.count(old) != c['times']:
             sys.exit(f'{volume} p. {n}: {old!r} is there {t.count(old)} times, the correction says {c["times"]}')
         keep_l, mid_old, mid_new, keep_r = _trim(old, new) if c.get('ctx') else ('', old, new, '')
-        out, owners, i = [], [], 0
+        out, owners, calls, i = [], [], [], 0
         while True:
             j = t.find(old, i)
             if j < 0:
                 break
-            out.append(t[i:j])
-            owners += who[i:j]
-            out.append(keep_l)
-            owners += who[j:j + len(keep_l)]
-            out.append(mid_new)
-            owners += [tuple(x for w in who[j + len(keep_l):j + len(keep_l) + len(mid_old)] for x in w) + (c,)] * len(mid_new)
-            out.append(keep_r)
-            owners += who[j + len(old) - len(keep_r):j + len(old)]
+            a, b = j + len(keep_l), j + len(keep_l) + len(mid_old)
+            out.append(t[i:j] + keep_l + mid_new + keep_r)
+            owners += who[i:a]
+            owners += [tuple(x for w in who[a:b] for x in w) + (c,)] * len(mid_new)
+            owners += who[b:j + len(old)]
+            # a note call that the correction keeps is still a call
+            kept = [False] * len(mid_new)
+            for m in difflib.SequenceMatcher(None, mid_old, mid_new, autojunk=False).get_matching_blocks():
+                kept[m.b:m.b + m.size] = call[a + m.a:a + m.a + m.size]
+            calls += call[i:a] + kept + call[b:j + len(old)]
             i = j + len(old)
         out.append(t[i:])
         owners += who[i:]
-        t, who = ''.join(out), owners
-    return t, who
+        calls += call[i:]
+        t, who, call = ''.join(out), owners, calls
+    return t, who, call
 
 
 _BRACES = re.compile(r'\{[^{}]*\}')
 OPEN, MID, CLOSE, KEEP = '\ue030', '\ue031', '\ue032', '\ue010'
 
 
-def mark(text, who):
-    """The text with markers around braced errata and corrected words; the popups' texts."""
+def _with_calls(text, call, k, j):
+    """`text[k:j]` with its note calls between marks."""
+    out = []
+    for x in range(k, j):
+        on, before, after = call[x], x > k and call[x - 1], x + 1 < j and call[x + 1]
+        out.append((CALL_OPEN if on and not before else '') + text[x] + (CALL_CLOSE if on and not after else ''))
+    return ''.join(out)
+
+
+def mark(text, who, call):
+    """The text with markers around braced errata, corrected words and note calls; the popups' texts."""
     brace = [0] * len(text)
     for m in _BRACES.finditer(text):
         for k in range(m.start(), m.end()):
@@ -194,7 +244,7 @@ def mark(text, who):
         j = k
         while j < len(text) and (brace[j], tuple(id(x) for x in who[j])) == key and (text[j] != '\n' or j == k):
             j += 1
-        chunk, owners = text[k:j], who[k]
+        chunk, owners = _with_calls(text, call, k, j), who[k]
         if chunk == '\n' or (not brace[k] and not owners):
             out.append(chunk)
         else:
@@ -237,6 +287,7 @@ def page_html(n, head, lines, notes):
     """A page in the format of GRETIL's files."""
     t = html.escape('\n'.join(lines), quote=False).replace('||||', '|| ||')
     t = _SUPERSCRIPT.sub(lambda m: red(m.group(1).translate(_SUPERSCRIPTS)), t)
+    t = re.sub(CALL_OPEN + '(.*?)' + CALL_CLOSE, lambda m: red(m.group(1)), t)
     s = [f'<!-- page-status: corrected --><b>[page {n:03d}]</b><BR>\n']
     if head:
         s.append(f'<i>{html.escape(head, quote=False)}</i><BR>\n')
@@ -315,20 +366,20 @@ def build_file(volume, rel):
     if unicodedata.normalize('NFC', source) != source:
         sys.exit(f'{rel}: not in Unicode NFC')
     header = _PAGE.split(source)[0]
-    blocks, changed = [], 0
-    for n, (head, text, notes) in sorted(parts(source).items()):
+    blocks, changed, calls = [], 0, {}
+    for n, (head, text, notes) in sorted(parts(source, calls=calls).items()):
         replaced = DATA['replaced_pages'].get(f'{volume}|{n}')
         if replaced:
             head, text, notes = replaced['head'], replaced['text'], replaced['notes']
-            who = [()] * len(text)
+            who, call = [()] * len(text), glued_calls(text)
         else:
-            head, _ = apply(volume, n, 'head', head)
-            notes, _ = apply(volume, n, 'notes', notes)
-            text, who = apply(volume, n, 'text', text)
+            head = apply(volume, n, 'head', head)[0]
+            notes = apply(volume, n, 'notes', notes)[0]
+            text, who, call = apply(volume, n, 'text', text, calls[n] or glued_calls(text))
             if volume.startswith('SN '):          # the Saṃyutta writes its abbreviation sign as `°`
                 text = text.replace('º', '°')
         changed += any(who)
-        marked, infos = mark(text, who)
+        marked, infos = mark(text, who, call)
         block = page_html(n, head, marked.replace('ṁ', KEEP).split('\n'), notes).replace(KEEP, 'ṁ')
         block = spans(block, infos)
         # the page reads back exactly as written
