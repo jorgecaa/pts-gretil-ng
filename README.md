@@ -37,6 +37,7 @@ project, where the review is done; it is data, not written by hand, and is updat
 |---|---|
 | `build.py` | The whole build: download, verify, correct, write. |
 | `corrections.json` | Pinned mirror commit, checksums, corrections with their sources. |
+| `transcriptions/` | Two HTML files: unreviewed draft transcriptions of the Nettippakaraṇa and Peṭakopadesa. Not built by `build.py`. |
 | `corrected/` | The built files (44 HTML files, 43 volumes), committed for convenience. |
 
 ## Corrections and their sources
@@ -78,9 +79,9 @@ popup of each marked word and in `corrections.json`).
   Kathāvatthu). A volume without corrections is rebuilt as GRETIL has it, with the licence and the notices.
 - **Left out because the review service blocks them** (no compatible scan of the printed edition to
   check against): Vimānavatthu, Petavatthu, Apadāna, Buddhavaṃsa, Cariyāpiṭaka, Yamaka and Paṭṭhāna.
-- **Nettippakaraṇa and Peṭakopadesa** are not in GRETIL, so they cannot be part of this build. The
-  foureditions project is transcribing them from the scans of the printed PTS editions; that work is
-  still unreviewed and is not published here.
+- **Nettippakaraṇa and Peṭakopadesa** are not in GRETIL, so they are not part of this build. The folder
+  `transcriptions/` holds one HTML file for each, transcribed from the scans of the printed PTS editions.
+  **They are unreviewed drafts**: no page has been proofread by a person; each file says so at the top.
 - **The Sutta Nipāta, Theragāthā and Therīgāthā** were proofread directly in the GRETIL file. Their
   differences from the mirror's file are written in `corrections.json` as ordinary corrections
   (source label: "Hand-corrected copy of the GRETIL file"), so they are reproducible from the mirror too.
