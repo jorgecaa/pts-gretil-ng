@@ -4475,7 +4475,7 @@
 "gretil": "me^so",
 "book": "mêso",
 "times": 2,
-"source": "Notation only: GRETIL's encoding of a character",
+"source": "Notation only: GRETIL's signs (^ for a circumflex, <…> for brackets or parentheses) written as the book prints them; same letters",
 "kind": "notation",
 "date": null
 },
@@ -5333,7 +5333,7 @@
 "gretil": "me^tan",
 "book": "mêtan",
 "times": 1,
-"source": "Notation only: GRETIL's encoding of a character",
+"source": "Notation only: GRETIL's signs (^ for a circumflex, <…> for brackets or parentheses) written as the book prints them; same letters",
 "kind": "notation",
 "date": null
 },
@@ -5608,7 +5608,7 @@
 "gretil": "me^so",
 "book": "mêso",
 "times": 2,
-"source": "Notation only: GRETIL's encoding of a character",
+"source": "Notation only: GRETIL's signs (^ for a circumflex, <…> for brackets or parentheses) written as the book prints them; same letters",
 "kind": "notation",
 "date": null
 },
@@ -5619,7 +5619,7 @@
 "gretil": "me^so",
 "book": "mêso",
 "times": 2,
-"source": "Notation only: GRETIL's encoding of a character",
+"source": "Notation only: GRETIL's signs (^ for a circumflex, <…> for brackets or parentheses) written as the book prints them; same letters",
 "kind": "notation",
 "date": null
 },
@@ -5630,7 +5630,7 @@
 "gretil": "me^so",
 "book": "mêso",
 "times": 1,
-"source": "Notation only: GRETIL's encoding of a character",
+"source": "Notation only: GRETIL's signs (^ for a circumflex, <…> for brackets or parentheses) written as the book prints them; same letters",
 "kind": "notation",
 "date": null
 },
@@ -5641,7 +5641,7 @@
 "gretil": "me^so",
 "book": "mêso",
 "times": 1,
-"source": "Notation only: GRETIL's encoding of a character",
+"source": "Notation only: GRETIL's signs (^ for a circumflex, <…> for brackets or parentheses) written as the book prints them; same letters",
 "kind": "notation",
 "date": null
 },
@@ -5652,7 +5652,7 @@
 "gretil": "me^so",
 "book": "mêso",
 "times": 1,
-"source": "Notation only: GRETIL's encoding of a character",
+"source": "Notation only: GRETIL's signs (^ for a circumflex, <…> for brackets or parentheses) written as the book prints them; same letters",
 "kind": "notation",
 "date": null
 },
@@ -5663,7 +5663,7 @@
 "gretil": "me^so",
 "book": "mêso",
 "times": 3,
-"source": "Notation only: GRETIL's encoding of a character",
+"source": "Notation only: GRETIL's signs (^ for a circumflex, <…> for brackets or parentheses) written as the book prints them; same letters",
 "kind": "notation",
 "date": null
 },
@@ -5674,7 +5674,7 @@
 "gretil": "kukkuṭacchāpakasse^va",
 "book": "kukkuṭacchāpakassêva",
 "times": 1,
-"source": "Notation only: GRETIL's encoding of a character",
+"source": "Notation only: GRETIL's signs (^ for a circumflex, <…> for brackets or parentheses) written as the book prints them; same letters",
 "kind": "notation",
 "date": null
 },
@@ -5685,7 +5685,7 @@
 "gretil": "me^so",
 "book": "mêso",
 "times": 2,
-"source": "Notation only: GRETIL's encoding of a character",
+"source": "Notation only: GRETIL's signs (^ for a circumflex, <…> for brackets or parentheses) written as the book prints them; same letters",
 "kind": "notation",
 "date": null
 },
@@ -5696,7 +5696,7 @@
 "gretil": "me^so",
 "book": "mêso",
 "times": 3,
-"source": "Notation only: GRETIL's encoding of a character",
+"source": "Notation only: GRETIL's signs (^ for a circumflex, <…> for brackets or parentheses) written as the book prints them; same letters",
 "kind": "notation",
 "date": null
 },
@@ -5707,7 +5707,7 @@
 "gretil": "me^so",
 "book": "mêso",
 "times": 1,
-"source": "Notation only: GRETIL's encoding of a character",
+"source": "Notation only: GRETIL's signs (^ for a circumflex, <…> for brackets or parentheses) written as the book prints them; same letters",
 "kind": "notation",
 "date": null
 },
@@ -9106,7 +9106,7 @@
 "gretil": "<2>",
 "book": "(2)",
 "times": 1,
-"source": "Notation only: GRETIL's encoding of a character",
+"source": "Notation only: GRETIL's signs (^ for a circumflex, <…> for brackets or parentheses) written as the book prints them; same letters",
 "kind": "notation",
 "date": null
 },
@@ -9744,7 +9744,7 @@
 "gretil": "<or Puṇḍarīka>",
 "book": "or Puṇḍarīka",
 "times": 1,
-"source": "Notation only: GRETIL's encoding of a character",
+"source": "Notation only: GRETIL's signs (^ for a circumflex, <…> for brackets or parentheses) written as the book prints them; same letters",
 "kind": "notation",
 "date": null
 },
@@ -10492,7 +10492,7 @@
 "gretil": "<1>",
 "book": "(1)",
 "times": 1,
-"source": "Notation only: GRETIL's encoding of a character",
+"source": "Notation only: GRETIL's signs (^ for a circumflex, <…> for brackets or parentheses) written as the book prints them; same letters",
 "kind": "notation",
 "date": null
 },
@@ -10514,7 +10514,7 @@
 "gretil": "<OR PAÑCAKA>",
 "book": "OR PAÑCAKA",
 "times": 1,
-"source": "Notation only: GRETIL's encoding of a character",
+"source": "Notation only: GRETIL's signs (^ for a circumflex, <…> for brackets or parentheses) written as the book prints them; same letters",
 "kind": "notation",
 "date": null
 },
@@ -10525,7 +10525,7 @@
 "gretil": "<or Cheta>",
 "book": "(or Cheta)",
 "times": 1,
-"source": "Notation only: GRETIL's encoding of a character",
+"source": "Notation only: GRETIL's signs (^ for a circumflex, <…> for brackets or parentheses) written as the book prints them; same letters",
 "kind": "notation",
 "date": null
 },
@@ -10536,7 +10536,7 @@
 "gretil": "<or Cārika>",
 "book": "(or Cārika)",
 "times": 1,
-"source": "Notation only: GRETIL's encoding of a character",
+"source": "Notation only: GRETIL's signs (^ for a circumflex, <…> for brackets or parentheses) written as the book prints them; same letters",
 "kind": "notation",
 "date": null
 },
@@ -10547,7 +10547,7 @@
 "gretil": "<or Vesālī>",
 "book": "(or Vesālī)",
 "times": 1,
-"source": "Notation only: GRETIL's encoding of a character",
+"source": "Notation only: GRETIL's signs (^ for a circumflex, <…> for brackets or parentheses) written as the book prints them; same letters",
 "kind": "notation",
 "date": null
 },
@@ -10558,7 +10558,7 @@
 "gretil": "<or Sambahulā bhikkhū>",
 "book": "(or Sambahulā bhikkhū)",
 "times": 1,
-"source": "Notation only: GRETIL's encoding of a character",
+"source": "Notation only: GRETIL's signs (^ for a circumflex, <…> for brackets or parentheses) written as the book prints them; same letters",
 "kind": "notation",
 "date": null
 },
@@ -21910,7 +21910,7 @@
 "gretil": "<tā> ",
 "book": "[tā] ",
 "times": 1,
-"source": "Notation only: GRETIL's encoding of a character",
+"source": "Notation only: GRETIL's signs (^ for a circumflex, <…> for brackets or parentheses) written as the book prints them; same letters",
 "kind": "notation",
 "date": null
 },
@@ -21921,7 +21921,7 @@
 "gretil": "anu[pari]yanti",
 "book": "anupariyanti",
 "times": 1,
-"source": "Notation only: GRETIL's encoding of a character",
+"source": "Notation only: GRETIL's signs (^ for a circumflex, <…> for brackets or parentheses) written as the book prints them; same letters",
 "kind": "notation",
 "date": null
 },
@@ -21932,7 +21932,7 @@
 "gretil": "dhār[ay]e",
 "book": "dhāraye",
 "times": 1,
-"source": "Notation only: GRETIL's encoding of a character",
+"source": "Notation only: GRETIL's signs (^ for a circumflex, <…> for brackets or parentheses) written as the book prints them; same letters",
 "kind": "notation",
 "date": null
 },
@@ -22295,7 +22295,7 @@
 "gretil": "sa[bba]dā",
 "book": "sabbadā",
 "times": 1,
-"source": "Notation only: GRETIL's encoding of a character",
+"source": "Notation only: GRETIL's signs (^ for a circumflex, <…> for brackets or parentheses) written as the book prints them; same letters",
 "kind": "notation",
 "date": null
 },
@@ -22427,7 +22427,7 @@
 "gretil": "<patijaggeyya*>",
 "book": "[patijaggeyya] ",
 "times": 1,
-"source": "Notation only: GRETIL's encoding of a character",
+"source": "Notation only: GRETIL's signs (^ for a circumflex, <…> for brackets or parentheses) written as the book prints them; same letters",
 "kind": "notation",
 "date": null
 },
@@ -22438,7 +22438,7 @@
 "gretil": "<ko>",
 "book": "[ko]",
 "times": 1,
-"source": "Notation only: GRETIL's encoding of a character",
+"source": "Notation only: GRETIL's signs (^ for a circumflex, <…> for brackets or parentheses) written as the book prints them; same letters",
 "kind": "notation",
 "date": null
 },
@@ -22449,7 +22449,7 @@
 "gretil": "<rā>",
 "book": "[rā]",
 "times": 2,
-"source": "Notation only: GRETIL's encoding of a character",
+"source": "Notation only: GRETIL's signs (^ for a circumflex, <…> for brackets or parentheses) written as the book prints them; same letters",
 "kind": "notation",
 "date": null
 },
@@ -22460,7 +22460,7 @@
 "gretil": "N[a c]’ eva",
 "book": "Na c' eva",
 "times": 1,
-"source": "Notation only: GRETIL's encoding of a character",
+"source": "Notation only: GRETIL's signs (^ for a circumflex, <…> for brackets or parentheses) written as the book prints them; same letters",
 "kind": "notation",
 "date": null
 },

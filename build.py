@@ -278,7 +278,7 @@ def _with_calls(text, call, k, j):
 
 
 BRACES_NOTE = ('GRETIL encloses this in braces { }. | Reproduced as in GRETIL: the proofreading left '
-               'the content between braces unchanged.')
+               'the content between braces unchanged, except for notation.')
 
 
 def describe(c):
@@ -294,7 +294,7 @@ def describe(c):
         lines = ['Suggested emendation (not applied to the text)', f'Text, as in GRETIL: «{old}»',
                  f'Suggested: «{new}»', f"Authority: {c['source']}. {date}"]
     elif kind == 'notation':
-        lines = ['Notation only (same reading)', f"GRETIL: «{old}» → «{new}» (GRETIL's encoding of the character)",
+        lines = ['Notation only (same reading)', f'GRETIL: «{old}» → «{new}» (same letters; only the signs differ)',
                  date]
     elif c['gretil'] == c['book']:
         lines = ['Printed reading confirmed', f'The printed edition reads «{new}» (sic), as GRETIL has; kept.',
@@ -432,14 +432,19 @@ WARNING = ('<div class="legend" style="border:2px solid #c00;background:#fff4f4"
 CREDIT = ('<div class="legend"><b>About this copy.</b> The licence and the notice above are GRETIL\'s '
           'own and apply unchanged (CC BY-SA 4.0, &copy; Pali Text Society and Dhammakaya Foundation, 2015). '
           'Where GRETIL departs from the printed edition, the text below gives the printed reading, '
-          'checked against the scans of the edition (Jorge Contreras, github.com/jorgecaa, foureditions '
-          'project); each correction was approved by a person. Emendations of the edition itself (M. Cone\'s '
+          'checked against the scans of the edition; proofreading and approval by Jorge Contreras '
+          '(github.com/jorgecaa), foureditions project. Each correction was approved by a person; 24 were '
+          'read on the scan by machine and checked by hand, as their popups say.{replaced} Emendations of the edition itself (M. Cone\'s '
           'Dictionary of P\u0101li, P. Jackson\'s revision of Sa\u1e43yutta IV, W. Pruitt\'s correction lists) '
           'are not applied to the text: they are given as suggestions on the words concerned. '
           'The text of GRETIL itself has not been rewritten: every correction is recorded, with its '
           'source and, when recorded, its date, in corrections.json of the repository that built this file.</div>\n')
+#: said only in a file with pages read from the scan in place of GRETIL's (`replaced_pages`)
+REPLACED = {'SN II': (' Pages 109-116, missing or cut short in GRETIL, were read from the scan by machine '
+                      '(OCR for 109-112, AI for 113-116) and reviewed by hand; they carry no marks.')}
 LEGEND = ('<div class="legend"><span class="erratum">red underline</span>: GRETIL encloses the words in '
-          'braces { }; reproduced as in GRETIL. &nbsp; <span class="correction">green underline</span>: '
+          'braces { }; reproduced as in GRETIL, unchanged except for notation. &nbsp; '
+          '<span class="correction">green underline</span>: '
           'GRETIL departs from the printed edition; the printed reading is given. &nbsp; '
           '<span class="suggestion">orange dotted underline</span>: an emendation of the edition, suggested '
           'but not applied. Hover over (or tap) a marked word for the readings, the evidence or authority, '
@@ -448,15 +453,16 @@ NOTE = ('Pali Text Society edition (Ee), digital input by the Dhammakaya Foundat
         'version. Licence: CC BY-SA 4.0, (c) Pali Text Society and Dhammakaya Foundation, 2015. '
         'This file carries the corrections approved in the foureditions project ({count} pages '
         'changed in this file; built from commit {commit} of the GRETIL mirror). The critical apparatus (footnotes and variant '
-        'readings) has NOT been proofread. Text between braces is an erratum printed by GRETIL and '
-        'is kept as is. The original GRETIL file is not modified.')
+        'readings) has NOT been proofread. Text between braces is reproduced as GRETIL has it, '
+        'unchanged except for notation. Emendations of the edition are suggested, not applied. '
+        'The original GRETIL file is not modified.')
 
 
 #: volumes whose footnotes were proofread too: the warning about the apparatus does not apply
 APPARATUS_PROOFREAD = ('Sn',)
 
 
-def document(header, note, blocks, warning):
+def document(header, note, blocks, warning, credit):
     """GRETIL's own opening (title, introduction, licence notice, terms of use) is kept as it is;
     the warning about the apparatus, when it applies, stands above it, at the top of the page."""
     start = header.lower().find('<!doctype')
@@ -464,7 +470,7 @@ def document(header, note, blocks, warning):
                   header[start:] if start > 0 else header, count=1, flags=re.S)
     head = head.replace('</head>', STYLE + '</head>', 1)
     head = re.sub(r'(<body[^>]*>)', lambda m: m.group(1) + '\n' + warning, head, count=1)
-    return (head + f'<!-- {note} -->\n{CREDIT}{LEGEND}<hr>\n' + ''.join(blocks)
+    return (head + f'<!-- {note} -->\n{credit}{LEGEND}<hr>\n' + ''.join(blocks)
             + f'<hr>\n{SCRIPT}</body></html>\n')
 
 
@@ -507,7 +513,8 @@ def build_file(volume, rel):
     if proofread:
         note = note.replace(' The critical apparatus (footnotes and variant readings) has NOT been proofread.', '')
     with open(os.path.join(OUT_DIR, os.path.basename(rel) + '.htm'), 'w', encoding='utf-8', newline='\n') as fh:
-        fh.write(document(header, note, blocks, '' if proofread else WARNING))
+        fh.write(document(header, note, blocks, '' if proofread else WARNING,
+                          CREDIT.replace('{replaced}', REPLACED.get(volume, ''))))
     print(f'{os.path.basename(rel)}.htm: {len(blocks)} pages, {changed} with corrections')
 
 

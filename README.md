@@ -23,12 +23,14 @@ The build is deterministic: after `python3 build.py`, `git status` must show no 
    A correction that does not fit exactly the stated number of times stops the build; nothing is
    applied halfway.
 4. **Write.** One HTML file per GRETIL file in `corrected/` (also committed here). GRETIL's own opening
-   (title, notice, licence, terms of use) is kept unchanged. The marks are described under
+   (notice, licence, terms of use) is kept unchanged; the title gains "(with approved corrections
+   marked)". The marks are described under
    [Reading the pages](#reading-the-pages).
 
 `corrections.json` holds the pinned mirror commit, the checksums, the corrections and eight
-Saṃyutta II pages (109-116) that GRETIL's file lacks; those pages were read from the scan and
-reviewed, replace GRETIL's broken text whole, and carry no marks. The GRETIL files themselves are
+Saṃyutta II pages (109-116): GRETIL's file lacks pages 110-116 and cuts page 109 short. Those pages
+were read from the scan by machine (OCR for 109-112, AI for 113-116), reviewed by hand, replace
+GRETIL's text whole, and carry no marks. The GRETIL files themselves are
 never modified. `corrections.json` is exported from the corrections layer of the foureditions
 project, where the review is done; it is data, not written by hand, and is updated from there.
 
@@ -48,7 +50,8 @@ Each correction was approved by a person. Every correction in `corrections.json`
 
 - **transcription**: GRETIL departs from the printed edition; checked against the scan of the edition.
   Applied to the text.
-- **notation**: GRETIL's encoding of a character (`me^so` for `mêso`); the reading is the same. Applied.
+- **notation**: GRETIL's signs written as the book prints them (`me^so` for `mêso`, `<…>` for `[…]` or
+  `(…)`); the letters are the same. Applied.
 - **emendation**: a correction of the edition itself, by a later authority. Not applied: the text
   keeps the printed reading, and the popup gives the suggestion and its authority.
 
@@ -65,7 +68,7 @@ Each correction was approved by a person. Every correction in `corrections.json`
 | transcription | Answer during review, checked by hand against the scan of the PTS edition | 7 |
 | transcription | Earlier correction, checked by hand word by word against the scan of the PTS edition on 2026-10-11 | 6 |
 | transcription | Precision sample, checked by hand against the scan of the PTS edition | 1 |
-| notation | Notation only: GRETIL's encoding of a character | 28 |
+| notation | Notation only: GRETIL's signs (^ for a circumflex, <…> for brackets or parentheses) written as the book prints them; same letters | 28 |
 | emendation | M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition) | 1,023 |
 | emendation | L. Feer, Saṃyutta-nikāya IV, revised by P. Jackson (PTS, 2014) | 608 |
 | emendation | W. Pruitt, Corrections for the 2004 reprint of Majjhima-nikāya II (PTS, 2008) | 14 |
@@ -74,7 +77,7 @@ Each correction was approved by a person. Every correction in `corrections.json`
 ## Reading the pages
 
 - Red underline: GRETIL encloses the words in braces { }; they are reproduced as in GRETIL (the
-  proofreading left the content between braces unchanged).
+  proofreading left the content between braces unchanged, except for notation).
 - Green underline: GRETIL departs from the printed edition; the text gives the printed reading.
 - Orange dotted underline: an emendation of the edition, suggested but not applied; the text keeps the
   printed reading.
@@ -157,21 +160,29 @@ Page counts are those of each built file; corrections are counted per volume.
   Kathāvatthu). A volume without corrections is rebuilt as GRETIL has it, with the licence and the notices.
 - **Left out because the review service blocks them** (no compatible scan of the printed edition to
   check against): Vimānavatthu, Petavatthu, Apadāna, Buddhavaṃsa, Cariyāpiṭaka, Yamaka and Paṭṭhāna.
-- **Nettippakaraṇa and Peṭakopadesa** are not in GRETIL, so they are not part of this build. The folder
-  `transcriptions/` holds one HTML file for each, transcribed from the scans of the printed PTS editions.
+- **Nettippakaraṇa and Peṭakopadesa**: GRETIL has them only in the Sinhala edition (input by the Sri Lanka
+  Tripitaka Project, with the PTS page numbers), not in the PTS edition, so they are not part of this build.
+  The folder `transcriptions/` holds one HTML file for each, transcribed from the scans of the printed PTS
+  editions.
   **They are unreviewed drafts**: no page has been proofread by a person; each file says so at the top.
 - **The Sutta Nipāta, Theragāthā and Therīgāthā** were proofread directly in the GRETIL file. Their
   differences from the mirror's file are written in `corrections.json` as ordinary corrections
-  (source label: "Hand-corrected copy of the GRETIL file"), so they are reproducible from the mirror too.
+  (source label: "Copy of the GRETIL file corrected by hand, checked against the scan of the PTS edition"),
+  so they are reproducible from the mirror too. The Sutta Nipāta was checked against the scan, apparatus
+  included. The Theragāthā and Therīgāthā were checked against the scan of the first printing
+  (Oldenberg and Pischel, 1883), while GRETIL follows the second edition (1966); their pagination was found
+  equal on the nine pages compared.
 - The proofreading is not finished for every book.
-- Corrections are by Jorge Contreras (github.com/jorgecaa), from the foureditions project.
+- Proofreading and approval of the corrections: Jorge Contreras (github.com/jorgecaa), foureditions project.
+  24 corrections and the eight Saṃyutta II pages were read on the scan by machine and checked by hand.
+  The emendations suggested are those of the authorities cited (Cone, Jackson, Pruitt).
 
 ## Licence
 
 The GRETIL texts are © Pali Text Society and Dhammakaya Foundation, 2015, under
-[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Everything in this repository (the
-code, `corrections.json` and the built files in `corrected/`) is a derivative and is released under
-the same licence, with the same notice.
+[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). `corrections.json` and the built
+files in `corrected/` derive from those texts and are released under the same licence, with the same
+notice. `build.py` and this README contain no GRETIL text and are released under the same licence.
 
 The two files in `transcriptions/` are not derived from GRETIL (they are drafts transcribed from printed
 PTS editions); their rights have not been assessed. See `LICENSE`.
