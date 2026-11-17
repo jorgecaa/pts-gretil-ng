@@ -110,6 +110,10 @@ Each correction was approved by a person. Every correction in `corrections.json`
 Corrections applied: transcription and notation corrections, which change the text. Emendations suggested:
 shown on the words concerned but not applied.
 
+Struck through: volumes with no correction applied. Their proofreading against the scan has not been
+done yet, so their text is GRETIL's as it stands (Ja I carries only suggested emendations, which do not
+change the text). The built file is still published, with the licence and the notices.
+
 | Volume | File | Pages | Corrections applied | Emendations suggested |
 |---|---|---:|---:|---:|
 | DN I | [`dighn1ou.htm`](corrected/dighn1ou.htm) | 253 | 73 | 25 |
@@ -131,29 +135,29 @@ shown on the words concerned but not applied.
 | Sn | [`sutnipou.htm`](corrected/sutnipou.htm) | 223 | 827 | 0 |
 | Th & Th | [`theragou.htm`](corrected/theragou.htm) | 115 | 63 | 0 |
 |  | [`therigou.htm`](corrected/therigou.htm) | 52 |  |  |
-| Dhp | [`dhampdou.htm`](corrected/dhampdou.htm) | 120 | 0 | 0 |
-| Khp | [`khudp_ou.htm`](corrected/khudp_ou.htm) | 9 | 0 | 0 |
+| ~~Dhp~~ | ~~[`dhampdou.htm`](corrected/dhampdou.htm)~~ | 120 | 0 | 0 |
+| ~~Khp~~ | ~~[`khudp_ou.htm`](corrected/khudp_ou.htm)~~ | 9 | 0 | 0 |
 | Ud | [`udana_ou.htm`](corrected/udana_ou.htm) | 94 | 7 | 0 |
-| It | [`itivutou.htm`](corrected/itivutou.htm) | 124 | 0 | 0 |
-| Ja I | [`jatak1ou.htm`](corrected/jatak1ou.htm) | 511 | 0 | 86 |
+| ~~It~~ | ~~[`itivutou.htm`](corrected/itivutou.htm)~~ | 124 | 0 | 0 |
+| ~~Ja I~~ | ~~[`jatak1ou.htm`](corrected/jatak1ou.htm)~~ | 511 | 0 | 86 |
 | Ja II | [`jatak2ou.htm`](corrected/jatak2ou.htm) | 451 | 1 | 68 |
 | Ja III | [`jatak3ou.htm`](corrected/jatak3ou.htm) | 543 | 5 | 106 |
 | Ja IV | [`jatak4ou.htm`](corrected/jatak4ou.htm) | 499 | 19 | 106 |
 | Ja V | [`jatak5ou.htm`](corrected/jatak5ou.htm) | 511 | 24 | 198 |
 | Ja VI | [`jatak6ou.htm`](corrected/jatak6ou.htm) | 596 | 7 | 174 |
 | Nidd I | [`nidde1ou.htm`](corrected/nidde1ou.htm) | 509 | 2 | 0 |
-| Nidd II | [`nidde2ou.htm`](corrected/nidde2ou.htm) | 72 | 0 | 0 |
+| ~~Nidd II~~ | ~~[`nidde2ou.htm`](corrected/nidde2ou.htm)~~ | 72 | 0 | 0 |
 | Patis I | [`patis1ou.htm`](corrected/patis1ou.htm) | 196 | 73 | 0 |
 | Patis II | [`patis2ou.htm`](corrected/patis2ou.htm) | 246 | 38 | 0 |
-| Mil | [`milindou.htm`](corrected/milindou.htm) | 420 | 0 | 0 |
+| ~~Mil~~ | ~~[`milindou.htm`](corrected/milindou.htm)~~ | 420 | 0 | 0 |
 | Vin I | [`vin1maou.htm`](corrected/vin1maou.htm) | 360 | 8 | 0 |
 | Vin II | [`vin2cuou.htm`](corrected/vin2cuou.htm) | 308 | 14 | 0 |
 | Vin III | [`vin3s1ou.htm`](corrected/vin3s1ou.htm) | 266 | 7 | 0 |
 | Vin IV | [`vin4s2ou.htm`](corrected/vin4s2ou.htm) | 351 | 1 | 0 |
-| Vin V | [`vin5paou.htm`](corrected/vin5paou.htm) | 226 | 0 | 0 |
+| ~~Vin V~~ | ~~[`vin5paou.htm`](corrected/vin5paou.htm)~~ | 226 | 0 | 0 |
 | Dhs | [`dhamsgou.htm`](corrected/dhamsgou.htm) | 264 | 1 | 0 |
-| Vibh | [`vibhanou.htm`](corrected/vibhanou.htm) | 436 | 0 | 0 |
-| Dhātuk | [`dhatukou.htm`](corrected/dhatukou.htm) | 113 | 0 | 0 |
+| ~~Vibh~~ | ~~[`vibhanou.htm`](corrected/vibhanou.htm)~~ | 436 | 0 | 0 |
+| ~~Dhātuk~~ | ~~[`dhatukou.htm`](corrected/dhatukou.htm)~~ | 113 | 0 | 0 |
 | Pp | [`pugpan_ou.htm`](corrected/pugpan_ou.htm) | 74 | 13 | 0 |
 | Kv | [`kathavou.htm`](corrected/kathavou.htm) | 628 | 136 | 0 |
 
