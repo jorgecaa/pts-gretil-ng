@@ -173,7 +173,7 @@ def _tokens(t):
 
 
 def _trim(old, new):
-    """For corrections generated from a corrected file, only the words that change are the correction."""
+    """The words that change, and the unchanged context around them (split at whitespace)."""
     a, b = _tokens(old), _tokens(new)
     i = 0
     while i < min(len(a), len(b)) and a[i] == b[i]:
@@ -181,6 +181,9 @@ def _trim(old, new):
     j = 0
     while j < min(len(a), len(b)) - i and a[-1 - j] == b[-1 - j]:
         j += 1
+    if not ''.join(a[i:len(a) - j]).strip() and not ''.join(b[i:len(b) - j]).strip():
+        # only the spacing changes (two lines joined): the words on either side are the correction
+        i, j = max(i - 1, 0), max(j - 1, 0)
     return ''.join(a[:i]), ''.join(a[i:len(a) - j]), ''.join(b[i:len(b) - j]), ''.join(a[len(a) - j:])
 
 
@@ -195,7 +198,9 @@ def apply(volume, n, part, text, flags=None):
         old, new = c['gretil'], c['book']
         if t.count(old) != c['times']:
             sys.exit(f'{volume} p. {n}: {old!r} is there {t.count(old)} times, the correction says {c["times"]}')
-        keep_l, mid_old, mid_new, keep_r = _trim(old, new) if c.get('ctx') else ('', old, new, '')
+        # only the words that change are marked: what the correction repeats around them (a
+        # line-break hyphen, a neighbouring word) is context, not part of the correction
+        keep_l, mid_old, mid_new, keep_r = _trim(old, new)
         out, owners, calls, i = [], [], [], 0
         while True:
             j = t.find(old, i)
@@ -245,7 +250,7 @@ def mark(text, who, call):
         while j < len(text) and (brace[j], tuple(id(x) for x in who[j])) == key and (text[j] != '\n' or j == k):
             j += 1
         chunk, owners = _with_calls(text, call, k, j), who[k]
-        if chunk == '\n' or (not brace[k] and not owners):
+        if not chunk.strip() or (not brace[k] and not owners):     # spacing alone is not underlined
             out.append(chunk)
         else:
             classes, lines = [], []
@@ -255,9 +260,8 @@ def mark(text, who, call):
                              'It is kept as printed; its content is not altered.')
             for c in owners:
                 classes.append('correction')
-                old, new = c['gretil'], c['book']
-                if c.get('ctx'):                    # only the words that change, not their context
-                    _, old, new, _ = _trim(old, new)
+                _, old, new, _ = _trim(c['gretil'], c['book'])    # only the words that change
+                old, new = ' '.join(old.split()), ' '.join(new.split())
                 when = f" approved on {c['date']}" if c['date'] else ''
                 lines.append(f"Correction{when}. Source: {c['source']}. "
                              f"GRETIL had: «{old.strip()}». The book prints: «{new.strip()}».")

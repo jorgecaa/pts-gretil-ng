@@ -70,7 +70,8 @@ popup of each marked word and in `corrections.json`).
 ## Reading the pages
 
 - Red underline: an erratum GRETIL prints between braces { }, kept as printed.
-- Green underline: a correction (hover or tap for its source).
+- Green underline: a correction (hover or tap for its source). Only the words that change are underlined:
+  a line-break hyphen or a neighbouring word that a correction repeats as context is left unmarked.
 - Each page shows line numbers in the left margin (1, 5, 10, 15 …), counting only the lines of the text, not
   the running head nor the apparatus. They are drawn by the style sheet and are not part of the text.
 - The pages are set in Noto Sans, loaded from Google Fonts; without a connection the browser's default
