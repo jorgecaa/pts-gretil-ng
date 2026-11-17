@@ -268,8 +268,10 @@ WARNING = ('<div class="legend" style="border:2px solid #c00;background:#fff4f4"
            'edition; they may contain errors and should not be relied on without checking the book.</div>\n')
 CREDIT = ('<div class="legend"><b>About this copy.</b> The licence and the notice above are GRETIL\'s '
           'own and apply unchanged (CC BY-SA 4.0, &copy; Pali Text Society and Dhammakaya Foundation, 2015). '
-          'Proofreading of this copy against the scans of the printed PTS edition and the '
-          'corrections marked below: Jorge Contreras (github.com/jorgecaa), foureditions project. '
+          'Manual proofreading corrections against the scans of the printed edition are marked below '
+          '(Jorge Contreras, github.com/jorgecaa, foureditions project); each was approved by a person. '
+          'Corrections derived from the Cone dictionary, Jackson\'s revised Sa\u1e43yutta IV apparatus or '
+          'word indices are identified by their source label. '
           'The text of GRETIL itself has not been rewritten: every correction is recorded, with its '
           'source and date, in corrections.json of the repository that built this file.</div>\n')
 LEGEND = ('<div class="legend"><span class="erratum">red underline</span>: an erratum that GRETIL '

@@ -1,4 +1,4 @@
-# gretil-corrected
+# pts-gretil-ng
 
 Reproducible build of the Pali Text Society (PTS) editions of the Pali canon from
 [GRETIL](https://gretil.sub.uni-goettingen.de/), with proofreading corrections marked in the text.
@@ -14,16 +14,42 @@ Requirements: Python 3.9+ and git. No other dependency. Download size: about 130
    [INDOLOGY/GRETIL-mirror](https://github.com/INDOLOGY/GRETIL-mirror) (only the Pali folders).
 2. **Verify.** The SHA-256 of each GRETIL file must equal the one recorded in `corrections.json`;
    otherwise the build stops, because the corrections were made on exactly those files.
-3. **Correct.** Each correction replaces the text GRETIL has with the text the printed book prints
-   (checked against scans of the PTS edition). A correction that does not fit exactly the stated
-   number of times stops the build; nothing is applied halfway.
-4. **Write.** One HTML file per GRETIL file in `corrected/` (also committed here). GRETIL's own opening (title, notice,
-   licence, terms of use) is kept unchanged. Red underline: an erratum GRETIL prints between braces,
-   kept as printed. Blue underline: a correction from `corrections.json`; hovering shows its source,
-   approval date, what GRETIL had and what the book prints.
+3. **Correct.** Each correction replaces the text GRETIL has with the text the printed book prints.
+   A correction that does not fit exactly the stated number of times stops the build; nothing is
+   applied halfway.
+4. **Write.** One HTML file per GRETIL file in `corrected/` (also committed here). GRETIL's own opening
+   (title, notice, licence, terms of use) is kept unchanged. Red underline: an erratum GRETIL prints
+   between braces, kept as printed. Blue underline: a correction from `corrections.json`; hovering
+   shows its source, approval date, what GRETIL had and what the book prints.
 
 `corrections.json` holds the checksums, the corrections and eight Saṃyutta II pages that GRETIL's
 file lacks (read from the scan and reviewed). The GRETIL files themselves are never modified.
+
+## Corrections and their sources
+
+Manual proofreading corrections against the scans of the printed edition are marked in the text.
+Each correction was approved by a person. Corrections derived from the Cone dictionary, Jackson's
+revised Saṃyutta IV apparatus or word indices are identified by their source label (shown in the
+popup of each marked word and in `corrections.json`).
+
+4,191 corrections in total:
+
+| Source label | Corrections |
+|---|---|
+| Sheet corrected by hand against the scan of the PTS edition | 1,132 |
+| Cone's Dictionary of Pāli (entry marked as wrong reading), confirmed against the scan | 1,023 |
+| Hand-corrected copy of the GRETIL file, checked against the scan of the PTS edition | 886 |
+| Revised edition of the Saṃyutta, vol. IV (apparatus) | 608 |
+| Word Index to the Pāli Tipiṭaka, compared with the copy | 252 |
+| Literal reading recorded during review | 135 |
+| PTS word index, compared with the copy | 71 |
+| Character-level repair (characters layer) | 28 |
+| Transcribed from the scan and approved by hand | 24 |
+| Corrections published by the PTS (2004) | 14 |
+| Answer given by hand during review | 7 |
+| Earlier hand correction | 6 |
+| Corrections published for Majjhima I (W. Pruitt) | 4 |
+| Precision study, confirmed against the scan | 1 |
 
 ## Scope and limits
 
@@ -47,5 +73,5 @@ file lacks (read from the scan and reviewed). The GRETIL files themselves are ne
 ## Licence
 
 The GRETIL texts are © Pali Text Society and Dhammakaya Foundation, 2015, under
-[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/); the files in `corrected/` (also committed here) are
+[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/); the files in `corrected/` are
 derivatives and carry the same licence and notice.
