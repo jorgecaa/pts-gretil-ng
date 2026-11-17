@@ -87,7 +87,7 @@ Each correction was approved by a person. Every correction in `corrections.json`
 | transcription | Review sheet, checked by hand against the scan of the PTS edition | 1,132 |
 | transcription | Copy of the GRETIL file corrected by hand, checked against the scan of the PTS edition | 886 |
 | transcription | Flagged by the Word Index to the Pāli Tipiṭaka (Ousaka 2019), checked by hand against the scan of the PTS edition | 252 |
-| transcription | Printed reading recorded as it stands on the scan of the PTS edition (misprints kept) | 135 |
+| transcription | Printed reading, checked by hand against the scan of the PTS edition | 134 |
 | transcription | Flagged by the PTS word index (Ousaka, Pruitt and Jackson 2019), checked by hand against the scan of the PTS edition | 71 |
 | transcription | Read on the scan of the PTS edition by machine; checked and approved by hand | 24 |
 | transcription | Answer during review, checked by hand against the scan of the PTS edition | 44 |
@@ -95,7 +95,7 @@ Each correction was approved by a person. Every correction in `corrections.json`
 | transcription | Precision sample, checked by hand against the scan of the PTS edition | 1 |
 | notation | Notation only: GRETIL's signs (^ for a circumflex, <…> for brackets or parentheses) written as the book prints them; same letters | 28 |
 | emendation | M. Cone, A Dictionary of Pāli (entry marked as a wrong reading of the PTS edition) | 1,023 |
-| emendation | L. Feer, Saṃyutta-nikāya IV, revised by P. Jackson (PTS, 2014) | 608 |
+| emendation | L. Feer, Saṃyutta-nikāya IV, revised by P. Jackson (PTS, 2014) | 609 |
 | emendation | W. Pruitt, Corrections for the 2004 reprint of Majjhima-nikāya II (PTS, 2008) | 14 |
 | emendation | W. Pruitt, M I corrections (PTS, 2009) | 4 |
 
@@ -157,7 +157,7 @@ Yamaka is excluded:
 | SN I | [`samyu1ou.htm`](corrected/samyu1ou.htm) | 240 | 169 | 29 |  |
 | SN II | [`samyu2ou.htm`](corrected/samyu2ou.htm) | 279 | 87 | 9 | yes |
 | SN III | [`samyu3ou.htm`](corrected/samyu3ou.htm) | 279 | 52 | 8 | yes |
-| SN IV | [`samyu4ou.htm`](corrected/samyu4ou.htm) | 403 | 103 | 633 | yes |
+| SN IV | [`samyu4ou.htm`](corrected/samyu4ou.htm) | 403 | 102 | 634 | yes |
 | SN V | [`samyu5ou.htm`](corrected/samyu5ou.htm) | 478 | 80 | 26 | yes |
 | AN I | [`angut1ou.htm`](corrected/angut1ou.htm) | 304 | 65 | 19 | yes |
 | AN II | [`angut2ou.htm`](corrected/angut2ou.htm) | 257 | 65 | 17 | yes |
