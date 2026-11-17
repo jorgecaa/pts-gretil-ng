@@ -24,6 +24,9 @@ identifiers:
     value: 10.5281/zenodo.24314138
     description: All versions (resolves to the latest release)
   - type: doi
+    value: 10.5281/zenodo.24315419
+    description: Version 2.0.0
+  - type: doi
     value: 10.5281/zenodo.24314139
     description: Version 1.0.0
 repository-code: "https://github.com/jorgecaa/pts-gretil-ng"
