@@ -45626,6 +45626,17 @@
 "date": "2026-11-03"
 },
 {
+"volume": "Vin I",
+"page": 234,
+"part": "text",
+"gretil": "an-\napalokitvā",
+"book": "an-\napalokitā",
+"times": 1,
+"source": "Answer during review, checked by hand against the scan of the PTS edition",
+"kind": "transcription",
+"date": "2026-11-17"
+},
+{
 "volume": "Vin II",
 "page": 141,
 "part": "text",
@@ -45756,6 +45767,28 @@
 "source": "Answer during review, checked by hand against the scan of the PTS edition",
 "kind": "transcription",
 "date": "2026-11-03"
+},
+{
+"volume": "Vin II",
+"page": 13,
+"part": "text",
+"gretil": "Assajipunal ba-",
+"book": "Assajipunabba-",
+"times": 1,
+"source": "Answer during review, checked by hand against the scan of the PTS edition",
+"kind": "transcription",
+"date": "2026-11-17"
+},
+{
+"volume": "Vin II",
+"page": 142,
+"part": "text",
+"gretil": "puṇanuti",
+"book": "puṇanti",
+"times": 1,
+"source": "Answer during review, checked by hand against the scan of the PTS edition",
+"kind": "transcription",
+"date": "2026-11-17"
 },
 {
 "volume": "Vin III",

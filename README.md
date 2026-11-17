@@ -65,7 +65,7 @@ Each correction was approved by a person. Every correction in `corrections.json`
 - **emendation**: a correction of the edition itself, by a later authority. Not applied: the text
   keeps the printed reading, and the popup gives the suggestion and its authority.
 
-4,217 corrections in total:
+4,220 corrections in total:
 
 | Kind | Source label (evidence or authority) | Corrections |
 |---|---|---:|
@@ -75,7 +75,7 @@ Each correction was approved by a person. Every correction in `corrections.json`
 | transcription | Printed reading recorded as it stands on the scan of the PTS edition (misprints kept) | 135 |
 | transcription | Flagged by the PTS word index (Ousaka, Pruitt and Jackson 2019), checked by hand against the scan of the PTS edition | 71 |
 | transcription | Read on the scan of the PTS edition by machine; checked and approved by hand | 24 |
-| transcription | Answer during review, checked by hand against the scan of the PTS edition | 33 |
+| transcription | Answer during review, checked by hand against the scan of the PTS edition | 36 |
 | transcription | Earlier correction, checked by hand word by word against the scan of the PTS edition on 2026-10-11 | 6 |
 | transcription | Precision sample, checked by hand against the scan of the PTS edition | 1 |
 | notation | Notation only: GRETIL's signs (^ for a circumflex, <…> for brackets or parentheses) written as the book prints them; same letters | 28 |
@@ -146,8 +146,8 @@ shown on the words concerned but not applied.
 | Patis I | [`patis1ou.htm`](corrected/patis1ou.htm) | 196 | 73 | 0 |
 | Patis II | [`patis2ou.htm`](corrected/patis2ou.htm) | 246 | 38 | 0 |
 | Mil | [`milindou.htm`](corrected/milindou.htm) | 420 | 0 | 0 |
-| Vin I | [`vin1maou.htm`](corrected/vin1maou.htm) | 360 | 7 | 0 |
-| Vin II | [`vin2cuou.htm`](corrected/vin2cuou.htm) | 308 | 12 | 0 |
+| Vin I | [`vin1maou.htm`](corrected/vin1maou.htm) | 360 | 8 | 0 |
+| Vin II | [`vin2cuou.htm`](corrected/vin2cuou.htm) | 308 | 14 | 0 |
 | Vin III | [`vin3s1ou.htm`](corrected/vin3s1ou.htm) | 266 | 7 | 0 |
 | Vin IV | [`vin4s2ou.htm`](corrected/vin4s2ou.htm) | 351 | 1 | 0 |
 | Vin V | [`vin5paou.htm`](corrected/vin5paou.htm) | 226 | 0 | 0 |
