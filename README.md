@@ -3,13 +3,19 @@
 Reproducible build of the Pali Text Society (PTS) editions of the Pali canon from
 [GRETIL](https://gretil.sub.uni-goettingen.de/), with proofreading corrections marked in the text.
 
-    python3 build.py            # 1. download GRETIL  2. read corrections.json  3. write corrected/*.htm
+    python3 build.py            # 1. download GRETIL  2. read corrections.json  3. write corrected/*.htm and index.html
     python3 build.py --verify   # only check the downloaded files against the expected checksums
 
 Requirements: Python 3.9+ and git. No other dependency. The download takes about 150 MB on disk
 (folder `mirror/`, not committed); the build itself takes under a minute.
 
-The build is deterministic: after `python3 build.py`, `git status` must show no change in `corrected/`.
+The build is deterministic: after `python3 build.py`, `git status` must show no change in `corrected/`
+nor in `index.html`. A GitHub Action (`.github/workflows/build.yml`) checks this on every push, with
+Python 3.9 and 3.13.
+
+**Reading online:** the pages are meant to be opened in a browser, where hovering over a marked word
+shows its popup; GitHub's file view shows their source instead. They are published with GitHub Pages
+at <https://jorgecaa.github.io/pts-gretil-ng/> (active once the repository is public).
 
 ## How it works
 
@@ -43,6 +49,10 @@ project, where the review is done; it is data, not written by hand, and is updat
 | `transcriptions/` | Two HTML files: unreviewed draft transcriptions of the Nettippakaraṇa and Peṭakopadesa. Not built by `build.py`. |
 | `LICENSE` | Licence notice (CC BY-SA 4.0; the scope of the drafts in `transcriptions/` is stated apart). |
 | `corrected/` | The built files (44 HTML files, 43 volumes), committed for convenience. |
+| `index.html` | Entry page with a link to every built file (written by `build.py`; the GitHub Pages home). |
+| `CITATION.cff` | How to cite this repository. |
+| `CONTRIBUTING.md` | How to report an error. |
+| `.github/workflows/build.yml` | The check that the build reproduces the committed files. |
 
 ## Corrections and their sources
 

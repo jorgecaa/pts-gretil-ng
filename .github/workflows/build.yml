@@ -1,0 +1,35 @@
+name: build
+
+# The build must reproduce the committed files exactly (README: "The build is deterministic").
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.9', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Cache the GRETIL mirror (keyed on the pinned commit)
+        uses: actions/cache@v4
+        with:
+          path: mirror
+          key: gretil-mirror-${{ hashFiles('corrections.json') }}
+          restore-keys: gretil-mirror-
+      - name: Build
+        run: python build.py
+      - name: The built files are the committed ones
+        run: |
+          git status --porcelain -- corrected index.html
+          test -z "$(git status --porcelain -- corrected index.html)"

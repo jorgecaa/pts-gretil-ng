@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: >-
+  If you cite these texts, cite this repository and the printed PTS edition
+  (volume and page). The corrections are recorded, with their sources, in
+  corrections.json.
+type: dataset
+title: "pts-gretil-ng: PTS Pali texts from GRETIL, proofread"
+abstract: >-
+  Reproducible build of the Pali Text Society editions as given by GRETIL
+  (digital input by the Dhammakaya Foundation), with proofreading corrections
+  against the scans of the printed editions marked in the text, and
+  emendations by later authorities given as suggestions.
+authors:
+  - family-names: Contreras
+    given-names: Jorge
+license: CC-BY-SA-4.0
+repository-code: "https://github.com/jorgecaa/pts-gretil-ng"
+url: "https://jorgecaa.github.io/pts-gretil-ng/"
+keywords:
+  - Pali
+  - Tipitaka
+  - Pali Text Society
+  - GRETIL
+  - philology

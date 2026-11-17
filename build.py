@@ -516,6 +516,54 @@ def build_file(volume, rel):
         fh.write(document(header, note, blocks, '' if proofread else WARNING,
                           CREDIT.replace('{replaced}', REPLACED.get(volume, ''))))
     print(f'{os.path.basename(rel)}.htm: {len(blocks)} pages, {changed} with corrections')
+    return len(blocks)
+
+
+INDEX = """<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PTS Pali texts from GRETIL, proofread</title>
+{style}
+</head>
+<body>
+<h1>PTS Pali texts from GRETIL, proofread</h1>
+<p>The Pali Text Society editions as GRETIL gives them (digital input by the Dhammakaya Foundation),
+with proofreading corrections against the scans of the printed editions marked in the text. Built
+reproducibly from a pinned commit of the GRETIL mirror; source, method and licence:
+<a href="https://github.com/jorgecaa/pts-gretil-ng">github.com/jorgecaa/pts-gretil-ng</a>.</p>
+{legend}
+<p><b>The critical apparatus (footnotes) has NOT been proofread</b>, except in the Sutta Nipāta.
+Licence: CC BY-SA 4.0, &copy; Pali Text Society and Dhammakaya Foundation, 2015.</p>
+<table>
+<tr><th>Volume</th><th>File</th><th>Pages</th><th>Corrections</th></tr>
+{rows}
+</table>
+<p>Not built from GRETIL: unreviewed draft transcriptions of the
+<a href="transcriptions/Nettippakarana.htm">Nettippakaraṇa</a> and the
+<a href="transcriptions/Petakopadesa.htm">Peṭakopadesa</a> (no page proofread by a person).</p>
+</body>
+</html>
+"""
+
+
+def write_index(pages):
+    """`index.html`: the page GitHub Pages opens first, with a link to every built file."""
+    counts = {}
+    for c in DATA['corrections']:
+        counts[c['volume']] = counts.get(c['volume'], 0) + 1
+    rows = []
+    for volume, rels in FILES.items():
+        for k, rel in enumerate(rels):
+            name = os.path.basename(rel) + '.htm'
+            rows.append(f'<tr><td>{html.escape(volume) if k == 0 else ""}</td>'
+                        f'<td><a href="corrected/{name}">{name}</a></td><td>{pages[rel]}</td>'
+                        f'<td>{counts.get(volume, 0) if k == 0 else ""}</td></tr>')
+    style = STYLE.replace('</style>', 'table{border-collapse:collapse}td,th{padding:.2em .8em;text-align:left}'
+                          'td:nth-child(n+3){text-align:right}tr:nth-child(even){background:#f4f4f4}</style>')
+    with open(os.path.join(HERE, 'index.html'), 'w', encoding='utf-8', newline='\n') as fh:
+        fh.write(INDEX.format(style=style, legend=LEGEND, rows='\n'.join(rows)))
 
 
 def main():
@@ -525,9 +573,11 @@ def main():
     if '--verify' in sys.argv:
         print('the downloaded files are the ones the corrections were made on')
         return
+    pages = {}
     for volume, rels in FILES.items():
         for rel in rels:
-            build_file(volume, rel)
+            pages[rel] = build_file(volume, rel)
+    write_index(pages)
 
 
 if __name__ == '__main__':
