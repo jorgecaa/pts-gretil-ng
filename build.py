@@ -6,7 +6,6 @@
 
 Needs Python 3.9+ and git. No other dependency. See README.md.
 """
-import datetime
 import hashlib
 import html
 import json
@@ -29,7 +28,7 @@ FILES = DATA['files']
 # 1. download -----------------------------------------------------------------------------
 
 def download():
-    """The pinned commit of the mirror, only the Pāli folders (about 100 MB)."""
+    """The pinned commit of the mirror, only the Pāli folders (about 150 MB on disk)."""
     def git(*a):
         subprocess.run(['git', '-C', MIRROR_DIR, *a], check=True)
     if not os.path.isdir(os.path.join(MIRROR_DIR, '.git')):
@@ -44,6 +43,8 @@ def download():
 
 def verify():
     """The input is exactly what the corrections were made on."""
+    if not os.path.isdir(BASE):
+        sys.exit('GRETIL has not been downloaded yet: run `python3 build.py` first')
     bad = []
     for rel, digest in DATA['sources'].items():
         path = os.path.join(BASE, rel)
@@ -201,9 +202,12 @@ def mark(text, who):
                              'It is kept as printed; its content is not altered.')
             for c in owners:
                 classes.append('correction')
-                when = f"approved on {c['date']}" if c['date'] else 'approved in the corrections layer'
-                lines.append(f"Correction {when}. Source: {c['source']}. "
-                             f"GRETIL had: «{c['gretil'].strip()}». The book prints: «{c['book'].strip()}».")
+                old, new = c['gretil'], c['book']
+                if c.get('ctx'):                    # only the words that change, not their context
+                    _, old, new, _ = _trim(old, new)
+                when = f" approved on {c['date']}" if c['date'] else ''
+                lines.append(f"Correction{when}. Source: {c['source']}. "
+                             f"GRETIL had: «{old.strip()}». The book prints: «{new.strip()}».")
             infos.append((' '.join(dict.fromkeys(classes)), ' | '.join(dict.fromkeys(lines))))
             out.append(f'{OPEN}{len(infos) - 1}{MID}{chunk}{CLOSE}')
         k = j
@@ -281,7 +285,7 @@ LEGEND = ('<div class="legend"><span class="erratum">red underline</span>: an er
 NOTE = ('Pali Text Society edition (Ee), digital input by the Dhammakaya Foundation (1989-1996), GRETIL '
         'version. Licence: CC BY-SA 4.0, (c) Pali Text Society and Dhammakaya Foundation, 2015. '
         'This file carries the corrections approved in the foureditions project ({count} pages '
-        'changed in this file, generated {date}). The critical apparatus (footnotes and variant '
+        'changed in this file; built from commit {commit} of the GRETIL mirror). The critical apparatus (footnotes and variant '
         'readings) has NOT been proofread. Text between braces is an erratum printed by GRETIL and '
         'is kept as is. The original GRETIL file is not modified.')
 
@@ -325,7 +329,7 @@ def build_file(volume, rel):
             sys.exit(f'{volume} p. {n}: does not read back identical')
         blocks.append(block)
     os.makedirs(OUT_DIR, exist_ok=True)
-    note = NOTE.format(count=changed, date=datetime.date.today().isoformat())
+    note = NOTE.format(count=changed, commit=DATA['commit'][:12])
     with open(os.path.join(OUT_DIR, os.path.basename(rel) + '.htm'), 'w', encoding='utf-8', newline='\n') as fh:
         fh.write(document(header, note, blocks))
     print(f'{os.path.basename(rel)}.htm: {len(blocks)} pages, {changed} with corrections')

@@ -6,7 +6,10 @@ Reproducible build of the Pali Text Society (PTS) editions of the Pali canon fro
     python3 build.py            # 1. download GRETIL  2. read corrections.json  3. write corrected/*.htm
     python3 build.py --verify   # only check the downloaded files against the expected checksums
 
-Requirements: Python 3.9+ and git. No other dependency. Download size: about 130 MB.
+Requirements: Python 3.9+ and git. No other dependency. The download takes about 150 MB on disk
+(folder `mirror/`, not committed); the build itself takes under a minute.
+
+The build is deterministic: after `python3 build.py`, `git status` must show no change in `corrected/`.
 
 ## How it works
 
@@ -22,8 +25,20 @@ Requirements: Python 3.9+ and git. No other dependency. Download size: about 130
    between braces, kept as printed. Blue underline: a correction from `corrections.json`; hovering
    shows its source, approval date, what GRETIL had and what the book prints.
 
-`corrections.json` holds the checksums, the corrections and eight Saṃyutta II pages that GRETIL's
-file lacks (read from the scan and reviewed). The GRETIL files themselves are never modified.
+`corrections.json` holds the pinned mirror commit, the checksums, the corrections and eight
+Saṃyutta II pages (109-116) that GRETIL's file lacks; those pages were read from the scan and
+reviewed, replace GRETIL's broken text whole, and carry no marks. The GRETIL files themselves are
+never modified. `corrections.json` is exported from the corrections layer of the foureditions
+project, where the review is done; it is data, not written by hand, and is updated from there.
+
+## Files
+
+| Path | What it is |
+|---|---|
+| `build.py` | The whole build: download, verify, correct, write. |
+| `corrections.json` | Pinned mirror commit, checksums, corrections with their sources. |
+| `corrected/` | The built files (44 HTML files, 43 volumes), committed for convenience. |
+| `transcriptions/` | Unreviewed draft transcriptions of two works GRETIL lacks (see below). Not built by `build.py`. |
 
 ## Corrections and their sources
 
@@ -54,7 +69,10 @@ popup of each marked word and in `corrections.json`).
 ## Scope and limits
 
 - **The critical apparatus (footnotes and variant readings) has NOT been proofread.** The corrections
-  apply to the main text only.
+  apply to the main text only. One exception in the data, not in the claim: the hand-corrected Sutta
+  Nipāta file also differs from GRETIL in its footnotes (mostly notation); those differences are applied
+  so that the file is reproduced exactly, but its apparatus has not been systematically proofread either.
+- A correction that only deletes text leaves no mark in the HTML; it is still listed in `corrections.json`.
 - **Included:** every GRETIL volume of the PTS editions that the foureditions review service does not
   block: 43 volumes (Dīgha, Majjhima, Saṃyutta, Aṅguttara, Vinaya, Khuddakapāṭha, Dhammapada, Udāna,
   Itivuttaka, Sutta Nipāta, Theragāthā and Therīgāthā, Jātaka, Mahāniddesa and Cūḷaniddesa,
