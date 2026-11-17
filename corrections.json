@@ -471,6 +471,17 @@
 },
 {
 "volume": "DN I",
+"page": 16,
+"part": "text",
+"gretil": "attā ca loka ca",
+"book": "attā ca loko ca",
+"times": 1,
+"source": "Corrigenda printed in the PTS edition itself",
+"kind": "emendation",
+"date": "2026-11-17"
+},
+{
+"volume": "DN I",
 "page": 8,
 "part": "text",
 "gretil": "vacanīyaṃpure",
@@ -546,12 +557,12 @@
 "volume": "DN I",
 "page": 75,
 "part": "text",
-"gretil": "upekhako ca",
-"book": "upekhako ",
+"gretil": "virāgā\nca upekhako",
+"book": "virāgā\nupekhako",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "Corrigenda printed in the PTS edition itself",
+"kind": "emendation",
+"date": "2026-11-17"
 },
 {
 "volume": "DN I",
@@ -619,11 +630,11 @@
 "page": 78,
 "part": "text",
 "gretil": "va saṃvatteti",
-"book": "vasaṃvatteti",
+"book": "vasaṃ vatteti",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "Corrigenda printed in the PTS edition itself",
+"kind": "emendation",
+"date": "2026-11-17"
 },
 {
 "volume": "DN I",
@@ -640,12 +651,12 @@
 "volume": "DN I",
 "page": 84,
 "part": "text",
-"gretil": "\"Vimuttasmiṃ",
-"book": "Vimuṭṭasmiṃ,",
+"gretil": "\"Vimuttasmiṃ vimuttam\"2",
+"book": "vimuṭṭasmiṃ, \"vimuttam\"2",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "Corrigenda printed in the PTS edition itself",
+"kind": "emendation",
+"date": "2026-11-17"
 },
 {
 "volume": "DN I",
@@ -782,9 +793,20 @@
 "gretil": "saṃghī gaṇī-bhūtā",
 "book": "saṃghe gaṇī-bhūtā",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "Corrigenda printed in the PTS edition itself",
+"kind": "emendation",
+"date": "2026-11-17"
+},
+{
+"volume": "DN I",
+"page": 112,
+"part": "text",
+"gretil": "saṃghī gaṇī-bhūte",
+"book": "saṃghe gaṇī-bhūte",
+"times": 1,
+"source": "Corrigenda printed in the PTS edition itself",
+"kind": "emendation",
+"date": "2026-11-17"
 },
 {
 "volume": "DN I",
@@ -980,9 +1002,9 @@
 "gretil": "-\nparinibbāyi",
 "book": "-\nparinibbāyī",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "Corrigenda printed in the PTS edition itself",
+"kind": "emendation",
+"date": "2026-11-17"
 },
 {
 "volume": "DN I",
@@ -991,9 +1013,9 @@
 "gretil": "ṭhitā kho",
 "book": "ṭhitā kho te",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "Corrigenda printed in the PTS edition itself",
+"kind": "emendation",
+"date": "2026-11-17"
 },
 {
 "volume": "DN I",
@@ -1002,20 +1024,20 @@
 "gretil": "bho1",
 "book": "",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "Corrigenda printed in the PTS edition itself",
+"kind": "emendation",
+"date": "2026-11-17"
 },
 {
 "volume": "DN I",
 "page": 161,
 "part": "text",
 "gretil": "Bhaga-",
-"book": "Bha-",
+"book": "bha-",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "Corrigenda printed in the PTS edition itself",
+"kind": "emendation",
+"date": "2026-11-17"
 },
 {
 "volume": "DN I",
@@ -1024,9 +1046,9 @@
 "gretil": "ekāgāriko va",
 "book": "ekāgāriko vā",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "Corrigenda printed in the PTS edition itself",
+"kind": "emendation",
+"date": "2026-11-17"
 },
 {
 "volume": "DN I",
@@ -1035,9 +1057,9 @@
 "gretil": "āpānako",
 "book": "apānako",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "Corrigenda printed in the PTS edition itself",
+"kind": "emendation",
+"date": "2026-11-17"
 },
 {
 "volume": "DN I",
@@ -1046,9 +1068,31 @@
 "gretil": "āpānakattam",
 "book": "apānakattam",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "Corrigenda printed in the PTS edition itself",
+"kind": "emendation",
+"date": "2026-11-17"
+},
+{
+"volume": "DN I",
+"page": 167,
+"part": "text",
+"gretil": "vākā-cīram",
+"book": "vāka-cīram",
+"times": 1,
+"source": "Corrigenda printed in the PTS edition itself",
+"kind": "emendation",
+"date": "2026-11-17"
+},
+{
+"volume": "DN I",
+"page": 167,
+"part": "text",
+"gretil": "rajojalla-\ndhare",
+"book": "rajojalla-\ndharo",
+"times": 1,
+"source": "Corrigenda printed in the PTS edition itself",
+"kind": "emendation",
+"date": "2026-11-17"
 },
 {
 "volume": "DN I",
@@ -1057,9 +1101,9 @@
 "gretil": "eso abhavissa\nñātuṃ1",
 "book": "etaṃ abhavissa\nñātuṃ1",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "Corrigenda printed in the PTS edition itself",
+"kind": "emendation",
+"date": "2026-11-17"
 },
 {
 "volume": "DN I",
@@ -1083,20 +1127,20 @@
 "gretil": "tapasa6-brah-",
 "book": "te sa-brah-",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "Corrigenda printed in the PTS edition itself",
+"kind": "emendation",
+"date": "2026-11-17"
 },
 {
 "volume": "DN I",
 "page": 182,
 "part": "text",
-"gretil": "vivekajaṃ pīti-sukhaṃ",
-"book": "vivekaja-pīti-sukhaṃ",
+"gretil": "vivekajaṃ pīti-sukhaṃ sukhuma-",
+"book": "vivekaja-pītisukha-sukhuma-",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "Corrigenda printed in the PTS edition itself",
+"kind": "emendation",
+"date": "2026-11-17"
 },
 {
 "volume": "DN I",
@@ -1117,12 +1161,12 @@
 "volume": "DN I",
 "page": 227,
 "part": "text",
-"gretil": "ajjhāvasī",
-"book": "ajjhāvasatī",
+"gretil": "ajjhāvasī ti",
+"book": "ajjhāvasasīti",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "Corrigenda printed in the PTS edition itself",
+"kind": "emendation",
+"date": "2026-11-17"
 },
 {
 "volume": "DN I",
@@ -1145,9 +1189,9 @@
 "gretil": "svāyaṃ",
 "book": "yvāyaṃ",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "Corrigenda printed in the PTS edition itself",
+"kind": "emendation",
+"date": "2026-11-17"
 },
 {
 "volume": "DN I",
@@ -1156,9 +1200,9 @@
 "gretil": "-\nsahavyatāya, svāyaṃ",
 "book": "-\nsahavyatāya, yvāyaṃ",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "Corrigenda printed in the PTS edition itself",
+"kind": "emendation",
+"date": "2026-11-17"
 },
 {
 "volume": "DN I",
@@ -1178,9 +1222,9 @@
 "gretil": "ajjhāpannā",
 "book": "ajjhopannā",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "Corrigenda printed in the PTS edition itself",
+"kind": "emendation",
+"date": "2026-11-17"
 },
 {
 "volume": "DN I",
@@ -1215,12 +1259,12 @@
 "volume": "DN I",
 "page": 250,
 "part": "text",
-"gretil": "rajāpatho",
-"book": "rajapatho",
+"gretil": "rajāpatho,\"1",
+"book": "rajapatho,1",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "Corrigenda printed in the PTS edition itself",
+"kind": "emendation",
+"date": "2026-11-17"
 },
 {
 "volume": "DN I",
@@ -1444,6 +1488,160 @@
 "entry": [
 "niyāmaka"
 ]
+},
+{
+"volume": "DN I",
+"page": 92,
+"part": "text",
+"gretil": "nim-\nmadeti",
+"book": "nim-\nmādeti",
+"times": 1,
+"source": "Corrigenda printed in the PTS edition itself",
+"kind": "emendation",
+"date": "2026-11-17"
+},
+{
+"volume": "DN I",
+"page": 117,
+"part": "text",
+"gretil": "{gāmakkhettaṃ}",
+"book": "gāma-khettaṃ",
+"times": 1,
+"source": "Corrigenda printed in the PTS edition itself",
+"kind": "emendation",
+"date": "2026-11-17"
+},
+{
+"volume": "DN I",
+"page": 141,
+"part": "text",
+"gretil": "na icchiṃsu, na",
+"book": "na icchiṃsu na",
+"times": 1,
+"source": "Corrigenda printed in the PTS edition itself",
+"kind": "emendation",
+"date": "2026-11-17"
+},
+{
+"volume": "DN I",
+"page": 145,
+"part": "text",
+"gretil": "Gotama yañño imāya",
+"book": "Gotama añño yañño imāya",
+"times": 1,
+"source": "Corrigenda printed in the PTS edition itself",
+"kind": "emendation",
+"date": "2026-11-17"
+},
+{
+"volume": "DN I",
+"page": 148,
+"part": "text",
+"gretil": "brāhmaṇassa anu-\npubbikathaṃ",
+"book": "brāhmaṇassa ānu-\npubbikathaṃ",
+"times": 1,
+"source": "Corrigenda printed in the PTS edition itself",
+"kind": "emendation",
+"date": "2026-11-17"
+},
+{
+"volume": "DN I",
+"page": 208,
+"part": "text",
+"gretil": "‘So evaṃ samāhite citte parisuddhe pariyodāte . . .",
+"book": "21. ‘So evaṃ samāhite citte parisuddhe pariyodāte . . .",
+"times": 1,
+"source": "Corrigenda printed in the PTS edition itself",
+"kind": "emendation",
+"date": "2026-11-17"
+},
+{
+"volume": "DN I",
+"page": 209,
+"part": "text",
+"gretil": "85,86.1]",
+"book": "85.1]",
+"times": 1,
+"source": "Corrigenda printed in the PTS edition itself",
+"kind": "emendation",
+"date": "2026-11-17"
+},
+{
+"volume": "DN I",
+"page": 209,
+"part": "text",
+"gretil": "87-98.]",
+"book": "97.]",
+"times": 1,
+"source": "Corrigenda printed in the PTS edition itself",
+"kind": "emendation",
+"date": "2026-11-17"
+},
+{
+"volume": "DN I",
+"page": 209,
+"part": "text",
+"gretil": "36. ‘Yam pi",
+"book": "26. ‘Yam pi",
+"times": 1,
+"source": "Corrigenda printed in the PTS edition itself",
+"kind": "emendation",
+"date": "2026-11-17"
+},
+{
+"volume": "DN I",
+"page": 209,
+"part": "text",
+"gretil": "37. ‘Ayaṃ kho",
+"book": "27. ‘Ayaṃ kho",
+"times": 1,
+"source": "Corrigenda printed in the PTS edition itself",
+"kind": "emendation",
+"date": "2026-11-17"
+},
+{
+"volume": "DN I",
+"page": 222,
+"part": "text",
+"gretil": "pacchā-\ngacchati",
+"book": "paccā-\ngacchate",
+"times": 1,
+"source": "Corrigenda printed in the PTS edition itself",
+"kind": "emendation",
+"date": "2026-11-17"
+},
+{
+"volume": "DN I",
+"page": 222,
+"part": "text",
+"gretil": "\"Idha bhikkhu1",
+"book": "\"Ime kho maṃ bhikkhū1",
+"times": 1,
+"source": "Corrigenda printed in the PTS edition itself",
+"kind": "emendation",
+"date": "2026-11-17"
+},
+{
+"volume": "DN I",
+"page": 61,
+"part": "text",
+"gretil": "{v' assāhaṃ}",
+"book": "vatassāhaṃ",
+"times": 1,
+"source": "Corrigenda printed in the PTS edition itself",
+"kind": "emendation",
+"date": "2026-11-17"
+},
+{
+"volume": "DN I",
+"page": 85,
+"part": "text",
+"gretil": "bahu-karaṇīyā",
+"book": "bahu-karaṇūjā",
+"times": 1,
+"source": "Corrigenda printed in the PTS edition itself",
+"kind": "emendation",
+"date": "2026-11-17"
 },
 {
 "volume": "DN II",
@@ -1730,9 +1928,9 @@
 "gretil": "anagariyaṃ",
 "book": "anagāriyaṃ",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-11"
+"source": "Corrigenda printed in the PTS edition itself",
+"kind": "emendation",
+"date": "2026-11-17"
 },
 {
 "volume": "DN II",
@@ -2077,6 +2275,17 @@
 },
 {
 "volume": "DN II",
+"page": 2,
+"part": "notes",
+"gretil": "So S Bm.",
+"book": "So St Bm.",
+"times": 1,
+"source": "Corrigenda printed in the PTS edition itself",
+"kind": "emendation",
+"date": "2026-11-17"
+},
+{
+"volume": "DN II",
 "page": 13,
 "part": "text",
 "gretil": "parivāreti.",
@@ -2338,9 +2547,9 @@
 "gretil": "-\nGovindasa",
 "book": "-\nGovindassa",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "Corrigenda printed in the PTS edition itself",
+"kind": "emendation",
+"date": "2026-11-17"
 },
 {
 "volume": "DN II",
@@ -2349,9 +2558,9 @@
 "gretil": "Brahmadātto",
 "book": "Brahmadatto",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
+"source": "Corrigenda printed in the PTS edition itself",
+"kind": "emendation",
+"date": "2026-11-17"
 },
 {
 "volume": "DN II",
@@ -2427,6 +2636,17 @@
 },
 {
 "volume": "DN II",
+"page": 283,
+"part": "notes",
+"gretil": "Samyutta",
+"book": "Saṃyutta",
+"times": 1,
+"source": "Corrigenda printed in the PTS edition itself",
+"kind": "emendation",
+"date": "2026-11-17"
+},
+{
+"volume": "DN II",
 "page": 284,
 "part": "text",
 "gretil": "pucchittho ti",
@@ -2496,6 +2716,17 @@
 "source": "Review sheet, checked by hand against the scan of the PTS edition",
 "kind": "transcription",
 "date": "2026-10-23"
+},
+{
+"volume": "DN II",
+"page": 3,
+"part": "notes",
+"gretil": "Bm K asiti.",
+"book": "Bm K asīti.",
+"times": 1,
+"source": "Corrigenda printed in the PTS edition itself",
+"kind": "emendation",
+"date": "2026-11-17"
 },
 {
 "volume": "DN II",
@@ -2729,6 +2960,28 @@
 },
 {
 "volume": "DN II",
+"page": 38,
+"part": "text",
+"gretil": "{Seyyatha pi}",
+"book": "Seyyathā pi",
+"times": 1,
+"source": "Corrigenda printed in the PTS edition itself",
+"kind": "emendation",
+"date": "2026-11-17"
+},
+{
+"volume": "DN II",
+"page": 56,
+"part": "notes",
+"gretil": "saḷayatana",
+"book": "saḷāyatana",
+"times": 1,
+"source": "Corrigenda printed in the PTS edition itself",
+"kind": "emendation",
+"date": "2026-11-17"
+},
+{
+"volume": "DN II",
 "page": 65,
 "part": "text",
 "gretil": "attanaṃ",
@@ -2737,6 +2990,28 @@
 "source": "Flagged by the Word Index to the Pāli Tipiṭaka (Ousaka 2019), checked by hand against the scan of the PTS edition",
 "kind": "transcription",
 "date": "2026-11-15"
+},
+{
+"volume": "DN II",
+"page": 68,
+"part": "text",
+"gretil": "tad akalaṃ.",
+"book": "tad akallaṃ.",
+"times": 1,
+"source": "Corrigenda printed in the PTS edition itself",
+"kind": "emendation",
+"date": "2026-11-17"
+},
+{
+"volume": "DN II",
+"page": 69,
+"part": "text",
+"gretil": "sam-\natikkhamma",
+"book": "sam-\natikkamma",
+"times": 1,
+"source": "Corrigenda printed in the PTS edition itself",
+"kind": "emendation",
+"date": "2026-11-17"
 },
 {
 "volume": "DN II",
@@ -2762,6 +3037,17 @@
 },
 {
 "volume": "DN II",
+"page": 97,
+"part": "notes",
+"gretil": "-liyā- throughout",
+"book": "-liyā and -liṃ throughout",
+"times": 1,
+"source": "Corrigenda printed in the PTS edition itself",
+"kind": "emendation",
+"date": "2026-11-17"
+},
+{
+"volume": "DN II",
 "page": 239,
 "part": "text",
 "gretil": "Brāhmunā",
@@ -2770,6 +3056,17 @@
 "source": "Flagged by the Word Index to the Pāli Tipiṭaka (Ousaka 2019), checked by hand against the scan of the PTS edition",
 "kind": "transcription",
 "date": "2026-11-15"
+},
+{
+"volume": "DN II",
+"page": 298,
+"part": "text",
+"gretil": "vediyānīti",
+"book": "vediyāmīti",
+"times": 1,
+"source": "Corrigenda printed in the PTS edition itself",
+"kind": "emendation",
+"date": "2026-11-17"
 },
 {
 "volume": "DN II",
@@ -3183,9 +3480,9 @@
 "gretil": "Āṭānātiyaṃ",
 "book": "Āṭānāṭiyaṃ",
 "times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-11"
+"source": "Corrigenda printed in the PTS edition itself",
+"kind": "emendation",
+"date": "2026-11-17"
 },
 {
 "volume": "DN III",
@@ -3362,6 +3659,17 @@
 "source": "Review sheet, checked by hand against the scan of the PTS edition",
 "kind": "transcription",
 "date": "2026-10-11"
+},
+{
+"volume": "DN III",
+"page": 254,
+"part": "text",
+"gretil": "yebhuyyasikā",
+"book": "yebbhuyyasikā",
+"times": 1,
+"source": "Corrigenda printed in the PTS edition itself",
+"kind": "emendation",
+"date": "2026-11-17"
 },
 {
 "volume": "DN III",
@@ -3652,17 +3960,6 @@
 },
 {
 "volume": "DN III",
-"page": 156,
-"part": "text",
-"gretil": "tāni10",
-"book": "tani10",
-"times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-14"
-},
-{
-"volume": "DN III",
 "page": 162,
 "part": "text",
 "gretil": "atujā",
@@ -3921,28 +4218,6 @@
 },
 {
 "volume": "DN III",
-"page": 176,
-"part": "text",
-"gretil": "tulākūṭa-kaṃsakūṭa-mānakūṭa-ukkoṭana-vañ-",
-"book": "tulā kūṭa-kaṃsakūṭa-mānakūṭa-ukkoṭana-vañ-",
-"times": 1,
-"source": "Review sheet, checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-10-23"
-},
-{
-"volume": "DN III",
-"page": 176,
-"part": "text",
-"gretil": "samano",
-"book": "samāno",
-"times": 1,
-"source": "Flagged by the Word Index to the Pāli Tipiṭaka (Ousaka 2019), checked by hand against the scan of the PTS edition",
-"kind": "transcription",
-"date": "2026-11-15"
-},
-{
-"volume": "DN III",
 "page": 178,
 "part": "text",
 "gretil": "gano",
@@ -4062,6 +4337,17 @@
 "entry": [
 "pariyosāna"
 ]
+},
+{
+"volume": "DN III",
+"page": 55,
+"part": "text",
+"gretil": "asatho",
+"book": "asaṭho",
+"times": 1,
+"source": "Corrigenda printed in the PTS edition itself",
+"kind": "emendation",
+"date": "2026-11-17"
 },
 {
 "volume": "DN III",
@@ -4294,6 +4580,28 @@
 },
 {
 "volume": "DN III",
+"page": 97,
+"part": "text",
+"gretil": "vītimissa-diṭṭhi-kamma-",
+"book": "vītimissa-kamma-diṭṭhi-",
+"times": 1,
+"source": "Corrigenda printed in the PTS edition itself",
+"kind": "emendation",
+"date": "2026-11-17"
+},
+{
+"volume": "DN III",
+"page": 107,
+"part": "notes",
+"gretil": "Bmr K anusana.",
+"book": "Bmr K anusāsana.",
+"times": 1,
+"source": "Corrigenda printed in the PTS edition itself",
+"kind": "emendation",
+"date": "2026-11-17"
+},
+{
+"volume": "DN III",
 "page": 142,
 "part": "text",
 "gretil": "putta",
@@ -4320,6 +4628,17 @@
 "part": "text",
 "gretil": "labbhati",
 "book": "labhati",
+"times": 1,
+"source": "Flagged by the Word Index to the Pāli Tipiṭaka (Ousaka 2019), checked by hand against the scan of the PTS edition",
+"kind": "transcription",
+"date": "2026-11-15"
+},
+{
+"volume": "DN III",
+"page": 176,
+"part": "text",
+"gretil": "samano",
+"book": "samāno",
 "times": 1,
 "source": "Flagged by the Word Index to the Pāli Tipiṭaka (Ousaka 2019), checked by hand against the scan of the PTS edition",
 "kind": "transcription",

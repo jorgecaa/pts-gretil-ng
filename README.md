@@ -27,7 +27,7 @@ at <https://jorgecaa.github.io/pts-gretil-ng/>.
    otherwise the build stops, because the corrections were made on exactly those files.
 3. **Correct.** Where GRETIL departs from the printed edition, the correction replaces GRETIL's text
    with the printed reading. Corrections of the edition itself published by the PTS (Cone, Jackson,
-   Pruitt), which mark a printed reading as wrong and give the reading to adopt, are applied too: the
+   Pruitt, the corrigenda printed in the volume), which mark a printed reading as wrong and give the reading to adopt, are applied too: the
    text gives the reading to adopt, and the popup on the words concerned gives the printed reading it
    replaces. In those places the text is no longer the printed edition.
    A correction that does not fit exactly the stated number of times stops the build; nothing is
@@ -76,16 +76,16 @@ Each correction was approved by a person. Every correction in `corrections.json`
   `(…)`); the letters are the same. Applied.
 - **emendation**: a correction of the edition itself, published by the PTS: M. Cone's Dictionary of
   Pāli (an entry that marks the printed reading as wrong), P. Jackson's revision of Saṃyutta IV, W. Pruitt's
-  correction lists. The authority declares the printed reading wrong and gives the reading to adopt.
+  correction lists, the corrigenda printed in the volume itself. The authority declares the printed reading wrong and gives the reading to adopt.
   Applied: the text gives the reading to adopt, and the popup gives the printed reading it replaces and the
   authority. A correction taken from Cone also has `entry`: the article(s) of the Dictionary of Pāli that
   cite the passage, found mechanically from the passage cited and the forms of Cone's note.
 
-4,228 corrections in total:
+4,257 corrections in total:
 
 | Kind | Source label (evidence or authority) | Corrections |
 |---|---|---:|
-| transcription | Review sheet, checked by hand against the scan of the PTS edition | 986 |
+| transcription | Review sheet, checked by hand against the scan of the PTS edition | 961 |
 | transcription | Copy of the GRETIL file corrected by hand, checked against the scan of the PTS edition | 886 |
 | transcription | Flagged by the Word Index to the Pāli Tipiṭaka (Ousaka 2019), checked by hand against the scan of the PTS edition | 252 |
 | transcription | Printed reading, checked by hand against the scan of the PTS edition | 134 |
@@ -99,6 +99,7 @@ Each correction was approved by a person. Every correction in `corrections.json`
 | emendation | L. Feer, Saṃyutta-nikāya IV, revised by P. Jackson (PTS, 2014) | 609 |
 | emendation | W. Pruitt, Corrections for the 2004 reprint of Majjhima-nikāya II (PTS, 2008) | 14 |
 | emendation | W. Pruitt, M I corrections (PTS, 2009) | 4 |
+| emendation | Corrigenda printed in the PTS edition itself | 54 |
 
 ## Reading the pages
 
@@ -107,8 +108,8 @@ Each correction was approved by a person. Every correction in `corrections.json`
   «{maññī}»). The content between braces is kept as in GRETIL (unchanged by the proofreading, except
   for notation).
 - Green underline: GRETIL departs from the printed edition; the text gives the printed reading.
-- Orange dotted underline: the PTS has published a correction of the edition here (Cone, Jackson or
-  Pruitt), marking the printed reading as wrong; applied: the text gives the reading the authority adopts,
+- Orange dotted underline: the PTS has published a correction of the edition here (Cone, Jackson,
+  Pruitt, or the corrigenda of the volume), marking the printed reading as wrong; applied: the text gives the reading the authority adopts,
   and the popup the printed reading it replaces.
 - Hover over (or tap) a marked word: the popup gives the reading the text replaced and who corrected it:
   `from «ratheni» (GRETIL) corrected by the PTS ed. (scan)` (green: checked on the scan of the PTS
@@ -132,7 +133,7 @@ Each correction was approved by a person. Every correction in `corrections.json`
 ## Volumes
 
 Proofreading corrections: transcription and notation corrections, where GRETIL departs from the printed
-edition. PTS corrections of the edition: corrections published by the PTS (Cone, Jackson, Pruitt) of
+edition. PTS corrections of the edition: corrections published by the PTS (Cone, Jackson, Pruitt, the corrigenda of the volume) of
 readings the printed edition gets wrong. Both are applied to the text.
 
 Every volume listed with a file was reviewed in the foureditions review service. The counts give the
@@ -156,9 +157,9 @@ Yamaka is excluded:
 
 | Volume | File | Pages | Proofreading corrections | PTS corrections of the edition | Public scan |
 |---|---|---:|---:|---:|---|
-| DN I | [`dighn1ou.htm`](corrected/dighn1ou.htm) | 253 | 54 | 44 |  |
-| DN II | [`dighn2ou.htm`](corrected/dighn2ou.htm) | 358 | 84 | 29 |  |
-| DN III | [`dighn3ou.htm`](corrected/dighn3ou.htm) | 293 | 101 | 36 |  |
+| DN I | [`dighn1ou.htm`](corrected/dighn1ou.htm) | 253 | 35 | 81 |  |
+| DN II | [`dighn2ou.htm`](corrected/dighn2ou.htm) | 358 | 81 | 41 |  |
+| DN III | [`dighn3ou.htm`](corrected/dighn3ou.htm) | 293 | 98 | 41 |  |
 | MN I | [`majjn1ou.htm`](corrected/majjn1ou.htm) | 524 | 133 | 18 | yes |
 | MN II | [`majjn2ou.htm`](corrected/majjn2ou.htm) | 266 | 36 | 43 |  |
 | MN III | [`majjn3ou.htm`](corrected/majjn3ou.htm) | 302 | 128 | 36 |  |
@@ -173,8 +174,8 @@ Yamaka is excluded:
 | AN IV | [`angut4ou.htm`](corrected/angut4ou.htm) | 466 | 46 | 21 | yes |
 | AN V | [`angut5ou.htm`](corrected/angut5ou.htm) | 361 | 23 | 5 | yes |
 | Sn | [`sutnipou.htm`](corrected/sutnipou.htm) | 223 | 827 | 0 |  |
-| Th & Th | [`theragou.htm`](corrected/theragou.htm) | 115 | 63 | 0 | yes |
-|  | [`therigou.htm`](corrected/therigou.htm) | 52 |  |  | yes |
+| Th & Th | [`theragou.htm`](corrected/theragou.htm) | 115 | 31 | 0 | yes |
+|  | [`therigou.htm`](corrected/therigou.htm) | 52 | 32 | 0 | yes |
 | Dhp | [`dhampdou.htm`](corrected/dhampdou.htm) | 120 | 8 | 0 |  |
 | Khp | [`khudp_ou.htm`](corrected/khudp_ou.htm) | 9 | 0 | 0 |  |
 | Ud | [`udana_ou.htm`](corrected/udana_ou.htm) | 94 | 7 | 0 |  |
@@ -235,7 +236,7 @@ Page counts are those of each built file; corrections are counted per volume.
 - The proofreading is not finished for every book.
 - Proofreading and approval of the corrections: Jorge Contreras (github.com/jorgecaa), foureditions project.
   24 corrections and the eight Saṃyutta II pages were read on the scan by machine and checked by hand.
-  The PTS corrections of the edition are those of the authorities cited (Cone, Jackson, Pruitt), applied as
+  The PTS corrections of the edition are those of the authorities cited (Cone, Jackson, Pruitt, the corrigenda of the volume), applied as
   they publish them.
 - The proofreader is not a philologist. The corrections are mechanical: each one restores what the printed PTS edition prints, read on its scan, or applies a correction published by the authority cited. No reading was chosen on text-critical grounds, and no emendation is the proofreader's own; applying a correction of the PTS does not mean the proofreader has judged it.
 

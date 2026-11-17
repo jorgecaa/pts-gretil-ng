@@ -271,6 +271,7 @@ BY = (
     ('L. Feer, Saṃyutta-nikāya IV, revised by P. Jackson', 'Jackson, SN IV (2014)'),
     ('W. Pruitt, Corrections for the 2004 reprint', 'Pruitt, MN II (2008)'),
     ('W. Pruitt, M I corrections', 'Pruitt, MN I (2009)'),
+    ('Corrigenda printed in the PTS edition', 'the corrigenda of the PTS ed.'),
 )
 SCAN = 'the PTS ed. (scan)'
 
@@ -422,7 +423,7 @@ CREDIT = ('<div class="legend"><b>About this copy.</b> The licence and the notic
           'checked against the scans of the edition; proofreading and approval by Jorge Contreras '
           '(github.com/jorgecaa), foureditions project. Each correction was approved by a person; 24 were '
           'read on the scan by machine and checked by hand, as their popups say.{replaced} The proofreader is not a philologist. The corrections are mechanical: each one restores what the printed PTS edition prints, read on its scan, or applies a correction published by the authority cited. No reading was chosen on text-critical grounds, and no emendation is the proofreader\'s own; applying a correction of the PTS does not mean the proofreader has judged it. Corrections of the edition itself published by the PTS (M. Cone\'s '
-          'Dictionary of P\u0101li, P. Jackson\'s revision of Sa\u1e43yutta IV, W. Pruitt\'s correction lists), '
+          'Dictionary of P\u0101li, P. Jackson\'s revision of Sa\u1e43yutta IV, W. Pruitt\'s correction lists, the corrigenda printed in the volume), '
           'which mark a printed reading as wrong and give the reading to adopt, are applied to the text: '
           'the text gives the reading to adopt, and the popup on the words concerned gives the printed reading it replaces. '
           'The text of GRETIL itself has not been rewritten: every correction is recorded, with its '
@@ -436,13 +437,13 @@ LEGEND = ('<div class="legend"><span class="erratum">red underline</span>: an er
           '<span class="correction">green underline</span>: '
           'GRETIL departs from the printed edition; the printed reading is given. &nbsp; '
           '<span class="suggestion">orange dotted underline</span>: a correction of the edition published by '
-          'the PTS (Cone, Jackson or Pruitt), applied: the text gives the reading the authority adopts, the popup the printed reading it marks as wrong. Hover over (or tap) a marked word for the reading it replaced and who corrected it.</div>')
+          'the PTS (Cone, Jackson, Pruitt, or the corrigenda of the volume), applied: the text gives the reading the authority adopts, the popup the printed reading it marks as wrong. Hover over (or tap) a marked word for the reading it replaced and who corrected it.</div>')
 NOTE = ('Pali Text Society edition (Ee), digital input by the Dhammakaya Foundation (1989-1996), GRETIL '
         'version. Licence: CC BY-SA 4.0, (c) Pali Text Society and Dhammakaya Foundation, 2015. '
         'This file carries the corrections approved in the foureditions project ({count} pages '
         'changed in this file; built from commit {commit} of the GRETIL mirror). The critical apparatus (footnotes and variant '
         'readings) has NOT been proofread. Text between braces is reproduced as GRETIL has it, '
-        'unchanged except for notation. Corrections of the edition published by the PTS (Cone, Jackson, Pruitt) are applied and marked. '
+        'unchanged except for notation. Corrections of the edition published by the PTS (Cone, Jackson, Pruitt, the corrigenda of the volume) are applied and marked. '
         'The original GRETIL file is not modified.')
 
 
@@ -556,6 +557,15 @@ LEFT_OUT = (('Vimānavatthu', NO_SCAN), ('Petavatthu', NO_SCAN), ('Apadāna', NO
             ('Paṭṭhāna', NO_SCAN))
 
 
+def file_counts(volume, rel):
+    """Proofreading corrections and PTS corrections of the edition on the pages of one file."""
+    with open(os.path.join(BASE, rel + '.htm'), encoding='utf-8', newline=None) as fh:
+        numbers = set(parts(_BR.sub('<BR>', fh.read()), calls={}))
+    mine = [c for c in DATA['corrections'] if c['volume'] == volume and c['page'] in numbers]
+    emended = sum(c.get('kind') == 'emendation' for c in mine)
+    return len(mine) - emended, emended
+
+
 def write_index(pages):
     """`index.html`: the page GitHub Pages opens first, with a link to every built file."""
     # proofreading corrections and corrections of the edition published by the PTS, counted apart
@@ -567,10 +577,12 @@ def write_index(pages):
     for volume, rels in FILES.items():
         for k, rel in enumerate(rels):
             name = os.path.basename(rel) + '.htm'
+            n_counts, n_emended = counts.get(volume, 0), emended.get(volume, 0)
+            if len(rels) > 1:          # a volume in two files (Theragāthā, Therīgāthā): each file its own
+                n_counts, n_emended = file_counts(volume, rel)
             rows.append(f'<tr><td>{html.escape(volume) if k == 0 else ""}</td>'
                         f'<td><a href="corrected/{name}">{name}</a></td><td>{pages[rel]}</td>'
-                        f'<td>{counts.get(volume, 0) if k == 0 else ""}</td>'
-                        f'<td>{emended.get(volume, 0) if k == 0 else ""}</td></tr>')
+                        f'<td>{n_counts}</td><td>{n_emended}</td></tr>')
     for book, reason in LEFT_OUT:                         # struck through: not reviewed, not built
         rows.append(f'<tr><td><s>{html.escape(book)}</s></td><td colspan="4">{html.escape(reason)}</td></tr>')
     style = STYLE.replace('</style>', 'table{border-collapse:collapse}td,th{padding:.2em .8em;text-align:left}'

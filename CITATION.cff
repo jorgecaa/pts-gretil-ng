@@ -10,13 +10,14 @@ abstract: >-
   Reproducible build of the Pali Text Society editions as given by GRETIL
   (digital input by the Dhammakaya Foundation), with proofreading corrections
   against the scans of the printed editions marked in the text, and
-  corrections of the editions published by the PTS (Cone, Jackson, Pruitt)
+  corrections of the editions published by the PTS (Cone, Jackson, Pruitt,
+  the corrigenda of the volumes)
   applied and marked, with the printed reading they replace.
 authors:
   - family-names: Contreras
     given-names: Jorge
 license: CC-BY-SA-4.0
-version: "2.2.1"
+version: "2.3.0"
 date-released: "2026-11-17"
 doi: 10.5281/zenodo.24314138
 identifiers:
