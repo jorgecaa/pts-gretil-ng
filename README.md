@@ -269,6 +269,8 @@ release may differ. `CITATION.cff` gives the details; GitHub shows them under «
 The releases are archived at Zenodo:
 
 - all versions (resolves to the latest release): [10.5281/zenodo.24314138](https://doi.org/10.5281/zenodo.24314138);
+- version 2.2.0: [10.5281/zenodo.24318371](https://doi.org/10.5281/zenodo.24318371) (same text as 2.0.0;
+  146 corrections attributed to Cone's DOP instead of the scan);
 - version 2.1.0: [10.5281/zenodo.24316048](https://doi.org/10.5281/zenodo.24316048) (same text as 2.0.0;
   short popups, DOP articles);
 - version 2.0.0: [10.5281/zenodo.24315419](https://doi.org/10.5281/zenodo.24315419);
