@@ -73,6 +73,8 @@ popup of each marked word and in `corrections.json`).
   is the Sutta Nipāta, whose footnotes were proofread together with its text; its file carries no such warning.
 - Each page shows line numbers in the left margin (1, 5, 10, 15 …), counting only the lines of the text, not
   the running head nor the apparatus. They are drawn by the style sheet and are not part of the text.
+- The pages are set in Noto Sans, loaded from Google Fonts; without a connection the browser's default
+  sans-serif font is used.
 - Note calls are superscript numbers and the apparatus is shown in blue (GRETIL shows both in red). On the eight Saṃyutta II pages read from the
   scan and on three pages GRETIL's markup does not let be read reliably (SN II 60 and 129, Nidd I 161), the
   digits glued to the end of a word are taken as the calls.

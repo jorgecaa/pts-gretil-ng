@@ -309,18 +309,20 @@ def page_html(n, head, lines, notes):
     return ''.join(s)
 
 
-STYLE = """<style>
-body{font-family:Georgia,serif;max-width:60em;margin:1em auto;padding:0 1em;color:#222}
+STYLE = """<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap">
+<style>
+body,td{font-family:'Noto Sans',sans-serif}
+body{max-width:60em;margin:1em auto;padding:0 1em;color:#222}
 .erratum{border-bottom:2px solid #c00;cursor:help}
 .correction{text-decoration:underline #0a7a2f 2px;cursor:help}
 .erratum.correction{border-bottom:2px solid #c00}
 #tip{position:fixed;display:none;max-width:26em;background:#fffbe6;border:1px solid #888;
- padding:.5em .7em;font:13px/1.4 sans-serif;box-shadow:0 2px 6px #0004;z-index:9;white-space:normal}
+ padding:.5em .7em;font:13px/1.4 'Noto Sans',sans-serif;box-shadow:0 2px 6px #0004;z-index:9;white-space:normal}
 .red{color:#00c}
-.ln{display:inline-block;width:2.2em;margin-right:.9em;text-align:right;color:#000;font:11px/1 sans-serif;
+.ln{display:inline-block;width:2.2em;margin-right:.9em;text-align:right;color:#000;font:11px/1 'Noto Sans',sans-serif;
  user-select:none;vertical-align:baseline}
 .ln::before{content:attr(data-n)}
-.legend{font:13px/1.4 sans-serif;border:1px solid #ccc;padding:.5em .8em;margin-bottom:1em}
+.legend{font:13px/1.4 'Noto Sans',sans-serif;border:1px solid #ccc;padding:.5em .8em;margin-bottom:1em}
 </style>"""
 SCRIPT = """<script>
 (function(){var tip=document.createElement('div');tip.id='tip';document.body.appendChild(tip);
