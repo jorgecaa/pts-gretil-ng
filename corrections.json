@@ -444,7 +444,7 @@
 "kind": "emendation",
 "date": "2026-11-05",
 "entry": [
-"brūmetūti"
+"brūti"
 ]
 },
 {
@@ -850,8 +850,7 @@
 "kind": "emendation",
 "date": "2026-10-14",
 "entry": [
-"anukulaṃ",
-"anukūla"
+"anukulaṃ"
 ]
 },
 {
@@ -895,9 +894,7 @@
 "kind": "emendation",
 "date": "2026-11-05",
 "entry": [
-"anukulaṃ",
-"anukūla",
-"araha(t)"
+"anukulaṃ"
 ]
 },
 {
@@ -2251,7 +2248,6 @@
 "kind": "emendation",
 "date": "2026-10-14",
 "entry": [
-"anusāyitvā",
 "anuyāti"
 ]
 },
@@ -2462,7 +2458,6 @@
 "kind": "emendation",
 "date": "2026-10-14",
 "entry": [
-"*opāṭeti",
 "opādesi"
 ]
 },
@@ -3692,7 +3687,6 @@
 "kind": "emendation",
 "date": "2026-10-14",
 "entry": [
-"cira",
 "girā"
 ]
 },
@@ -3786,7 +3780,8 @@
 "kind": "emendation",
 "date": "2026-10-14",
 "entry": [
-"nimmetvā"
+"nimmetvā",
+"nimmināti"
 ]
 },
 {
@@ -5519,7 +5514,6 @@
 "kind": "emendation",
 "date": "2026-10-14",
 "entry": [
-"palambhati",
 "paluddha"
 ]
 },
@@ -5534,7 +5528,6 @@
 "kind": "emendation",
 "date": "2026-11-05",
 "entry": [
-"palambhati",
 "paluddha"
 ]
 },
@@ -6222,7 +6215,6 @@
 "kind": "emendation",
 "date": "2026-11-05",
 "entry": [
-"kalāya, kaḷāya",
 "taṇḍula"
 ]
 },
@@ -6328,8 +6320,7 @@
 "kind": "emendation",
 "date": "2026-10-14",
 "entry": [
-"āvi, āvī",
-"āvikaroti"
+"āvi, āvī"
 ]
 },
 {
@@ -6354,7 +6345,6 @@
 "kind": "emendation",
 "date": "2026-10-14",
 "entry": [
-"padhāvino",
 "pathāvi(n)"
 ]
 },
@@ -6402,7 +6392,6 @@
 "kind": "emendation",
 "date": "2026-10-14",
 "entry": [
-"āpānakoṭikaṃ",
 "āpāṇakoṭikaṃ"
 ]
 },
@@ -8895,6 +8884,7 @@
 "kind": "emendation",
 "date": "2026-11-05",
 "entry": [
+"upatiṭṭhati",
 "uppaṭṭhāpayato"
 ]
 },
@@ -9510,6 +9500,7 @@
 "kind": "emendation",
 "date": "2026-10-14",
 "entry": [
+"kotthuka",
 "kutthaka"
 ]
 },
@@ -9574,8 +9565,7 @@
 "kind": "emendation",
 "date": "2026-10-14",
 "entry": [
-"anukulaṃ",
-"anukūlaṃ"
+"anukulaṃ"
 ]
 },
 {
@@ -9589,8 +9579,7 @@
 "kind": "emendation",
 "date": "2026-10-14",
 "entry": [
-"ocarati",
-"ocaritā"
+"ocarati"
 ]
 },
 {
@@ -10112,7 +10101,6 @@
 "kind": "emendation",
 "date": "2026-10-14",
 "entry": [
-"upakkamati",
 "upakkhalati"
 ]
 },
@@ -11102,6 +11090,7 @@
 "kind": "emendation",
 "date": "2026-11-05",
 "entry": [
+"issatta",
 "issattha"
 ]
 },
@@ -21386,7 +21375,6 @@
 "kind": "emendation",
 "date": "2026-10-14",
 "entry": [
-"ārakkasārathi",
 "ārakkha"
 ]
 },
@@ -22820,8 +22808,7 @@
 "kind": "emendation",
 "date": "2026-11-05",
 "entry": [
-"ucchāda",
-"ucchādana"
+"ucchāda"
 ]
 },
 {
@@ -23561,6 +23548,7 @@
 "kind": "emendation",
 "date": "2026-11-07",
 "entry": [
+"kaṇajaka",
 "kaṇājaka"
 ]
 },
@@ -23861,8 +23849,7 @@
 "kind": "emendation",
 "date": "2026-10-14",
 "entry": [
-"anukulaṃ",
-"anukūlaṃ"
+"anukulaṃ"
 ]
 },
 {
@@ -24972,6 +24959,7 @@
 "kind": "emendation",
 "date": "2026-11-07",
 "entry": [
+"ārabbha",
 "ārambha"
 ]
 },
@@ -25001,7 +24989,8 @@
 "kind": "emendation",
 "date": "2026-11-07",
 "entry": [
-"atimāteti"
+"atimāteti",
+"atipatati"
 ]
 },
 {
@@ -25191,8 +25180,7 @@
 "kind": "emendation",
 "date": "2026-10-14",
 "entry": [
-"abhinibbhijjati",
-"abhinibbijjituṃ"
+"abhinibbhijjati"
 ]
 },
 {
@@ -25993,7 +25981,8 @@
 "kind": "emendation",
 "date": "2026-11-07",
 "entry": [
-"kiḷeyyaṃ"
+"kiḷeyyaṃ",
+"kīḷati"
 ]
 },
 {
@@ -37307,7 +37296,8 @@
 "kind": "emendation",
 "date": "2026-11-07",
 "entry": [
-"parimaddati"
+"parimaddati",
+"parimaddhita-"
 ]
 },
 {
@@ -37545,7 +37535,6 @@
 "kind": "emendation",
 "date": "2026-11-07",
 "entry": [
-"pacchā",
 "paccāgacchati"
 ]
 },
@@ -37913,7 +37902,6 @@
 "kind": "emendation",
 "date": "2026-11-07",
 "entry": [
-"addhamāsiyaṃ",
 "amāvasī"
 ]
 },
@@ -37956,8 +37944,7 @@
 "kind": "emendation",
 "date": "2026-11-08",
 "entry": [
-"eka",
-"pāyāta"
+"eka"
 ]
 },
 {
@@ -38084,7 +38071,6 @@
 "kind": "emendation",
 "date": "2026-11-07",
 "entry": [
-"ghotehi",
 "kasā"
 ]
 },
@@ -38127,8 +38113,7 @@
 "kind": "emendation",
 "date": "2026-11-07",
 "entry": [
-"bhaṇḍika",
-"gaṇḍikā"
+"bhaṇḍika"
 ]
 },
 {
@@ -38307,7 +38292,6 @@
 "kind": "emendation",
 "date": "2026-11-07",
 "entry": [
-"gaṇeti, ~ayati",
 "gaṇhāti"
 ]
 },
@@ -38702,6 +38686,7 @@
 "kind": "emendation",
 "date": "2026-11-07",
 "entry": [
+"acceti, accayati",
 "aticāra"
 ]
 },
@@ -38801,7 +38786,6 @@
 "kind": "emendation",
 "date": "2026-11-07",
 "entry": [
-"antara",
 "jānāti"
 ]
 },
@@ -38872,8 +38856,7 @@
 "kind": "emendation",
 "date": "2026-11-07",
 "entry": [
-"kuṇḍadaka",
-"kuṇḍaka"
+"kuṇḍadaka"
 ]
 },
 {
@@ -39041,8 +39024,7 @@
 "kind": "emendation",
 "date": "2026-11-07",
 "entry": [
-"parisakkati",
-"āvāsa"
+"parisakkati"
 ]
 },
 {
@@ -39456,8 +39438,7 @@
 "kind": "emendation",
 "date": "2026-11-07",
 "entry": [
-"kaṭhati, kathati, kuthati",
-"kaṭhina"
+"kaṭhati, kathati, kuthati"
 ]
 },
 {
@@ -40249,6 +40230,7 @@
 "kind": "emendation",
 "date": "2026-11-07",
 "entry": [
+"atikkamati",
 "kanta"
 ]
 },
@@ -40320,7 +40302,6 @@
 "kind": "emendation",
 "date": "2026-11-07",
 "entry": [
-"aya",
 "ayanāya"
 ]
 },
@@ -40406,7 +40387,6 @@
 "kind": "emendation",
 "date": "2026-11-07",
 "entry": [
-"anto",
 "paṭikaṅkhati"
 ]
 },
@@ -40506,7 +40486,6 @@
 "kind": "emendation",
 "date": "2026-11-07",
 "entry": [
-"ghuṇa",
 "guṇa"
 ]
 },
@@ -40549,7 +40528,6 @@
 "kind": "emendation",
 "date": "2026-11-07",
 "entry": [
-"jīvar eva",
 "jīvati"
 ]
 },
@@ -40650,9 +40628,7 @@
 "kind": "emendation",
 "date": "2026-11-07",
 "entry": [
-"andhitvā",
-"āhiṇḍati",
-"āvijjhati"
+"āhiṇḍati"
 ]
 },
 {
@@ -41159,8 +41135,7 @@
 "kind": "emendation",
 "date": "2026-11-07",
 "entry": [
-"akāmaka",
-"pada"
+"akāmaka"
 ]
 },
 {
@@ -41244,7 +41219,7 @@
 "kind": "emendation",
 "date": "2026-11-07",
 "entry": [
-"ativassati"
+"kāla"
 ]
 },
 {
@@ -41512,8 +41487,7 @@
 "kind": "emendation",
 "date": "2026-11-07",
 "entry": [
-"payāti",
-"pivati"
+"payāti"
 ]
 },
 {
@@ -41710,7 +41684,9 @@
 "kind": "emendation",
 "date": "2026-11-07",
 "entry": [
-"bhisa"
+"abhisaṅkharoti",
+"bhisa",
+"karoti, kubbati, kurute kayirati)"
 ]
 },
 {
@@ -41992,9 +41968,7 @@
 "kind": "emendation",
 "date": "2026-11-07",
 "entry": [
-"kva",
-"upajjhāya",
-"upajotiya"
+"kva"
 ]
 },
 {
@@ -42319,7 +42293,6 @@
 "kind": "emendation",
 "date": "2026-11-07",
 "entry": [
-"paṭigacchati",
 "paṭikaroti"
 ]
 },
@@ -42585,7 +42558,8 @@
 "kind": "emendation",
 "date": "2026-11-07",
 "entry": [
-"patarati"
+"patarati",
+"pātareyya"
 ]
 },
 {
@@ -42921,6 +42895,7 @@
 "kind": "emendation",
 "date": "2026-11-07",
 "entry": [
+"dighañña",
 "jighañña"
 ]
 },
@@ -43019,7 +42994,6 @@
 "kind": "emendation",
 "date": "2026-11-08",
 "entry": [
-"khura",
 "pavedhati"
 ]
 },
@@ -43034,6 +43008,7 @@
 "kind": "emendation",
 "date": "2026-11-07",
 "entry": [
+"avasura",
 "avasūra"
 ]
 },
@@ -43429,9 +43404,6 @@
 "kind": "emendation",
 "date": "2026-11-08",
 "entry": [
-"adhisaritvā",
-"atta(n)",
-"kujjhati",
 "pharusa"
 ]
 },
@@ -43901,6 +43873,7 @@
 "kind": "emendation",
 "date": "2026-11-07",
 "entry": [
+"anta",
 "anto"
 ]
 },
@@ -44055,7 +44028,6 @@
 "kind": "emendation",
 "date": "2026-11-07",
 "entry": [
-"opati",
 "upeti"
 ]
 },
@@ -44553,8 +44525,7 @@
 "kind": "emendation",
 "date": "2026-11-07",
 "entry": [
-"anupacinanta",
-"upacināti"
+"anupacinanta"
 ]
 },
 {
@@ -44695,9 +44666,7 @@
 "kind": "emendation",
 "date": "2026-11-07",
 "entry": [
-"cāṭi",
-"okiṇṇa",
-"otarati"
+"cāṭi"
 ]
 },
 {
@@ -44753,7 +44722,6 @@
 "kind": "emendation",
 "date": "2026-11-07",
 "entry": [
-"āmalaka",
 "āmalavaṭṭamuttaratana"
 ]
 },
@@ -44825,8 +44793,7 @@
 "kind": "emendation",
 "date": "2026-11-07",
 "entry": [
-"dighañña",
-"jighañña"
+"dighañña"
 ]
 },
 {
@@ -44855,8 +44822,7 @@
 "kind": "emendation",
 "date": "2026-11-07",
 "entry": [
-"dighañña",
-"jighañña"
+"dighañña"
 ]
 },
 {
@@ -44996,8 +44962,7 @@
 "kind": "emendation",
 "date": "2026-11-07",
 "entry": [
-"bhaṇana",
-"ābhaṇanatthāya"
+"bhaṇana"
 ]
 },
 {
@@ -45025,7 +44990,8 @@
 "kind": "emendation",
 "date": "2026-11-07",
 "entry": [
-"issa"
+"issa",
+"issāsiṅga"
 ]
 },
 {
@@ -45053,7 +45019,8 @@
 "kind": "emendation",
 "date": "2026-11-07",
 "entry": [
-"issa"
+"issa",
+"issāmiga"
 ]
 },
 {
@@ -45325,6 +45292,7 @@
 "kind": "emendation",
 "date": "2026-11-07",
 "entry": [
+"karaṇḍaka",
 "kuraṇḍaka"
 ]
 },
@@ -45339,6 +45307,7 @@
 "kind": "emendation",
 "date": "2026-11-07",
 "entry": [
+"apāyika",
 "āpāyika"
 ]
 },
@@ -45742,7 +45711,6 @@
 "kind": "emendation",
 "date": "2026-11-07",
 "entry": [
-"apaneti",
 "apanudati (and apanudeti)"
 ]
 },
@@ -45757,8 +45725,7 @@
 "kind": "emendation",
 "date": "2026-11-07",
 "entry": [
-"avattharati",
-"avatthavassa"
+"avattharati"
 ]
 },
 {
@@ -45800,7 +45767,8 @@
 "kind": "emendation",
 "date": "2026-11-07",
 "entry": [
-"uddāna"
+"uddāna",
+"udāna"
 ]
 },
 {
@@ -45884,8 +45852,7 @@
 "kind": "emendation",
 "date": "2026-11-07",
 "entry": [
-"anavasumbhitvā",
-"anusumbhitvā"
+"anavasumbhitvā"
 ]
 },
 {
@@ -45927,8 +45894,7 @@
 "kind": "emendation",
 "date": "2026-11-07",
 "entry": [
-"pamajjati",
-"pavattati"
+"pamajjati"
 ]
 },
 {
@@ -46012,7 +45978,8 @@
 "kind": "emendation",
 "date": "2026-11-07",
 "entry": [
-"agghāpanaka"
+"agghāpanaka",
+"agghāṇaka-"
 ]
 },
 {
@@ -46394,8 +46361,7 @@
 "kind": "emendation",
 "date": "2026-11-08",
 "entry": [
-"nacca",
-"paccatta"
+"nacca"
 ]
 },
 {
@@ -46453,7 +46419,6 @@
 "kind": "emendation",
 "date": "2026-11-07",
 "entry": [
-"khara",
 "khāra"
 ]
 },
@@ -46668,8 +46633,7 @@
 "kind": "emendation",
 "date": "2026-11-07",
 "entry": [
-"anubhāyissaṃ",
-"tarati"
+"anubhāyissaṃ"
 ]
 },
 {
@@ -46966,7 +46930,7 @@
 "kind": "emendation",
 "date": "2026-11-07",
 "entry": [
-"atiniggaṇhanto"
+"niggaṇhāti"
 ]
 },
 {
@@ -47149,9 +47113,7 @@
 "kind": "emendation",
 "date": "2026-11-07",
 "entry": [
-"panti",
-"paricāra",
-"patti"
+"paricāra"
 ]
 },
 {
@@ -47348,8 +47310,7 @@
 "kind": "emendation",
 "date": "2026-11-07",
 "entry": [
-"padahati",
-"panudati"
+"padahati"
 ]
 },
 {
@@ -47504,6 +47465,7 @@
 "kind": "emendation",
 "date": "2026-11-07",
 "entry": [
+"ahuti",
 "āhuti"
 ]
 },
