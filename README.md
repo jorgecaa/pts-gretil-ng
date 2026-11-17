@@ -23,7 +23,7 @@ The build is deterministic: after `python3 build.py`, `git status` must show no 
 4. **Write.** One HTML file per GRETIL file in `corrected/` (also committed here). GRETIL's own opening
    (title, notice, licence, terms of use) is kept unchanged. Red underline: an erratum GRETIL prints
    between braces, kept as printed. Green underline: a correction from `corrections.json`; hovering
-   shows its source, approval date, what GRETIL had and what the book prints.
+   (or tapping) shows its source, its approval date when recorded, what GRETIL had and what the book prints.
 
 `corrections.json` holds the pinned mirror commit, the checksums, the corrections and eight
 Saṃyutta II pages (109-116) that GRETIL's file lacks; those pages were read from the scan and
@@ -38,6 +38,7 @@ project, where the review is done; it is data, not written by hand, and is updat
 | `build.py` | The whole build: download, verify, correct, write. |
 | `corrections.json` | Pinned mirror commit, checksums, corrections with their sources. |
 | `transcriptions/` | Two HTML files: unreviewed draft transcriptions of the Nettippakaraṇa and Peṭakopadesa. Not built by `build.py`. |
+| `LICENSE` | Licence notice (CC BY-SA 4.0; the scope of the drafts in `transcriptions/` is stated apart). |
 | `corrected/` | The built files (44 HTML files, 43 volumes), committed for convenience. |
 
 ## Corrections and their sources
@@ -66,11 +67,10 @@ popup of each marked word and in `corrections.json`).
 | Corrections published for Majjhima I (W. Pruitt) | 4 |
 | Precision study, confirmed against the scan | 1 |
 
-## Scope and limits
+## Reading the pages
 
-- **The critical apparatus (footnotes and variant readings) has NOT been proofread.** The corrections
-  apply to the main text only, and every built file says so at the top of the page. The one exception
-  is the Sutta Nipāta, whose footnotes were proofread together with its text; its file carries no such warning.
+- Red underline: an erratum GRETIL prints between braces { }, kept as printed.
+- Green underline: a correction (hover or tap for its source).
 - Each page shows line numbers in the left margin (1, 5, 10, 15 …), counting only the lines of the text, not
   the running head nor the apparatus. They are drawn by the style sheet and are not part of the text.
 - The pages are set in Noto Sans, loaded from Google Fonts; without a connection the browser's default
@@ -79,6 +79,63 @@ popup of each marked word and in `corrections.json`).
   scan and on three pages GRETIL's markup does not let be read reliably (SN II 60 and 129, Nidd I 161), the
   digits glued to the end of a word are taken as the calls.
 - A correction that only deletes text leaves no mark in the HTML; it is still listed in `corrections.json`.
+
+## Volumes
+
+| Volume | File | Pages | Corrections |
+|---|---|---:|---:|
+| DN I | [`dighn1ou.htm`](corrected/dighn1ou.htm) | 253 | 98 |
+| DN II | [`dighn2ou.htm`](corrected/dighn2ou.htm) | 358 | 113 |
+| DN III | [`dighn3ou.htm`](corrected/dighn3ou.htm) | 293 | 137 |
+| MN I | [`majjn1ou.htm`](corrected/majjn1ou.htm) | 524 | 151 |
+| MN II | [`majjn2ou.htm`](corrected/majjn2ou.htm) | 266 | 79 |
+| MN III | [`majjn3ou.htm`](corrected/majjn3ou.htm) | 302 | 164 |
+| SN I | [`samyu1ou.htm`](corrected/samyu1ou.htm) | 240 | 198 |
+| SN II | [`samyu2ou.htm`](corrected/samyu2ou.htm) | 279 | 96 |
+| SN III | [`samyu3ou.htm`](corrected/samyu3ou.htm) | 279 | 60 |
+| SN IV | [`samyu4ou.htm`](corrected/samyu4ou.htm) | 403 | 736 |
+| SN V | [`samyu5ou.htm`](corrected/samyu5ou.htm) | 478 | 106 |
+| AN I | [`angut1ou.htm`](corrected/angut1ou.htm) | 304 | 84 |
+| AN II | [`angut2ou.htm`](corrected/angut2ou.htm) | 257 | 82 |
+| AN III | [`angut3ou.htm`](corrected/angut3ou.htm) | 452 | 37 |
+| AN IV | [`angut4ou.htm`](corrected/angut4ou.htm) | 466 | 67 |
+| AN V | [`angut5ou.htm`](corrected/angut5ou.htm) | 361 | 28 |
+| Sn | [`sutnipou.htm`](corrected/sutnipou.htm) | 223 | 827 |
+| Th & Th | [`theragou.htm`](corrected/theragou.htm) | 115 | 63 |
+|  | [`therigou.htm`](corrected/therigou.htm) | 52 |  |
+| Dhp | [`dhampdou.htm`](corrected/dhampdou.htm) | 120 | 0 |
+| Khp | [`khudp_ou.htm`](corrected/khudp_ou.htm) | 9 | 0 |
+| Ud | [`udana_ou.htm`](corrected/udana_ou.htm) | 94 | 7 |
+| It | [`itivutou.htm`](corrected/itivutou.htm) | 124 | 0 |
+| Ja I | [`jatak1ou.htm`](corrected/jatak1ou.htm) | 511 | 86 |
+| Ja II | [`jatak2ou.htm`](corrected/jatak2ou.htm) | 451 | 69 |
+| Ja III | [`jatak3ou.htm`](corrected/jatak3ou.htm) | 543 | 111 |
+| Ja IV | [`jatak4ou.htm`](corrected/jatak4ou.htm) | 499 | 125 |
+| Ja V | [`jatak5ou.htm`](corrected/jatak5ou.htm) | 511 | 222 |
+| Ja VI | [`jatak6ou.htm`](corrected/jatak6ou.htm) | 596 | 181 |
+| Nidd I | [`nidde1ou.htm`](corrected/nidde1ou.htm) | 509 | 2 |
+| Nidd II | [`nidde2ou.htm`](corrected/nidde2ou.htm) | 72 | 0 |
+| Patis I | [`patis1ou.htm`](corrected/patis1ou.htm) | 196 | 73 |
+| Patis II | [`patis2ou.htm`](corrected/patis2ou.htm) | 246 | 38 |
+| Mil | [`milindou.htm`](corrected/milindou.htm) | 420 | 0 |
+| Vin I | [`vin1maou.htm`](corrected/vin1maou.htm) | 360 | 0 |
+| Vin II | [`vin2cuou.htm`](corrected/vin2cuou.htm) | 308 | 0 |
+| Vin III | [`vin3s1ou.htm`](corrected/vin3s1ou.htm) | 266 | 1 |
+| Vin IV | [`vin4s2ou.htm`](corrected/vin4s2ou.htm) | 351 | 0 |
+| Vin V | [`vin5paou.htm`](corrected/vin5paou.htm) | 226 | 0 |
+| Dhs | [`dhamsgou.htm`](corrected/dhamsgou.htm) | 264 | 1 |
+| Vibh | [`vibhanou.htm`](corrected/vibhanou.htm) | 436 | 0 |
+| Dhātuk | [`dhatukou.htm`](corrected/dhatukou.htm) | 113 | 0 |
+| Pp | [`pugpan_ou.htm`](corrected/pugpan_ou.htm) | 74 | 13 |
+| Kv | [`kathavou.htm`](corrected/kathavou.htm) | 628 | 136 |
+
+Page counts are those of each built file; corrections are counted per volume.
+
+## Scope and limits
+
+- **The critical apparatus (footnotes and variant readings) has NOT been proofread.** The corrections
+  apply to the main text only, and every built file says so at the top of the page. The one exception
+  is the Sutta Nipāta, whose footnotes were proofread together with its text; its file carries no such warning.
 - **Included:** every GRETIL volume of the PTS editions that the foureditions review service does not
   block: 43 volumes (Dīgha, Majjhima, Saṃyutta, Aṅguttara, Vinaya, Khuddakapāṭha, Dhammapada, Udāna,
   Itivuttaka, Sutta Nipāta, Theragāthā and Therīgāthā, Jātaka, Mahāniddesa and Cūḷaniddesa,
@@ -101,3 +158,6 @@ The GRETIL texts are © Pali Text Society and Dhammakaya Foundation, 2015, under
 [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Everything in this repository (the
 code, `corrections.json` and the built files in `corrected/`) is a derivative and is released under
 the same licence, with the same notice.
+
+The two files in `transcriptions/` are not derived from GRETIL (they are drafts transcribed from printed
+PTS editions); their rights have not been assessed. See `LICENSE`.
