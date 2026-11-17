@@ -538,6 +538,9 @@ reproducibly from a pinned commit of the GRETIL mirror; source, method and licen
 {legend}
 <p><b>The critical apparatus (footnotes) has NOT been proofread</b>, except in the Sutta Nipāta.
 Licence: CC BY-SA 4.0, &copy; Pali Text Society and Dhammakaya Foundation, 2015.</p>
+<p>Struck through: volumes with no correction applied. Their proofreading against the scan has not been
+done yet, so their text is GRETIL's as it stands (Ja I carries only suggested emendations, which do not
+change the text). The built file is still published, with the licence and the notices.</p>
 <table>
 <tr><th>Volume</th><th>File</th><th>Pages</th><th>Corrections applied</th><th>Emendations suggested</th></tr>
 {rows}
@@ -561,8 +564,10 @@ def write_index(pages):
     for volume, rels in FILES.items():
         for k, rel in enumerate(rels):
             name = os.path.basename(rel) + '.htm'
-            rows.append(f'<tr><td>{html.escape(volume) if k == 0 else ""}</td>'
-                        f'<td><a href="corrected/{name}">{name}</a></td><td>{pages[rel]}</td>'
+            # a volume with no correction applied is struck through: not yet proofread (README, «Volumes»)
+            s, e = ('<s>', '</s>') if not counts.get(volume) else ('', '')
+            rows.append(f'<tr><td>{s + html.escape(volume) + e if k == 0 else ""}</td>'
+                        f'<td>{s}<a href="corrected/{name}">{name}</a>{e}</td><td>{pages[rel]}</td>'
                         f'<td>{counts.get(volume, 0) if k == 0 else ""}</td>'
                         f'<td>{emended.get(volume, 0) if k == 0 else ""}</td></tr>')
     style = STYLE.replace('</style>', 'table{border-collapse:collapse}td,th{padding:.2em .8em;text-align:left}'
