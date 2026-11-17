@@ -29,9 +29,13 @@ file lacks (read from the scan and reviewed). The GRETIL files themselves are ne
 
 - **The critical apparatus (footnotes and variant readings) has NOT been proofread.** The corrections
   apply to the main text only.
-- Only volumes whose printed edition has a compatible scan available for checking are included.
-  The Sutta Nipāta, Theragāthā, Therīgāthā, Vimāna-, Peta-, Apadāna, Buddhavaṃsa, Cariyāpiṭaka,
-  Niddesa, Paṭisambhidāmagga, Yamaka, Paṭṭhāna are not.
+- **Not included, because no compatible scan of the printed edition is available to check against:**
+  Theragāthā and Therīgāthā, Vimānavatthu, Petavatthu, Apadāna, Buddhavaṃsa, Cariyāpiṭaka,
+  Mahāniddesa and Cūḷaniddesa, Paṭisambhidāmagga, Yamaka, Paṭṭhāna (Dukapaṭṭhāna, Tikapaṭṭhāna).
+- **Not included, because its source is not GRETIL's file:** the Sutta Nipāta (the proofread copy
+  started from an already edited version, so it cannot be rebuilt from the GRETIL mirror).
+- Dhammapada, Jātaka and Vinaya are included although a few pages of their scans are missing; those
+  pages cannot be verified.
 - The proofreading is not finished for every book.
 - Corrections are by Jorge Contreras (github.com/jorgecaa), from the foureditions project.
 
