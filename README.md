@@ -272,6 +272,8 @@ release may differ. `CITATION.cff` gives the details; GitHub shows them under «
 The releases are archived at Zenodo:
 
 - all versions (resolves to the latest release): [10.5281/zenodo.24314138](https://doi.org/10.5281/zenodo.24314138);
+- version 2.3.0: [10.5281/zenodo.24322444](https://doi.org/10.5281/zenodo.24322444) (corrigenda of the
+  Dīgha volumes applied; footnotes corrected);
 - version 2.2.1: [10.5281/zenodo.24320118](https://doi.org/10.5281/zenodo.24320118) (same text as 2.0.0;
   DOP article of the note answered in review, popup on braces);
 - version 2.2.0: [10.5281/zenodo.24318371](https://doi.org/10.5281/zenodo.24318371) (same text as 2.0.0;
