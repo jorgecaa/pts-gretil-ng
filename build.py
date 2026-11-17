@@ -22,30 +22,8 @@ OUT_DIR = os.path.join(HERE, 'corrected')
 BASE = os.path.join(MIRROR_DIR, 'gretil.sub.uni-goettingen.de', 'gretil', '2_pali')
 DATA = json.load(open(os.path.join(HERE, 'corrections.json'), encoding='utf-8'))
 
-#: volume -> file, below `gretil/2_pali/` in the mirror
-FILES = {
-    'DN I': '1_tipit/2_sut/1_digh/dighn1ou', 'DN II': '1_tipit/2_sut/1_digh/dighn2ou',
-    'DN III': '1_tipit/2_sut/1_digh/dighn3ou',
-    'MN I': '1_tipit/2_sut/2_majjh/majjn1ou', 'MN II': '1_tipit/2_sut/2_majjh/majjn2ou',
-    'MN III': '1_tipit/2_sut/2_majjh/majjn3ou',
-    'SN I': '1_tipit/2_sut/3_samyu/samyu1ou', 'SN II': '1_tipit/2_sut/3_samyu/samyu2ou',
-    'SN III': '1_tipit/2_sut/3_samyu/samyu3ou', 'SN IV': '1_tipit/2_sut/3_samyu/samyu4ou',
-    'SN V': '1_tipit/2_sut/3_samyu/samyu5ou',
-    'AN I': '1_tipit/2_sut/4_angu/angut1ou', 'AN II': '1_tipit/2_sut/4_angu/angut2ou',
-    'AN III': '1_tipit/2_sut/4_angu/angut3ou', 'AN IV': '1_tipit/2_sut/4_angu/angut4ou',
-    'AN V': '1_tipit/2_sut/4_angu/angut5ou',
-    'Dhp': '1_tipit/2_sut/5_khudd/dhampdou', 'Khp': '1_tipit/2_sut/5_khudd/khudp_ou',
-    'Ud': '1_tipit/2_sut/5_khudd/udana_ou', 'It': '1_tipit/2_sut/5_khudd/itivutou',
-    'Ja I': '1_tipit/2_sut/5_khudd/jatak1ou', 'Ja II': '1_tipit/2_sut/5_khudd/jatak2ou',
-    'Ja III': '1_tipit/2_sut/5_khudd/jatak3ou', 'Ja IV': '1_tipit/2_sut/5_khudd/jatak4ou',
-    'Ja V': '1_tipit/2_sut/5_khudd/jatak5ou', 'Ja VI': '1_tipit/2_sut/5_khudd/jatak6ou',
-    'Mil': '2_parcan/milindou',
-    'Vin I': '1_tipit/1_vin/vin1maou', 'Vin II': '1_tipit/1_vin/vin2cuou',
-    'Vin III': '1_tipit/1_vin/vin3s1ou', 'Vin IV': '1_tipit/1_vin/vin4s2ou',
-    'Vin V': '1_tipit/1_vin/vin5paou',
-    'Dhs': '1_tipit/3_abh/dhamsgou', 'Vibh': '1_tipit/3_abh/vibhanou',
-    'Dhātuk': '1_tipit/3_abh/dhatukou', 'Pp': '1_tipit/3_abh/pugpan_ou', 'Kv': '1_tipit/3_abh/kathavou',
-}
+#: volume -> files (without extension), below `gretil/2_pali/` in the mirror
+FILES = DATA['files']
 
 
 # 1. download -----------------------------------------------------------------------------
@@ -59,8 +37,7 @@ def download():
         subprocess.run(['git', 'init', '-q', MIRROR_DIR], check=True)
         git('remote', 'add', 'origin', DATA['mirror'])
     git('fetch', '-q', '--depth', '1', '--filter=blob:none', 'origin', DATA['commit'])
-    git('sparse-checkout', 'set', '--cone',
-        'gretil.sub.uni-goettingen.de/gretil/2_pali/1_tipit',
+    git('sparse-checkout', 'set', '--cone', 'gretil.sub.uni-goettingen.de/gretil/2_pali/1_tipit',
         'gretil.sub.uni-goettingen.de/gretil/2_pali/2_parcan')
     git('checkout', '-q', 'FETCH_HEAD')
 
@@ -151,13 +128,32 @@ for c in DATA['corrections']:
     CORRECTIONS.setdefault((c['volume'], c['page']), []).append(c)
 
 
-def apply(volume, n, text):
+def _tokens(t):
+    return re.split(r'(\s+)', t)
+
+
+def _trim(old, new):
+    """For corrections generated from a corrected file, only the words that change are the correction."""
+    a, b = _tokens(old), _tokens(new)
+    i = 0
+    while i < min(len(a), len(b)) and a[i] == b[i]:
+        i += 1
+    j = 0
+    while j < min(len(a), len(b)) - i and a[-1 - j] == b[-1 - j]:
+        j += 1
+    return ''.join(a[:i]), ''.join(a[i:len(a) - j]), ''.join(b[i:len(b) - j]), ''.join(a[len(a) - j:])
+
+
+def apply(volume, n, part, text):
     """The text with its corrections, and for every character the corrections that wrote it."""
     t, who = text, [()] * len(text)
     for c in CORRECTIONS.get((volume, n), []):
+        if c.get('part', 'text') != part:
+            continue
         old, new = c['gretil'], c['book']
         if t.count(old) != c['times']:
             sys.exit(f'{volume} p. {n}: {old!r} is there {t.count(old)} times, the correction says {c["times"]}')
+        keep_l, mid_old, mid_new, keep_r = _trim(old, new) if c.get('ctx') else ('', old, new, '')
         out, owners, i = [], [], 0
         while True:
             j = t.find(old, i)
@@ -165,8 +161,12 @@ def apply(volume, n, text):
                 break
             out.append(t[i:j])
             owners += who[i:j]
-            out.append(new)
-            owners += [tuple(x for w in who[j:j + len(old)] for x in w) + (c,)] * len(new)
+            out.append(keep_l)
+            owners += who[j:j + len(keep_l)]
+            out.append(mid_new)
+            owners += [tuple(x for w in who[j + len(keep_l):j + len(keep_l) + len(mid_old)] for x in w) + (c,)] * len(mid_new)
+            out.append(keep_r)
+            owners += who[j + len(old) - len(keep_r):j + len(old)]
             i = j + len(old)
         out.append(t[i:])
         owners += who[i:]
@@ -307,7 +307,9 @@ def build_file(volume, rel):
             head, text, notes = replaced['head'], replaced['text'], replaced['notes']
             who = [()] * len(text)
         else:
-            text, who = apply(volume, n, text)
+            head, _ = apply(volume, n, 'head', head)
+            notes, _ = apply(volume, n, 'notes', notes)
+            text, who = apply(volume, n, 'text', text)
             if volume.startswith('SN '):          # the Saṃyutta writes its abbreviation sign as `°`
                 text = text.replace('º', '°')
         changed += any(who)
@@ -334,8 +336,9 @@ def main():
     if '--verify' in sys.argv:
         print('the downloaded files are the ones the corrections were made on')
         return
-    for volume, rel in FILES.items():
-        build_file(volume, rel)
+    for volume, rels in FILES.items():
+        for rel in rels:
+            build_file(volume, rel)
 
 
 if __name__ == '__main__':
