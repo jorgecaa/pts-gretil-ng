@@ -65,7 +65,7 @@ Each correction was approved by a person. Every correction in `corrections.json`
 - **emendation**: a correction of the edition itself, by a later authority. Not applied: the text
   keeps the printed reading, and the popup gives the suggestion and its authority.
 
-4,191 corrections in total:
+4,217 corrections in total:
 
 | Kind | Source label (evidence or authority) | Corrections |
 |---|---|---:|
@@ -75,7 +75,7 @@ Each correction was approved by a person. Every correction in `corrections.json`
 | transcription | Printed reading recorded as it stands on the scan of the PTS edition (misprints kept) | 135 |
 | transcription | Flagged by the PTS word index (Ousaka, Pruitt and Jackson 2019), checked by hand against the scan of the PTS edition | 71 |
 | transcription | Read on the scan of the PTS edition by machine; checked and approved by hand | 24 |
-| transcription | Answer during review, checked by hand against the scan of the PTS edition | 7 |
+| transcription | Answer during review, checked by hand against the scan of the PTS edition | 33 |
 | transcription | Earlier correction, checked by hand word by word against the scan of the PTS edition on 2026-10-11 | 6 |
 | transcription | Precision sample, checked by hand against the scan of the PTS edition | 1 |
 | notation | Notation only: GRETIL's signs (^ for a circumflex, <…> for brackets or parentheses) written as the book prints them; same letters | 28 |
@@ -107,54 +107,55 @@ Each correction was approved by a person. Every correction in `corrections.json`
 
 ## Volumes
 
-The count of corrections includes every kind, emendations not applied among them.
+Corrections applied: transcription and notation corrections, which change the text. Emendations suggested:
+shown on the words concerned but not applied.
 
-| Volume | File | Pages | Corrections |
-|---|---|---:|---:|
-| DN I | [`dighn1ou.htm`](corrected/dighn1ou.htm) | 253 | 98 |
-| DN II | [`dighn2ou.htm`](corrected/dighn2ou.htm) | 358 | 113 |
-| DN III | [`dighn3ou.htm`](corrected/dighn3ou.htm) | 293 | 137 |
-| MN I | [`majjn1ou.htm`](corrected/majjn1ou.htm) | 524 | 151 |
-| MN II | [`majjn2ou.htm`](corrected/majjn2ou.htm) | 266 | 79 |
-| MN III | [`majjn3ou.htm`](corrected/majjn3ou.htm) | 302 | 164 |
-| SN I | [`samyu1ou.htm`](corrected/samyu1ou.htm) | 240 | 198 |
-| SN II | [`samyu2ou.htm`](corrected/samyu2ou.htm) | 279 | 96 |
-| SN III | [`samyu3ou.htm`](corrected/samyu3ou.htm) | 279 | 60 |
-| SN IV | [`samyu4ou.htm`](corrected/samyu4ou.htm) | 403 | 736 |
-| SN V | [`samyu5ou.htm`](corrected/samyu5ou.htm) | 478 | 106 |
-| AN I | [`angut1ou.htm`](corrected/angut1ou.htm) | 304 | 84 |
-| AN II | [`angut2ou.htm`](corrected/angut2ou.htm) | 257 | 82 |
-| AN III | [`angut3ou.htm`](corrected/angut3ou.htm) | 452 | 37 |
-| AN IV | [`angut4ou.htm`](corrected/angut4ou.htm) | 466 | 67 |
-| AN V | [`angut5ou.htm`](corrected/angut5ou.htm) | 361 | 28 |
-| Sn | [`sutnipou.htm`](corrected/sutnipou.htm) | 223 | 827 |
-| Th & Th | [`theragou.htm`](corrected/theragou.htm) | 115 | 63 |
-|  | [`therigou.htm`](corrected/therigou.htm) | 52 |  |
-| Dhp | [`dhampdou.htm`](corrected/dhampdou.htm) | 120 | 0 |
-| Khp | [`khudp_ou.htm`](corrected/khudp_ou.htm) | 9 | 0 |
-| Ud | [`udana_ou.htm`](corrected/udana_ou.htm) | 94 | 7 |
-| It | [`itivutou.htm`](corrected/itivutou.htm) | 124 | 0 |
-| Ja I | [`jatak1ou.htm`](corrected/jatak1ou.htm) | 511 | 86 |
-| Ja II | [`jatak2ou.htm`](corrected/jatak2ou.htm) | 451 | 69 |
-| Ja III | [`jatak3ou.htm`](corrected/jatak3ou.htm) | 543 | 111 |
-| Ja IV | [`jatak4ou.htm`](corrected/jatak4ou.htm) | 499 | 125 |
-| Ja V | [`jatak5ou.htm`](corrected/jatak5ou.htm) | 511 | 222 |
-| Ja VI | [`jatak6ou.htm`](corrected/jatak6ou.htm) | 596 | 181 |
-| Nidd I | [`nidde1ou.htm`](corrected/nidde1ou.htm) | 509 | 2 |
-| Nidd II | [`nidde2ou.htm`](corrected/nidde2ou.htm) | 72 | 0 |
-| Patis I | [`patis1ou.htm`](corrected/patis1ou.htm) | 196 | 73 |
-| Patis II | [`patis2ou.htm`](corrected/patis2ou.htm) | 246 | 38 |
-| Mil | [`milindou.htm`](corrected/milindou.htm) | 420 | 0 |
-| Vin I | [`vin1maou.htm`](corrected/vin1maou.htm) | 360 | 0 |
-| Vin II | [`vin2cuou.htm`](corrected/vin2cuou.htm) | 308 | 0 |
-| Vin III | [`vin3s1ou.htm`](corrected/vin3s1ou.htm) | 266 | 1 |
-| Vin IV | [`vin4s2ou.htm`](corrected/vin4s2ou.htm) | 351 | 0 |
-| Vin V | [`vin5paou.htm`](corrected/vin5paou.htm) | 226 | 0 |
-| Dhs | [`dhamsgou.htm`](corrected/dhamsgou.htm) | 264 | 1 |
-| Vibh | [`vibhanou.htm`](corrected/vibhanou.htm) | 436 | 0 |
-| Dhātuk | [`dhatukou.htm`](corrected/dhatukou.htm) | 113 | 0 |
-| Pp | [`pugpan_ou.htm`](corrected/pugpan_ou.htm) | 74 | 13 |
-| Kv | [`kathavou.htm`](corrected/kathavou.htm) | 628 | 136 |
+| Volume | File | Pages | Corrections applied | Emendations suggested |
+|---|---|---:|---:|---:|
+| DN I | [`dighn1ou.htm`](corrected/dighn1ou.htm) | 253 | 73 | 25 |
+| DN II | [`dighn2ou.htm`](corrected/dighn2ou.htm) | 358 | 101 | 12 |
+| DN III | [`dighn3ou.htm`](corrected/dighn3ou.htm) | 293 | 113 | 24 |
+| MN I | [`majjn1ou.htm`](corrected/majjn1ou.htm) | 524 | 137 | 14 |
+| MN II | [`majjn2ou.htm`](corrected/majjn2ou.htm) | 266 | 46 | 33 |
+| MN III | [`majjn3ou.htm`](corrected/majjn3ou.htm) | 302 | 134 | 30 |
+| SN I | [`samyu1ou.htm`](corrected/samyu1ou.htm) | 240 | 169 | 29 |
+| SN II | [`samyu2ou.htm`](corrected/samyu2ou.htm) | 279 | 87 | 9 |
+| SN III | [`samyu3ou.htm`](corrected/samyu3ou.htm) | 279 | 52 | 8 |
+| SN IV | [`samyu4ou.htm`](corrected/samyu4ou.htm) | 403 | 103 | 633 |
+| SN V | [`samyu5ou.htm`](corrected/samyu5ou.htm) | 478 | 80 | 26 |
+| AN I | [`angut1ou.htm`](corrected/angut1ou.htm) | 304 | 65 | 19 |
+| AN II | [`angut2ou.htm`](corrected/angut2ou.htm) | 257 | 65 | 17 |
+| AN III | [`angut3ou.htm`](corrected/angut3ou.htm) | 452 | 25 | 12 |
+| AN IV | [`angut4ou.htm`](corrected/angut4ou.htm) | 466 | 50 | 17 |
+| AN V | [`angut5ou.htm`](corrected/angut5ou.htm) | 361 | 25 | 3 |
+| Sn | [`sutnipou.htm`](corrected/sutnipou.htm) | 223 | 827 | 0 |
+| Th & Th | [`theragou.htm`](corrected/theragou.htm) | 115 | 63 | 0 |
+|  | [`therigou.htm`](corrected/therigou.htm) | 52 |  |  |
+| Dhp | [`dhampdou.htm`](corrected/dhampdou.htm) | 120 | 0 | 0 |
+| Khp | [`khudp_ou.htm`](corrected/khudp_ou.htm) | 9 | 0 | 0 |
+| Ud | [`udana_ou.htm`](corrected/udana_ou.htm) | 94 | 7 | 0 |
+| It | [`itivutou.htm`](corrected/itivutou.htm) | 124 | 0 | 0 |
+| Ja I | [`jatak1ou.htm`](corrected/jatak1ou.htm) | 511 | 0 | 86 |
+| Ja II | [`jatak2ou.htm`](corrected/jatak2ou.htm) | 451 | 1 | 68 |
+| Ja III | [`jatak3ou.htm`](corrected/jatak3ou.htm) | 543 | 5 | 106 |
+| Ja IV | [`jatak4ou.htm`](corrected/jatak4ou.htm) | 499 | 19 | 106 |
+| Ja V | [`jatak5ou.htm`](corrected/jatak5ou.htm) | 511 | 24 | 198 |
+| Ja VI | [`jatak6ou.htm`](corrected/jatak6ou.htm) | 596 | 7 | 174 |
+| Nidd I | [`nidde1ou.htm`](corrected/nidde1ou.htm) | 509 | 2 | 0 |
+| Nidd II | [`nidde2ou.htm`](corrected/nidde2ou.htm) | 72 | 0 | 0 |
+| Patis I | [`patis1ou.htm`](corrected/patis1ou.htm) | 196 | 73 | 0 |
+| Patis II | [`patis2ou.htm`](corrected/patis2ou.htm) | 246 | 38 | 0 |
+| Mil | [`milindou.htm`](corrected/milindou.htm) | 420 | 0 | 0 |
+| Vin I | [`vin1maou.htm`](corrected/vin1maou.htm) | 360 | 7 | 0 |
+| Vin II | [`vin2cuou.htm`](corrected/vin2cuou.htm) | 308 | 12 | 0 |
+| Vin III | [`vin3s1ou.htm`](corrected/vin3s1ou.htm) | 266 | 7 | 0 |
+| Vin IV | [`vin4s2ou.htm`](corrected/vin4s2ou.htm) | 351 | 1 | 0 |
+| Vin V | [`vin5paou.htm`](corrected/vin5paou.htm) | 226 | 0 | 0 |
+| Dhs | [`dhamsgou.htm`](corrected/dhamsgou.htm) | 264 | 1 | 0 |
+| Vibh | [`vibhanou.htm`](corrected/vibhanou.htm) | 436 | 0 | 0 |
+| Dhātuk | [`dhatukou.htm`](corrected/dhatukou.htm) | 113 | 0 | 0 |
+| Pp | [`pugpan_ou.htm`](corrected/pugpan_ou.htm) | 74 | 13 | 0 |
+| Kv | [`kathavou.htm`](corrected/kathavou.htm) | 628 | 136 | 0 |
 
 Page counts are those of each built file; corrections are counted per volume.
 
@@ -186,6 +187,16 @@ Page counts are those of each built file; corrections are counted per volume.
 - Proofreading and approval of the corrections: Jorge Contreras (github.com/jorgecaa), foureditions project.
   24 corrections and the eight Saṃyutta II pages were read on the scan by machine and checked by hand.
   The emendations suggested are those of the authorities cited (Cone, Jackson, Pruitt).
+- The proofreader is not a philologist. The corrections are mechanical: each one restores what the printed PTS edition prints, read on its scan, or records an emendation proposed by the authority cited. No reading was chosen on text-critical grounds, and no emendation is the proofreader's own; listing an emendation does not endorse it.
+
+## Scans of the printed editions
+
+The scans used for proofreading that are in the public domain worldwide (published more than 95 years
+ago, every named editor dead for more than 100 years) are at the Internet Archive:
+<https://archive.org/details/pts-gretil-ng-public-domain-scans>. These are 23 volumes: AN I–V, MN I,
+SN II–V, Ja II, IV, V and VI, Vin II, III and V, Thag, Thig, It, Mil, Pp and Nett. Its `MANIFEST.txt` gives each
+volume's editor, the editor's year of death with a source, and a SHA-256 checksum. The other scans used
+are not published here.
 
 ## Licence
 

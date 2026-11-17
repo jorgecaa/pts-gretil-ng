@@ -289,6 +289,8 @@ def describe(c):
     date = f"Approved on {c['date']}." if c['date'] else 'Approval date not recorded.'
     kind = c.get('kind', 'transcription')
     if kind == 'emendation':
+        # listing an emendation does not endorse it: its date is when it was recorded
+        date = f"Recorded on {c['date']}." if c['date'] else 'Date not recorded.'
         if not old or not new:                            # an addition or an omission: show the context
             old, new = full_old, full_new
         lines = ['Suggested emendation (not applied to the text)', f'Text, as in GRETIL: «{old}»',
@@ -434,7 +436,7 @@ CREDIT = ('<div class="legend"><b>About this copy.</b> The licence and the notic
           'Where GRETIL departs from the printed edition, the text below gives the printed reading, '
           'checked against the scans of the edition; proofreading and approval by Jorge Contreras '
           '(github.com/jorgecaa), foureditions project. Each correction was approved by a person; 24 were '
-          'read on the scan by machine and checked by hand, as their popups say.{replaced} Emendations of the edition itself (M. Cone\'s '
+          'read on the scan by machine and checked by hand, as their popups say.{replaced} The proofreader is not a philologist. The corrections are mechanical: each one restores what the printed PTS edition prints, read on its scan, or records an emendation proposed by the authority cited. No reading was chosen on text-critical grounds, and no emendation is the proofreader\'s own; listing an emendation does not endorse it. Emendations of the edition itself (M. Cone\'s '
           'Dictionary of P\u0101li, P. Jackson\'s revision of Sa\u1e43yutta IV, W. Pruitt\'s correction lists) '
           'are not applied to the text: they are given as suggestions on the words concerned. '
           'The text of GRETIL itself has not been rewritten: every correction is recorded, with its '
@@ -537,7 +539,7 @@ reproducibly from a pinned commit of the GRETIL mirror; source, method and licen
 <p><b>The critical apparatus (footnotes) has NOT been proofread</b>, except in the Sutta Nipāta.
 Licence: CC BY-SA 4.0, &copy; Pali Text Society and Dhammakaya Foundation, 2015.</p>
 <table>
-<tr><th>Volume</th><th>File</th><th>Pages</th><th>Corrections</th></tr>
+<tr><th>Volume</th><th>File</th><th>Pages</th><th>Corrections applied</th><th>Emendations suggested</th></tr>
 {rows}
 </table>
 <p>Not built from GRETIL: unreviewed draft transcriptions of the
@@ -550,16 +552,19 @@ Licence: CC BY-SA 4.0, &copy; Pali Text Society and Dhammakaya Foundation, 2015.
 
 def write_index(pages):
     """`index.html`: the page GitHub Pages opens first, with a link to every built file."""
-    counts = {}
+    # applied corrections and suggested emendations apart: an emendation does not change the text
+    counts, emended = {}, {}
     for c in DATA['corrections']:
-        counts[c['volume']] = counts.get(c['volume'], 0) + 1
+        tally = emended if c.get('kind') == 'emendation' else counts
+        tally[c['volume']] = tally.get(c['volume'], 0) + 1
     rows = []
     for volume, rels in FILES.items():
         for k, rel in enumerate(rels):
             name = os.path.basename(rel) + '.htm'
             rows.append(f'<tr><td>{html.escape(volume) if k == 0 else ""}</td>'
                         f'<td><a href="corrected/{name}">{name}</a></td><td>{pages[rel]}</td>'
-                        f'<td>{counts.get(volume, 0) if k == 0 else ""}</td></tr>')
+                        f'<td>{counts.get(volume, 0) if k == 0 else ""}</td>'
+                        f'<td>{emended.get(volume, 0) if k == 0 else ""}</td></tr>')
     style = STYLE.replace('</style>', 'table{border-collapse:collapse}td,th{padding:.2em .8em;text-align:left}'
                           'td:nth-child(n+3){text-align:right}tr:nth-child(even){background:#f4f4f4}</style>')
     with open(os.path.join(HERE, 'index.html'), 'w', encoding='utf-8', newline='\n') as fh:
