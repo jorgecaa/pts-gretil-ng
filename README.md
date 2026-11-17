@@ -24,8 +24,9 @@ at <https://jorgecaa.github.io/pts-gretil-ng/>.
 2. **Verify.** The SHA-256 of each GRETIL file must equal the one recorded in `corrections.json`;
    otherwise the build stops, because the corrections were made on exactly those files.
 3. **Correct.** Where GRETIL departs from the printed edition, the correction replaces GRETIL's text
-   with the printed reading. Emendations of the edition itself (Cone, Jackson, Pruitt) are not applied:
-   the text keeps the printed reading and the words concerned are marked with the suggestion.
+   with the printed reading. Corrections of the edition itself published by the PTS (Cone, Jackson,
+   Pruitt), which mark a printed reading as wrong and give the reading to adopt, are not applied: the
+   text keeps the printed reading and the words concerned are marked with the corrected reading.
    A correction that does not fit exactly the stated number of times stops the build; nothing is
    applied halfway.
 4. **Write.** One HTML file per GRETIL file in `corrected/` (also committed here). GRETIL's own opening
@@ -61,8 +62,10 @@ Each correction was approved by a person. Every correction in `corrections.json`
   Applied to the text.
 - **notation**: GRETIL's signs written as the book prints them (`me^so` for `mêso`, `<…>` for `[…]` or
   `(…)`); the letters are the same. Applied.
-- **emendation**: a correction of the edition itself, by a later authority. Not applied: the text
-  keeps the printed reading, and the popup gives the suggestion and its authority.
+- **emendation**: a correction of the edition itself, published by the PTS: M. Cone's Dictionary of
+  Pāli (an entry that marks the printed reading as wrong), P. Jackson's revision of Saṃyutta IV, W. Pruitt's
+  correction lists. The authority declares the printed reading wrong and gives the reading to adopt. Not
+  applied: the text keeps the printed reading, and the popup gives the corrected reading and its authority.
 
 4,228 corrections in total:
 
@@ -88,10 +91,10 @@ Each correction was approved by a person. Every correction in `corrections.json`
 - Red underline: GRETIL encloses the words in braces { }; they are reproduced as in GRETIL (the
   proofreading left the content between braces unchanged, except for notation).
 - Green underline: GRETIL departs from the printed edition; the text gives the printed reading.
-- Orange dotted underline: an emendation of the edition, suggested but not applied; the text keeps the
-  printed reading.
+- Orange dotted underline: the PTS has published a correction of the edition here (Cone, Jackson or
+  Pruitt), marking the printed reading as wrong; not applied, the text keeps the printed reading.
 - Hover over (or tap) a marked word: the popup states what kind of change it is, GRETIL's reading, the
-  printed reading or the suggestion, the evidence or authority, and the approval date when recorded.
+  printed reading or the reading to adopt, the evidence or authority, and the approval date when recorded.
   Only the words that change are underlined: a line-break hyphen or a neighbouring word that a
   correction repeats as context is left unmarked.
 - Each page shows line numbers in the left margin (1, 5, 10, 15 …), counting only the lines of the text, not
@@ -106,14 +109,15 @@ Each correction was approved by a person. Every correction in `corrections.json`
 
 ## Volumes
 
-Corrections applied: transcription and notation corrections, which change the text. Emendations suggested:
-shown on the words concerned but not applied.
+Corrections applied: transcription and notation corrections, which change the text. PTS corrections not
+applied: corrections of the edition published by the PTS (Cone, Jackson, Pruitt), shown on the words
+concerned but not applied.
 
 Every volume listed with a file was reviewed in the foureditions review service. The counts give the
 corrections approved so far. A volume with 0 corrections applied has no approved correction yet; this
 does not mean it was proofread in full and found free of errors, since the proofreading is not finished
-for every book (see «Scope and limits»). Ja I carries only suggested emendations, which do not change
-the text.
+for every book (see «Scope and limits»). Ja I carries only PTS corrections not applied, which do not
+change the text.
 
 Struck through, at the end: the books the review service leaves out, which are not built. A review needs
 a scan of the same printed edition that GRETIL transcribes; six of these books have none usable, and the
@@ -126,7 +130,7 @@ Yamaka is excluded:
 - **Paṭṭhāna**: no scan of the PTS edition is at hand.
 - **Yamaka**: its PTS edition is excluded from the review because of its many abbreviations.
 
-| Volume | File | Pages | Corrections applied | Emendations suggested |
+| Volume | File | Pages | Corrections applied | PTS corrections not applied |
 |---|---|---:|---:|---:|
 | DN I | [`dighn1ou.htm`](corrected/dighn1ou.htm) | 253 | 73 | 25 |
 | DN II | [`dighn2ou.htm`](corrected/dighn2ou.htm) | 358 | 101 | 12 |
@@ -207,8 +211,8 @@ Page counts are those of each built file; corrections are counted per volume.
 - The proofreading is not finished for every book.
 - Proofreading and approval of the corrections: Jorge Contreras (github.com/jorgecaa), foureditions project.
   24 corrections and the eight Saṃyutta II pages were read on the scan by machine and checked by hand.
-  The emendations suggested are those of the authorities cited (Cone, Jackson, Pruitt).
-- The proofreader is not a philologist. The corrections are mechanical: each one restores what the printed PTS edition prints, read on its scan, or records an emendation proposed by the authority cited. No reading was chosen on text-critical grounds, and no emendation is the proofreader's own; listing an emendation does not endorse it.
+  The PTS corrections not applied are those of the authorities cited (Cone, Jackson, Pruitt).
+- The proofreader is not a philologist. The corrections are mechanical: each one restores what the printed PTS edition prints, read on its scan, or records a correction published by the authority cited. No reading was chosen on text-critical grounds, and no emendation is the proofreader's own; listing an emendation does not endorse it.
 
 ## Scans of the printed editions
 

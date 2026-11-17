@@ -6,8 +6,8 @@ Open an issue with:
 
 - the volume, page and line (the line numbers are in the left margin of each page);
 - what the page shows and what the printed PTS edition prints, if you have checked it;
-- whether the word carries a mark (green: a transcription correction; orange dotted: a suggested
-  emendation; red: braces in GRETIL).
+- whether the word carries a mark (green: a transcription correction; orange dotted: a PTS correction
+  of the edition, not applied; red: braces in GRETIL).
 
 `corrections.json` is not edited by hand here: it is exported from the corrections layer of the
 foureditions project, where every correction is checked against the scan and approved. A reported
