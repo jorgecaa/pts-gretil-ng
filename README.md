@@ -65,7 +65,7 @@ Each correction was approved by a person. Every correction in `corrections.json`
 - **emendation**: a correction of the edition itself, by a later authority. Not applied: the text
   keeps the printed reading, and the popup gives the suggestion and its authority.
 
-4,220 corrections in total:
+4,228 corrections in total:
 
 | Kind | Source label (evidence or authority) | Corrections |
 |---|---|---:|
@@ -75,7 +75,7 @@ Each correction was approved by a person. Every correction in `corrections.json`
 | transcription | Printed reading recorded as it stands on the scan of the PTS edition (misprints kept) | 135 |
 | transcription | Flagged by the PTS word index (Ousaka, Pruitt and Jackson 2019), checked by hand against the scan of the PTS edition | 71 |
 | transcription | Read on the scan of the PTS edition by machine; checked and approved by hand | 24 |
-| transcription | Answer during review, checked by hand against the scan of the PTS edition | 36 |
+| transcription | Answer during review, checked by hand against the scan of the PTS edition | 44 |
 | transcription | Earlier correction, checked by hand word by word against the scan of the PTS edition on 2026-10-11 | 6 |
 | transcription | Precision sample, checked by hand against the scan of the PTS edition | 1 |
 | notation | Notation only: GRETIL's signs (^ for a circumflex, <…> for brackets or parentheses) written as the book prints them; same letters | 28 |
@@ -136,7 +136,7 @@ service leaves out, which are not built.
 | Sn | [`sutnipou.htm`](corrected/sutnipou.htm) | 223 | 827 | 0 |
 | Th & Th | [`theragou.htm`](corrected/theragou.htm) | 115 | 63 | 0 |
 |  | [`therigou.htm`](corrected/therigou.htm) | 52 |  |  |
-| Dhp | [`dhampdou.htm`](corrected/dhampdou.htm) | 120 | 0 | 0 |
+| Dhp | [`dhampdou.htm`](corrected/dhampdou.htm) | 120 | 8 | 0 |
 | Khp | [`khudp_ou.htm`](corrected/khudp_ou.htm) | 9 | 0 | 0 |
 | Ud | [`udana_ou.htm`](corrected/udana_ou.htm) | 94 | 7 | 0 |
 | It | [`itivutou.htm`](corrected/itivutou.htm) | 124 | 0 | 0 |
