@@ -69,6 +69,7 @@ body:
         - None
         - "Green underline: transcription correction"
         - "Orange dotted underline: PTS correction of the edition, applied"
+        - "Purple dashed underline: reading Cone marks as wrong, left as printed"
         - "Red underline: braces in GRETIL"
     validations:
       required: true

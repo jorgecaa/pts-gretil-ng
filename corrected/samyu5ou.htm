@@ -20,7 +20,8 @@ body{max-width:60em;margin:1em auto;padding:0 1em;color:#222;line-height:1.4;wor
 .correction{text-decoration:underline #3cb371 2px;text-underline-offset:.32em;text-decoration-skip-ink:none;cursor:help}
 .erratum.correction{border-bottom:2px solid #c00}
 .suggestion{border-bottom:2px dotted #d07a00;cursor:help}
-u.suggestion,u.erratum{text-decoration:none}
+.wrong{border-bottom:2px dashed #7b3fb5;cursor:help}
+u.suggestion,u.erratum,u.wrong{text-decoration:none}
 #tip{position:fixed;display:none;max-width:26em;background:#fffbe6;border:1px solid #888;
  padding:.5em .7em;font:13px/1.4 'Noto Sans',sans-serif;box-shadow:0 2px 6px #0004;z-index:9;white-space:pre-line;word-spacing:normal}
 .red{color:#00c}
@@ -146,9 +147,9 @@ http://gretil.sub.uni-goettingen.de/gretil.htm</p>
 <BR>
 Saṃyutta-Nikāya Vol. V<BR>
 <BR>
-<!-- Pali Text Society edition (Ee), digital input by the Dhammakaya Foundation (1989-1996), GRETIL version. Licence: CC BY-SA 4.0, (c) Pali Text Society and Dhammakaya Foundation, 2015. This file carries the corrections approved in the foureditions project (94 pages changed in this file; built from commit 0baf718d8e45 of the GRETIL mirror). The critical apparatus (footnotes and variant readings) has NOT been proofread. Text between braces is reproduced as GRETIL has it, unchanged except for notation. Corrections of the edition published by the PTS (Cone, Jackson, Pruitt, the corrigenda of the volume) are applied and marked. The original GRETIL file is not modified. -->
+<!-- Pali Text Society edition (Ee), digital input by the Dhammakaya Foundation (1989-1996), GRETIL version. Licence: CC BY-SA 4.0, (c) Pali Text Society and Dhammakaya Foundation, 2015. This file carries the corrections approved in the foureditions project (98 pages changed in this file; built from commit 0baf718d8e45 of the GRETIL mirror). The critical apparatus (footnotes and variant readings) has NOT been proofread. Text between braces is reproduced as GRETIL has it, unchanged except for notation. Corrections of the edition published by the PTS (Cone, Jackson, Pruitt, the corrigenda of the volume) are applied and marked. The original GRETIL file is not modified. -->
 <div class="legend"><b>About this copy.</b> The licence and the notice above are GRETIL's own and apply unchanged (CC BY-SA 4.0, &copy; Pali Text Society and Dhammakaya Foundation, 2015). Where GRETIL departs from the printed edition, the text below gives the printed reading, checked against the scans of the edition; proofreading and approval by Jorge Contreras (github.com/jorgecaa), foureditions project. Each correction was approved by a person; 24 were read on the scan by machine and checked by hand, as their popups say. The proofreader is not a philologist. The corrections are mechanical: each one restores what the printed PTS edition prints, read on its scan, or applies a correction published by the authority cited. No reading was chosen on text-critical grounds, and no emendation is the proofreader's own; applying a correction of the PTS does not mean the proofreader has judged it. Corrections of the edition itself published by the PTS (M. Cone's Dictionary of Pāli, P. Jackson's revision of Saṃyutta IV, W. Pruitt's correction lists, the corrigenda printed in the volume), which mark a printed reading as wrong and give the reading to adopt, are applied to the text: the text gives the reading to adopt, and the popup on the words concerned gives the printed reading it replaces. The text of GRETIL itself has not been rewritten: every correction is recorded, with its source and, when recorded, its date, in corrections.json of the repository that built this file.</div>
-<div class="legend"><span class="erratum">red underline</span>: an erratum already corrected in GRETIL, which puts its correction in braces { } in place of the printed reading; kept as in GRETIL. &nbsp; <span class="correction">green underline</span>: GRETIL departs from the printed edition; the printed reading is given. &nbsp; <span class="suggestion">orange dotted underline</span>: a correction of the edition published by the PTS (M. Cone's Dictionary of Pāli, cited in the popups as DOP; P. Jackson; W. Pruitt; or the corrigenda of the volume), applied: the text gives the reading the authority adopts, the popup the printed reading it marks as wrong. Hover over (or tap) a marked word for the reading it replaced and who corrected it.</div><hr>
+<div class="legend"><span class="erratum">red underline</span>: an erratum already corrected in GRETIL, which puts its correction in braces { } in place of the printed reading; kept as in GRETIL. &nbsp; <span class="correction">green underline</span>: GRETIL departs from the printed edition; the printed reading is given. &nbsp; <span class="suggestion">orange dotted underline</span>: a correction of the edition published by the PTS (M. Cone's Dictionary of Pāli, cited in the popups as DOP; P. Jackson; W. Pruitt; or the corrigenda of the volume), applied: the text gives the reading the authority adopts, the popup the printed reading it marks as wrong. &nbsp; <span class="wrong">purple dashed underline</span>: a printed reading Cone (DOP) marks as wrong without giving a reading to adopt (or giving several, with no edition named); left as printed. Hover over (or tap) a marked word for the reading it replaced and who corrected it.</div><hr>
 <a id="p1"></a><!-- page-status: corrected --><b>[page 001]</b><BR>
 <i>1</i><BR>
 <span class="ln" data-n="1"></span>SAṂYUTTA-NIKĀYA.<BR>
@@ -392,7 +393,7 @@ Saṃyutta-Nikāya Vol. V<BR>
 <span class="ln"></span>Ratho sīlaparikkhāro ║ jhānakkho cakkaviriyo ║<BR>
 <span class="ln"></span>upekkhā dhurasamādhi ║ anicchā parivāraṇaṃ ║<span class="red"><sup>2</sup></span>║<BR>
 <span class="ln"></span>Abyāpādo avihiṃsā<span class="red"><sup>6</sup></span> ║ viveko yassa āvudhaṃ ║<BR>
-<span class="ln"></span>titikkhā dhammasannāho<span class="red"><sup>7</sup></span> ║ yogakkhemāya vattati ║<span class="red"><sup>3</sup></span>║<BR>
+<span class="ln"></span>titikkhā <span class="wrong" data-info="«dhammasannāho» marked as a wrong reading by DOP (see s.v. dhamma)">dhammasannāho<span class="red"><sup>7</sup></span></span> ║ yogakkhemāya vattati ║<span class="red"><sup>3</sup></span>║<BR>
 <span class="ln" data-n="15"></span>Etad <span class="suggestion" data-info="from «attaniyam8 bhūtaṃ» corrected by DOP (see s.v. attaniya)">attani8 sambhūtaṃ</span> ║ brahmayānaṃ anuttaraṃ ║<BR>
 <span class="ln"></span>niyyanti dhīrā lokamhā ║ aññadatthu<span class="red"><sup>9</sup></span> jayaṃ<span class="red"><sup>10</sup></span> jayanti<span class="red"><sup>11</sup></span> ║<span class="red"><sup>4</sup></span>║<BR>
 <BR>
@@ -2458,7 +2459,7 @@ I bound myself to this note upon this matter.<BR>
 <BR>
 <span class="ln" data-n="5"></span>(10) Nāvā.<BR>
 <span class="ln"></span>2. Seyyathāpi bhikkhave<span class="red"><sup>3</sup></span> sāmuddikāya<span class="red"><sup>4</sup></span> nāvāya vetta-<BR>
-<span class="ln"></span>bandhanabandhāya<span class="red"><sup>5</sup></span> chamasāni udake pariyenāya<span class="red"><sup>6</sup></span> heman-<BR>
+<span class="ln"></span>bandhanabandhāya<span class="red"><sup>5</sup></span> chamasāni udake <span class="wrong" data-info="«pariyenāya» marked as a wrong reading by DOP (see s.v. pariyenāya)">pariyenāya<span class="red"><sup>6</sup></span></span> heman-<BR>
 <span class="ln"></span>tikena thalam<span class="red"><sup>7</sup></span> ukkhittāya vātātapaparetāni<span class="red"><sup>8</sup></span> bandhanāni<BR>
 <span class="ln"></span>tāni pāvussakena<span class="red"><sup>9</sup></span> meghena abhippavuṭṭhāni<span class="red"><sup>10</sup></span> appakasire-<BR>
 <span class="ln" data-n="10"></span>neva<span class="red"><sup>11</sup></span> paṭipassambhanti<span class="red"><sup>12</sup></span> pūtikāni bhavanti ║ evam eva kho<BR>
@@ -3266,7 +3267,7 @@ sutta in S1-3.<BR>
 <span class="ln"></span>12. Evam bhāvitesu kho bhikkhave sattasu bojjhaṅgesu<BR>
 <span class="ln"></span>evam bahulikatesu satta phalā sattānisaṃsā pātikaṅkhā ║ ║<BR>
 <span class="ln"></span>Katame satta phalā sattānisaṃsā ║ ║<BR>
-<span class="ln"></span>13. Diṭṭheva dhamme <span class="suggestion" data-info="from «paṭihacca9» corrected by DOP (see s.v. paṭihacca)">paṭigacca<span class="red"><sup>9</sup></span></span> aññam ārādheti ║ no<BR>
+<span class="ln"></span>13. Diṭṭheva dhamme <span class="suggestion" data-info="from «paṭihacca9» corrected by DOP (see s.v. paṭihacca) | Cone also gives «paṭikacca» (Be, Se); the text follows Ce, then Be, then Se">paṭigacca<span class="red"><sup>9</sup></span></span> aññam ārādheti ║ no<BR>
 <span class="ln" data-n="20"></span>ce<span class="red"><sup>10</sup></span> diṭṭheva dhamme paṭihacca<span class="red"><sup>11</sup></span> aññam<span class="red"><sup>12</sup></span> ārādheti ║ atha<BR>
 <span class="ln"></span>maraṇakāle aññam ārādheti ║ ║<BR>
 <span class="ln"></span>14. No ce<span class="red"><sup>10</sup></span> diṭṭheva dhamme paṭihacca aññam ārādheti<BR>
@@ -10201,7 +10202,7 @@ Suddhakaṃ Sotāpanno Araham Buddho dve Samaṇabrāhmaṇā ti.<BR>
 <span class="ln" data-n="1"></span>4. Evaṃ hetam Ānanda hoti jarādhammo yobbaññe<span class="red"><sup>1</sup></span><BR>
 <span class="ln"></span>vyādhidhammo ārogye<span class="red"><sup>2</sup></span> maraṇadhammo jīvite<span class="red"><sup>3</sup></span> na ceva<span class="red"><sup>4</sup></span><BR>
 <span class="ln"></span>tāva parisuddho hoti chavivaṇṇo pariyodāto sithilāni ca<span class="red"><sup>5</sup></span><BR>
-<span class="ln"></span>honti gattāni sabbāni<span class="red"><sup>6</sup></span> baliyajātāni<span class="red"><sup>7</sup></span> purato pabbhāro ca<span class="red"><sup>8</sup></span><BR>
+<span class="ln"></span>honti gattāni sabbāni<span class="red"><sup>6</sup></span> <span class="wrong" data-info="«baliyajātāni» marked as a wrong reading by DOP (see s.v. baliyajātāni)">baliyajātāni<span class="red"><sup>7</sup></span></span> purato pabbhāro ca<span class="red"><sup>8</sup></span><BR>
 <span class="ln" data-n="5"></span>kāyo ║ dissati ca indriyānam aññathattaṃ cakkhundriyassa<span class="red"><sup>9</sup></span><BR>
 <span class="ln"></span>sotindriyassa ghānindriyassa ║ pe ║ kāyindriyassā ti ║ ║<BR>
 <span class="ln"></span>5. Idam avoca Bhagavā ║ idaṃ vatvā ca<span class="red"><sup>10</sup></span> sugato athā-<BR>
@@ -11176,7 +11177,7 @@ in the Singhalese MSS.<BR>
 <span class="ln" data-n="5"></span>3. Imesaṃ kho bhikkhave pañcannam indriyānam bhā-<BR>
 <span class="ln"></span>vitattā bahulīkatattā satta phalā sattānisaṃsā patikaṅkhā ║<BR>
 <span class="ln"></span>katame satta phalā sattānisaṃsā ║ ║<BR>
-<span class="ln"></span>4. Diṭṭheva dhamme <span class="suggestion" data-info="from «paṭihacca» corrected by DOP (see s.v. paṭihacca)">paṭigacca</span> aññam ārādheti ║ ║ No<BR>
+<span class="ln"></span>4. Diṭṭheva dhamme <span class="suggestion" data-info="from «paṭihacca» corrected by DOP (see s.v. paṭihacca) | Cone also gives «paṭikacca» (Be, Se); the text follows Ce, then Be, then Se">paṭigacca</span> aññam ārādheti ║ ║ No<BR>
 <span class="ln"></span>ce diṭṭheva dhamme paṭihacca aññam ārādheti ║ atha<BR>
 <span class="ln" data-n="10"></span>maraṇakāle aññam ārādheti ║ ║ No ce diṭṭheva dhamme<BR>
 <span class="ln"></span>paṭihacca<span class="red"><sup>1</sup></span> aññam ārādheti ║ ║ no ce maraṇa kāle aññam<BR>
@@ -13333,7 +13334,7 @@ to want in S1-3, since there is nothing about suddhi.<BR>
 <span class="ln"></span>3. Imesaṃ kho bhikkhave catunnam iddhipādānam bhā-<BR>
 <span class="ln"></span>vitattā bahulīkatattā satta phalā sattānisaṃsā pātikaṅkhā ║ ║<BR>
 <span class="ln"></span>Katame sattaphalā sattānisaṃsā ║ ║<BR>
-<span class="ln"></span>4. Diṭṭheva dhamme <span class="suggestion" data-info="from «paṭihacca6» corrected by DOP (see s.v. paṭihacca)">paṭigacca<span class="red"><sup>6</sup></span></span> aññam ārādheti ║ ║ No<BR>
+<span class="ln"></span>4. Diṭṭheva dhamme <span class="suggestion" data-info="from «paṭihacca6» corrected by DOP (see s.v. paṭihacca) | Cone also gives «paṭikacca» (Be, Se); the text follows Ce, then Be, then Se">paṭigacca<span class="red"><sup>6</sup></span></span> aññam ārādheti ║ ║ No<BR>
 <span class="ln" data-n="15"></span>ce diṭṭheva dhamme paṭihacca aññam ārādheti ║ atha<span class="red"><sup>6</sup></span><BR>
 <span class="ln"></span>maraṇakāle aññam ārādheti<span class="red"><sup>7</sup></span> ║ ║ No ce maraṇakāle aññam<BR>
 <span class="ln"></span>ārādheti ║ atha pañcannam orambhāgiyānaṃ saṃyojanānam<BR>
@@ -16764,7 +16765,7 @@ the presence of the sheet du not even entire, but mutilated.<BR>
 <span class="ln"></span>ambho purisa kālasseva uṭṭhāya pācīnamukho<span class="red"><sup>4</sup></span> yāhi ║ so<BR>
 <span class="ln"></span>tvam mā semhaṃ<span class="red"><sup>5</sup></span> parivajjehi ║ mā papātaṃ ║ mā<span class="red"><sup>6</sup></span> khāṇum ║<BR>
 <span class="ln"></span>mā<span class="red"><sup>7</sup></span> kaṇṭakaṃ<span class="red"><sup>8</sup></span> ṭhānam<span class="red"><sup>9</sup></span> ║ mā candanikaṃ<span class="red"><sup>10</sup></span> ║ mā oḷigallaṃ<span class="red"><sup>11</sup></span> ║<BR>
-<span class="ln"></span>yattha papāteyyāsi<span class="red"><sup>12</sup></span> tattheva maraṇam āgaccheyyāsi<span class="red"><sup>13</sup></span> ║<BR>
+<span class="ln"></span>yattha <span class="wrong" data-info="«papāteyyāsi» marked as a wrong reading by DOP (see s.v. papāteyyāsi)">papāteyyāsi<span class="red"><sup>12</sup></span></span> tattheva maraṇam āgaccheyyāsi<span class="red"><sup>13</sup></span> ║<BR>
 <span class="ln" data-n="15"></span>Evaṃ<span class="red"><sup>14</sup></span> tvam ambho purisa kāyassa bhedā param maraṇā<BR>
 <span class="ln"></span>sugatim saggam lokam upapajjissasīti<span class="red"><sup>15</sup></span> ║ ║<BR>
 <span class="ln"></span>4. Taṃ kho panetam bhikkhave<span class="red"><sup>16</sup></span> brāhmaṇānaṃ bāla-<BR>
@@ -17645,7 +17646,7 @@ the differing parts.<BR>
 <span class="ln" data-n="25"></span>dhāram anupaveccheyya<span class="red"><sup>13</sup></span> ║ ║ Api nu tāni bījāni vuddhiṃ<BR>
 <span class="ln"></span>viruḷhiṃ vepullam āpajjeyyum tī ║ ║<BR>
 <span class="ln"></span>No hetam bhante ║ ║<BR>
-<span class="ln"></span>Evam eva kho Mahānama idha dhammo dvākkhāto hoti<BR>
+<span class="ln"></span>Evam eva kho Mahānama idha dhammo <span class="wrong" data-info="«dvākkhāto» marked as a wrong reading by DOP (see s.v. dvākkhāta)">dvākkhāto</span> hoti<BR>
 <span class="ln"></span>duppavedito anīyāniko anupasamasaṃvattanike<span class="red"><sup>14</sup></span> asammā-<BR>
 <span class="ln" data-n="30"></span>sambuddhappavedito ║ idam aham<span class="red"><sup>15</sup></span> dukkhettasmiṃ vadāmi ║<BR>
 <BR>

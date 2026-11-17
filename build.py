@@ -282,12 +282,21 @@ def describe(c):
     flat = lambda r: ' '.join(re.sub(r'-[ \t]*\n\s*', '-', r).split())   # a line-break hyphen joins the line
     old, new = flat(old), flat(new)
     kind = c.get('kind', 'transcription')
-    if kind == 'emendation':
-        if not old or not new:                            # an addition or an omission: show the context
-            old = flat(c['gretil'])
+    if kind in ('emendation', 'wrong-reading'):
         by = next((short for start, short in BY if c['source'].startswith(start)), c['source'])
         see = f" (see s.v. {', '.join(c['entry'])})" if c.get('entry') else ''
-        return f'from «{old}» corrected by {by}{see}'
+        others = c.get('alternatives') or []
+        if kind == 'wrong-reading':
+            # the word is left as printed: Cone marks it as wrong and gives no reading to adopt
+            old = re.sub(r'[\d.,;:!?]+$', '', old)        # without its note call and punctuation
+            proposed = ' or '.join(f'«{a["reading"]}»' for a in others)
+            return f'«{old}» marked as a wrong reading by {by}{see}' + (
+                f' | Cone proposes {proposed}, naming no edition' if others else '')
+        if not old or not new:                            # an addition or an omission: show the context
+            old = flat(c['gretil'])
+        also = '; '.join(f'«{a["reading"]}» ({", ".join(a["editions"]) or "no edition"})' for a in others)
+        return f'from «{old}» corrected by {by}{see}' + (
+            f' | Cone also gives {also}; the text follows Ce, then Be, then Se' if others else '')
     if kind == 'notation':
         return f'from «{old}» (GRETIL notation)'
     if c['gretil'] == c['book']:
@@ -323,7 +332,7 @@ def mark(text, who, call, infos=None, braces=True, tag='span'):
                 classes.append('erratum')
                 items.append(BRACES_NOTE)
             for c in owners:
-                classes.append('suggestion' if c.get('kind') == 'emendation' else 'correction')
+                classes.append({'emendation': 'suggestion', 'wrong-reading': 'wrong'}.get(c.get('kind'), 'correction'))
                 items.append(describe(c))
             infos.append((' '.join(dict.fromkeys(classes)), ' |  | '.join(dict.fromkeys(items)), tag))
             out.append(f'{OPEN}{len(infos) - 1}{MID}{chunk}{CLOSE}')
@@ -395,7 +404,8 @@ body{max-width:60em;margin:1em auto;padding:0 1em;color:#222;line-height:1.4;wor
 .correction{text-decoration:underline #3cb371 2px;text-underline-offset:.32em;text-decoration-skip-ink:none;cursor:help}
 .erratum.correction{border-bottom:2px solid #c00}
 .suggestion{border-bottom:2px dotted #d07a00;cursor:help}
-u.suggestion,u.erratum{text-decoration:none}
+.wrong{border-bottom:2px dashed #7b3fb5;cursor:help}
+u.suggestion,u.erratum,u.wrong{text-decoration:none}
 #tip{position:fixed;display:none;max-width:26em;background:#fffbe6;border:1px solid #888;
  padding:.5em .7em;font:13px/1.4 'Noto Sans',sans-serif;box-shadow:0 2px 6px #0004;z-index:9;white-space:pre-line;word-spacing:normal}
 .red{color:#00c}
@@ -448,7 +458,9 @@ LEGEND = ('<div class="legend"><span class="erratum">red underline</span>: an er
           'GRETIL departs from the printed edition; the printed reading is given. &nbsp; '
           '<span class="suggestion">orange dotted underline</span>: a correction of the edition published by '
           'the PTS (M. Cone\'s Dictionary of Pāli, cited in the popups as DOP; P. Jackson; W. Pruitt; or the '
-          'corrigenda of the volume), applied: the text gives the reading the authority adopts, the popup the printed reading it marks as wrong. Hover over (or tap) a marked word for the reading it replaced and who corrected it.</div>')
+          'corrigenda of the volume), applied: the text gives the reading the authority adopts, the popup the printed reading it marks as wrong. &nbsp; '
+          '<span class="wrong">purple dashed underline</span>: a printed reading Cone (DOP) marks as wrong without '
+          'giving a reading to adopt (or giving several, with no edition named); left as printed. Hover over (or tap) a marked word for the reading it replaced and who corrected it.</div>')
 NOTE = ('Pali Text Society edition (Ee), digital input by the Dhammakaya Foundation (1989-1996), GRETIL '
         'version. Licence: CC BY-SA 4.0, (c) Pali Text Society and Dhammakaya Foundation, 2015. '
         'This file carries the corrections approved in the foureditions project ({count} pages '
@@ -546,6 +558,8 @@ the volume (page 45: <code>…/dighn1ou.htm#p45</code>).</p>
 (green): places where GRETIL departs from the printed edition, checked on its scan, including GRETIL's
 signs written as the book prints them. PTS corrections of the edition (orange): corrections of the
 edition itself published by the PTS. The two columns do not overlap: each correction is counted once.
+Wrong readings marked (purple): printed readings Cone marks as wrong without giving one to adopt; the
+text is left as printed, so they are not corrections.
 Of the {sn4_total} PTS corrections of SN IV, {sn4_jackson} come from P. Jackson's revision of that volume (2014).</p>
 <p>Every volume listed with a file was reviewed in the foureditions review service: foureditions is the
 project where the review is done, each correction checked against the scan and approved; it is not public
@@ -564,7 +578,7 @@ Minayeff 1888, Morris 1882), a different text.</li>
 <li><b>Yamaka</b>: its PTS edition is excluded from the review because of its many abbreviations.</li>
 </ul>
 <table>
-<tr><th>Volume</th><th>File</th><th>Pages</th><th>Proofreading corrections</th><th>PTS corrections of the edition</th></tr>
+<tr><th>Volume</th><th>File</th><th>Pages</th><th>Proofreading corrections</th><th>PTS corrections of the edition</th><th>Wrong readings marked (DOP)</th></tr>
 {rows}
 </table>
 </body>
@@ -590,29 +604,31 @@ def file_counts(volume, rel):
         numbers = set(parts(_BR.sub('<BR>', fh.read()), calls={}))
     mine = [c for c in DATA['corrections'] if c['volume'] == volume and c['page'] in numbers]
     emended = sum(c.get('kind') == 'emendation' for c in mine)
-    return len(mine) - emended, emended
+    wrong = sum(c.get('kind') == 'wrong-reading' for c in mine)
+    return len(mine) - emended - wrong, emended, wrong
 
 
 def write_index(pages):
     """`index.html`: the page GitHub Pages opens first, with a link to every built file."""
-    # proofreading corrections and corrections of the edition published by the PTS, counted apart
-    counts, emended = {}, {}
+    # proofreading corrections, corrections of the edition published by the PTS, and the wrong readings
+    # marked (not corrections: the word is left as printed), counted apart
+    counts, emended, wrong = {}, {}, {}
     for c in DATA['corrections']:
-        tally = emended if c.get('kind') == 'emendation' else counts
+        tally = {'emendation': emended, 'wrong-reading': wrong}.get(c.get('kind'), counts)
         tally[c['volume']] = tally.get(c['volume'], 0) + 1
     rows = []
     for volume, rels in FILES.items():
         for k, rel in enumerate(rels):
             name = os.path.basename(rel) + '.htm'
-            n_counts, n_emended = counts.get(volume, 0), emended.get(volume, 0)
+            n_counts, n_emended, n_wrong = counts.get(volume, 0), emended.get(volume, 0), wrong.get(volume, 0)
             if len(rels) > 1:          # a volume in two files (Theragāthā, Therīgāthā): each file its own
-                n_counts, n_emended = file_counts(volume, rel)
+                n_counts, n_emended, n_wrong = file_counts(volume, rel)
             label = LABELS.get(os.path.basename(rel), volume if k == 0 else '')
             rows.append(f'<tr><td>{html.escape(label)}</td>'
                         f'<td><a href="corrected/{name}">{name}</a></td><td>{pages[rel]}</td>'
-                        f'<td>{n_counts}</td><td>{n_emended}</td></tr>')
+                        f'<td>{n_counts}</td><td>{n_emended}</td><td>{n_wrong}</td></tr>')
     for book, reason in LEFT_OUT:                         # struck through: not reviewed, not built
-        rows.append(f'<tr><td><s>{html.escape(book)}</s></td><td colspan="4">{html.escape(reason)}</td></tr>')
+        rows.append(f'<tr><td><s>{html.escape(book)}</s></td><td colspan="5">{html.escape(reason)}</td></tr>')
     style = STYLE.replace('</style>', 'table{border-collapse:collapse}td,th{padding:.2em .8em;text-align:left}'
                           'td:nth-child(n+3){text-align:right}tr:nth-child(even){background:#f4f4f4}</style>')
     with open(os.path.join(HERE, 'index.html'), 'w', encoding='utf-8', newline='\n') as fh:

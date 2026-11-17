@@ -20,7 +20,8 @@ body{max-width:60em;margin:1em auto;padding:0 1em;color:#222;line-height:1.4;wor
 .correction{text-decoration:underline #3cb371 2px;text-underline-offset:.32em;text-decoration-skip-ink:none;cursor:help}
 .erratum.correction{border-bottom:2px solid #c00}
 .suggestion{border-bottom:2px dotted #d07a00;cursor:help}
-u.suggestion,u.erratum{text-decoration:none}
+.wrong{border-bottom:2px dashed #7b3fb5;cursor:help}
+u.suggestion,u.erratum,u.wrong{text-decoration:none}
 #tip{position:fixed;display:none;max-width:26em;background:#fffbe6;border:1px solid #888;
  padding:.5em .7em;font:13px/1.4 'Noto Sans',sans-serif;box-shadow:0 2px 6px #0004;z-index:9;white-space:pre-line;word-spacing:normal}
 .red{color:#00c}
@@ -179,9 +180,9 @@ http://gretil.sub.uni-goettingen.de/gretil.htm</p>
 <BR>
 Jātaka with Commentary Vol. V<BR>
 <BR>
-<!-- Pali Text Society edition (Ee), digital input by the Dhammakaya Foundation (1989-1996), GRETIL version. Licence: CC BY-SA 4.0, (c) Pali Text Society and Dhammakaya Foundation, 2015. This file carries the corrections approved in the foureditions project (168 pages changed in this file; built from commit 0baf718d8e45 of the GRETIL mirror). The critical apparatus (footnotes and variant readings) has NOT been proofread. Text between braces is reproduced as GRETIL has it, unchanged except for notation. Corrections of the edition published by the PTS (Cone, Jackson, Pruitt, the corrigenda of the volume) are applied and marked. The original GRETIL file is not modified. -->
+<!-- Pali Text Society edition (Ee), digital input by the Dhammakaya Foundation (1989-1996), GRETIL version. Licence: CC BY-SA 4.0, (c) Pali Text Society and Dhammakaya Foundation, 2015. This file carries the corrections approved in the foureditions project (188 pages changed in this file; built from commit 0baf718d8e45 of the GRETIL mirror). The critical apparatus (footnotes and variant readings) has NOT been proofread. Text between braces is reproduced as GRETIL has it, unchanged except for notation. Corrections of the edition published by the PTS (Cone, Jackson, Pruitt, the corrigenda of the volume) are applied and marked. The original GRETIL file is not modified. -->
 <div class="legend"><b>About this copy.</b> The licence and the notice above are GRETIL's own and apply unchanged (CC BY-SA 4.0, &copy; Pali Text Society and Dhammakaya Foundation, 2015). Where GRETIL departs from the printed edition, the text below gives the printed reading, checked against the scans of the edition; proofreading and approval by Jorge Contreras (github.com/jorgecaa), foureditions project. Each correction was approved by a person; 24 were read on the scan by machine and checked by hand, as their popups say. The proofreader is not a philologist. The corrections are mechanical: each one restores what the printed PTS edition prints, read on its scan, or applies a correction published by the authority cited. No reading was chosen on text-critical grounds, and no emendation is the proofreader's own; applying a correction of the PTS does not mean the proofreader has judged it. Corrections of the edition itself published by the PTS (M. Cone's Dictionary of Pāli, P. Jackson's revision of Saṃyutta IV, W. Pruitt's correction lists, the corrigenda printed in the volume), which mark a printed reading as wrong and give the reading to adopt, are applied to the text: the text gives the reading to adopt, and the popup on the words concerned gives the printed reading it replaces. The text of GRETIL itself has not been rewritten: every correction is recorded, with its source and, when recorded, its date, in corrections.json of the repository that built this file.</div>
-<div class="legend"><span class="erratum">red underline</span>: an erratum already corrected in GRETIL, which puts its correction in braces { } in place of the printed reading; kept as in GRETIL. &nbsp; <span class="correction">green underline</span>: GRETIL departs from the printed edition; the printed reading is given. &nbsp; <span class="suggestion">orange dotted underline</span>: a correction of the edition published by the PTS (M. Cone's Dictionary of Pāli, cited in the popups as DOP; P. Jackson; W. Pruitt; or the corrigenda of the volume), applied: the text gives the reading the authority adopts, the popup the printed reading it marks as wrong. Hover over (or tap) a marked word for the reading it replaced and who corrected it.</div><hr>
+<div class="legend"><span class="erratum">red underline</span>: an erratum already corrected in GRETIL, which puts its correction in braces { } in place of the printed reading; kept as in GRETIL. &nbsp; <span class="correction">green underline</span>: GRETIL departs from the printed edition; the printed reading is given. &nbsp; <span class="suggestion">orange dotted underline</span>: a correction of the edition published by the PTS (M. Cone's Dictionary of Pāli, cited in the popups as DOP; P. Jackson; W. Pruitt; or the corrigenda of the volume), applied: the text gives the reading the authority adopts, the popup the printed reading it marks as wrong. &nbsp; <span class="wrong">purple dashed underline</span>: a printed reading Cone (DOP) marks as wrong without giving a reading to adopt (or giving several, with no edition named); left as printed. Hover over (or tap) a marked word for the reading it replaced and who corrected it.</div><hr>
 <a id="p1"></a><!-- page-status: corrected --><b>[page 001]</b><BR>
 <i>1</i><BR>
 <span class="ln" data-n="1"></span>                         XVI. TIṂSANIPĀTA.<BR>
@@ -2683,7 +2684,7 @@ Jātaka with Commentary Vol. V<BR>
 <span class="ln" data-n="5"></span>                    rakkhanti naṃ<span class="red"><sup>4</sup></span> aṭṭhasahassanāgā<BR>
 <span class="ln"></span>                    īsādantā<span class="red"><sup>5</sup></span> vātajavappahārino. ║ Ja_XVI:107 ║<BR>
 <BR>
-<span class="ln"></span>  Ja_XVI.4(=514).12: Tiṭṭhanti te bhimūla<span class="red"><sup>6</sup></span> passasantā,<BR>
+<span class="ln"></span>  Ja_XVI.4(=514).12: Tiṭṭhanti te <span class="wrong" data-info="«bhimūla» marked as a wrong reading by DOP (see s.v. bhimūla)">bhimūla<span class="red"><sup>6</sup></span></span> passasantā,<BR>
 <span class="ln"></span>                    kuppanti vātassa pi eritassa,<BR>
 <span class="ln"></span>                    manussabhūtaṃ pana tattha disvā<BR>
 <span class="ln" data-n="10"></span>                    bhasmaṃ<span class="red"><sup>7</sup></span> kareyyaṃ, nāssa<span class="red"><sup>8</sup></span> rajo pi tassā 'ti. ║ Ja_XVI:108 ║<BR>
@@ -2862,7 +2863,7 @@ Jātaka with Commentary Vol. V<BR>
 <span class="ln" data-n="5"></span>katvā sattame divase āgantvā deviṃ vanditvā aṭṭhāsi. Atha<BR>
 <span class="ln"></span>naṃ sā "niṭṭhitaṃ te samma<span class="red"><sup>3</sup></span> panthūpakaraṇaṃ<span class="red"><sup>4</sup></span>, imaṃ<span class="red"><sup>5</sup></span> tāva<BR>
 <span class="ln"></span>pasibbakaṃ gaṇhā" 'ti āha. So pana mahāthāmo pañcannaṃ<BR>
-<span class="ln"></span>hatthīnaṃ balaṃ dhāreti, tasmā taṃ pūpapasibbakaṃ<span class="red"><sup>6</sup></span> viya<BR>
+<span class="ln"></span>hatthīnaṃ balaṃ dhāreti, tasmā <span class="wrong" data-info="«taṃ» marked as a wrong reading by DOP (see s.v. pūva)">taṃ</span> pūpapasibbakaṃ<span class="red"><sup>6</sup></span> viya<BR>
 <span class="ln"></span>ukkhipitvā upakacchantare ṭhapetvā rittahattho viya aṭṭhāsi.<BR>
 <span class="ln" data-n="10"></span>Cullasubhaddā<span class="red"><sup>7</sup></span> luddassa dārakānaṃ paribbayaṃ datvā rañño<BR>
 <span class="ln"></span>ācikkhitvā Sonuttaraṃ uyyojesi. So pi rājānañ ca deviñ ca<BR>
@@ -3600,7 +3601,7 @@ Jātaka with Commentary Vol. V<BR>
 <span class="ln" data-n="25"></span>                    nikkham imaṃ<span class="red"><sup>18</sup></span> suvaṇṇassa haraṃ gaccha Sucīrata,<BR>
 <span class="ln"></span>                    abhihāraṃ imaṃ dajjā atthadhammānusatthiyā ti g. ā. ║ Ja_XVI:143 ║<BR>
 <BR>
-<span class="ln"></span>     Tattha upantikan ti santikaṃ, nikkhan ti pañcadasasuvaṇṇā<span class="red"><sup>19</sup></span> eko<BR>
+<span class="ln"></span>     Tattha upantikan ti santikaṃ, nikkhan ti <span class="wrong" data-info="«pañcadasasuvaṇṇā» marked as a wrong reading by DOP (see s.v. pañca)">pañcadasasuvaṇṇā<span class="red"><sup>19</sup></span></span> eko<BR>
 <span class="ln"></span>nikkho, ayaṃ pana rattasuvaṇṇassa nikkhasahassaṃ datvā evam āha, imaṃ<BR>
 <span class="ln"></span>dajjā ti tena imasmiṃ dhammayāgapañhe kathite tassā<span class="red"><sup>20</sup></span> atthadhammānu-<BR>
 <span class="ln" data-n="30"></span>satthiyā abhihāraṃ pūjaṃ karonto imaṃ nikkhasahassaṃ dadeyyāsīti<span class="red"><sup>21</sup></span>.<BR>
@@ -4611,7 +4612,7 @@ Jātaka with Commentary Vol. V<BR>
 <span class="ln"></span>eva udabindugaṇanāya addhabeluvapakkapamāṇā<span class="red"><sup>11</sup></span> gaṇḍā uṭṭhahiṃsu, tasmā<BR>
 <span class="ln"></span>evaṃ āha, pabhinnā ti te gaṇḍā taṃ divasam eva bhijjitvā kuṇapā<span class="red"><sup>12</sup></span> pūti-<BR>
 <span class="ln"></span>gandhikā hutvā pubbalohitāni pagghariṃsu, yenā 'ti yena<span class="red"><sup>13</sup></span> maggena, okkitā<span class="red"><sup>14</sup></span><BR>
-<span class="ln" data-n="15"></span>ti<span class="red"><sup>15</sup></span> pūtigandhena okiṇṇā parikkitā<span class="red"><sup>16</sup></span> parivāritā. māssu orena āgamā ti<span class="red"><sup>17</sup></span><BR>
+<span class="ln" data-n="15"></span>ti<span class="red"><sup>15</sup></span> pūtigandhena okiṇṇā <span class="wrong" data-info="«parikkitā» marked as a wrong reading by DOP (see s.v. parikrita)">parikkitā<span class="red"><sup>16</sup></span></span> parivāritā. māssu orena āgamā ti<span class="red"><sup>17</sup></span><BR>
 <span class="ln"></span>duṭṭhasatta orena māssu āgamā, amhākaṃ santikaṃ mā agamāsi<span class="red"><sup>18</sup></span>, evaṃ vadantā<BR>
 <span class="ln"></span>nivārentīti<span class="red"><sup>19</sup></span> attho, dāni me ti mahārāja tato paṭṭhāya idāni sattavassāni mama<BR>
 <span class="ln"></span>ettakaṃ kālaṃ sakakammaṃ anubhomi, iti so attano mittadūbhikammaṃ<span class="red"><sup>20</sup></span><BR>
@@ -5102,7 +5103,7 @@ Jātaka with Commentary Vol. V<BR>
 <span class="ln" data-n="20"></span>  Ja_XVI.8(=518).22: Hitvā<span class="red"><sup>19</sup></span> gharaṃ pabbajito acelo<BR>
 <span class="ln"></span>                    naggo muṇḍo carati<span class="red"><sup>20</sup></span> ghāsahetu,<BR>
 <span class="ln"></span>                    tamhī nu kho vivariṃ<span class="red"><sup>21</sup></span> guyham atthaṃ<span class="red"><sup>22</sup></span>,<BR>
-<span class="ln"></span>                    atthā ca dhammā ca avāgat' amhā<span class="red"><sup>23</sup></span>. ║ Ja_XVI:244 ║<BR>
+<span class="ln"></span>                    atthā ca dhammā ca avāgat' <span class="wrong" data-info="«amhā» marked as a wrong reading by DOP (see s.v. avāgata)">amhā<span class="red"><sup>23</sup></span>.</span> ║ Ja_XVI:244 ║<BR>
 <BR>
 <span class="ln"></span>  Ja_XVI.8(=518).23: Kathaṃkaro cā hi<span class="red"><sup>24</sup></span> supaṇṇarāja<span class="red"><sup>25</sup></span><BR>
 <span class="ln" data-n="25"></span>                    kiṃsīlo kena<span class="red"><sup>26</sup></span> vatena vattaṃ<BR>
@@ -5855,7 +5856,7 @@ Jātaka with Commentary Vol. V<BR>
 <span class="ln"></span>                    thīnaṃ bhāvo durājāno macchassevodake gatan ti. ║ Ja_XVI:295 ║<BR>
 <BR>
 <span class="ln" data-n="25"></span>     Sā tassa vacanaṃ sutvā "ayyaputta<span class="red"><sup>17</sup></span> ahaṃ taṃ<span class="red"><sup>18</sup></span> asadda-<BR>
-<span class="ln"></span>hantaṃ mama saccabalen' eva<span class="red"><sup>19</sup></span> tikicchissāmīti" udakalasaṃ<BR>
+<span class="ln"></span>hantaṃ mama saccabalen' eva<span class="red"><sup>19</sup></span> tikicchissāmīti" <span class="wrong" data-info="«udakalasaṃ» marked as a wrong reading by DOP (see s.v. uda)">udakalasaṃ</span><BR>
 <span class="ln"></span>pūretvā saccakiriyaṃ katvā tassa sīse udakaṃ āsiñcantī<BR>
 <BR>
 <BR>
@@ -6109,7 +6110,7 @@ Jātaka with Commentary Vol. V<BR>
 <span class="ln" data-n="1"></span>purisabhayena divā gehe vasituṃ na sakkonti, gehāni kaṇṭha-<BR>
 <span class="ln"></span>kasākhāhi parikkhipitvā aruṇe uggacchante yeva araññaṃ pavi-<BR>
 <span class="ln"></span>santi, divā rājapurisā<span class="red"><sup>1</sup></span> vilumpanti rattiṃ corā<span class="red"><sup>2</sup></span> Tadā Bo.<BR>
-<span class="ln"></span>bahinagare gaṇḍatindurukkhe<span class="red"><sup>3</sup></span> devatā hutvā nibhatti, anusaṃ-<BR>
+<span class="ln"></span>bahinagare <span class="wrong" data-info="«gaṇḍatindurukkhe» marked as a wrong reading by DOP (see s.v. gaṇḍatindurukkhe)">gaṇḍatindurukkhe<span class="red"><sup>3</sup></span></span> devatā hutvā nibhatti, anusaṃ-<BR>
 <span class="ln" data-n="5"></span>vaccharaṃ rañño santikā sahassagghaṇakaṃ<span class="red"><sup>4</sup></span> balikammaṃ<BR>
 <span class="ln"></span>labhati, so cintesi: "ayaṃ rājā pamatto rajjaṃ kāreti, sakala-<BR>
 <span class="ln"></span>raṭṭhaṃ vinassati, ṭhapetvā maṃ añño<span class="red"><sup>5</sup></span> rājānaṃ patirūpe<BR>
@@ -6324,7 +6325,7 @@ Jātaka with Commentary Vol. V<BR>
 <span class="ln"></span>raññā<span class="red"><sup>9</sup></span> kaṇṭako<span class="red"><sup>2</sup></span> oloketvā ācikkhitabbo ti.<BR>
 <span class="ln" data-n="20"></span>     Taṃ sutvā mahallakko tisso gāthā abhāsi:<BR>
 <BR>
-<span class="ln"></span>  Ja_XVI.10(=520).14: Pahottha<span class="red"><sup>10</sup></span> Brahmadattassa yo<span class="red"><sup>11</sup></span> 'haṃ maggo<span class="red"><sup>12</sup></span> 'smi brāhmaṇa,<BR>
+<span class="ln"></span>  Ja_XVI.10(=520).14: <span class="wrong" data-info="«Pahottha» marked as a wrong reading by DOP (see s.v. pahottha)">Pahottha<span class="red"><sup>10</sup></span></span> Brahmadattassa yo<span class="red"><sup>11</sup></span> 'haṃ maggo<span class="red"><sup>12</sup></span> 'smi brāhmaṇa,<BR>
 <span class="ln"></span>                    arakkhitā jānapadā adhammabalinā hatā<span class="red"><sup>13</sup></span>. ║ Ja_XVI:318 ║<BR>
 <BR>
 <span class="ln"></span>  Ja_XVI.10(=520).15: Rattimhi corā khādanti, divā khādanti tuṇḍiyā,<BR>
@@ -6965,7 +6966,7 @@ Jātaka with Commentary Vol. V<BR>
 <span class="ln"></span>abravun ti Suciparivāraseṭṭhinā pucchitā kathayiṃsu, uṭṭhānaviriye<span class="red"><sup>24</sup></span> ti<BR>
 <span class="ln"></span>yo poso uṭṭhāne ca viriye ca patiṭṭhito na ca paresaṃ sampattiṃ disvā usuyyati<span class="red"><sup>25</sup></span><BR>
 <span class="ln"></span>tasmiṃ ahaṃ abhiramāmīti<span class="red"><sup>26</sup></span> evaṃ<span class="red"><sup>27</sup></span> tāta Siri kathesi, usuyyake<span class="red"><sup>28</sup></span> ti Alakkhi<BR>
-<span class="ln" data-n="25"></span>pana tāta pucchitā ahaṃ parasampattiusuyyake <span class="suggestion" data-info="from «duccite» corrected by DOP (see s.v. citta, duccite)">duccitte</span><span class="red"><sup>29</sup></span> kalyānakammadussake,<BR>
+<span class="ln" data-n="25"></span>pana tāta pucchitā ahaṃ parasampattiusuyyake <span class="suggestion" data-info="from «duccite» corrected by DOP (see s.v. citta, duccite) | Cone also gives «ducitte» (Be); the text follows Ce, then Be, then Se">duccitte</span><span class="red"><sup>29</sup></span> kalyānakammadussake,<BR>
 <span class="ln"></span>yo<span class="red"><sup>30</sup></span> kalyāṇakammaṃ dussento<span class="red"><sup>31</sup></span> appiyāyanto aṭṭiyanto<span class="red"><sup>32</sup></span> na karoti tasmiṃ<BR>
 <span class="ln"></span>abhiramāmīti āha, evaṃ sā kālakaṇṇī mahārāja ramati paṭirūpadesavāsādino<BR>
 <span class="ln"></span>kusalacakkassa bhañjanī, suhadayo ti sundaracitto hitacittako, nudā<span class="red"><sup>33</sup></span> 'ti<BR>
@@ -7152,7 +7153,7 @@ Jātaka with Commentary Vol. V<BR>
 <span class="ln"></span>  Ja_XVII.1(=521).21: Mā ca vegena kiccāni kāresi kārayesi vā,<BR>
 <span class="ln"></span>                    vegasā hi kataṃ kammaṃ mando pacchānutappati. ║ Ja_XVII:21 ║<BR>
 <BR>
-<span class="ln" data-n="5"></span>  Ja_XVII.1(=521).22: Mā te avisare<span class="red"><sup>2</sup></span> muñca<span class="red"><sup>3</sup></span> subāḷham adhikodhitaṃ,<BR>
+<span class="ln" data-n="5"></span>  Ja_XVII.1(=521).22: Mā te <span class="wrong" data-info="«avisare» marked as a wrong reading by DOP (see s.v. adhikodhita, adhisara)">avisare<span class="red"><sup>2</sup></span></span> muñca<span class="red"><sup>3</sup></span> subāḷham <span class="wrong" data-info="«adhikodhitaṃ» marked as a wrong reading by DOP (see s.v. adhikodhita, adhisara)">adhikodhitaṃ,</span><BR>
 <span class="ln"></span>                    kodhasā hi bahū pi tā kulā akulataṃ<span class="red"><sup>4</sup></span> gatā. ║ Ja_XVII:22 ║<BR>
 <BR>
 <span class="ln"></span>  Ja_XVII.1(=521).23: Mā tāta issaro 'mhīti anatthāya patārayi,<BR>
@@ -7299,7 +7300,7 @@ Jātaka with Commentary Vol. V<BR>
 <span class="ln" data-n="5"></span>vā chinno<span class="red"><sup>11</sup></span> ti<span class="red"><sup>12</sup></span> coraṃ dassenti<span class="red"><sup>13</sup></span> tadā te paresaṃ vacanehi suṭṭhu <span class="suggestion" data-info="from «kodhitaṃ14» corrected by DOP (see s.v. kujjhati)">kopitaṃ<span class="red"><sup>14</sup></span></span><BR>
 <span class="ln"></span>pi hadayaṃ kodhavasena mā muñca<span class="red"><sup>8</sup></span> apariggahetvā mā daṇḍaṃ panesi<span class="red"><sup>15</sup></span>, kiṃ-<BR>
 <span class="ln"></span>kāraṇā: acoram pi hi<span class="red"><sup>16</sup></span> coro ti gahetvā ānenti, tasmā akujjhitvā<span class="red"><sup>17</sup></span> ubhinnaṃ<BR>
-<span class="ln"></span><span class="suggestion" data-info="from «attapaccakkhikānaṃ» corrected by DOP (see s.v. atta(n))">atthapaccatthikānaṃ</span><span class="red"><sup>18</sup></span> kathaṃ sutvā suṭṭhu sodhetvā attapaccakkhena tassa<BR>
+<span class="ln"></span><span class="suggestion" data-info="from «attapaccakkhikānaṃ» corrected by DOP (see s.v. atta(n)) | Cone also gives «attapaccatthikānaṃ» (Be, Se); the text follows Ce, then Be, then Se">atthapaccatthikānaṃ</span><span class="red"><sup>18</sup></span> kathaṃ sutvā suṭṭhu sodhetvā attapaccakkhena tassa<BR>
 <span class="ln"></span>corabhāvaṃ ñatvā paveṇiyā ṭhapitadaṇḍavasena kattabbaṃ karohi, raññā hi<BR>
 <span class="ln" data-n="10"></span>uppanne pi koddhe hadayaṃ sītalaṃ akatvā kammaṃ na kātabbaṃ, yadā<BR>
 <span class="ln"></span>pan' assa hadayaṃ nibbutaṃ hoti mudukaṃ tadā vinicchayakammaṃ kā-<BR>
@@ -9596,7 +9597,7 @@ Jātaka with Commentary Vol. V<BR>
 <span class="ln"></span>                    taṃ enaṃ tattha dhāresi ure katvāna sobhanā. ║ Ja_XVII:123 ║<BR>
 <BR>
 <span class="ln"></span>  Ja_XVII.3(=523).32: Yathā ekamuhuttaṃ va tīṇi vassāni dhārayi<BR>
-<span class="ln" data-n="15"></span>                    vimado tīhi vassehi paṭibujjhitvāna<span class="red"><sup>10</sup></span> brāhmaṇo. ║ Ja_XVII:124 ║<BR>
+<span class="ln" data-n="15"></span>                    vimado tīhi vassehi <span class="wrong" data-info="«paṭibujjhitvāna» marked as a wrong reading by DOP (see s.v. paṭibujjhati)">paṭibujjhitvāna<span class="red"><sup>10</sup></span></span> brāhmaṇo. ║ Ja_XVII:124 ║<BR>
 <BR>
 <span class="ln"></span>  Ja_XVII.3(=523).33: Addasāsi harīrukkhe<span class="red"><sup>11</sup></span> samantā<span class="red"><sup>12</sup></span> aggiyāyanaṃ<BR>
 <span class="ln"></span>                    navapattavanaṃ phullaṃ kokilagaṇaghositaṃ<span class="red"><sup>13</sup></span>. ║ Ja_XVII:125 ║<BR>
@@ -10610,7 +10611,7 @@ Jātaka with Commentary Vol. V<BR>
 <span class="ln"></span>evaṃ sante mama lohitaṃko<span class="red"><sup>31</sup></span> dhanāharaṇo<span class="red"><sup>32</sup></span> sabbakāmadado maṇi saṃvijjati,<BR>
 <span class="ln"></span>taṃ uḷāraṃ maṇiratanaṃ ādāya tava gehaṃ gaccha, tattha imassānubhāvena<BR>
 <span class="ln"></span>yāvadicchakaṃ laddhā dhanaṃ puna imaṃ maṇiṃ ossajassu<span class="red"><sup>33</sup></span> ossajanto<span class="red"><sup>33</sup></span> ca<BR>
-<span class="ln"></span>aññattha anussajitvā<span class="red"><sup>34</sup></span> attano udakacāṭiyaṃ ossajeyyāsīti<span class="red"><sup>33</sup></span> vatvā mayhaṃ<BR>
+<span class="ln"></span>aññattha <span class="wrong" data-info="«anussajitvā» marked as a wrong reading by DOP (see s.v. ussajati)">anussajitvā<span class="red"><sup>34</sup></span></span> attano udakacāṭiyaṃ ossajeyyāsīti<span class="red"><sup>33</sup></span> vatvā mayhaṃ<BR>
 <span class="ln" data-n="30"></span>maṇiratanaṃ upanesīti vadati.<BR>
 <span class="ln"></span>     Evaṃ vatvā Aḷāro<span class="red"><sup>30</sup></span> "athāhaṃ mahārāja taṃ<span class="red"><sup>35</sup></span> nāgarā-<BR>
 <span class="ln"></span>jānaṃ<span class="red"><sup>36</sup></span> ‘samma nāhaṃ dhanen' atthiko, pabbajituṃ pana<BR>
@@ -10762,7 +10763,7 @@ Jātaka with Commentary Vol. V<BR>
 <span class="ln"></span>pakkosāpetvā "sirasmiṃ me phalitaṃ jātaṃ<span class="red"><sup>3</sup></span>, mahallako 'smi,<BR>
 <span class="ln" data-n="5"></span>mama pabbajjabhāvaṃ<span class="red"><sup>4</sup></span> jānāthā" 'ti paṭhamaṃ g. ā.:<BR>
 <BR>
-<span class="ln"></span>  Ja_XVII.5(=525).1: Āmantayāmi nigamaṃ mittāmacce parīsaje<span class="red"><sup>5</sup></span>:<BR>
+<span class="ln"></span>  Ja_XVII.5(=525).1: Āmantayāmi nigamaṃ mittāmacce <span class="wrong" data-info="«parīsaje» marked as a wrong reading by DOP (see s.v. parīsaja)">parīsaje<span class="red"><sup>5</sup></span>:</span><BR>
 <span class="ln"></span>                    sirasmiṃ phalitaṃ jātaṃ, pabbajjaṃ dāni roc' ahan<span class="red"><sup>6</sup></span> ti. ║ Ja_XVII:191 ║<BR>
 <BR>
 <span class="ln"></span>     Tattha āmantayāmīti jānāpemi, rocahan<span class="red"><sup>6</sup></span> ti rocemi ahaṃ, tassa me<BR>
@@ -10903,7 +10904,7 @@ Jātaka with Commentary Vol. V<BR>
 <span class="ln" data-n="25"></span>mattakassa pi sinehassa abhāvena chinnan nu tava amhesu hadayaṃ udāhu<BR>
 <span class="ln"></span>karuṇāya abhāvena kāruññaṃ vā n' atthi yaṃ no evam kandantiyo<span class="red"><sup>14</sup></span> pahāya<BR>
 <span class="ln"></span>pabbajasīti.<BR>
-<span class="ln"></span>     M. tāsaṃ pādamūle pavaṭṭetvā paridevamānānaṃ taṃ<span class="red"><sup>15</sup></span><BR>
+<span class="ln"></span>     M. tāsaṃ pādamūle <span class="wrong" data-info="«pavaṭṭetvā» marked as a wrong reading by DOP (see s.v. pavattati)">pavaṭṭetvā</span> paridevamānānaṃ taṃ<span class="red"><sup>15</sup></span><BR>
 <span class="ln"></span>paridevaṃ<span class="red"><sup>16</sup></span> sutvā anantaraṃ g. ā.:<BR>
 <BR>
 <BR>
@@ -11091,7 +11092,7 @@ Jātaka with Commentary Vol. V<BR>
 <a id="p184"></a><!-- page-status: corrected --><b>[page 184]</b><BR>
 <i>184                     XVII. Cattālīsanipāta.</i><BR>
 <span class="ln" data-n="1"></span>hoti<span class="red"><sup>1</sup></span>, puttaṃ apanehi, mā me antarāyaṃ karīti" sayaṃ puttaṃ<BR>
-<span class="ln"></span>hatthe gahetvā apanetuṃ asakkonto tassā lañcaṃ paṭījānitvā<BR>
+<span class="ln"></span>hatthe gahetvā apanetuṃ asakkonto tassā lañcaṃ <span class="wrong" data-info="«paṭījānitvā» marked as a wrong reading by DOP (see s.v. paṭījānitvā)">paṭījānitvā</span><BR>
 <BR>
 <span class="ln"></span>  Ja_XVII.5(=525).20: Uṭṭhehi tvaṃ dhāti,<BR>
 <span class="ln"></span>                    imaṃ kumāraṃ ramehi aññattha,<BR>
@@ -11788,7 +11789,7 @@ Jātaka with Commentary Vol. V<BR>
 <span class="ln"></span>taraṃ g. ā.:<BR>
 <BR>
 <span class="ln"></span>  Ja_XVIII.1(=526).16: Gambhīrarūpo te vaṇo salohito<BR>
-<span class="ln"></span>                    apūtiko pannagandho<span class="red"><sup>13</sup></span> mahā ca,<BR>
+<span class="ln"></span>                    apūtiko <span class="wrong" data-info="«pannagandho» marked as a wrong reading by DOP (see s.v. pajjati)">pannagandho<span class="red"><sup>13</sup></span></span> mahā ca,<BR>
 <span class="ln" data-n="20"></span>                    karomi te kiñci kasāyayogaṃ<span class="red"><sup>14</sup></span><BR>
 <span class="ln"></span>                    yathā bhavaṃ paramasukhī bhaveyyā<span class="red"><sup>15</sup></span> 'ti. ║ Ja_XVIII:16 ║<BR>
 <BR>
@@ -13082,7 +13083,7 @@ Jātaka with Commentary Vol. V<BR>
 <BR>
 <span class="ln" data-n="5"></span>  Ja_XVIII.2(=527).35: Yaṃ kiñci dukkhaṃ ca sukhañ ca etto<span class="red"><sup>2</sup></span><BR>
 <span class="ln"></span>                    dhammātisāraṃ va<span class="red"><sup>3</sup></span> manovighātaṃ<BR>
-<span class="ln"></span>                    urasā ahaṃ paccupadissāmi<span class="red"><sup>4</sup></span> sabbaṃ<BR>
+<span class="ln"></span>                    urasā ahaṃ <span class="wrong" data-info="«paccupadissāmi» marked as a wrong reading by DOP (see s.v. paccupadissāmi)">paccupadissāmi<span class="red"><sup>4</sup></span></span> sabbaṃ<BR>
 <span class="ln"></span>                    pathavī yathā thāvarānaṃ tasānaṃ. ║ Ja_XVIII:91 ║<BR>
 <BR>
 <span class="ln"></span>  Ja_XVIII.2(=527).36: Dhammātisāraṃ va<span class="red"><sup>3</sup></span> manovighātaṃ<BR>
@@ -13669,7 +13670,7 @@ Jātaka with Commentary Vol. V<BR>
 <span class="ln" data-n="20"></span>tassa jīvitadānaṃ dātuṃ vaṭṭatīti" cintetvā punadivase pāto<BR>
 <span class="ln"></span>va pāsādā oruyha mahādvāraṃ āgantvā ummāre sīsaṃ katvā<BR>
 <span class="ln"></span>M-assa āgamanamaggaṃ<span class="red"><sup>8</sup></span> olokento nipajji. Te khaggahatthāpi<BR>
-<span class="ln"></span>amaccā pāto va āgantvā anantaradvāre<span class="red"><sup>9</sup></span> aṭṭhaṃsu. Bo. pi<BR>
+<span class="ln"></span>amaccā pāto va āgantvā <span class="wrong" data-info="«anantaradvāre» marked as a wrong reading by DOP (see s.v. antara)">anantaradvāre<span class="red"><sup>9</sup></span></span> aṭṭhaṃsu. Bo. pi<BR>
 <span class="ln"></span>velaṃ sallakkhetvā uyyānā nikkhamma rājadvāraṃ āgacchi<span class="red"><sup>10</sup></span>,<BR>
 <span class="ln" data-n="25"></span>atha naṃ sunakho disvā mukhaṃ vivaritvā catasso dāṭhā<BR>
 <span class="ln"></span>dassetvā "kiṃ bhante Jambudīpatale aññattha bhikkhaṃ na<BR>
@@ -14301,7 +14302,7 @@ Jātaka with Commentary Vol. V<BR>
 <span class="ln"></span>  Ja_XVIII.3(=528).43: Yadi vassasataṃ devo na vasse na himaṃ pate<BR>
 <span class="ln"></span>                    ucchijjeyya ayaṃ loko vinasseyya ayaṃ pajā. ║ Ja_XVIII:166 ║<BR>
 <BR>
-<span class="ln"></span>  Ja_XVIII.3(=528).44: Yasmā ca vassatī devo himaṃ cānuphusīyati<span class="red"><sup>9</sup></span><BR>
+<span class="ln"></span>  Ja_XVIII.3(=528).44: Yasmā ca vassatī devo himaṃ <span class="wrong" data-info="«cānuphusīyati» marked as a wrong reading by DOP (see s.v. anuphusīyati)">cānuphusīyati<span class="red"><sup>9</sup></span></span><BR>
 <span class="ln"></span>                    tasmā sassāni paccanti raṭṭhañ ca pallate ciraṃ<span class="red"><sup>10</sup></span>. ║ Ja_XVIII:167 ║<BR>
 <BR>
 <span class="ln" data-n="20"></span>  Ja_XVIII.3(=528).45: Gavañ ce taramānānaṃ jimhaṃ gacchati puṅgavo (supra 222|21)<BR>
@@ -14967,10 +14968,10 @@ Jātaka with Commentary Vol. V<BR>
 <span class="ln"></span>thesi, tato uttariṃ pana satam pi sahassam pi aparimāṇāni<BR>
 <span class="ln" data-n="25"></span>samaṇabhadrakāni<span class="red"><sup>18</sup></span> esa kathetuṃ samattho yeva, rājā pana<BR>
 <span class="ln"></span>kāmābhiratattā taṃ<span class="red"><sup>19</sup></span> kathaṃ paṭicchinditvā<span class="red"><sup>20</sup></span> "mayhaṃ sa-<BR>
-<span class="ln"></span>maṇabhadrakehi attho n' atthīti" attano kāmādhivimuttitaṃ<span class="red"><sup>21</sup></span><BR>
+<span class="ln"></span>maṇabhadrakehi attho n' atthīti" attano <span class="wrong" data-info="«kāmādhivimuttitaṃ» marked as a wrong reading by DOP (see s.v. kāma)">kāmādhivimuttitaṃ<span class="red"><sup>21</sup></span></span><BR>
 <span class="ln"></span>pakāsento āha:<BR>
 <BR>
-<span class="ln"></span>  Ja_XIX.1(=529).20: Bahū pi bhadrakā ete yo<span class="red"><sup>22</sup></span> tvaṃ bhikkhu pasaṃsasi,<BR>
+<span class="ln"></span>  Ja_XIX.1(=529).20: Bahū pi <span class="wrong" data-info="«bhadrakā» marked as a wrong reading by DOP (see s.v. bhaddaka)">bhadrakā</span> ete yo<span class="red"><sup>22</sup></span> tvaṃ bhikkhu pasaṃsasi,<BR>
 <span class="ln" data-n="30"></span>                    ahañ ca giddho kāmesu kathaṃ kāhāmi<span class="red"><sup>23</sup></span> Sonaka. ║ Ja_XIX:20 ║<BR>
 <BR>
 <span class="ln"></span>  Ja_XIX.1(=529).21: Piyā me mānusā kāmā atho divyāpi me piyā,<BR>
@@ -15736,7 +15737,7 @@ Jātaka with Commentary Vol. V<BR>
 <span class="ln"></span>                    sapārisajjo ucchinno, Mejjhāraññaṃ<span class="red"><sup>10</sup></span> tadā ahu. ║ Ja_XIX:96 ║<BR>
 <BR>
 <span class="ln"></span>  Ja_XIX.2(=530).29: Kaṇhadīpāyan' āsajja isiṃ Andhakaveṇhuyo<span class="red"><sup>12</sup></span><BR>
-<span class="ln"></span>                    aññaññaṃ<span class="red"><sup>13</sup></span> musale hantvā sampattā Yamasādanaṃ<span class="red"><sup>14</sup></span>. ║ Ja_XIX:97 ║<BR>
+<span class="ln"></span>                    <span class="wrong" data-info="«aññaññaṃ» marked as a wrong reading by DOP (see s.v. añña)">aññaññaṃ<span class="red"><sup>13</sup></span></span> musale hantvā sampattā Yamasādanaṃ<span class="red"><sup>14</sup></span>. ║ Ja_XIX:97 ║<BR>
 <BR>
 <span class="ln"></span>  Ja_XIX.2(=530).30: Athāyaṃ isinā satto<span class="red"><sup>15</sup></span> antalikkhacaro<span class="red"><sup>16</sup></span> pure (III 460|1)<BR>
 <span class="ln" data-n="15"></span>                    pāvekkhi paṭhaviṃ Cecco hīnatto patta pariyāyaṃ<span class="red"><sup>17</sup></span>. ║ Ja_XIX:98 ║<BR>
@@ -15824,7 +15825,7 @@ Jātaka with Commentary Vol. V<BR>
 <span class="ln" data-n="25"></span>                    bhusam āpajjate<span class="red"><sup>19</sup></span> dukkhaṃ attakammaphalūpago. ║ Ja_XIX:112 ║<BR>
 <BR>
 <span class="ln"></span>  Ja_XIX.2(=530).45: Amanussā atibalā hantāraṃ janayantiyā<BR>
-<span class="ln"></span>                    ayomayehi phālehi<span class="red"><sup>20</sup></span> pīḷayanti punappunaṃ. ║ Ja_XIX:113 ║<BR>
+<span class="ln"></span>                    ayomayehi <span class="wrong" data-info="«phālehi» marked as a wrong reading by DOP (see s.v. phāla)">phālehi<span class="red"><sup>20</sup></span></span> pīḷayanti punappunaṃ. ║ Ja_XIX:113 ║<BR>
 <BR>
 <BR>
 <span class="red">--------------------------------------------------------------------------<BR>
@@ -16083,7 +16084,7 @@ Jātaka with Commentary Vol. V<BR>
 <span class="ln" data-n="10"></span>catūsu dvāresu ekekasmiṃ cattāro cattāro katvā soḷasa soḷasa ussadanirayā ti<BR>
 <span class="ln"></span>sabbe pi sataṃ<span class="red"><sup>4</sup></span> aṭṭhavīsati<span class="red"><sup>5</sup></span> ussadanirayā aṭṭha ca mahānirayā ti chattiṃsa-<BR>
 <span class="ln"></span>nirayasataṃ, kadariyātapanā<span class="red"><sup>6</sup></span> ti sabbe p' ete kadariyānaṃ tapanā<span class="red"><sup>7</sup></span>, balava-<BR>
-<span class="ln"></span>dukkhatāya ghorā, kappanibbattānaṃ<span class="red"><sup>8</sup></span> accīnaṃ atthitāya accimanto, bha-<BR>
+<span class="ln"></span>dukkhatāya ghorā, <span class="wrong" data-info="«kappanibbattānaṃ» marked as a wrong reading by DOP (see s.v. kappa)">kappanibbattānaṃ<span class="red"><sup>8</sup></span></span> accīnaṃ atthitāya accimanto, bha-<BR>
 <span class="ln"></span>yassa mahantatāya<span class="red"><sup>9</sup></span> mahabbhayā, diṭṭhamattā vā<span class="red"><sup>10</sup></span> sutamattā vā<span class="red"><sup>11</sup></span> lomāni<BR>
 <span class="ln" data-n="15"></span>haṃsentīti<span class="red"><sup>12</sup></span> lomahaṃsanarūpā va<span class="red"><sup>13</sup></span>, bhiṃsanatāya bhesmā<span class="red"><sup>14</sup></span>, bhayajanana-<BR>
 <span class="ln"></span>tāya paṭibhayā, sukhābhāvena dukkhā, catukkaṇṇā ti sabbe pi caturassā<span class="red"><sup>15</sup></span><BR>
@@ -16375,7 +16376,7 @@ Jātaka with Commentary Vol. V<BR>
 <span class="ln"></span>     Ta. santo ti kāyādīhi upasantā, uddhan ti devalokaṃ, saindā<span class="red"><sup>17</sup></span> ti ta.<BR>
 <span class="ln"></span>ta. indehi saddhiṃ, M. <span class="red"><sup>18</sup></span> hi 'ssa cātummahārājike deve ca dassento mahārāja<BR>
 <span class="ln"></span>cātummahārājādike hi deve passa cattāro mahārāje passa tāvatiṃse passa<BR>
-<span class="ln"></span>Sakkaṃ passā 'ti evaṃ sabbe pi <span class="suggestion" data-info="from «indake» corrected by DOP (see s.v. indake)">sa-indake</span><span class="red"><sup>19</sup></span> deve dassetvā idaṃ pi suciṇṇassa<BR>
+<span class="ln"></span>Sakkaṃ passā 'ti evaṃ sabbe pi <span class="suggestion" data-info="from «indake» corrected by DOP (see s.v. indake) | Cone also gives «sa-indake» (Be); the text follows Ce, then Be, then Se">sahindake</span><span class="red"><sup>19</sup></span> deve dassetvā idaṃ pi suciṇṇassa<BR>
 <span class="ln" data-n="25"></span>phalan ti dassesi, taṃ taṃ brūmīti tasmā taṃ bhaṇāmi, dhamman ti ito<BR>
 <span class="ln"></span>paṭṭhāya pāṇātipātādīni pañca verāni pahāya dānādīni puññāni karohi<span class="red"><sup>20</sup></span>, yathā<BR>
 <span class="ln"></span>taṃ suciṇṇaṃ nānutappeyyā 'ti yathā taṃ dānādipuññakammaṃ suciṇṇaṃ<BR>
@@ -17785,7 +17786,7 @@ Jātaka with Commentary Vol. V<BR>
 <span class="ln"></span>     Atha naṃ rājā saññapento āha: "devi, kiṃ kathesi, tava<BR>
 <span class="ln"></span>dhītā sakala-Jambudīpe aggarājānaṃ virūpo ti chaḍḍetvā gata-<BR>
 <span class="ln" data-n="10"></span>magge padavalañje avinaṭṭhe yeva <span class="erratum" data-info="{ } erratum already corrected in GRETIL: not the printed reading, which GRETIL does not give">{maccuṃ}</span><span class="red"><sup>6</sup></span> nalāṭenādāya āgatā,<BR>
-<span class="ln"></span>idāni attano rūpan nissāya issāsaphalaṃ<span class="red"><sup>7</sup></span> labhatū" 'ti. Sā tassa<BR>
+<span class="ln"></span>idāni attano rūpan nissāya <span class="wrong" data-info="«issāsaphalaṃ» marked as a wrong reading by DOP (see s.v. issāsaphalaṃ)">issāsaphalaṃ<span class="red"><sup>7</sup></span></span> labhatū" 'ti. Sā tassa<BR>
 <span class="ln"></span>vacanaṃ sutvā dhītu santikaṃ gantvā vilapantī ā.:<BR>
 <BR>
 <span class="ln"></span>  Ja_XX.1(=531).47: Na me akāsi vacanaṃ atthakāmāya <span class="suggestion" data-info="from «puttaki» corrected by DOP (see s.v. puttikā)">puttike</span><span class="red"><sup>8</sup></span>,<BR>
@@ -17798,7 +17799,7 @@ Jātaka with Commentary Vol. V<BR>
 <span class="ln"></span>                    Kusena jātaṃ khattiyaṃ suvaṇṇamaṇimekhalaṃ<BR>
 <span class="ln"></span>                    pūjitā ñātisaṃghehi na gañchisi<span class="red"><sup>13</sup></span> Yamakkhayaṃ. ║ Ja_XX:49 ║<BR>
 <BR>
-<span class="ln" data-n="20"></span>  Ja_XX.1(=531).50: Yatth' assu bheri nadati kuñjaro ca<span class="red"><sup>14</sup></span> nikuñjati<span class="red"><sup>15</sup></span><BR>
+<span class="ln" data-n="20"></span>  Ja_XX.1(=531).50: Yatth' assu bheri nadati kuñjaro ca<span class="red"><sup>14</sup></span> <span class="wrong" data-info="«nikuñjati» marked as a wrong reading by DOP (see s.v. nikuñjati)">nikuñjati<span class="red"><sup>15</sup></span></span><BR>
 <span class="ln"></span>                    khattiyānaṃ kule bhadde, kin nu sukhataraṃ tato. ║ Ja_XX:50 ║<BR>
 <BR>
 <span class="ln"></span>  Ja_XX.1(=531).51: Asso ca siṃsati<span class="red"><sup>16</sup></span> dvāre kumāro c' uparodati<BR>
@@ -18937,7 +18938,7 @@ Jātaka with Commentary Vol. V<BR>
 <span class="ln" data-n="25"></span>  Ja_XX.2(=532).41: Atho ḍaṃsā ca<span class="red"><sup>9</sup></span> makasā ca appam eva siriṃsapā<span class="red"><sup>10</sup></span>,<BR>
 <span class="ln"></span>                    vane vīḷamigākiṇṇe biṃsā amhaṃ na vijjati. ║ Ja_XX:133 ║<BR>
 <BR>
-<span class="ln"></span>  Ja_XX.2(=532).42: Bahūni c' assa<span class="red"><sup>12</sup></span> pūgāni assame sammataṃ idha<span class="red"><sup>13</sup></span>,<BR>
+<span class="ln"></span>  Ja_XX.2(=532).42: Bahūni c' assa<span class="red"><sup>12</sup></span> pūgāni assame sammataṃ <span class="wrong" data-info="«idha» marked as a wrong reading by DOP (see s.v. pūga)">idha<span class="red"><sup>13</sup></span>,</span><BR>
 <span class="ln"></span>                    nābhijānāmi uppannaṃ ābādhaṃ amanoramaṃ. ║ Ja_XX:134 ║<BR>
 <BR>
 <span class="ln"></span>  Ja_XX.2(=532).43: Svāgatan te mahāraja atho te adurāgataṃ, (IV 434|5)<BR>
@@ -19361,7 +19362,7 @@ Jātaka with Commentary Vol. V<BR>
 <span class="ln"></span>  Ja_XX.2(=532).86: Ānando ca pamādo ca sadā hasitākīḷitaṃ<BR>
 <span class="ln"></span>                    pitaraṃ paricaritvāna labbham etaṃ vijānato. ║ Ja_XX:178 ║<BR>
 <BR>
-<span class="ln"></span>  Ja_XX.2(=532).87: Dānañ ca <span class="suggestion" data-info="from «peyyavāsañ» corrected by DOP (see s.v. peyya)">piyavācaṃ</span><span class="red"><sup>3</sup></span> ca atthacariyā ca yā idha<BR>
+<span class="ln"></span>  Ja_XX.2(=532).87: Dānañ ca <span class="suggestion" data-info="from «peyyavāsañ» corrected by DOP (see s.v. peyya) | Cone also gives «peyyavācaṃ» (no edition); the text follows Ce, then Be, then Se">piyavācaṃ</span><span class="red"><sup>3</sup></span> ca atthacariyā ca yā idha<BR>
 <span class="ln"></span>                    samānattā<span class="red"><sup>4</sup></span> ca dhammesu tattha tattha yathārahaṃ, ║ Ja_XX:179 ║<BR>
 <BR>
 <span class="ln" data-n="30"></span>  Ja_XX.2(=532).88: Ete kho saṅghā loke rathassāṇīva yāyato,<BR>
@@ -21776,7 +21777,7 @@ Jātaka with Commentary Vol. V<BR>
 <span class="ln" data-n="25"></span>     So tassa kathento āha:<BR>
 <BR>
 <span class="ln"></span>  Ja_XXI.2(=534).45: Ajja me sattamā ratti ādānāni upāsato<span class="red"><sup>15</sup></span>,<BR>
-<span class="ln"></span>                    padam etassa anvesaṃ appamatto bhavassito<span class="red"><sup>16</sup></span>. ║ Ja_XXI:133 ║<BR>
+<span class="ln"></span>                    padam etassa anvesaṃ appamatto <span class="wrong" data-info="«bhavassito» marked as a wrong reading by DOP (see s.v. bhava)">bhavassito<span class="red"><sup>16</sup></span>.</span> ║ Ja_XXI:133 ║<BR>
 <BR>
 <span class="ln"></span>  Ja_XXI.2(=534).46: Ath' assa padaṃ addakkhiṃ carato <span class="suggestion" data-info="from «ādanesanaṃ» corrected by DOP (see s.v. ādanesanā)">adanesanā</span><span class="red"><sup>17</sup></span>,<BR>
 <span class="ln"></span>                    tatthāhaṃ odahiṃ pāsaṃ, ev' etaṃ dijam aggahin ti. ║ Ja_XXI:134 ║<BR>
@@ -22112,7 +22113,7 @@ Jātaka with Commentary Vol. V<BR>
 <span class="ln" data-n="5"></span>                    Sumukho <span class="suggestion" data-info="from «ajja pāvekkhi» corrected by DOP (see s.v. pavisati)">ajjhupāvekkhi</span> dhataraṭṭhass' anantarā. ║ Ja_XXI:161 ║<BR>
 <BR>
 <span class="ln"></span>  Ja_XXI.2(=534).74: Tesaṃ kañcanapattehi<span class="red"><sup>1</sup></span> puthū ādāya Kāsiyo<BR>
-<span class="ln"></span>                    haṃsānaṃ abhihāreyyuṃ aggarañño pavāsitan ti. ║ Ja_XXI:162 ║<BR>
+<span class="ln"></span>                    haṃsānaṃ <span class="wrong" data-info="«abhihāreyyuṃ» marked as a wrong reading by DOP (see s.v. abhiharati)">abhihāreyyuṃ</span> aggarañño pavāsitan ti. ║ Ja_XXI:162 ║<BR>
 <BR>
 <span class="ln"></span>     Ta. maṭṭhan ti karaṇapariniṭṭhitaṃ, kāsikavatthinan<span class="red"><sup>5</sup></span> ti kāsika-<BR>
 <span class="ln"></span>vatthena atthaṭaṃ, kocchan ti majjhe saṃkhittavyagghacammaparisibbitaṃ<span class="red"><sup>6</sup></span><BR>
@@ -23997,7 +23998,7 @@ Jātaka with Commentary Vol. V<BR>
 <span class="ln" data-n="20"></span>                    te sampaṭicchanti punā hirīmanā. ║ Ja_XXI:283 ║<BR>
 <BR>
 <span class="ln"></span>  Ja_XXI.3(=535).93: Velā yathā sāgaravegavārini<span class="red"><sup>8</sup></span><BR>
-<span class="ln"></span>                    hir' āyaṃ hi<span class="red"><sup>9</sup></span> pāpajanaṃ nivāraṇī.<BR>
+<span class="ln"></span>                    hir' āyaṃ hi<span class="red"><sup>9</sup></span> pāpajanaṃ <span class="wrong" data-info="«nivāraṇī» marked as a wrong reading by DOP (see s.v. nivāraṇa)">nivāraṇī.</span><BR>
 <span class="ln"></span>                    taṃ sabbaloke Hirim ariyapūjitaṃ<BR>
 <span class="ln"></span>                    Indassa taṃ vedaya devasārathīti. ║ Ja_XXI:284 ║<BR>
 <BR>
@@ -24480,7 +24481,7 @@ Jātaka with Commentary Vol. V<BR>
 <span class="ln" data-n="5"></span>sāmā 'ti vasanti, Kuṇālarājā pana tā uyyojento nassathā 'ti ādi vacanehi<BR>
 <span class="ln"></span>apasādeti, ta. <span class="red"><sup>4</sup></span> vinassathā 'ti sabbatobhāgena nassatha gehe dhanadhaññādīnaṃ<BR>
 <span class="ln"></span>nāsanena coriyo bahumāyatāya dhuttiyo naṭṭhasatitāya asatiyo anavaṭṭhitacitta-<BR>
-<span class="ln"></span>tāya lahucittāyo katavināsanena mittadūbhitāya <span class="suggestion" data-info="from «appatikāriyo» corrected by DOP (see s.v. appatikāriyo)">appatikārikāyo</span> ti.<BR>
+<span class="ln"></span>tāya lahucittāyo katavināsanena mittadūbhitāya <span class="suggestion" data-info="from «appatikāriyo» corrected by DOP (see s.v. appatikāriyo) | Cone also gives «appaṭikārikāyo» (Be, Se); the text follows Ce, then Be, then Se">appatikārikāyo</span> ti.<BR>
 <span class="ln"></span>     Evañ ca pana vatvā "iti kho bhi. ahaṃ tiracchānagato pi<BR>
 <span class="ln" data-n="10"></span>itthīnam akataññutaṃ bahumāyataṃ anācāratam<span class="red"><sup>5</sup></span> dussīlatañ ca jānāmi.<BR>
 <span class="ln"></span>tadā p' ahaṃ<span class="red"><sup>6</sup></span> tāsaṃ vase avattitvā tā yeva attano vase vattemīti"<BR>
@@ -26548,7 +26549,7 @@ Jātaka with Commentary Vol. V<BR>
 <span class="ln"></span>                    osaranti pamadā pamādinaṃ<BR>
 <span class="ln"></span>                    loṇatoyavatiyaṃ va āpakā<span class="red"><sup>6</sup></span>. ║ Ja_XXI:351 ║<BR>
 <BR>
-<span class="ln" data-n="20"></span>  Ja_XXI.4(=536).65: Yaṃ naraṃ uparamanti<span class="red"><sup>7</sup></span> nāriyo<BR>
+<span class="ln" data-n="20"></span>  Ja_XXI.4(=536).65: Yaṃ naraṃ <span class="wrong" data-info="«uparamanti» marked as a wrong reading by DOP (see s.v. uparamati)">uparamanti<span class="red"><sup>7</sup></span></span> nāriyo<BR>
 <span class="ln"></span>                    chandasā ca<span class="red"><sup>8</sup></span> ratiyā dhanena vā<BR>
 <span class="ln"></span>                    jātavedasadisam pi tādisaṃ<BR>
 <span class="ln"></span>                    rāgadosavatiyo<span class="red"><sup>9</sup></span> ḍahanti naṃ. ║ Ja_XXI:352 ║<BR>
@@ -28459,9 +28460,9 @@ Jātaka with Commentary Vol. V<BR>
 <span class="ln" data-n="10"></span>  Ja_XXI.5(=537).49: Idaṃ te raṭṭhaṃ sadhanaṃ sayoggam (289|19)<BR>
 <span class="ln"></span>                    sakāyuraṃ sabbakāmūpapannaṃ,<BR>
 <span class="ln"></span>                    kiṃ kāmahetu paribhāsase maṃ,<BR>
-<span class="ln"></span>                    gacchām' ahaṃ porisādassa <span class="suggestion" data-info="from «kante» corrected by DOP (see s.v. kante)">ñatte</span><span class="red"><sup>6</sup></span> ti g. ā. ║ Ja_XXI:416 ║<BR>
+<span class="ln"></span>                    gacchām' ahaṃ porisādassa <span class="wrong" data-info="«kante» marked as a wrong reading by DOP (see s.v. kante) | Cone proposes «ñatte» or «ñante», naming no edition">kante<span class="red"><sup>6</sup></span></span> ti g. ā. ║ Ja_XXI:416 ║<BR>
 <BR>
-<span class="ln"></span>     Ta. <span class="suggestion" data-info="from «kante» corrected by DOP (see s.v. kante)">ñatte</span><span class="red"><sup>6</sup></span> ti santike.<BR>
+<span class="ln"></span>     Ta. kante<span class="red"><sup>6</sup></span> ti santike.<BR>
 <span class="ln" data-n="15"></span>     Tasmiṃ samaye pitu rañño hadayaṃ uṇham ahosi, so<BR>
 <span class="ln"></span>"tāta Sutasoma kin nām' etaṃ kathesi, caturaṅginiyā senāya<BR>
 <span class="ln"></span>coraṃ gahessāmīti" vatvā g. āha:<BR>
@@ -28628,7 +28629,7 @@ Jātaka with Commentary Vol. V<BR>
 <span class="ln"></span>Sutasoma aham eva adhammiko" ti vatvā gātham āha:<BR>
 <BR>
 <span class="ln"></span>  Ja_XXI.5(=537).57: Yo maṃsahetu migavaṃ careyya<BR>
-<span class="ln"></span>                    yo cāhane<span class="red"><sup>6</sup></span> purisaṃ attahetu<BR>
+<span class="ln"></span>                    yo <span class="wrong" data-info="«cāhane» marked as a wrong reading by DOP (see s.v. āhanati)">cāhane<span class="red"><sup>6</sup></span></span> purisaṃ attahetu<BR>
 <span class="ln"></span>                    ubho pi te pecca samā bhavanti,<BR>
 <span class="ln" data-n="20"></span>                    kasmā no adhammikaṃ brūsi<span class="red"><sup>7</sup></span> maṃ tvan ti. ║ Ja_XXI:424 ║<BR>
 <BR>
@@ -29112,7 +29113,7 @@ Jātaka with Commentary Vol. V<BR>
 <span class="ln"></span>                    labbhā piyā ocitatthena pacchā ti. ║ Ja_XXI:457 ║<BR>
 <BR>
 <span class="ln"></span>     Ta. tādiso ti janinda tādiso yuvā abhirūpo mahāyaso idaṃ nāma me<BR>
-<span class="ln"></span>piyan ti piyavatthūh' ālaggo<span class="red"><sup>14</sup></span> attānaṃ niraṃkatvā sabbasugatīhi c' eva sukha-<BR>
+<span class="ln"></span>piyan ti piyavatthūh' ālaggo<span class="red"><sup>14</sup></span> <span class="wrong" data-info="«attānaṃ» marked as a wrong reading by DOP (see s.v. ālagga)">attānaṃ</span> niraṃkatvā sabbasugatīhi c' eva sukha-<BR>
 <span class="ln"></span>visesehi ca nuditvā<span class="red"><sup>15</sup></span> niraye pātetvā na ve piyāni sevati, paramā va seyyo<BR>
 <span class="ln" data-n="25"></span>ti purisassa hi paramhā<span class="red"><sup>16</sup></span> piyavatthumhā attā va varataro<span class="red"><sup>17</sup></span>, labbhā piyā ti<BR>
 <span class="ln"></span>piyā nāma visayavasena<span class="red"><sup>18</sup></span> c' eva puññena ca ocitatthena vaḍḍhitatthena diṭṭha-<BR>

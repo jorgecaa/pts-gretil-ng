@@ -16,14 +16,15 @@ abstract: >-
   Corrections of the editions themselves published by the PTS (M. Cone's
   Dictionary of Pāli, P. Jackson's revision of Saṃyutta IV, W. Pruitt's
   correction lists, the corrigenda printed in the volumes) are applied and
-  marked, with the printed reading they replace. The build is reproducible
+  marked, with the printed reading they replace; readings Cone marks as wrong
+  without giving one to adopt are left as printed and marked. The build is reproducible
   from a pinned commit of the GRETIL mirror; every correction is recorded with
   its source in corrections.json.
 authors:
   - family-names: Contreras
     given-names: Jorge
 license: CC-BY-SA-4.0
-version: "2.3.1"
+version: "2.4.0"
 date-released: "2026-11-17"
 doi: 10.5281/zenodo.24314138
 identifiers:

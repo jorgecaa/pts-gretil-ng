@@ -7,7 +7,8 @@ Open an issue with the form «Error in the text» (Issues → New issue). It ask
 - the volume, page and line (the line numbers are in the left margin of each page);
 - what the page shows and what the printed PTS edition prints, if you have checked it;
 - whether the word carries a mark (green: a transcription correction; orange dotted: a PTS correction
-  of the edition, applied; red: braces in GRETIL).
+  of the edition, applied; purple dashed: a reading Cone marks as wrong, left as printed; red: braces in
+  GRETIL).
 
 `corrections.json` is not edited by hand here: it is exported from the corrections layer of the
 foureditions project (not public), where every correction is checked against the scan and approved. A reported
