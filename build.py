@@ -314,7 +314,7 @@ STYLE = """<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family
 body,td{font-family:'Noto Sans',sans-serif}
 body{max-width:60em;margin:1em auto;padding:0 1em;color:#222}
 .erratum{border-bottom:2px solid #c00;cursor:help}
-.correction{text-decoration:underline #0a7a2f 2px;cursor:help}
+.correction{text-decoration:underline #3cb371 2px;text-underline-offset:.32em;text-decoration-skip-ink:none;cursor:help}
 .erratum.correction{border-bottom:2px solid #c00}
 #tip{position:fixed;display:none;max-width:26em;background:#fffbe6;border:1px solid #888;
  padding:.5em .7em;font:13px/1.4 'Noto Sans',sans-serif;box-shadow:0 2px 6px #0004;z-index:9;white-space:normal}
