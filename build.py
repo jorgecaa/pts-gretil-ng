@@ -20,6 +20,7 @@ import re
 import subprocess
 import sys
 import unicodedata
+from collections import Counter
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 MIRROR_DIR = os.path.join(HERE, 'mirror')
@@ -554,18 +555,14 @@ Licence: CC BY-SA 4.0, &copy; Pali Text Society and Dhammakaya Foundation, 2015.
 own DOI, listed in the <a href="{repo}#citing">README</a>), together with the printed PTS edition (volume
 and page). To link to a page of the printed edition, add <code>#p</code> and its number to the address of
 the volume (page 45: <code>…/dighn1ou.htm#p45</code>).</p>
-<p><b>The table.</b> Pages: the pages of the printed edition in the file. Proofreading corrections
-(green): places where GRETIL departs from the printed edition, checked on its scan, including GRETIL's
-signs written as the book prints them. PTS corrections of the edition (orange): corrections of the
-edition itself published by the PTS. The two columns do not overlap: each correction is counted once.
-Wrong readings marked (purple): printed readings Cone marks as wrong without giving one to adopt; the
-text is left as printed, so they are not corrections.
+<p>The <b>Corrections (total)</b> column includes proofreading corrections (green), corrections to the printed
+edition published by the PTS (orange), and readings Cone marks as wrong (purple). The purple markings
+retain the printed reading.
 Of the {sn4_total} PTS corrections of SN IV, {sn4_jackson} come from P. Jackson's revision of that volume (2014).</p>
 <p>Every volume listed with a file was reviewed in the foureditions review service: foureditions is the
 project where the review is done, each correction checked against the scan and approved; it is not public
-(see the README). The counts give the corrections approved so far. A volume with 0 proofreading corrections has no approved correction yet; this
-does not mean it was proofread in full and found free of errors, since the proofreading is not finished
-for every book. Ja I carries only PTS corrections of the edition.</p>
+(see the README). The counts reflect the review so far. Proofreading is ongoing. The entries for Ja I
+come from PTS corrections and marked readings.</p>
 <p>Struck through, at the end: the books the review service leaves out, which are not built. A review needs
 a scan of the same printed edition that GRETIL transcribes; six of these books have none usable, and the
 Yamaka is excluded:</p>
@@ -578,7 +575,7 @@ Minayeff 1888, Morris 1882), a different text.</li>
 <li><b>Yamaka</b>: its PTS edition is excluded from the review because of its many abbreviations.</li>
 </ul>
 <table>
-<tr><th>Volume</th><th>File</th><th>Pages</th><th>Proofreading corrections</th><th>PTS corrections of the edition</th><th>Wrong readings marked (DOP)</th></tr>
+<tr><th>Volume</th><th>File</th><th>Pages</th><th>Corrections (total)</th></tr>
 {rows}
 </table>
 </body>
@@ -598,37 +595,27 @@ LEFT_OUT = (('Vimānavatthu', NO_SCAN), ('Petavatthu', NO_SCAN), ('Apadāna', NO
 LABELS = {'theragou': 'Th', 'therigou': 'Thī'}
 
 
-def file_counts(volume, rel):
-    """Proofreading corrections and PTS corrections of the edition on the pages of one file."""
+def file_correction_count(volume, rel):
+    """Count correction records on the pages of one file."""
     with open(os.path.join(BASE, rel + '.htm'), encoding='utf-8', newline=None) as fh:
-        numbers = set(parts(_BR.sub('<BR>', fh.read()), calls={}))
-    mine = [c for c in DATA['corrections'] if c['volume'] == volume and c['page'] in numbers]
-    emended = sum(c.get('kind') == 'emendation' for c in mine)
-    wrong = sum(c.get('kind') == 'wrong-reading' for c in mine)
-    return len(mine) - emended - wrong, emended, wrong
+        pages = parts(_BR.sub('<BR>', fh.read()))
+    return sum(c['volume'] == volume and c['page'] in pages for c in DATA['corrections'])
 
 
 def write_index(pages):
     """`index.html`: the page GitHub Pages opens first, with a link to every built file."""
-    # proofreading corrections, corrections of the edition published by the PTS, and the wrong readings
-    # marked (not corrections: the word is left as printed), counted apart
-    counts, emended, wrong = {}, {}, {}
-    for c in DATA['corrections']:
-        tally = {'emendation': emended, 'wrong-reading': wrong}.get(c.get('kind'), counts)
-        tally[c['volume']] = tally.get(c['volume'], 0) + 1
+    counts = Counter(c['volume'] for c in DATA['corrections'])
     rows = []
     for volume, rels in FILES.items():
         for k, rel in enumerate(rels):
             name = os.path.basename(rel) + '.htm'
-            n_counts, n_emended, n_wrong = counts.get(volume, 0), emended.get(volume, 0), wrong.get(volume, 0)
-            if len(rels) > 1:          # a volume in two files (Theragāthā, Therīgāthā): each file its own
-                n_counts, n_emended, n_wrong = file_counts(volume, rel)
+            count = file_correction_count(volume, rel) if len(rels) > 1 else counts[volume]
             label = LABELS.get(os.path.basename(rel), volume if k == 0 else '')
             rows.append(f'<tr><td>{html.escape(label)}</td>'
                         f'<td><a href="corrected/{name}">{name}</a></td><td>{pages[rel]}</td>'
-                        f'<td>{n_counts}</td><td>{n_emended}</td><td>{n_wrong}</td></tr>')
+                        f'<td>{count}</td></tr>')
     for book, reason in LEFT_OUT:                         # struck through: not reviewed, not built
-        rows.append(f'<tr><td><s>{html.escape(book)}</s></td><td colspan="5">{html.escape(reason)}</td></tr>')
+        rows.append(f'<tr><td><s>{html.escape(book)}</s></td><td colspan="3">{html.escape(reason)}</td></tr>')
     style = STYLE.replace('</style>', 'table{border-collapse:collapse}td,th{padding:.2em .8em;text-align:left}'
                           'td:nth-child(n+3){text-align:right}tr:nth-child(even){background:#f4f4f4}</style>')
     with open(os.path.join(HERE, 'index.html'), 'w', encoding='utf-8', newline='\n') as fh:
