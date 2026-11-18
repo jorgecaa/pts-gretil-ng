@@ -202,59 +202,59 @@ Yamaka is excluded:
 - **Paṭṭhāna**: no scan of the PTS edition is at hand.
 - **Yamaka**: its PTS edition is excluded from the review because of its many abbreviations.
 
-| Volume | File | Pages | Proofreading corrections | PTS corrections of the edition | Wrong readings marked (DOP) | Public scan |
-|---|---|---:|---:|---:|---:|---|
-| DN I | [`dighn1ou.htm`](corrected/dighn1ou.htm) | 253 | 35 | 81 | 2 |  |
-| DN II | [`dighn2ou.htm`](corrected/dighn2ou.htm) | 358 | 81 | 41 | 5 |  |
-| DN III | [`dighn3ou.htm`](corrected/dighn3ou.htm) | 293 | 98 | 40 | 7 |  |
-| MN I | [`majjn1ou.htm`](corrected/majjn1ou.htm) | 524 | 133 | 19 | 0 | yes |
-| MN II | [`majjn2ou.htm`](corrected/majjn2ou.htm) | 266 | 36 | 43 | 4 |  |
-| MN III | [`majjn3ou.htm`](corrected/majjn3ou.htm) | 302 | 128 | 35 | 3 |  |
-| SN I | [`samyu1ou.htm`](corrected/samyu1ou.htm) | 240 | 141 | 57 | 4 |  |
-| SN II | [`samyu2ou.htm`](corrected/samyu2ou.htm) | 279 | 78 | 18 | 2 | yes |
-| SN III | [`samyu3ou.htm`](corrected/samyu3ou.htm) | 279 | 42 | 18 | 1 | yes |
-| SN IV | [`samyu4ou.htm`](corrected/samyu4ou.htm) | 403 | 102 | 634 | 1 | yes |
-| SN V | [`samyu5ou.htm`](corrected/samyu5ou.htm) | 478 | 76 | 30 | 5 | yes |
-| AN I | [`angut1ou.htm`](corrected/angut1ou.htm) | 304 | 61 | 23 | 1 | yes |
-| AN II | [`angut2ou.htm`](corrected/angut2ou.htm) | 257 | 51 | 31 | 3 | yes |
-| AN III | [`angut3ou.htm`](corrected/angut3ou.htm) | 452 | 22 | 13 | 5 | yes |
-| AN IV | [`angut4ou.htm`](corrected/angut4ou.htm) | 466 | 46 | 21 | 4 | yes |
-| AN V | [`angut5ou.htm`](corrected/angut5ou.htm) | 361 | 23 | 5 | 2 | yes |
-| Sn | [`sutnipou.htm`](corrected/sutnipou.htm) | 223 | 827 | 0 | 0 |  |
-| Th | [`theragou.htm`](corrected/theragou.htm) | 115 | 31 | 0 | 0 | yes |
-| Thī | [`therigou.htm`](corrected/therigou.htm) | 52 | 32 | 0 | 0 | yes |
-| Dhp | [`dhampdou.htm`](corrected/dhampdou.htm) | 120 | 8 | 0 | 0 |  |
-| Khp | [`khudp_ou.htm`](corrected/khudp_ou.htm) | 9 | 0 | 0 | 0 |  |
-| Ud | [`udana_ou.htm`](corrected/udana_ou.htm) | 94 | 7 | 0 | 0 |  |
-| It | [`itivutou.htm`](corrected/itivutou.htm) | 124 | 0 | 0 | 0 | yes |
-| Ja I | [`jatak1ou.htm`](corrected/jatak1ou.htm) | 511 | 0 | 86 | 14 |  |
-| Ja II | [`jatak2ou.htm`](corrected/jatak2ou.htm) | 451 | 1 | 68 | 15 | yes |
-| Ja III | [`jatak3ou.htm`](corrected/jatak3ou.htm) | 543 | 5 | 105 | 12 |  |
-| Ja IV | [`jatak4ou.htm`](corrected/jatak4ou.htm) | 499 | 19 | 106 | 20 | yes |
-| Ja V | [`jatak5ou.htm`](corrected/jatak5ou.htm) | 511 | 24 | 196 | 34 | yes |
-| Ja VI | [`jatak6ou.htm`](corrected/jatak6ou.htm) | 596 | 7 | 174 | 30 | yes |
-| Nidd I | [`nidde1ou.htm`](corrected/nidde1ou.htm) | 509 | 2 | 0 | 0 |  |
-| Nidd II | [`nidde2ou.htm`](corrected/nidde2ou.htm) | 72 | 0 | 0 | 0 |  |
-| Patis I | [`patis1ou.htm`](corrected/patis1ou.htm) | 196 | 73 | 0 | 0 |  |
-| Patis II | [`patis2ou.htm`](corrected/patis2ou.htm) | 246 | 38 | 0 | 0 |  |
-| Mil | [`milindou.htm`](corrected/milindou.htm) | 420 | 0 | 0 | 0 | yes |
-| Vin I | [`vin1maou.htm`](corrected/vin1maou.htm) | 360 | 8 | 0 | 0 |  |
-| Vin II | [`vin2cuou.htm`](corrected/vin2cuou.htm) | 308 | 14 | 0 | 0 | yes |
-| Vin III | [`vin3s1ou.htm`](corrected/vin3s1ou.htm) | 266 | 7 | 0 | 0 | yes |
-| Vin IV | [`vin4s2ou.htm`](corrected/vin4s2ou.htm) | 351 | 1 | 0 | 0 |  |
-| Vin V | [`vin5paou.htm`](corrected/vin5paou.htm) | 226 | 0 | 0 | 0 | yes |
-| Dhs | [`dhamsgou.htm`](corrected/dhamsgou.htm) | 264 | 1 | 0 | 0 |  |
-| Vibh | [`vibhanou.htm`](corrected/vibhanou.htm) | 436 | 0 | 0 | 0 |  |
-| Dhātuk | [`dhatukou.htm`](corrected/dhatukou.htm) | 113 | 0 | 0 | 0 |  |
-| Pp | [`pugpan_ou.htm`](corrected/pugpan_ou.htm) | 74 | 13 | 0 | 0 | yes |
-| Kv | [`kathavou.htm`](corrected/kathavou.htm) | 628 | 136 | 0 | 0 |  |
-| ~~Vimānavatthu~~ | not reviewed: no compatible scan of the printed PTS edition |  |  |  |  |  |
-| ~~Petavatthu~~ | not reviewed: no compatible scan of the printed PTS edition |  |  |  |  |  |
-| ~~Apadāna~~ | not reviewed: no compatible scan of the printed PTS edition |  |  |  |  |  |
-| ~~Buddhavaṃsa~~ | not reviewed: no compatible scan of the printed PTS edition |  |  |  |  |  |
-| ~~Cariyāpiṭaka~~ | not reviewed: no compatible scan of the printed PTS edition |  |  |  |  |  |
-| ~~Yamaka~~ | not reviewed: the review service excludes its PTS edition (too many abbreviations) |  |  |  |  |  |
-| ~~Paṭṭhāna~~ | not reviewed: no compatible scan of the printed PTS edition |  |  |  |  |  |
+| Volume | File | Pages | Corrections |
+|---|---|---:|---:|
+| DN I | [`dighn1ou.htm`](corrected/dighn1ou.htm) | 253 | 118 |
+| DN II | [`dighn2ou.htm`](corrected/dighn2ou.htm) | 358 | 127 |
+| DN III | [`dighn3ou.htm`](corrected/dighn3ou.htm) | 293 | 145 |
+| MN I | [`majjn1ou.htm`](corrected/majjn1ou.htm) | 524 | 152 |
+| MN II | [`majjn2ou.htm`](corrected/majjn2ou.htm) | 266 | 83 |
+| MN III | [`majjn3ou.htm`](corrected/majjn3ou.htm) | 302 | 166 |
+| SN I | [`samyu1ou.htm`](corrected/samyu1ou.htm) | 240 | 202 |
+| SN II | [`samyu2ou.htm`](corrected/samyu2ou.htm) | 279 | 98 |
+| SN III | [`samyu3ou.htm`](corrected/samyu3ou.htm) | 279 | 61 |
+| SN IV | [`samyu4ou.htm`](corrected/samyu4ou.htm) | 403 | 737 |
+| SN V | [`samyu5ou.htm`](corrected/samyu5ou.htm) | 478 | 111 |
+| AN I | [`angut1ou.htm`](corrected/angut1ou.htm) | 304 | 85 |
+| AN II | [`angut2ou.htm`](corrected/angut2ou.htm) | 257 | 85 |
+| AN III | [`angut3ou.htm`](corrected/angut3ou.htm) | 452 | 40 |
+| AN IV | [`angut4ou.htm`](corrected/angut4ou.htm) | 466 | 71 |
+| AN V | [`angut5ou.htm`](corrected/angut5ou.htm) | 361 | 30 |
+| Sn | [`sutnipou.htm`](corrected/sutnipou.htm) | 223 | 827 |
+| Th | [`theragou.htm`](corrected/theragou.htm) | 115 | 31 |
+| Thī | [`therigou.htm`](corrected/therigou.htm) | 52 | 32 |
+| Dhp | [`dhampdou.htm`](corrected/dhampdou.htm) | 120 | 8 |
+| Khp | [`khudp_ou.htm`](corrected/khudp_ou.htm) | 9 | 0 |
+| Ud | [`udana_ou.htm`](corrected/udana_ou.htm) | 94 | 7 |
+| It | [`itivutou.htm`](corrected/itivutou.htm) | 124 | 0 |
+| Ja I | [`jatak1ou.htm`](corrected/jatak1ou.htm) | 511 | 100 |
+| Ja II | [`jatak2ou.htm`](corrected/jatak2ou.htm) | 451 | 84 |
+| Ja III | [`jatak3ou.htm`](corrected/jatak3ou.htm) | 543 | 122 |
+| Ja IV | [`jatak4ou.htm`](corrected/jatak4ou.htm) | 499 | 145 |
+| Ja V | [`jatak5ou.htm`](corrected/jatak5ou.htm) | 511 | 254 |
+| Ja VI | [`jatak6ou.htm`](corrected/jatak6ou.htm) | 596 | 211 |
+| Nidd I | [`nidde1ou.htm`](corrected/nidde1ou.htm) | 509 | 2 |
+| Nidd II | [`nidde2ou.htm`](corrected/nidde2ou.htm) | 72 | 0 |
+| Patis I | [`patis1ou.htm`](corrected/patis1ou.htm) | 196 | 73 |
+| Patis II | [`patis2ou.htm`](corrected/patis2ou.htm) | 246 | 38 |
+| Mil | [`milindou.htm`](corrected/milindou.htm) | 420 | 0 |
+| Vin I | [`vin1maou.htm`](corrected/vin1maou.htm) | 360 | 8 |
+| Vin II | [`vin2cuou.htm`](corrected/vin2cuou.htm) | 308 | 14 |
+| Vin III | [`vin3s1ou.htm`](corrected/vin3s1ou.htm) | 266 | 7 |
+| Vin IV | [`vin4s2ou.htm`](corrected/vin4s2ou.htm) | 351 | 1 |
+| Vin V | [`vin5paou.htm`](corrected/vin5paou.htm) | 226 | 0 |
+| Dhs | [`dhamsgou.htm`](corrected/dhamsgou.htm) | 264 | 1 |
+| Vibh | [`vibhanou.htm`](corrected/vibhanou.htm) | 436 | 0 |
+| Dhātuk | [`dhatukou.htm`](corrected/dhatukou.htm) | 113 | 0 |
+| Pp | [`pugpan_ou.htm`](corrected/pugpan_ou.htm) | 74 | 13 |
+| Kv | [`kathavou.htm`](corrected/kathavou.htm) | 628 | 136 |
+| ~~Vimānavatthu~~ | not reviewed: no compatible scan of the printed PTS edition |  |  |
+| ~~Petavatthu~~ | not reviewed: no compatible scan of the printed PTS edition |  |  |
+| ~~Apadāna~~ | not reviewed: no compatible scan of the printed PTS edition |  |  |
+| ~~Buddhavaṃsa~~ | not reviewed: no compatible scan of the printed PTS edition |  |  |
+| ~~Cariyāpiṭaka~~ | not reviewed: no compatible scan of the printed PTS edition |  |  |
+| ~~Yamaka~~ | not reviewed: the review service excludes its PTS edition (too many abbreviations) |  |  |
+| ~~Paṭṭhāna~~ | not reviewed: no compatible scan of the printed PTS edition |  |  |
 
 Page counts are those of each built file; corrections are counted per volume.
 
