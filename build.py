@@ -543,6 +543,7 @@ INDEX = """<!DOCTYPE html>
 </head>
 <body>
 <h1>PTS Pali texts from GRETIL, proofread</h1>
+<p><strong>Unofficial project.</strong> Maintained independently of the Pali Text Society and GRETIL.</p>
 <p>The Pali Text Society editions as GRETIL gives them (digital input by the Dhammakaya Foundation),
 with proofreading corrections against the scans of the printed editions marked in the text. Built
 reproducibly from a pinned commit of the GRETIL mirror; source, method and licence:

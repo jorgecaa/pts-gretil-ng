@@ -2,6 +2,8 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24314138.svg)](https://doi.org/10.5281/zenodo.24314138)
 
+**Unofficial project.** Maintained independently of the Pali Text Society and GRETIL.
+
 Reproducible build of the Pali Text Society (PTS) editions of the Pali canon from
 [GRETIL](https://gretil.sub.uni-goettingen.de/), with proofreading corrections marked in the text.
 
